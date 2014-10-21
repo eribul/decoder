@@ -1,0 +1,197 @@
+Kod 	Klartext
+1400 	Labii sup
+1401 	Labii inf
+1408 	Labii amb
+1409 	Labii nud
+1410 	Baseos linguae
+1417 	Linguae an spec
+1418 	Linguae mult
+1419 	Linguae nud
+1420 	Gland parotidis
+1425 	Gland subling
+1426 	Gland submand
+1428 	Gland saliv mult
+1429 	Gland saliv nud
+143 	Baseos oris
+144 	Cavum oris,gingivae
+1450 	Tonsill
+1457 	Mesopharynx an spec
+1458 	Mesopharynx mult
+1459 	Mesopharynx nud
+146 	Nasopharynx
+147 	Hypopharynx
+148 	Pharynx nud
+150 	Oesophagi
+1500 	Oesophagi
+1508 	Oesophagi mult
+1509 	Oesophagi uns
+1510 	Pyloris,corp ventriculi
+1511 	Cardiae ventriculi
+1518 	Ventriculi mult
+1519 	Ospec ventrikelca
+1520 	Duodeni
+1527 	Jejunum,ileum
+1528 	Intest ten mult
+1529 	Intest ten nud
+1530 	Caecum,coli asc ileocek
+1531 	Colon transv,flex
+1532 	Colon descendens
+1533 	Colon sigmoideum
+1534 	Appendix
+1538 	Colon mult
+1539 	Colon nud
+1540 	Rectum
+1541 	Anus
+1548 	Rectum flera lok
+1550 	Hepar prim
+1551 	Ves fellae
+1552 	Viarum bilif extrahep
+1553 	Papilla vateri
+1558 	Gallvägar mult, gallvägar
+1559 	Viarum bilif nud
+156 	Hepar nud
+157 	Pancreas
+158 	Peritoneum
+1600 	Cavi nasi
+1601 	Tub phar tymp, auris med
+1602 	Sinus max
+1607 	Sinus an spec
+1608 	Nasi,sinus,auris mult
+1609 	Nasi,sinus,auris nud
+161 	Larynx et plicae vocalis
+1620 	Trachea
+1621 	Bronk et pulm
+1622 	Pleura
+163 	Pulm prim-sek
+164 	Mediastinum
+1701 	Mam dx
+1702 	Mam sin
+1707 	Mammult dx
+1708 	Mammult sin
+1709 	Mam nud
+171 	Colli uteri
+172 	Corpus uteri
+173 	Chorionep,mola hyd
+174 	Uterus nud
+17481 	1707
+17482 	1708
+175 	Ovarium
+1750 	Ovarium
+1751 	Tubae,lig lati
+1758 	Ovarium tubae,lig mult
+1759 	Ovarium tubae,lig nud
+176 	Genitalorg kv
+1760 	Vulva
+1761 	Vagina
+1767 	Kv gen an spec
+1768 	Tumör med mult lok
+1769 	Kv gen nud
+177 	Prostata
+178 	Testis
+1790 	Penis
+1791 	Scrotum
+1797 	Man gen an spec
+1798 	Man gen mult
+1799 	Man gen nud
+1800 	Renis
+1801 	Pelvis renalis
+1809 	Renis uns, urinorg uns 18
+1810 	Ves urinar
+1811 	Ureter
+1812 	Urethra
+1816 	Urachus
+1817 	Urinorg an spec
+1818 	Urinorg mult
+1819 	Urinorg nud
+1901 	Melanoma palpebr,canthos
+1902 	Melanoma auris,accustici,
+1903 	Melanoma fasciei an
+1904 	Melanoma,verticis,colli
+1905 	Melanoma trunci, scrotum
+1906 	Melanom subrachii,axill
+1907 	Melanom cruris
+1908 	Melanom mult
+1909 	Melanom nud
+1911 	Cutis palpebr,lanthos
+1912 	Cutis auris,accustici ext
+1913 	Cutis fasciei an
+1914 	Cutis verticis,colli
+1915 	Cutis trunci,scrotum
+1916 	Cutis brachii,axill
+1917 	Cutis cruris
+1918 	Cutis mult
+1919 	Cutis nud
+1920 	Bulbi oculi,retinae
+1921 	Nervus opticus
+1922 	Orbitae,extrabulb oculi
+1923 	Conjunctivae
+1927 	Oculi an spec
+1928 	Oculi mult
+1929 	Oculi nud
+1930 	Cerebri
+1931 	Medul.mening spinalis
+1933 	Perif nerver,syst symp
+1938 	Cerebri mult
+1939 	Cerebri nud
+194 	Thyreoidea
+1950 	Suprarenalis
+1951 	Parathyreoidea
+1952 	Thymi
+1953 	Hypofys,hyp.anlag
+1955 	Insulinomö an spec körtel
+1957 	End körtel an spec
+1958 	End körtlar mult
+1959 	End körtel nud
+1960 	Os cranii,fasc
+1961 	Os mand
+1962 	Columnae vertebralis
+1963 	Costae,sternum,claviculae
+1964 	Hum,rad,ulna,scapulae
+1965 	Carp,metacarp,phalangi
+1966 	Coxae,sacrum,coccyx
+1967 	Femoris,tibia,fibula
+1968 	Talus,calcan,metatars
+1969 	Ossium mult,nud
+1970 	Mj-sark cap,fac,colli
+1971 	Mj-sark trunci,dorsi
+1972 	Mj-sark extr sup,scapular
+1973 	Mj-sark extr inf,coxae,gl
+1974 	Mj-sark retroperit
+1975 	Mj-sark cordis
+1977 	Mjukdelstumör
+1978 	Mj-sark mult
+1979 	Mj-sark uns
+1991 	Cap,faciei,colli nud
+1992 	Thorax nud
+1993 	Abdomis,digest nud
+1994 	Pelvis nud
+1995 	Extremit nud
+1999 	Nud,sek
+2000 	Ret sarkom
+2001 	Lymfosark,lymfocyt-lymfob
+20019 	Mb waldenström
+2002 	Mal lymf uns
+2003 	Mb waldenström
+201 	Mb hodgin,lymfogranulomat
+2020 	Brill-symmers
+2021 	Reticulos nud,letterer si
+2022 	Mycosis fungoides
+2024 	Hårcellsleukemi
+203 	Myelomatos,plasmocytom
+2040 	Akut lymfatisk leukemi
+2041 	Kron lymf leukemi
+2042 	Monocytleukemi
+2049 	Lymf leukemi uns
+2050 	Akut myeloisk leukemi
+2051 	Kron myeloisk leukemi
+2059 	Myeloisk leukemi uns
+2060 	Akut monocytleukemi
+2061 	Kron monocytleukemi
+2069 	Monocytleukemi uns
+2070 	Akut leukemi (blastleuk)
+2071 	Kron leukemi
+2072 	Erythraemia acuta
+2073 	Annan spec leukemi
+2079 	Leukemi uns
+208 	Polycytemia vera
+209 	Myelofibros,myeloscleros

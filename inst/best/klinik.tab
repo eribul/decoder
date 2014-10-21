@@ -1,0 +1,139 @@
+key	value
+003	Mödrahälsovård (MVC) 
+207	Neonatal intensivvård
+009	Barnahälsovård (BVC) 
+211	Hud- och könssjukvård
+011	Distriktsläkarvård 
+215	Yrkesdermatologisk vård
+014	Distriktssköterskeverksamhet 
+221	Neurologisk vård
+015	Jourläkarverksamhet 
+231	Kardiologisk vård
+016	Allmän vård 
+241	Geriatrisk vård
+019	Primärvårdsansluten hemsjukvård (PAH) 
+243	Hemsjukvård,lasaretts-/sjukhusansluten, (LAH/SAH)
+020	Hälso- och sjukvård i särskilt boende 
+246	Långvårdsmedicin (sjukhem)
+021	Kortidsvård 
+249	Geriatrisk rehabilitering
+022	Företagshälsovård 
+251	Barn- och ungdomsneurologisk vård
+023	Skolhälsovård 
+301	Kirurgisk vård
+024	Ungdomsmottagningsvård 
+303	Mag-tarm-sjukvård
+041	Observationsplatsvård 
+304	Kärlkirurgisk vård
+045	Ambulansverksamhet 
+306	Brännskadevård
+046	Intagnings-/Akutverksamhet 
+311	Ortopedisk vård
+056	Lättvård 
+312	Ryggsjukvård
+061	Palliativ vård 
+316	Käkkirurgi
+076	Eftervård 
+321	Handkirurgisk vård
+086	Konvalescensvård 
+331	Neurokirurgisk vård
+096	Dagsjukvård 
+335	Neurotraumatologisk vård
+100	Akutklinik 
+341	Toraxkirurgisk vård
+101	Internmedicinsk vård 
+351	Plastikkirurgisk vård
+105	Gastroenterologi 
+361	Urologisk vård
+107	Kardiovaskulär medicin 
+371	Transplantationskirurgisk vård
+108	Hematologisk vård 
+401	Barn- och ungdomskirurgisk vård
+109	Strokevård 
+411	Anestesi- och intensivvård
+111	Lungsjukvård 
+412	Smärtbehandling
+121	Infektionssjukvård 
+413	Barn- och ungdomsanestesiologisk vård
+131	Reumatologisk vård 
+421	Anestesivård, special
+141	Allergisjukvård 
+431	Gynekologisk vård
+142	Allergisjukvård, barn- och ungdom 
+441	Förlossningsvård (BB)
+151	Medicinsk njursjukvård 
+451	Obstetrisk och gynekologisk vård
+156	Dialysvård 
+511	Ögonsjukvård
+161	Endokrinologisk vård 
+515	Ortoptisk vård
+171	Yrkesmedicinsk vård 
+521	Öron-, näs- och halssjukvård
+181	Miljömedicinsk vård 
+531	Audiologisk vård
+201	Barn- och ungdomsmedicinsk vård 
+532	Barn- och ungdomsaudiologisk vård
+203	Barn- och ungdomskardiologisk vård 
+541	Foniatrisk vård
+206	Prematurvård 
+551	Rehabiliteringsmedicinsk vård
+552	Neurologisk rehabilitering 
+943	Rättspsykiatrisk regionsjukvård
+553	Habilitering 
+944	Specialvård, psykiatrisk
+561	Sjukgymnastikverksamhet 
+945	Alkoholsjukvård
+564	Arbetsterapiverksamhet 
+948	Psykoterapeutisk verksamhet
+565	Idrottsmedicinsk vård 
+950	Kuratorsverksamhet
+566	Kiropraktorverksamhet 
+951	Psykologverksamhet
+567	Naprapatverksamhet 
+952	Familjevård
+570	Allmän tandvård 
+953	Toxikomanivård
+571	Oralkirurgisk vård 
+954	Narkomanvård
+572	Specialisttandvård 
+955	Somatisk vård vid psykiatriskt sjukhus
+573	Tandhygienistverksamhet 
+956	Rättspsykiatrisk undersökningsverksamhet
+581	Socialmedicinsk vård 
+957	Psykiatrisk rehabilitering
+601	Giftinformationscentral 
+971	Omhändertagande enligt smittskyddslagen
+611	Apoteksverksamhet 
+991	Vård av psykiskt utvecklingsstörda, vuxna
+711	Klinisk patologi 
+993	Vård av psykiskt utvecklingsstörda, barn
+712	Rättsmedicin
+713	Klinisk histopatologi
+715	Klinisk cytologi
+721	Radiopatologi
+722	Isotop-lab/-avd
+731	Medicinsk radiologisk vård
+741	Onkologisk vård, allmän
+751	Onkologisk vård, gynekologisk
+761	Barn- och ungdomsradiologisk vård
+762	Toraxradiologisk vård
+763	Neuroradiologisk vård
+811	Transfusionsmedicinsk vård
+821	Klinisk bakteriologi
+831	Klinisk fysiologi
+832	Klinisk fysiologi - Thorax
+841	Klinisk kemi
+845	Koagulations- och blödningsrubbningar
+851	Klinisk neurofysiologi
+881	Klinisk farmakologi
+882	Klinisk genetik
+883	Klinisk näringslära
+892	Klinisk allergologi
+893	Radiofysik
+894	Klinisk virologi
+895	Hormonlaboratorium
+896	Klinisk immunologi
+901	Allmänpsykiatrisk vård, vuxna
+906	Psykiatrisk sjukhemsvård
+928	Geropsykiatrisk vård
+931	Barn- och ungdomspsykiatrisk vård

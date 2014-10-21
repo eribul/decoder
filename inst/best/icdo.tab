@@ -1,0 +1,658 @@
+Kod 	Klartext
+B941 	Sena effekter av virusencefalit
+C000 	överläpp yttersida
+C001 	underläpp yttersida
+C002 	läpp uns yttersida
+C003 	överläpp insida
+C004 	underläpp insida
+C005 	läpp uns insida
+C006 	mungipa läppkommisur
+C008 	mult läpptumör
+C009 	läpp uns
+C019 	tunga bakre tredjedel
+C020 	tunga översida
+C021 	tunga kant-spets
+C022 	tunga undersida
+C023 	tunga främre del
+C024 	tungtonsill
+C028 	mult tungtumör
+C029 	tunga uns
+C030 	överkäke tandkött
+C031 	underkäke tandkött
+C038 	Tandkött mult
+C039 	tandkött uns
+C040 	munbotten främre del
+C041 	munbotten lateral del
+C048 	mult munbottentumör
+C049 	munbotten uns
+C050 	hårda gommens slemhinna
+C051 	mjuka gommen slemhinna
+C052 	uvula (gomseglet)
+C058 	mult gomtumör
+C059 	gom slemhinna uns
+C060 	kind slemhinna uns
+C061 	muningång kind-läppfåra
+C062 	retromolära ytan
+C068 	mult muntumör
+C069 	munhåla uns
+C079 	öronspottkörtel
+C080 	submandi-submaxi körtel
+C081 	sublingualiskörtel
+C088 	mult stora spottkörtlar
+C089 	stora spottkörtlar uns
+C090 	fossa tonsillaris
+C091 	gombågar främre-bakre
+C098 	mult tonsilltumör
+C099 	tonsill uns
+C100 	vallecula epiglottica
+C101 	främre epiglottis mm
+C102 	laterala orofarynx
+C103 	bakre orofarynx
+C104 	brankialvecket mm
+C108 	mult orofarynxtumör
+C109 	orofarynx uns
+C110 	svalg, övre vägg
+C111 	svalg, bakre vägg
+C112 	svalg, sidovägg
+C113 	svalg, främre vägg
+C118 	mult rinofarynxtumör
+C119 	rinofarynx uns
+C129 	fossa piroformis
+C130 	hypopharynx postkrikoid
+C131 	aryepiglottiska vecket
+C132 	bakre hypofarynxvägg
+C138 	mult hypofarynxtumör
+C139 	hypofarynx uns
+C140 	svalg uns
+C141 	svalg laryngofarynx
+C142 	waldeyers ring
+C148 	läpp el munhåla el svalg
+C150 	matstrupe cervikal del
+C151 	matstrupe thorakal del
+C152 	matstrupe abdominal del
+C153 	matstrupe övre tredjedel
+C154 	matstrupe mellersta
+C155 	matstrupe nedre tredjed
+C158 	matstrupe mult lok
+C159 	matstrupe uns
+C160 	cardia
+C161 	magsäck, fundus
+C162 	magsäck, corpus
+C163 	magsäck: antrum
+C164 	magsäck: pylorus
+C165 	magsäck: curvatura minor
+C166 	magsäck: curvatura major
+C168 	magsäck mult lok
+C169 	magsäck uns
+C170 	duodenum
+C171 	jejunum
+C172 	ileum tunntarm nedre del
+C173 	meckels divertikel
+C178 	mult tunntarm
+C179 	tunntarm uns
+C180 	caecum
+C181 	appendix
+C182 	ascendens
+C183 	flexura hepatica
+C184 	transversum
+C185 	flexura lienalis
+C186 	descendens
+C187 	sigmoideum
+C188 	mult i colon
+C189 	colon uns
+C199 	recto-sigmoideum
+C209 	rectum uns
+C210 	anus uns
+C211 	analkanalen
+C212 	kloakogena zonen
+C218 	mult i rectum-anus
+C220 	lever
+C221 	intrahepatisk gallgång
+C229 	lever uns
+C239 	vesica felleae
+C240 	extrahepatiska gallvägar
+C241 	ampulla vateri
+C248 	mult gallvägssystemet
+C249 	gallvägssystemet uns
+C250 	pancreas caput
+C251 	pancreas corpus
+C252 	pancreas cauda
+C253 	pancreas ductus
+C254 	langerhanska öarna
+C257 	pancreas annan spec lok
+C258 	mult pancreas uns
+C259 	pancreas uns
+C260 	tarmkanal ej spec lok
+C268 	mult matsmältningsorg
+C269 	digestionsorgan uns
+C300 	näshåla
+C301 	mellanöra
+C310 	maxillarsinus
+C311 	etmoidalsinus
+C312 	frontalsinus
+C313 	sfenoidalsinus
+C318 	mult näsbihåletumör
+C319 	näsans bihålor uns
+C320 	inre larynx, äkta stämb
+C321 	supraglottis
+C322 	subglottis
+C323 	larynxbrosk
+C328 	mult larynxtumör
+C329 	larynx uns
+C339 	luftstrupe (trakea)
+C340 	huvudbronk
+C341 	lunga överlob
+C342 	lunga mellanlob
+C343 	lunga underlob
+C348 	mult lunga el bronk
+C349 	bronk el lunga uns
+C379 	brässen (tymus)
+C380 	hjärta perikardium
+C381 	främre mediastinum
+C382 	bakre mediastinum
+C383 	mediastinum uns
+C384 	lungsäck
+C390 	övre luftvägar uns
+C398 	lunga el pleura uns
+C399 	intratorakala organ
+C400 	övre extr långa ben
+C401 	övre extr korta ben
+C402 	nedre extr långa ben
+C403 	nedre extr korta ben
+C409 	extr ben uns
+C410 	skalle, ansiktets ben
+C411 	underkäkens ben
+C412 	kotpelaren
+C413 	revben sternum klavikel
+C414 	bäckenets ben
+C419 	ej spec lok i ben
+C430 	läpphud mal melanom
+C431 	ögonlock-vrå mal melanom
+C432 	öra y-hörselgång mal mel
+C433 	annan/ej spec lok ansikt
+C434 	huvudsvål hals-nacke
+C435 	bål axill-lj scapula per
+C436 	ö extr skuldra mal mel
+C437 	n extr, höft mal melanom
+C438 	mult lok mal melanom
+C439 	hud uns mal melanom
+C440 	läpphud
+C441 	ögonlock-vrå, hud
+C442 	öra y-hörselgång, hud
+C443 	annan/ej spec lok ansikt
+C444 	huvudsvål, hals-nacke
+C445 	bål axill-lj scapula per
+C446 	ö extr, skuldra, hud
+C447 	n extr, höft, hud
+C448 	mult lok, hud
+C449 	hud uns
+C470 	perif nerv, huvud-hals
+C471 	perif nerv, ö extr-skuld
+C472 	perif nerv, n extr, höft
+C473 	perif nerv, bröstkorg
+C474 	perifer nerv, buk
+C475 	perifer nerv, bäcken
+C476 	perif nerv, bål-rygg uns
+C478 	perifer nerv, mult lok
+C479 	perif nerv, ej spec lok
+C480 	retroperitoneala rum
+C481 	bukhinna spec del
+C482 	bukhinna ej spec del
+C490 	bindväv, huvud-hals
+C491 	bindväv, ö extr-skuldra
+C492 	bindväv n extr-höft
+C493 	bindväv, bröstkorg
+C494 	bindväv, buk
+C495 	bindväv, bäckenet
+C496 	bindväv, bål-rygg uns
+C498 	bindväv, mult lok
+C499 	bindväv, ej spec lok
+C500 	bröstvårta o vårtgård
+C501 	bröst, centr del
+C502 	bröst, övre,inre kvadr
+C503 	bröst, nedre,inre kvadr
+C504 	bröst, övre,yttre kvadr
+C505 	bröst, nedre,yttre kvadr
+C506 	bröst, axillary tail
+C508 	bröst, mult lok
+C509 	bröst, uns
+C510 	vulva, labia majora
+C511 	vulva, labia minora
+C512 	vulva, klitoris
+C518 	vulva, mult lok
+C519 	vulva uns
+C529 	vagina uns
+C530 	endocervix
+C531 	exocervix
+C539 	cervix uteri uns
+C540 	istmus uteri
+C541 	endometrium
+C543 	fundus uteri
+C549 	corpus uteri uns
+C559 	uterus uns
+C569 	ovarium
+C570 	äggledare
+C571 	breda ligament
+C572 	runda ligament
+C573 	parametrium
+C574 	uterina adnexa uns
+C577 	kvinn könsorg a spec del
+C578 	kvinn könsorg mult lok
+C579 	kvinn könsorgan uns
+C589 	placenta
+C600 	preputiet
+C601 	glans penis
+C602 	peniskroppen
+C608 	penis mult lok
+C609 	penis uns
+C619 	prostata
+C620 	icke nedst testikel
+C621 	nedstigen testikel
+C629 	testikel uns
+C630 	bitestikel
+C631 	sädesledare
+C632 	skrotum mel,övr,uns
+C637 	a spec manl könsorgan
+C638 	manliga könsorg mult lok
+C639 	manliga könsorg uns
+C640 	njure parenkym
+C649 	njure uns
+C659 	njurbäcken
+C669 	uretär
+C670 	urinblåsa trigonum
+C671 	urinblåsa blåstak
+C672 	urinblåsa sidovägg
+C673 	urinblåsa framvägg
+C674 	urinblåsa bakvägg
+C675 	urinblåsa blåshals
+C676 	urinblåsa uretäröppning
+C677 	urinblåsa urachusgång
+C678 	urinblåsa mult lok
+C679 	urinblåsa uns
+C680 	urinorgan uretra
+C681 	urinorgan parauretr kört
+C682 	urinorgan a spec lok
+C688 	mult i urinorg o blåsa
+C689 	urinorgan uns
+C690 	öga konjunktiva
+C691 	öga kornea
+C692 	öga retina
+C693 	öga korioidea
+C694 	öga ciliarkropp, glob
+C695 	öga tårkanal o tårsäck
+C696 	ögonhåla
+C698 	öga mult lok
+C699 	öga uns
+C700 	hjärnhinnor
+C701 	ryggmärgshinnor
+C709 	hjärn-ryggmärgshinna uns
+C710 	hypothalamus
+C711 	frontallob
+C712 	temporallob
+C713 	parietallob
+C714 	occipitallob
+C715 	hjärnventriklar
+C716 	cerebellum
+C717 	hjärnstammen
+C718 	mult i hjärnan
+C719 	hjärnan uns
+C720 	medulla spinalis
+C721 	cauda equina
+C722 	nervus olfaktorius
+C723 	nervus opticus
+C724 	nervus acusticus
+C725 	a o ospec hjärnnerver
+C728 	ryggm hjärnnerv mult lok
+C729 	centr nervsystemet uns
+C739 	thyreoidea
+C740 	binjure cortex
+C741 	binjure medulla
+C749 	binjure uns
+C750 	parathyreoidea
+C751 	hypofys
+C752 	ductus craniopharyngeal
+C753 	tallkottkörteln
+C754 	glomus caroticum
+C755 	paraganglier
+C758 	mult lok endokrin körtel
+C759 	endokrin körtel uns
+C760 	ospec huvud ans hals uns
+C761 	icke spec lok bröstkorg
+C762 	icke spec lok i buk
+C763 	ospec lilla bäckenet uns
+C764 	ospec lok övre extr
+C765 	ospec lok nedre extr
+C767 	annan ospec lok
+C770 	lgll sek huvud ans hals
+C771 	lgll sek intratorakalt
+C772 	lgll sek intraabdominell
+C773 	lgll sek axill ö extr
+C774 	lgll sek ljumske n extr
+C775 	lgll sek bäcken
+C778 	mult lok i lgll
+C779 	lymfkörtlar uns
+C780 	metastas i lunga
+C781 	met i mediastinum
+C782 	met i lungsäck
+C783 	met andra respirationsor
+C784 	met tunntarm
+C785 	met tjock-ändtarm
+C786 	met bukhinna
+C787 	met lever
+C788 	met spec lok matsmältnin
+C790 	met njure njurbäcken
+C791 	met urinblåsa mm
+C792 	met hud
+C793 	met hjärna hjärnhinnor
+C794 	met ospec lok nervsyst
+C795 	met ben o benmärg
+C796 	met i ovarium
+C797 	met binjure
+C798 	met andra spec lok
+C809 	ospec lok, mult lok uns
+C810 	hodgkins sjukdom
+C811 	hodgkins sjukdom
+C812 	hodgkins sjukdom
+C813 	hodgkins sjukdom
+C817 	hodgkins sjukdom
+C819 	hodgkins sjukdom
+C827 	non-hodgkin lymfom
+C829 	non-hodgkin lymfom
+C834 	non-hodgkin lymfom
+C835 	non-hodgkin lymfom
+C836 	non-hodgkin lymfom
+C837 	non-hodgkin lymfom
+C838 	non-hodgkin lymfom
+C840 	t-cellslymfom
+C841 	sezarys syndrom
+C842 	t-cellslymfom
+C843 	t-cellslymfom
+C844 	T-cellslymfom
+C845 	T-cellslymfom
+C850 	lymfosarkom
+C851 	b-cells lymfom uns
+C857 	kutant lymfom uns
+C859 	malignt lymfom uns
+C880 	immunoproliferativ sjd
+C881 	immunoproliferativ sjd
+C882 	immunoproliferativ sjd
+C883 	immunoproliferativ sjd
+C887 	immunoproliferativ sjd
+C889 	immunoproliferativ sjd
+C900 	myelom
+C901 	myelom
+C902 	myelom
+C910 	akut lymfatisk leukemi
+C911 	kronisk lymfatisk leukemi
+C912 	lymfatisk leukemi
+C913 	lymfatisk leukemi
+C914 	hårcellsleukemi
+C915 	lymfatisk leukemi
+C917 	lymfatisk leukemi
+C919 	lymfatisk leukemi
+C920 	akut myeloisk leukemi
+C921 	kronisk myeloisk leukemi
+C922 	myeloisk leukemi
+C923 	myeloisk leukemi
+C924 	myeloisk leukemi
+C925 	myeloisk leukemi
+C927 	myeloisk leukemi
+C929 	myeloisk leukemi
+C930 	monocytleukemi
+C931 	monocytleukemi
+C932 	monocytleukemi
+C937 	monocytleukemi
+C939 	momocytleukemi
+C940 	leukemi annan spec
+C941 	leukemi annan spec
+C942 	leukemi annan spec
+C943 	leukemi annan spec
+C944 	leukemi annan spec
+C945 	leukemi annan spec
+C947 	leukemi annan spec
+C950 	leukemi uns
+C951 	leukemi uns
+C959 	leukemi uns
+C960 	lymfoid ospec tumör
+C961 	lymfoid ospec tumör
+C962 	lymfoid ospec tumör
+C963 	lymfoid ospec tumör
+C967 	lymfoid ospec tumör
+C969 	lymfoid ospec tumör
+D043 	Ca in situ i huden i andra och icke spec delar av ansiktet
+D101 	Benign tumör i tungan
+D110 	Benign tumör i parotiskörteln
+D117 	Benign tumör i andra stora spottkörtlar
+D119 	Benign tumör i stor spottkörtel, ospecificerad
+D152 	Benign tumör i mediastinum
+D164 	Benign tumör i skallens och ansiktets ben
+D170 	Lipom i hud och subkutan vävnad i huvudet, ansiktet och halsen
+D171 	Lipom i hud och subkutan vävnad på bålen
+D172 	Lipom i hud och subkutan vävnad på extremiteter
+D173 	Lipom i hud och subkutan vävnad med andra och icke spec lok
+D174 	Lipom i intratorakala organ
+D175 	Lipom i intraabdominella organ
+D176 	Lipom i sädesledare
+D177 	Lipom med andra spec lok
+D179 	Icke spec lok av lipom
+D180 	Haemangiom, alla lokalisationer
+D210 	Benign tumör i bindväv o annan mjukvävnad i huvud, ansikte och hals
+D211 	Benign tumör i bindväv o annan mjukvävnad i övre extrem inkl skuldra
+D212 	Benign tumör i bindväv och annan mjukvävnad i nedre extrem inkl höft
+D213 	Benign tumör i bindväv o annan mjukvävnad i bröstkorgen
+D214 	Benign tumör i bindväv o annan mjukvävnad i buken
+D215 	Benign tumör i bindväv och annan mjukvävnad i bäckenet
+D216 	Benign tumör i bindväv o annan mjukvävnad på bål, icke spec lok
+D217 	Icke spec lok benign tumör i bindväv och annan mjukvävnad
+D220 	Melanocytnaevus på läpp
+D221 	Melanocytnaevus på ögonlock inkl ögonvrå
+D222 	Melanocytnaevus på öra och yttre hörselgång
+D223 	Melanocytnaevus på andra och icke spec delar av ansiktet
+D224 	Melanocytnaevus i hårbotten och halsen
+D225 	Melanocytnaevus på bålen
+D226 	Melanocytnaevus på övre extremitet inkl skuldra
+D227 	Melanocytnaevus på nedre extremitet inklusive höften
+D229 	Icke specificerad lokalisation av melanocytnaevus
+D233 	Andra benigna tumörer i huden på andra och icke spec delar av ansikte
+D234 	Andra benigna tumörer i hårbotten och huden på halsen
+D236 	Andra benigna tumörsjd i huden på övre extremiteter inkl skuldran
+D249 	Benign tumör i bröstkörtel
+D251 	Intramuralt uterusmyom
+D279 	Benign tumör i ovarium
+D330 	Benign tumör i hjärnan, supratentoriell lok
+D331 	Benign tumör i hjärnan, infratentoriell lok
+D332 	Benign tumör med icke spec lok i hjärnan
+D333 	Benign tumör i kranialnerver
+D334 	Benign tumör i ryggmärgen
+D337 	Benign tumör i andra spec delar av CNS
+D339 	Icke spec lok av benign tumör i CNS
+D349 	Benign tumör i thyreoidea
+D350 	Benign tumör i binjure
+D351 	Benign tumör i parathyreoidea
+D352 	Benign tumör i hypofys
+D353 	Benign tumör i ductus craniopharyngealis
+D354 	Benign tumör i corpus pineale
+D355 	Benign tumör i glomus caroticum
+D356 	Benign tumör i aortic body och andra paraganglier
+D357 	Benign tumör i andra spec endokrina körtlar
+D358 	Benign tumör med multiglandulär lok
+D359 	Icke specificerad lokalisation av benign tumör i endokrin körtel
+D377 	Tumör av osäker eller okänd natur i andra matsmältningsorgan
+D390 	Tumör av osäker eller okänd natur i uterus
+D391 	Tumör av osäker/okänd natur i ovarium
+D392 	Tumör av osäker eller okänd natur i placenta
+D397 	Tumör av osäker/okänd natur i andra spec lok av kvinnl könsorgan
+D398 	Icke spec lok av tumör av osäker/okänd natur i kvinnl könsorgan
+D410 	Tumör av osäker eller okänd natur i njure
+D430 	Tumör av osäker eller okänd natur i hjärnan, supratentoriell lok
+D431 	Tumör av osäker eller okänd natur i hjärnan, infratentoriell lok
+D439 	Icke spec lok av tumör av osäker eller okänd natur i CNS
+D440 	Tumör av osäker eller okänd natur i thyreoidea
+D45 	polycytemia vera
+D459 	Polycythaemia vera
+D460 	myeloisk leukemi
+D461 	myeloisk leukemi
+D462 	myeloisk leukemi
+D463 	myeloisk leukemi
+D467 	myeloisk leukemi
+D469 	myeloisk leukemi
+D470 	lymfoid ospec tumör
+D471 	lymfoid övr tumör
+D473 	essentiell trombocytemi
+D479 	Lymfoproliferativ sjukdom UNS
+D480 	Tumör av osäker eler okänd natur i ben och ledbrosk
+D481 	Tumör av osäker eller okänd natur i bindväv o annan mjukvävnad
+D482 	Tumör av osäker/oklar natur i perifera nerver o autonoma nervsyst
+D483 	Tumör av osäker/okänd natur i retroperitoneum
+D484 	Tumör av osäker/okänd natur i peritoneum
+D485 	Tumör av osäker eller okänd natur i huden
+D486 	Tumör av osäker eller okänd natur i bröstkörtel
+D487 	Tumör av osäker/okänd natur på andra spec lok
+D489 	Icke spec lok av tumör av osäker eller okänd natur
+D649 	Anemi, ospecificerad
+D693 	Idiopatisk trombocytopen purpura
+D760 	lymfoid ospec tumör
+D860 	Lungsarkoidos
+D861 	Sarkoidos i lymfkörtlar
+D862 	Lungsarkoidos med sarkoidos i lymfkörtlar
+D863 	Sarkoidos i huden
+E030 	Medfödd hypothyreos med diffus struma
+E038 	Annan specificerad hypothyreos
+E039 	Hypothyreos, ospec
+E040 	Atoxisk diffus struma
+E041 	Atoxisk uninodulär struma
+E042 	Atoxisk multinodulär struma
+E048 	Annan spec atoxisk struma
+E049 	Atoxisk struma, ospec
+E050 	Thyreotoxicos med diffus struma
+E051 	Thyreotoxicos med toxisk uninodulär struma
+E052 	Thyreotoxicos med toxisk multinodulär struma
+E053 	Thyreotoxicos beroende på ektopisk thyreoideavävnad
+E054 	Thyreotoxicos factitia (överkonsumtion av sköldkörtelhormon)
+E055 	Thyreotoxisk kris
+E058 	Annan thyreotoxicos
+E059 	Thyreotoxicos ospecificerad
+E060 	Akut thyreoidit
+E061 	Subakut thyreoidit
+E062 	Kronisk thyreoidit med övergående thyreotoxicos
+E063 	Autoimmun thyreoidit
+E064 	Läkemedelsutlöst thyreoidit
+E065 	Annan kronisk thyreoidit
+E069 	Thyreoidit, ospec
+E070 	Hypersekretion av kalcitonin
+E071 	Dyshormogen struma
+E078 	Andra spec sjukdomar i sköldkörteln
+E079 	Sjukdom i sköldkörteln, ospec
+E220 	Akromegali och hypofysär gigantism
+E340 	Carcinoidsyndrom
+F320 	Lindrig depressiv episod
+F430 	Akut stressreaktion
+G122 	Motorneuronsjukdom
+H319 	Choriodal sjukdom, ospecificerad
+I880 	Icke specifik mesenteriell lymfadenit
+I881 	Kronisk lymfadenit med undantag av mesenteriet
+I888 	Annan icke specifik lymfadenit
+I889 	Icke specifik lymfadenit, ospec
+J989 	Sjukdomar i andningsorganen, ospecificerade
+K110 	Spottkörtelatrofi
+K111 	Spottkörtelhypertrofi
+K112 	Spottkörtelinflammation
+K113 	Spottkörtelabscess
+K114 	Spottkörtelfistel
+K115 	Spottsten
+K116 	Mukocele
+K117 	Rubbad spottkörtelfunktion
+K118 	Andra spec sjukdomar i spottkörtlarna
+K119 	Sjukdom i spottkörtel, ospec
+K290 	Akut hemorragisk gastrit
+K291 	Annan akut gastrit
+K292 	Gastrit orsakar av alkohol
+K293 	Kronisk ytlig gastrit
+K294 	Kronisk atrofisk gastrit
+K295 	Kronisk gastrit, ospec
+K296 	Annan spec gastrit
+K297 	Gastrit, ospec
+K298 	Duodenit
+K299 	Gastroduodenit, ospec
+K573 	Divertikel i tjocktarmen utan perforation eller abscess
+K589 	Irritabel tarm utan diar'ee
+K650 	Akut peritonit
+K658 	Annan specificerad peritonit
+K659 	Peritonit, ospecificerad
+K750 	Leverabscess
+L040 	Akut lymfadenit i ansiktet, på huvudet och halsen
+L041 	Akut lymfadenit på bålen
+L042 	Akut lymfadenit på övre extremitet
+L043 	Akut lymfadenit på nedre extremitet
+L048 	Akut lymfadenit med andra spec lok
+L049 	Akut lymfadenit, ospec
+L050 	Pilonidalcysta med abscess
+L051 	Pilonidalcysta
+L059 	Pilonidalcysta utan abscess
+L439 	Lichen ruber planus, ospec
+L928 	Andra spec granulomatösa sjukdomar i hud och underhud
+L988 	Andra specificerade sjukdomar i hud och underhud
+M479 	Spondylos, ospecificerad
+M723 	Nodulär fasciit
+M800 	Osteoporos
+M809 	Icke specificerad osteoporos med patologisk fraktur
+M859 	Rubbning i bentäthet och benstruktur, ospecificerad
+N421 	Blodöverfyllnad och blödning i prostata
+N600 	Solitär cysta i bröstkörtel
+N601 	Diffus cystisk mastopati
+N602 	Fibroadenomatos i bröstkörtel
+N603 	Fibroskleros i bröstkörtel
+N604 	Ektasi av bröstkörtelgångarna
+N608 	Andra spec benigna bröstkörteldysplasier
+N609 	Benign bröstkörteldysplasi, ospec
+N619 	Inflammatorisk process i bröstkörtelvävnad
+N629 	Gynekomasti
+N649 	Sjukdom i bröstkörtel, ospecificerad
+N832 	Andra och icke specificerade ovarialcystor
+N900 	Lätt dysplasi i vulva
+N901 	Måttlig dysplasi i vulva
+N902 	Svår dysplasi i vulva som ej klassificeras annorstädes
+N903 	Dysplasi i vulva,ospec
+N904 	Leukoplaki i vulva
+N905 	Atrofi av vulva
+N906 	Hypertrofi av vulva
+N907 	Cysta i vulva
+N908 	Andra spec icke inflammatoriska sjd i vulva och perineum
+N909 	Icke inflammatorisk sjd i vulva och perineum, ospec
+N950 	Postmenopausal blödning
+O008 	Annan specificerad extrauterin graviditet
+Q282 	Arteriovenös missbildning
+Q850 	Neurofibromatos (icke malign)
+Q851 	Tuberös skleros
+Q858 	Andra spec fakomatoser som ej klassificeras annorstädes
+Q859 	Fakomatos, ospec
+R190 	Svullnad, knöl och resistens i buken eller bäckenet
+R221 	Lokaliserad svullnad eller knöl i halsregionen
+R298 	Andra och icke spec symtom och sjd-tecken fr nerv-muskuloskeletal
+R429 	Vertigo UNS
+R509 	Feber, ospecificerad
+R529 	Smärta eller värk, ospec
+R590 	Lokaliserad lymfkörtelförstoring
+R591 	Generell lymfkörtelförstoring
+R599 	Lymfkörtelförstoring, ospec
+R879 	Onormala fynd i prov från de kvinnliga könsorganen
+R937 	Onormala fynd vid radiologisk diagnostik musculoskelettala systemet
+Z018 	Andra spec speciella undersökningar
+Z019 	Speciell undersökning, ospec
+Z031 	Observation för misstänkt malign tumör
+Z038 	Observation för andra misstänkta sjukdomar och tillstånd
+Z039 	Obs för icke spec misstänkt sjd eller icke spec misstänkt tillstånd
+Z049 	Undersökning och observation av icke specificerat skäl
+Z120 	Riktad hälsokontroll avseende tumör i magsäcken
+Z121 	Riktad hälsokontroll avseende tumör i tarmen
+Z122 	Riktad hälsokontroll avseende tumör i andningsorganen
+Z123 	Riktad hälsokontroll avseende tumör i bröstkörtel
+Z124 	Riktad hälsokontroll avseende tumör i cervix
+Z125 	Riktad hälsokontroll avseende tumör i prostata
+Z126 	Riktad hälsokontroll avseende tumör i urinblåsan
+Z128 	Riktad hälsokontroll avseende tumörer med andra lokalisationer
+Z129 	Riktad hälsokontroll avseende tumör, ospec
+Z138 	Riktad hälsokontroll avseende andra spec sjukdomar
+Z139 	Riktad hälsokontroll, ospec
+Z637 	Andra stressfyllda händelser som drabbar familj och hushåll
+Z711 	Person med befarad sjukdom där ingen diagnos ställts

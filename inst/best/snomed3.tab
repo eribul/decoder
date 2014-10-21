@@ -1,0 +1,913 @@
+Kod 	Klartext
+33400 	Cysta enkel
+71620 	Cysta kolloid
+72850 	Aktinisk keratos med grav atypi/dysplasi (motsvarande cancer in situ)
+80000 	Tumor UNS
+80001 	Tumör, osäkert om benign eller malign
+80002 	Precancerös ospec tumör
+80003 	Malign tumör ospecificerad/PAD saknas
+80101 	Misstänkt precancerösa förändringar i körtelepitel
+80102 	Carcinom, in situ, UNS
+80103 	Carcinom, malign epitelial tumör
+80123 	Carcinom, storcelligt
+80133 	Storcelligt neuroendokrint lungcancer
+80201 	Misstänkt odiff carcinom eller cancer
+80203 	Lågt differentierat carcinom/cancer
+80213 	Carcinom/ Anaplastisk cancer UNS
+80311 	Misstänkt jättecellcancer
+80313 	Jättecellscarcinom
+80401 	Tumorlet UNS
+80413 	Carcinom, småcelligt, UNS
+80423 	Oatcellscarcinom
+80433 	Carcinom, småcelligt, fusiformt och UNS
+80443 	Carcinom, småcelligt, intermediärt
+80463 	Lämplig text, tack!
+80503 	Carcinom, papillärt, UNS
+80512 	Verrukös skivepitel in situ
+80513 	Verruköst carcinom (skivepitelcancer)
+80701 	Misstänkt skivepitel
+80702 	Intraepidermalt eller intraepitelialt carcinom (skivepitelcancer)
+80703 	Carcinom, skivepitel, UNS
+80763 	Skivepitelcarcinom med mikroinvasion
+80771 	CIN III (endast cytologiverifierad)
+80121 	Misstänkt carcinom, storcelligt
+80202 	Carcinom UNS, in situ
+80323 	Spindelcellscarcinom/Spolcelligt carcinom
+80333 	Sarkomatoitt carcinom
+80411 	Misstänkt carcinom småcelligt UNS (C34)
+80421 	Misstänkt oatcellscarcinom
+80461 	Carcinom, icke småcelligt, misstänkt
+80511 	Verruköst carcinom, misstänkt malign (skivepitelcancer)
+80353 	Carcinom med osteoklastliknande jätteceller
+80772 	CIN/VIN/VAN/AIN III (skivepitel in situ)
+80802 	Erythroplasia Queyrat (skivepitel)
+80812 	Morbus Bowen
+80823 	Lymfoepiteliom eller lymfoepiteliomlikt carcinom
+80983 	Adenoitt basaloitt carcinom
+81022 	Trichilemmalt carcinom in situ
+81023 	Hårfollikelcarcinom
+81103 	Malignt pilomatricom
+81200 	Papillom utan atypi Blåspapillom
+81201 	Urotelilat papillom, UNS
+81202 	Urotelialt carcinom, in situ
+81203 	Transitional cell cancer UNS, Övergångsepielcancer, Urotelial cancer
+812031 	Urotelialt carcinom, UNS, inklusive cytologi
+812032 	Urotelialt carcinom, UNS, inklusive cytologi
+812033 	Urotelialt carcinom, UNS, inklusive cytologi
+81211 	Näspapillom, äkta (inverterat)/Schneiders papillom
+81213 	Schneiders carcinom
+81231 	Misstänkt basaliomatös cancer
+81233 	Basaloid cancer (C21.1)
+81241 	Misstänkt kloakogen cancer
+81243 	Kloakogen cancer (C21.2)
+81301 	Urotelial tumör, papillär med lågmalign potential (LMP)
+81302 	Urotelialt carcinom, papillärt(ej inv)UNS Ta-tumör
+813021 	Urotelialt carcinom, papillärt, icke invasivt
+813022 	Urotelialt carcinom, papillärt, icke invasivt
+813023 	Urotelialt carcinom, papillärt, icke invasivt
+81303 	Papillär övergångsepitelcancer
+813031 	Urotelialt carcinom, papillärt, invasivt
+813032 	Urotelialt carcinom, papillärt, invasivt
+813033 	Urotelialt carcinom, papillärt, invasivt
+81400 	Adenom i parathyreoidea eller hypofys
+81401 	Adenom atypisk
+81402 	Adenocarcinom in situ
+81403 	Adenocarcinom
+81413 	Carcinom, skirröst
+81423 	Linitis plastica
+81443 	Adenocarcinom, intestinal typ
+81482 	PIN III/prostatisk intraepitelial neoplasi, grad III (körtelepitel)
+81500 	Adenom av endokrin typ (C25.4)
+81501 	Ö-cellstumör oklar om benign eller maglign
+81503 	Ö-cellscarcinom (C25.4)
+81510 	Insulom (C25.4)
+81511 	Misstänkt insulom (Ö-cellstumör) Histologiskt malign C 25.4
+81513 	Insulom, histopatologiskt malign (C25.4)
+81520 	Glukagonom (C25.4)
+81521 	Glukagonom UNS (C75.9)
+81523 	Glukagonom, malignt (C25.4)
+81531 	G-cellstumör UNS
+81533 	G-cellstumör malign
+81543 	Blandat ö-cells och exokrint adenocarcinom
+81553 	Vipom C24/hist kod 091 t o m 2003-12-31.
+81601 	Misstänkt cholangiocellulär cancer, gallgångscancer
+81603 	Biliärt carcinom (C22.1)
+81621 	Misstänkt Klatskin-tumör
+81623 	Klatskintumör (C24.0)
+80833 	Basaloid skivepitel cancer
+81453 	Adenocarcinom, diffus typ
+81473 	Basalcellsadenocarcinom
+81551 	Vipom UNS
+81561 	Somatostatinom, UNS
+81563 	Somatostatinom, malign
+81581 	ACTH-producerande tumör
+81632 	Adenocarcinom, pankreatobiliär typ in situ (C24.1)
+81633 	Adenocarcinom, pankreatobiliär typ (C24.1)
+81700 	Levercellsadenom
+81701 	Misstänkt hepatocellulär cancer
+81703 	Hepatocellulärt carcinom, UNS
+81801 	Misstänkt hepatocellulär och cholangiocellulär cancer
+81803 	Hepatocellulärt och cholangiocellulärt carcinom blandat
+82001 	Misstänkt adenoid-cystisk cancer
+82003 	Carcinom, adenoidcystiskt
+82012 	Kribriformt carcinom in situ
+82013 	Carcinom, kribriformt, UNS
+82101 	Misstänkt adenomatös polyp
+82102 	Adenomatös polyp med grava atypier
+82112 	Cancer tubulär in situ
+82113 	Adenocarcinom, tubulärt
+82200 	Familjär polypos, precancerös adenomatos
+82201 	Misstänkt familjär polypos, adenocarcinom
+82203 	Familjär polypos, adenocarcinom
+82213 	Adenocarcinom (utgående från adenomatösa polyper i colon o/erektum hos pat med m
+82301 	Misstänkt solid cancer
+82303 	Carcinom, solidt, UNS
+82401 	Carcinoid i appendix vermiformis
+82403 	Carcinoid (exkl appendix)
+82413 	Endokrint carcinom, seratoninprocucerande med carcinoidsyndrom
+82423 	ECL-om (enterokromaffinlik cell carcinoid), mal
+82433 	Gobletcell carcinoidliknande
+82441 	Misstänkt blandtumör carcinoid- adenocarcinom
+82443 	Adenocarcinom, blandat carcinoid och adenocarcinom
+82461 	Misstänkt neuroendokrina tumörer
+82463 	Carcinom, neuroendokrint
+82471 	Misstänkt merkelcellstumör
+82473 	Merkelcellstumör /-carcinom
+82481 	Apudom
+82501 	Misstänkt bronkiolärt-alveolärt addenocarcinom Pulmonary adenomatos
+82503 	Adenocarcinom, bronkiolärt-alveolärt (bronkiolärt carcinom)
+82553 	Lämplig text, tack!
+82601 	Misstänkt papillärt adenocarcinom
+82602 	Papillärt adenocarcinom in situ
+82603 	Adenocarcinom, papillärt
+82611 	Misstänkt villöst adenom med grav atypi
+82612 	Villöst adenom med grav atypi/cancer in situ
+82631 	Misstänkt tubovillöst adenom med grav atypi
+82632 	Tubulovillöst adenom med grav atypi/cancer in situ
+82633 	Adenoca i tubovillöst adenom
+82710 	Prolaktinom (C75.1)
+82900 	Oxyfilt adenom (onkocytom) C75.0, C75.1)
+82901 	Misstänkt onkocytom
+82903 	Adenocarcinom, onkocytiskt/oxyfilt (Onkocytom, malignt)
+83101 	Misstänkt klarcellscancer
+83103 	Carcinom av mesonefroid typ, klarcellig
+83121 	Misstänkt hypernefrom
+83123 	Hypernefrom/Njurcellscarcinom/Renalcellscarcinom
+83131 	Klarcelligt adenofibrom Borderlinetumör
+83133 	Adenocarcinofibrom, klarcelligt
+83153 	Glykogen-rik Carcinoma
+83173 	Renalcellscarcinom, kromofob typ
+83183 	Sarkomatoid renalcellsca
+82421 	ECL-om (enterokromaffinlik cell carcinoid), UNS
+82493 	Atypisk (lung)carcinoid
+82700 	Adenom, kromofobt
+82703 	Kromofobt carcinom
+82132 	Serrated/sågtandat adenocarcinom, in situ
+82133 	Serrated/sågtandat adenocarcinom
+82533 	Bronkioalveolärt carcinom, mucinöst
+829030 	Oxyfilt carcinom, massivt infiltrativ
+83193 	Bellinis carcinoma (Carcinom, collecting duct carcinoma)
+83210 	Huvudcellsadenom (C75.0)
+83301 	Follikulärt adenom atypiskt, misstänkt malign
+83303 	Follikulärt( adeno), carcinom UNS
+83353 	Follikulärt (adeno)carcinom, minimal-invasivt
+83401 	Misstänkt blandat follikulert/papillärt/adenocarcinom
+83403 	Follikulär variant av papillärt adenocarcinom
+83443 	Papillärt (adeno)carcinom,högcells-varianten (fall cell-typen)
+83453 	Medullärt carcinom med amyloidstroma
+83463 	Follikulärt carcinom med komponent av medullärt carcinom
+83473 	Papillärt carcinom med komponent av medullärt carcinom
+83501 	Misstänkt skleroserande (ockult) cancer
+83503 	Skleroserande , ockult carcinom (Graham)
+83601 	MEA I och II (C75.8)
+83700 	Binjurebarksadenom
+83701 	Misstänkt binjurebarkscancer
+83703 	Binjurebarkscancer (adenocarcinom)
+83801 	Endometroitt kystadenom Borderlinetumör
+83803 	Endometriott carcinom
+83901 	Misstänkt adnexcancer
+83902 	Adnexalt carcinom in situ
+83903 	Adnexalt carcinom uns
+84001 	Svettkörtelderiverad hudtmör UNS
+84002 	Svettkörtelcancer i situ
+84003 	Svettkörtelcarcinom UNS
+84011 	Misstänkt apokrint adenocarcinom
+84013 	Apokrint adenocarcinom
+84073 	Mikrocystiskt svettkörtelcarcinom
+84092 	Porocarcinom in situ
+84093 	Malignt eccrint porom
+84101 	Misstänkt talgkörtelcancer
+84102 	Talgkörteldivierad ca in situ
+84103 	Sebaceöst carcinom
+84133 	Ekrint adenocarcinom UNS
+84203 	Cerumenioitt adenocarcinom (C44.2)
+84301 	Mukoepidermoid tumör
+84303 	Mukoepidermoid cancer C 33 - 34 ICD7=162
+84401 	Misstänkt kystadenocarcinom
+84403 	Kystadenocarcinom, UNS
+84410 	Seröst kystom, UNS
+84413 	Seröst Kystadenocarcinom
+84421 	Seröst kystadenom (kystom) Borderlinetumör
+84441 	Klarcellig papillär/cystisk Borderlinetumör
+84461 	Serös papillär/cystisk Borderlinetumör
+84501 	Misstänkt kystadenopapillär cancer/Acinic cell tumör oklar benignitet
+84503 	Papillärt Kystadenocarcinom
+84532 	Intraduktal papillär mucinöst carcinom, icke-invasivt
+84533 	Intraduktal papillär mucinöst carcinom, invasivt
+84601 	Misstänkt seropapillär cancer
+84603 	Seropapillärt carcinom
+84613 	Seröst papillärt carcinom (C48.1)
+84621 	Serös papillär borderline tumör
+84700 	Mucinöst kystadenom, UNS
+84701 	Misst mucinöst kystadenom
+84702 	Mucinös kystadenocarcinom icke invasivt
+83351 	Misstänkt follikulärt adenocarcinom minimal invasivitet
+83373 	Insulärt carcinom (C73.9)
+84091 	Misstänkt malignt eccrint porom
+84402 	Cystadenocarcinom UNS in situ
+84411 	Seröst cystadenocarcinom, misstänkt
+84412 	Seröst cystadenocarcinom in situ
+833030 	Follikulärt adenocarcinom, massivt infiltrerande
+83323 	Follikulärt carcinom, trabekulärt
+83363 	Trabekulärt carcinom hyaliniserande
+84523 	Solid pseudopapillärt carcinom
+84531 	Intraduktal papillär mucinöst neoplasi borderline (IPMN)
+84703 	Adenocarcinom, peritonealt mucinöst (C48.2)
+84721 	Mucinöst kystadenom (kystom) Borderlinetumör
+84731 	Mucinös papillär/cystisk Borderlinetumör
+84801 	Misstänkt slembildande adenoca
+84802 	Intramukosal non invasiv cancer
+84803 	Adenocarinom, slembildande (mucinöst)
+84901 	Misstänkt signetringcellscancer
+84903 	Signetringcellsscarcinom
+85001 	misst duktal ca
+85002 	Duktalt carcinom in situ, intraduktalt carcinom, UNS
+85003 	Duktalt carcinom,=duktogent carcinom
+85011 	Misstänkt comedocancer
+85012 	Comedocarcinom in situ
+85013 	Comedocarcinom
+85023 	Juvenilt/sekretoriskt carcinom i bröst
+85031 	Adenocarcinom, duktalt, papillärt, misstänkt
+85032 	Adenocarcinom, intraduktalt, papillärt in situ
+85033 	Adenocarcinom, duktalt, papillärt
+85101 	Misstänkt medullär cancer
+85103 	Carcinom, medullärt, UNS
+85113 	Medullärt carcinom
+85133 	Medullärt carcinom, atypiskt
+85201 	Misstänkt lobullär cancer
+85202 	Lobulärt carcinom in situ
+85203 	Lobulärt carcinom, UNS
+85222 	Kombinerat duktalt och lobulärt carcinom in situ
+85223 	Kombinerat duktalt och lobulärt carcinom
+85233 	Duktalt carcinom blandat med andra typer
+85243 	Lobulärt carcinom blandat med andra typer
+85253 	Adenocarcinom pleomorft låggradigt
+85303 	Inflammtoriskt carcinom
+85401 	Misstänkt Mb Paget
+85403 	Mb Paget
+85413 	Mb Paget och infiltrerande duktalt carcinom
+85421 	Misstänkt Mobus Paget (extramammärt) invasiv
+85422 	Extr Paget sjd
+85423 	Morbus Paget (extramammär)
+85433 	Mb Paget och duktalt carcinom in situ
+85501 	Acinärcellstumör
+85503 	Acinic cell cancer
+85601 	Misstänkt addenoskvamös cancer
+85602 	Adenoskvamös ca in situ
+85603 	Adenoskvamös cancer
+85623 	Epiteial-myoepitelial carcinom
+85701 	Misstänkt adenoakantom
+85703 	Adenoakantom
+85753 	Metaplastiskt carcinom
+85800 	Tymom, benign
+85801 	Tymom UNS
+85803 	Tymom, malignt, UNS
+85811 	Tymom, medullärt, UNS
+85813 	Tymom, medullärt, malignt
+85821 	Tymom, blandat, UNS
+85823 	Tymom, blandat, malignt
+85841 	Tymom, kortikalt, UNS
+85043 	Intracystiskt papillärt adenocarcinom
+85232 	Duktalt carcinom in situ blandat med andra typer in situ
+85242 	Lobulärt carcinom in situ blandat med andra typer in situ
+85723 	Adenocarcinom med spindelcellsmetaplasi
+85513 	Acinic cell cystadenocarcinom
+85523 	Acinär/ductal blandtumör, carcinom
+85763 	Hepatoid adenocarcinom
+85843 	Tymom, kortikalt, malignt
+85863 	Carcinom, tymiskt, UNS
+85901 	Gonadal stromacellstumör UNS (interstialcellstumör)
+86000 	Tekom UNS
+86001 	Misstänkt tekom malignt
+86003 	Tekom, malignt
+86100 	Luteom endokrint aktiv???
+86201 	Granulosacellstumör, UNS
+86203 	Granulosacellstumör
+86211 	Granulosa-tekacellstumör
+86301 	Androblastom/arrenoblastom, UNS
+86303 	Androblastom/arrenoblastom, malignt
+86311 	Sertoli-Leydig cellstumör (endokrint aktiv)
+86313 	Sertoli-Leydig-cells tumör, malign
+86321 	Gynandroblastom
+86403 	Sertolicells-carcinom
+86410 	Sertolicellstumör UNS (endokrint aktiv = lipidrik)
+86501 	Leydigcellstumör, UNS
+86503 	Leydigcellstumör, malign
+86600 	Hiluscellstumör (endokrint aktiv)
+86700 	Lipidcellstumör i ovariet (endokrint aktiv)
+86801 	Paragangliom, i annat läge, (C75.5)
+86803 	Paragangliom, i annat läge, malignt (C75.5)
+86901 	Glomus jugulare tumör (C75.9)
+86911 	Glomus aorticum tumör (C75.9)
+86921 	Glomus caroticum tumör (C75.9)
+86931 	Kemodektom (extraadrenalt paragangliom) (C75.5)
+87000 	Familjär kromaffinomatos (C75.8)
+87003 	Feokromocytom, malignt, UNS
+87201 	Melanom, malignt, misstänkt
+87202 	Melanocytär nevus med grav/stark atypi/dysplasi (dysplastisk nevus)
+87203 	Malignt melanom
+87213 	Nodulärt melanom (NM)
+87223 	Ballongcellsmelanom
+87231 	Regressivt melanom / tumorös melanos
+87233 	Malignt melanom regressivt
+87270 	Melanocytär nevus med grav/stark atypi/dysplasi (dysplastisk nevus)
+87280 	Melanocytos, diffus (C70.9)
+87281 	Melanocytom, meningealt (C70.9)
+87283 	Melanomatosis, meningeal (C70.9)
+87303 	Amelanotiskt melanom
+87412 	Melanos, precancerös
+87421 	Misstänkt lentigo maligna
+87422 	Lentigo maligna (in situ-form)
+87423 	Lentigo maligna melanom (LMM)
+87432 	Superficiellt / ytspridande melanom in situ
+87433 	Superficiellt / ytspridande melanom (SSM)
+87442 	Akralt lentiginöst melanom in situ
+87443 	Akralt lentiginöst melanom (ALM)
+87451 	Misstänkt desmoplastiskt malignt melanom
+87453 	Desmoplastiskt melanom
+87462 	Mucosalt entiginöst melanom in situ*
+87463 	Mucosalt lentiginöst melanom*
+87642 	Mucosalt lentiginöst melanom in situ*
+87701 	Atypisk Spitznevus
+85893 	Carcinom med tymuskliknande differentiering
+87001 	Feokromocytom, malignt misstänkt
+87211 	Nodulärt melanom (NM), misstänkt malign
+87413 	Melanom, utvecklat ur precancerös melanos
+87613 	Melanom malignt, utvecklat ur kongental jättenevus
+87703 	Blandat epiteloid- och spolcellsmelanom / Spitzoitt melanom-
+87713 	Epiteloidcellsmelanom
+87723 	Spolcellsmelanom
+87733 	Melanom, malignt spolcellig typ A
+87743 	Melanom, malignt spolcellig typ B
+87803 	Malign blå nevus / malignt melanom utvecklat ur en blå nevus
+88001 	Misstänkt odiff sarkom, mesenkymal tumör
+88003 	Sarkom UNS
+88011 	Misstänkt spolcelligt sarkom
+88013 	Spolcelligt sarkom
+88023 	Jättecellssarkom
+88033 	Småcelligt sarkom
+88041 	Misstänkt epiteloidcellssarkom
+88043 	Epiteloidcellssarkom
+88063 	Småcelligt desmoplastiskt sarkom
+88101 	Misstänkt fibrosarkom/cellulär fibrom
+88103 	Fibrosarkom (C54.9)
+88111 	Misstänkt fibromyxosarkom
+88113 	Fibromyxosarkom
+88143 	Fibrosarkom, infantilt
+88153 	Solitär fibrös tumör, malign
+88211 	Fibromatos, aggressiv
+88221 	Abdominal Fibromatos (desmoid)
+88301 	Fibröst histiocytom, atypiskt
+88303 	Fibröst histiocytom, malignt
+88323 	Dermatofibrosarcoma protuberans
+88400 	Myxom, UNS
+88403 	Myxosarkom
+88500 	Intrakraniellt lipom, Lipom UNS
+88501 	Atypiskt lipom
+88503 	Liposarkom, UNS
+88513 	Liposarkom högt differentierat
+88523 	Liposarkom, myxoitt
+88533 	Liposarkom, rundcelligt
+88543 	Liposarkom, pleomorft
+88583 	Liposarkom, dedifferentierat
+88901 	Misstänkt leiomyosarkom
+88903 	Leiomyosarkom
+88910 	Leiomyoblastom, Epiteloid leiomyom
+88913 	Leiomyosarkom, epitelioitt
+88930 	Bisarrt (epiteloitt) leiomyom
+88951 	Misstänkt myogent sarkom
+88953 	Myogent sarkom
+89001 	Misstänkt Rhabdomyosarkom
+89003 	Rhabdomyosarkom UNS
+89013 	Rhabdomyosarkom, pleomorft adult typ
+89103 	Rhabdomyosarkom, embryonalt (botryoid-typ)
+89203 	Alveolärt rhabdomyosarkom
+89213 	Rhabdomyosarkom med ganglielik differentiering
+89303 	Endometrialt stromacellssarkom, höggradigt och UNS (C54.1)
+89313 	Endometrialt stromacellssarkom, låggradigt (endolymfatisk stromamyos, endometrie
+89333 	Adenosarkom
+89361 	GIST UNS (gastrointestinal stroma cellstumör med oklar malign potential/misstänk
+89363 	GIST (gastrointestinalt stromacellssarkom)
+89401 	Misstänkt blandsvulst, (av spottkörteltyp)
+88123 	Fibrosarkom periostalt
+88150 	Solitär fibrös tumör, intrakraniellt & spinalt
+88151 	Solitär fibrös tumör, malign misstänkt
+88521 	Liposarkom, myxoitt misstänkt malignt
+88553 	Liposarkom, blandad
+89331 	Misstänkt adenosarkom
+88321 	Dermatofibrosarcoma protuberans, misstänkt malignt(C44, hud)
+89403 	Blandtumör (mixed tumor) malign
+89411 	Misst mal pleomorft adenom
+89413 	Malignt pleomorft adenom
+89501 	Misstänkt Mullersk blandtumör
+89503 	Mûllersk blandtumör
+89511 	Misstänkt mesodermal blandtumör
+89513 	Mesodermal tumör, malign
+89601 	Misstänkt nefroblastom/Wilms tumör
+89603 	Nefroblastom /Wilms tumör/Nefrom UNS
+89641 	Misstänkt klarcellssarkom
+89643 	Klarcellssarkom
+89701 	Misstänkt hepatoblastom
+89703 	Hepatoblastom
+89721 	Misstänkt pulmonärt blastom
+89723 	Blastom, pulmonärt (pneumoblastom, lungblastom)
+89801 	Misstänkt carcinosarkom
+89803 	Carcinosarkom UNS
+89811 	Misstänkt carcinosarkom av embryonal typ
+89813 	Carcinosarkom av embryonal typ
+89823 	Myoepitelialt carcinom
+89901 	Misstänkt mesenkymom
+89903 	Mesenkymom, malignt
+90001 	Brennertumör Borderlinetumör
+90003 	Brennertumör, malign
+90141 	Serös, av adenofibromtyp (ovanlig) Borderlinetumör
+90143 	Adenocarcinofibrom, serös
+90200 	Adenoma phyllodes
+90201 	Phyllodes tumör, UNS/borderline
+90203 	Phyllodes tumör, malign
+90401 	Misstänkt synovialom
+90403 	Synovialt sarkom UNS
+90433 	Synovialt sarkom
+90441 	Misstänkt klarcellssarkom
+90443 	Klarcellssarkom, UNS
+90501 	Misst mesotheliom
+90503 	Mesoteliom, malignt (C38.0, C38.4)
+90513 	Mesoteliom, fibröst, malignt (C38.0, C38.4)
+90523 	Mesoteliom, epiteloitt, malignt (C38.0, C38.4)
+90533 	Mesoteliom, bifasiskt, malignt (C38.0, C38.4)
+90540 	Adenomatoid tumö, UNS
+90601 	Misstänkt dysgerminom
+90603 	Dysgerminom
+90611 	Misstänkt seminom
+90612 	Seminom, in situ
+90613 	Seminom, UNS
+906130 	Seminom/non seminom AFP förhöjning
+90633 	Seminom, spermatocytiskt
+90641 	Misstänkt germinom
+90642 	Germinalcellstumör intratubulär (IGCNU)
+90643 	Germinom
+90653 	Germinalcellstumör, utan seminomkomponent
+90701 	Misstänkt embryonalt carcinom
+90703 	Embryonalt carcinom UNS
+90711 	Misstänkt gulsäckstumör/Endodermal sinustumör
+90713 	"Endodermal sinustumör ""yolk sac tumor"" (gulesäckstumör)"
+89593 	Malign cystisk nefrom
+90413 	Synovialt sarkom, spolcelligt
+90423 	Synovialt sarkom, epiteloitt
+90652 	Germinalcellstumör, utan seminomkomponent, in situ
+89412 	Pleomorft adenom, in situ
+89633 	Rhabdoid tumor, malign
+89713 	Pankreatoblastom
+906110 	Seminom med AFP-stegring/non seminom, misstänkt
+90721 	Misstänkt embryonalt carcinom
+90723 	Embryonalt carcinom av polyembryonal typ
+90800 	Teratom, benignt
+90801 	Teratom, UNS
+90803 	Teratom, malignt
+90813 	Teratocarcinom (blandat embryonalt carcinom och teratom)
+90840 	Cysta dermoid
+90841 	Misstänkt dermoidcysta med malign omvandling
+90843 	Dermoidcysta med malign omvandling
+90853 	Germinalcellstumör, blandad (teratom, malignt och seminom, malignt)
+90903 	Struma ovarii, malign
+90911 	Carcinoid i struma ovarii
+91000 	Mola/mola hydatidosa (druvbörd) även partiell och komplett mola
+91001 	Invasiv mola
+91003 	Choriocarcinom
+91013 	Choriocarcinom kombinerat med andra germinalcellskomponenter (teratom/embryonalt
+91030 	Mola/mola hydatidosa (druvbörd) partiell
+91041 	Placental site trophoblastic tumor
+91053 	Trofoblastisk tumör, epiteloid
+91101 	Mesonefroid tumör, UNS
+91103 	Mesonefrom, malignt
+91200 	Hemangiom
+91201 	Misstänkt hemangiosarkom
+91203 	Angiosarkom
+91243 	Kupffercellssarkom (C22.0)
+91301 	Hemangioendoteliom, låggradigt benignt
+91303 	Hemangioendoteliom, malignt
+91401 	Misstänkt Kaposis sarkom
+91403 	Angiosarcoma Kaposi(Kaposi´s sarkom)
+91501 	Hemangiopericytom UNS
+91503 	Hemangiopericytom, malignt
+91600 	Nasofaryngealt angiofibrom (juvenilt)
+91611 	Hemangioblastom
+91701 	Lymfangiosarkom, misst
+91703 	Lymfangiosarkom
+91741 	Lymfangiomatosis
+91801 	Misstänkt osteosarkom
+91803 	Osteosarkom
+91813 	Osteosarkom, kondroblastiskt
+91823 	Osteosarkom, fibroblastiskt
+91843 	Osteosarkom utvecklat från Pagets sjukdom i ben
+91853 	Osteosarkom, småcelligt
+91863 	Osteosarkom, centralt
+91873 	Osteosarkom, intraosseöst högt differentierat
+91923 	Osteosarkom, juxtakortikalt
+91933 	Osteosarkom, periostealt
+91943 	Osteosarkom, ytligt växande, högt differentierat
+92001 	Osteoblastom, aggressivt
+92101 	Osteokondromatos
+92201 	Kondromatos
+92203 	Kondrosarkom
+92213 	Kondrosarkom, juxtakortikalt
+92311 	Misstänkt kondro-myxo-sarkom
+92313 	Kondrosarkom, myxoitt
+92403 	Kondrosarkom, mesenkymalt
+92303 	Kondroblasom, mal
+91333 	Hemangioendoteliom, malignt epiteloitt
+92421 	Misstänkt kondrosarkom, mesenkymalt
+91210 	Cavernous hemangioma
+91500 	Hemangiopericytom, benignt
+92423 	Kondrosarkom, klarcelligt
+92433 	Kondrosarkom, dedifferentierat
+92501 	Jättecellstumör
+92503 	Jättecellstumör, malign
+92513 	Jättecellstumör i mjukvävnad, malign
+92523 	Jättecells tumör tenosynovial
+92601 	Misstänkt Ewings sarkom
+92603 	Ewing sarkom
+92613 	Adamantinom (långa rörben)
+92701 	Odontogen tumör UNS
+92703 	Odontogen tumör, malign
+92800 	Odontom, UNS
+92903 	Ameloblastiskt odontosarkom
+93100 	Adamantinom (utom långa rörben), ameloblastom UNS
+93101 	Adamantinom, misst
+93103 	Adamantinom, malignt (ej långa rörben)
+93303 	Ameloblastiskt fibrosarkom
+93411 	Clear cell odontogenic tumör
+93423 	Odontogent carcinosarkom
+93501 	Kraniofaryngeom (C75.2)
+93601 	Pinealom (C75.3)
+93621 	Misstänkt pinealom malignt
+93623 	Pinealom, malignt (pineoblastom) (C75.3)
+93630 	Neuroektodermal tumör, melanotisk
+93641 	Misstänkt perifert neurofibrosarkom
+93643 	Perifer neuroektodermal tumör
+93703 	Kordom UNS
+93733 	Parachordom med malignifiering
+93801 	Misstänkt gliom, malignt
+93803 	Gliom, malignt
+93813 	Gliomatos, cerebral
+93821 	Misstänkt oligoastrocytom mixed)/gliom
+93823 	Gliom, mixed
+93831 	Subependymom
+93841 	Astrocytom, subependymalt jättecellstyp
+93900 	Plexuspapillom, choroitt (C71.5)
+93901 	Plexuspapillom, atypiskt choroitt (C71.5)
+93903 	Plexuscarcinom, choroitt (C71.5)
+93913 	Ependymom (gr I-II)
+93923 	Ependymom, anaplastiskt (gr III-IV)
+93933 	Ependymom, papillärt
+93941 	Ependymom, myxopapillärt (C72.0)
+94003 	Astrocytom (lågmalignt, gr I-II)
+94013 	Astrocytom, anaplastiskt (högmalignt gr III-IV)
+94113 	Astrocytom, gemistocytiskt
+94121 	Astrocytom, desmoplastiskt infantilt
+94130 	Neuroepitelial tumör, dysembryoplastisk
+94203 	Astrocytom fibrillärt
+94211 	Astrocytom, pilocytiskt
+94213 	Astrocytom, juvenilt (grad 0-1)
+94223 	Spongioblastom (grad 0-1)
+94233 	Spongioblastom
+94243 	Pleomorft xanthoastrocytom
+94401 	Misstänkt giobastoma multiforme
+94403 	Glioblastom UNS
+92431 	Kondrosarkom, dedifferentierat, misstänkt
+92511 	Jättecellstumör i mjukvävnad, malign misstänky
+93611 	Pineocytom
+93921 	Ependymom, anaplastiskt (gr III-IV), misstänkt
+94011 	Misstäkt anaplastiskt astrocytom
+94253 	Astrocytom, pilomyxoitt
+93953 	Papillär tumör i pinealregionen (C75.3)
+94311 	Angiocentric glioma
+94321 	Pituicytoma
+94413 	Glioblastom, jättecells-
+94421 	Misstänkt gliosarkom
+94423 	Gliosarkom
+94501 	Misstänkt oligodendrogliom
+94503 	Oligodendrogliom UNS
+94513 	Oligodendrogliom, anaplastiskt
+94601 	Misstänkt oligodendroblastom, malignt
+94603 	Oligodendroblastom
+94701 	Misstänkt medulloblastom
+94703 	Medulloblastom, UNS
+94713 	Medulloblastom, desmoplastiskt nodulärt
+94723 	Medullomyoblastom
+94731 	Misstänkt primitiv neuroektodermal tumör (PNET)
+94733 	Primitiv neuroektodermal tumör (PNET)
+94743 	Medulloblastom, storcelligt
+94900 	Ganglioneurom
+94901 	Misstänkt ganglioneuroblastom
+94903 	Ganglioneuroblastom
+94920 	Gangliocytom
+94930 	Gangliocytom dysplastiskt i cerebellum (C71.6)
+95001 	Misstänkt neuroblastom
+95003 	Neuroblastom
+95013 	Medulloepiteliom
+95023 	Medulloepiteliom, teratoitt
+95033 	Neuroepiteliom
+95051 	Gangliogliom UNS
+95053 	Gangliogliom, anaplastiskt
+95061 	Neurocytom, centralt
+95083 	Teratoid/rhabdoid tumör, atypisk
+95103 	Retinoblastom (främst hos barn) (C69.2)
+95111 	Misstänkt retinoblastom
+95113 	Retinoblastom, differentierat (C69.2)
+95123 	Retinoblastom, odifferentierat (C69.2)
+95133 	Retinoblastom, diffust (C69.2)
+95141 	Retinoblastom i spontan regress
+95203 	Olfaktorisk neurogen tumör (C72.2)
+95213 	Läplig text, tack!
+95223 	Olfaktoriskt neuroblastom (C72.2)
+95233 	Estesioneuroepiteliom
+95300 	Meningiom UNS
+95301 	Meningiomatosis
+95303 	Meningiom, malignt
+95310 	Meningiom, meningioteliomatöst
+95320 	Meningiom, fibröst
+95330 	Meningiom, psammomatöst
+95340 	Meningiom, angiomatöst
+95350 	Meningiom, angioblastiskt
+95370 	meningiom, blandat
+95381 	Meningiom, klarcelligt
+95383 	Meningiom, papillärt
+95391 	Meningiom, atypiskt
+95393 	Sarkomatos, meningeal
+95400 	Neurofibrom
+95401 	Neurofibromatos
+95403 	Epiteloid MPNST
+95091 	Papillary glioneuronal tumor
+95500 	Plexiformt neurofibrom
+95600 	Acusticusneurinom (C72.4)
+95601 	Neurinom, osäkert om malignt
+95603 	Neurilemom, malignt
+95613 	Malign perifer nervskidetumör med rhabdomyoblastisk differentiering
+95713 	Perineuriom, malign
+95801 	Misstänkt granularcellstumör
+95803 	Granularcellstumör malign
+95811 	Misstänkt alveolärt mjukdelssarkom
+95813 	Alveolärt mjukdelssarkom
+95901 	Misstänkt lymfom UNS
+95903 	Malignt lymfom UNS
+95911 	Misstänkt lymfom, Non Hodgkin UNS
+95913 	Mal non Hodgkinlymfom UNS
+959131 	Småcelligt/indolent NHL
+959133 	Blastiskt/aggressivt NHL
+959135 	T-cellslymfom UNS
+959136 	B-cellslymfom UNS
+96501 	Misstänkt Hodgkin lymf UNS
+96503 	Hodgkinlymfom, UNS
+96513 	HL, lymfocytrik typ
+96523 	HL, blandad typ
+96533 	HL, lymfocytfattig typ
+96593 	Nodulärt lymfocytdominerat Hodgkinlymfom
+96633 	HL, nodulärskleros
+96703 	Lymfocytiskt lymfom (lymfocytärt lymfom, UNS)
+96711 	Misst lymfoplasmacyt lymf
+96713 	Lymfoplasmacytiskt lymfom
+96733 	Mantelcellslymfom
+96783 	Primärt effusionslymfom
+96793 	Mediastinalt (thymiskt) storcelligt B-cellslymfom
+96803 	Diffust storcelligt B-cells lymfom
+96873 	Burkittlymfom
+96893 	Spleniskt marginalzonslymfom
+96901 	Misstänkt follik NH lymfom UNS
+96903 	Follikulärt lymfom, UNS
+96913 	Follikulärt lymf gr II
+96953 	Follikulärt lymf gr I
+96983 	Follikulärt lymf gr III
+96993 	Extranodalt marginalzonslymfom (MALT), nodalt marginalzonslymfom
+97001 	Misstänkt mycosis fungoides
+97003 	Mycosis fungoides
+97011 	Misstänkt Sezarýs syndrom
+97013 	Sézarýssyndrom
+97021 	Misstänkt perifert T-celllymfom UNS
+97023 	Perifert T-cellslymfom
+97051 	Misstänkt AILD-lymfom
+97053 	Angioimmunoblastiskt T-cellslymfom
+97083 	Subkutant pannikulit-liknande T-cellsymfom
+97091 	Misstänkt kutant lymfom UNS
+97093 	Kutant T-cellslymfom
+97143 	Anaplastiskt storcelligt T-cellslymfom
+971435 	Anaplastiskt storcelligt lymfom
+97163 	Hepatospleniskt T-cellslymfom
+97173 	T-cellslymfom, enteropatityp
+95710 	Perineuriom, intraneuralt, mjukdels
+95963 	B-cellslymfom, oklassificerbart, med drag av diffust storcelligt B-cellslymfom o
+96731 	Misstänkt mantelcellslymf
+959113 	Blastiskt/aggressivt NHL, misstänkt
+959115 	T-cellslymfom UNS, misstänkt
+959116 	B-cellslymfom UNS, misstänkt
+95961 	B-cellslymfom, oklassificerbart, med drag av diffust storcelligt B-cellslymfom o
+95973 	Primärt kutant follikelcenter lymfom
+96511 	HL, lymfocytrik typ, misstänkt
+96521 	HL, blandad typ, UNS, misstänkt
+96531 	HL, lymfocytfattig typ, UNS, misstänkt
+96591 	Nodulärt lymfocytdominerat Hodgkinlymfom, misstänkt
+96631 	HL, nodulärskleros (alla former), misstänkt
+96701 	Lymfocytiskt lymfom (lymfocytärt lymfom, UNS), misstänkt
+96781 	Primärt effusionslymfom, misstänkt
+96791 	Thymiskt storcelligt B-cellslymfom, misstänkt
+96801 	Diffust storcelligt B-cellslymfom (centrob/immunob/anaplastisk), misstänkt
+96871 	Burkittlymfom, misstänkt
+96883 	T-cells/histiocytrikt storcelligt B-cellslymfom
+96891 	Spleniskt marginalzonslymfom, misstänkt
+96911 	FL, grad 2, misstänkt
+96951 	FL, grad 1, misstänkt
+96981 	FL, grad 3/3A/3B, misstänkt
+96991 	Extranodalt marginalzonslymfom (MALT), misstänkt
+97081 	Subkutant pannikulit-liknande T-cellsymfom, misstänkt
+97141 	Anaplastiskt storcelligt T-cellslymfom ALK-positivt, misstänkt
+97161 	Hepatospleniskt T-cellslymfom, misstänkt
+97171 	Enteropatiassocierat T-cellslymfom, misstänkt
+97181 	Primärt kutant anaplastiskt storcelligt lymfom, misstänkt
+97183 	Prim cutant T-cells lymfo proliferativ sjd
+97193 	NK/T-cellslymfom, nasal typ
+97283 	Prekursor B lymfoblastlymfom
+97293 	Prekursor T-cell lymfoblastlymfom
+972935 	Prekursor T-cells lymfoblastlymfom
+97311 	Misstänkt plasmacellstumör
+97313 	Plasmocytom i skelett, solitärt
+97321 	Misstanke myelom
+97323 	Multipelt myelom/plasmacellsmyelom
+97333 	Plasmacellsleukemi
+97341 	Misst extraskelettalt plasmocytom
+97343 	Extraskelettalt plasmocytom
+97401 	Extrakutant mastocytom, mastcellstumör UNS
+97403 	Mastcellssarkom
+97411 	Mastocytos, kutant, indolent
+97413 	Systemisk mastocytos, associerad med klonal hematologisk sjd, aggressiv systemis
+97423 	Mastcellsleukemi
+97511 	Lämplig text, tack!
+97553 	Lämplig text, tack!
+97563 	Langerhans cell sarkom
+97571 	Interdigiterande dendritiskcellstumör
+97573 	Interdigiterande dendritiskcellssarkom, dendritiskcellssarkom UNS
+97581 	Follikulärt dendritiskcellstumör
+97583 	Follikulärt dendritiskcellssarkom
+97601 	Misstänkt immunproliferativ sjukdom, UNS
+97603 	Iimmunproliferativ sjukdom UNS, malign
+97611 	Misstänkt Waldenströms makroglobulinemi
+97613 	Waldenströms makroglobulinemi
+97623 	Heavy chain disease
+97641 	Misstänkt immunoproliferativ tunntarmssjukdom
+97651 	Monoklonal gammopathi (MGUS)
+97661 	Lymfomatoid granulomatos
+98001 	Misstänkt leukemi UNS
+98003 	Leukemi, UNS
+98011 	Misstänkt blastleukemi UNS
+98013 	Odifferentierad akut leukemi
+98053 	Bifenotypisk akut leukemi, bilinjär akut leukemi
+98201 	Misstänkt leukemi, lymfatisk UNS
+98203 	Lymfatisk leukemi, UNS
+98231 	Misstänkt leukemi, kronisk lymfatisk (KLL)
+98233 	Kronisk lymfatisk leukemi (KLL)
+982335 	Kronisk lymfatisk leukemi (KLL)T-cells typ
+982336 	Kronisk lymfatisk leukemi (KLL)B-cells typ
+98263 	Burkittleukemi
+98273 	Adult T-cellsleukemi
+98313 	Granulär lymfatisk leukemi
+98323 	Prolymfocytleukemi, UNS
+98333 	B-prolymfocytleukemi
+98343 	T-prolymfocytleukemi
+98353 	Akut lymfatisk leukemi UNS
+983535 	Akut lymfatisk leukemi (ALL),T-cells typ
+983536 	Akut lymfatisk leukemi (ALL),B-cells typ
+98363 	prekursor B lymfoblastleukemi
+983636 	Prekursor B lymfoblastkeukemi
+98373 	prekursor T lymfoblastleukemi
+97273 	Blastiskt plasmacytoid dendritisk cell neoplasi/blastiskt NK cells lymfom
+97191 	Extra nodalt NK/T-cellslymfom, nasal typ, misstänkt
+97263 	Primärt kutant gamma-delta T-cellslymfom
+97271 	Blastiskt plasmacytoid dendritisk cell neoplasi/blastiskt NK cells lymfom, misst
+97281 	Prekursor , B lymfoblastlymfom, misstänkt
+97291 	Prekursor T-cell lymfoblastlymfom UNS, misstänkt
+97331 	Plasmacellsleukemi, misstänkt
+97353 	Plasmablastiskt lymfom
+97373 	ALK-positivt storcelligt B-cellslymfom
+97383 	Storcelligt B-cellslymfom som uppkommer ur HHV8-associerad multicentrisk Castlem
+97421 	Mastcellsleukemi, misstänkt
+97513 	Langerhans cell histiocytos, UNS, LCH eosinofilt granulom, UNS, Histiocytosis X,
+97551 	Histiocytiskt sarkom, äkta histiocytärt lymfom, misstänkt
+97561 	Langerhans cell sarkom, misstänkt
+97621 	Gamma heavy chain disease, misstänkt
+98051 	Bifenotypisk akut leukemi/bilinjär akut leukemi, misstänkt
+98063 	Mixed phenotype acute leukemia with t(9;22)(q34;q11.2); BCR-ABL1
+98073 	Mixed phenotype acute leukemia with t(v;11q23); MLL rearranged
+98083 	Mixed phenotype acute leukemia, B/myeloid, NOS
+98093 	Mixed phenotype acute leukemia, T/myeloid, NOS
+98123 	Prekursor B-cell lymfoblastleukemi,t(9;22)(q34;q11.2); BCR-ABL1
+98133 	Prekursor B-cell lymfoblastleukemi, t(v;11q23); MLL rearrangerad
+98143 	"Prekursor B-cell lymfoblastleukemi t(12;21)(p13;q22); TEL-AML1 (ETV6-RUNX1),"
+98153 	Prekursor B-cell lymfoblastleukemi, med hyperdiploidi
+98163 	"Prekursor B-cell lymfoblastleukemi med hypodiploidi (hypodiploid ALL)"
+98173 	Prekursor B-cell lymfoblastleukemi, t(5;14)(q31;q32); IL3-IGH
+98183 	"Prekursor B-cell lymfoblastleukemi t(1;19)(q23;p13.3); E2A-PBX1 (TCF3-PBX1)"
+982315 	Kronisk lymfatisk leukemi KLL, T-cells typ, misstänkt
+982316 	Kronisk lymfatisk leukemi KLL, B-cells typ eller UNS, misstänkt
+98261 	Burkittleukemi, FAB L3, misstänkt
+98271 	Adult T-cellsleukemi (HTLV-1 positiv) alla varianter, misstänkt
+98311 	Granulär lymfatisk leukemi, T resp NK cellstyp, , misstänktT-LGL
+98321 	Prolymfocytleukemi, UNS, misstänkt
+98331 	B-prolymfocytleukemi, misstänkt
+98341 	T-prolymfocytleukemi, misstänkt
+98351 	Prekursor cell lymfoblastleukemi UNS (akut lymfatisk leukemi (ALL), UNS, FAB L1,
+983515 	Akut lymfatisk leukemi ALL, T-cells typ, misstänkt
+983516 	Akut lymfatisk leukemi ALL, B-cells typ, FAB L3, misstänkt
+98361 	Prekursor B-cell lymfoblastleukemi, misstänkt
+98371 	Prekursor T-cell lymfoblastleukemi, misstänkt
+983735 	Prekursor T lymfoblastleukemi
+98403 	Akut erytroid leukemi
+98601 	Misstänkt leukemi, myeloisk UNS
+98603 	Kron myelomonocytleukemi
+98611 	Misstänkt akut myeloisk leukemi
+98613 	Akut myeloisk leukemi (AML)
+98633 	Kronisk myeloisk leukemi (KML)
+98663 	Akut promyelocytleukemi, FAB M3
+98673 	Akut myelomonocytleukemi (AMML), FAB M4
+98703 	Akut basofil leukemi
+98713 	"Akut myeloisk leukemi med inv(16)t(16;16)"
+98723 	Akut myeloblastleukemi med minimal differentiering, FAB M0
+98733 	Akut myeloblastleukemi utan utmognad, FAB M1
+98743 	Akut myeloblastleukemi med utmognad, FAB M2
+98753 	Kronisk myeloisk leukemi, BCR/ABL positiv
+98763 	Kronisk myeloisk leukemi, atypisk
+98913 	Akut monoblast- och monocytleukemi, FAB M5
+98953 	Akut myeloisk leukemi med multilinjär dysplasi
+98963 	"Akut myeloisk leukemi med t(8;21), FAB M2"
+98973 	Akut myeloisk leukemi med 11Q23avvikelse
+99103 	Akut megakaryoblastleukemi, FAB M7
+99203 	Terapi-relaterad AML/MDS
+99303 	Myeloid sarkom
+99313 	Akut panmyelos med myelofibros
+99403 	Hårcellsleukemi
+99453 	Kronisk myelomonocytleukemi(KMML)
+99463 	Juvenil myelomonocytleukemi
+99483 	Aggressiv NK-cellsleukemi
+99503 	PVC/kronisk erytremi
+99601 	Misstänkt kronisk myeloproliferativ sjd
+99603 	Kronisk myeloproliferativ sjd, UNS
+99613 	Kronisk idiopatisk myelofibros (med extramedullär hematopoes)
+99623 	Essentiell/idiopatisk trombocythemi
+99633 	Kronisk neutrofil leukemi
+99643 	Kronisk eosinofil leukemi (inkl hypereosinofilt syndrom)
+99701 	Polymorf posttransplantations relaterad lymfoproliferativ sjd
+99751 	Myeloproliferativ sjukdom, UNS
+99803 	Refraktär anemi
+99823 	Refraktär anemi med ringsideroblaster
+99833 	Refraktär anemi med blastöverskott
+99843 	Refraktär anemi i transform MDS V
+99853 	Refraktär cytopeni med multilinjär dysplasi
+99863 	Myelodysplastiskt 5q-syndrom
+99873 	Myelodysplastiskt syndrom, terapirelaterat
+99891 	Misstänkt myelodysplastiskt syndrom UNS
+99893 	Myelodysplastiskt syndrom, UNS
+98693 	Akut myeloisk leukemi med inv(3)(q21q26.2) eller t(3;3)(q21;q26.2); RPN1-EVI1
+98701 	Akut basofil leukemi, misstänkt
+98711 	Akut myeloisk leukemi med inv(16) eller t(16;16) : CBFB-MYH11, misstänkt
+98721 	Akut myeloblastleukemi med minimal differentiering, FAB M0, misstänkt
+98731 	Akut myeloblastleukemi utan utmognad, FAB M1misstänkt
+98741 	Akut myeloblastleukemi med utmognad, FAB M2, misstänkt
+98751 	Kronisk myeloisk leukemi, BCR/ABL positiv, misstänkt
+98761 	Kronisk myeloisk leukemi, atypisk, BCR/ABL negativ, misstänkt
+98911 	Akut monoblast- och monocytleukemi, FAB M5, misstänkt
+98951 	Akut myeloisk leukemi med myelodysplasirelaterade förändringar, misstänkt
+98961 	Akut myeloisk leukemi med t(8;21) (q22;q22), misstänkt
+98971 	Akut myeloisk leukemi med t(9;11) (p22;q23), misstänkt
+98983 	Akut megakaryoblastleukemi hos barn (0-5 år) med Downs syndrom
+99753 	Myelodysplastisk/myeloproliferativ neoplasi, oklassificerbar (efter utredning)
+98401 	Akut erytroid leukemi/ akut erytroblastleukemi UNS, misstänkt
+98653 	Akut myeloisk leukemi med t(6;9) (p23;q34); DEK-NUP214
+98661 	Akut promyelocytleukemi, FAB M3, t (15;17) (q22;q11-12), misstänkt
+98671 	Akut myelomonocytleukemi (AMML), FAB M4, misstänkt
+99113 	Akut myeloisk leukemi (megakaryoblastisk) med t(1;22)(p13;q13); RBM15-MKL1
+99311 	Akut panmyelos med myelofibros, misstänkt
+99451 	Kronisk myelomonocytleukemi (KMML), FAB MDS4, misstänkt
+99461 	Juvenil myelomonocytleukemi, misstänkt
+99481 	Aggressiv NK-cellsleukemi, misstänkt
+99631 	Kronisk neutrofil leukemi, översättning mot kronisk leukemi UNS enl ICDO/2, miss
+99641 	Kronisk eosinofil leukemi (inkl hypereosinofilt syndrom), översättning mot kroni
+99913 	Refraktär neutropeni
+99923 	Refraktär trombocytopeni

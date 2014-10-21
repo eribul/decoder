@@ -1,0 +1,312 @@
+Kod 	Klartext
+1390 	Encephalit
+1400 	Ö-läpp läppröda
+1401 	U-läpp läppröda
+1403 	Ö-läpp insida
+1404 	U-läpp insida
+1405 	Läpp uns insida
+1406 	Mungipa uns
+1408 	Båda läpparna läppröda
+1409 	Icke angiven läpp (läpprö
+1410 	Tungbas bakre del
+1411 	Tungans översida
+1412 	Tungans kant-spets
+1413 	Tungans undersida
+1414 	Tungans främre 2/3 uns
+1418 	Tunga flera lok
+1419 	Tunga icke spec del
+1420 	Öronspottkörtel
+1421 	Submandibulariskörtel
+1422 	Sublingualiskörtel
+1428 	Flera spottkörtlar
+1429 	Icke spec spottkörtel
+1430 	Ö-käkens tandkött
+1431 	U-käkens tandkött
+1438 	Tandköttet flera delar
+1439 	Icke spec lok tandkött
+1449 	Munbotten
+1450 	Kindens slemhinna
+1452 	Hårda gommen slemhinna
+1453 	Mjuka gommen slemhinna
+1454 	Gomseglet uvula
+1455 	Gomslemhinna uns
+1456 	Retromolara området
+1458 	Flera lok gom
+1459 	Annan eller spec lok
+1460 	Tonsill
+1468 	Mellansvalg flera delar
+1469 	Mellansvalg annan/icke sp
+1479 	Näs-svalgrummet
+1480 	Postcricoidala regionen
+1481 	Fossa piriformis
+1488 	Flera lok hypopharynx
+1489 	Annan/icke spec lok hypop
+1499 	Svalg uns
+1503 	Matstrupen övre del
+1504 	Matstrupen mellersta dele
+1505 	Matstrupen nedre del
+1508 	Matstrupen flera delar
+1509 	Matstrupen uns
+1510 	Övre magmunnen cardia
+1511 	Nedre magmunnen pylorus/a
+1513 	Fundus ventriculi
+1514 	Corpus ventriculi
+1518 	Magsäck flera lok
+1519 	Annan/icke spec lok magsä
+1520 	Tolvfingertarm duodenum
+1521 	Tunntarm övre del jejunum
+1522 	Tunntarm nedre del ileum
+1528 	Tunntarm flera del
+1529 	Tunntarm annan/icke spec
+1530 	Flexura hepatica
+1531 	Transversum
+1532 	Descendens
+1533 	Sigmoideum
+1534 	Caecum
+1535 	Appendix
+1536 	Ascendens
+1537 	Flexura lienalis
+1538 	Grovtarm flera del
+1539 	Grovtarm icke spec del
+1540 	Rectum-sigmoideum
+1541 	Rectum
+1542 	Anus
+1548 	Flera lok samtidigt rectu
+1549 	Rectum icke spec del
+1550 	Primär tumör i lever
+1551 	Intrahepatiska gallvägar
+1552 	Lever uns
+1560 	Gallblåsa
+1561 	Extrahepatiska gallgångar
+1562 	Papilla vateri
+1568 	Gallgångar multipel
+1569 	Gallvägar uns
+1570 	Bukspottkörtel caput-del
+1571 	Bukspottkörtel mellandel
+1572 	Bukspottkörtel svans
+1573 	Bukspottkörtelgång
+1574 	Langerhanska öarna/insula
+1578 	Bukspottkörtel flera lok
+1579 	Bukspottkörtel uns
+1580 	Retroperitoneala rummet
+1588 	Bukhinnan spec del
+1589 	Bukhinna icke spec del
+1590 	Tarmkanalen icke spec lok
+1599 	Digestionskanalen icke sp
+1600 	Näshålan/nässkiljevägg
+1601 	Örontrumpet
+1602 	Överkäkshålan
+1603 	Sinus etmoidale
+1604 	Sinus frontalis
+1605 	Sinus sfenoidalis
+1608 	Flera lok samtidigt mella
+1609 	Annan/icke spec lok mella
+1610 	Inre del av larynx/äkta s
+1611 	Yttre del av larynx/falsk
+1612 	Subglottis
+1613 	Larynxbrosken
+1618 	Flera lok samtidigt laryn
+1619 	Icke spec lok uns larynx
+1620 	Luftstrupe
+1622 	Huvudbronk
+1623 	Lunga överlob
+1624 	Lunga mellanlob
+1625 	Lunga underlob
+1628 	Lunga flera lok
+1629 	Lunga uns
+1639 	Lungsäck pleura
+1640 	Brässen thymus
+1641 	Hjärta perikardium
+1649 	Mediastinum
+1659 	Lungsäck uns
+1700 	Skalle/ansiktets ben/över
+1701 	Underkäksben
+1702 	Kotpelare
+1703 	Rev-bröst-nyckelben
+1704 	Ö extr långa ben
+1705 	Ö extr korta ben
+1706 	Bäcken-kors-svansben
+1707 	N extr långa ben
+1708 	N extr korta ben
+1709 	Ben flera/icke angiven lo
+1710 	Huvud,ansikte,hals
+1712 	Ö extr skuldra
+1713 	N extr höft säte
+1714 	Annan spec lok i bröstkor
+1715 	Annan spec lok i buken
+1716 	Annan spec i bäckenet
+1717 	Bålen ryggen
+1718 	Flera lok samtidigt
+1719 	Icke spec lok mjukdel bin
+1720 	Läpphud mal mel
+1721 	Ögonlock-vrå mal mel
+1722 	Öra y hörselgång mal mel
+1723 	Annan/icke spec lok ansik
+1724 	Hårbotten halsen mal mel
+1725 	Bålen mal mel
+1726 	Ö extr axill skuldra mal
+1727 	N extr ljumske höft mal m
+1728 	Flera lok samtidigt mal m
+1729 	Icke angiven lok mal m
+1730 	Läpphud
+1731 	Ögonlock-vrå hud
+1732 	Öra y hörselgång hud
+1733 	Annan/spec lok ansikte hu
+1734 	Hårbotten hals hud
+1735 	Bålen hud
+1736 	Ö extr skuldra axill hud
+1737 	N extr höft ljumske hud
+1738 	Flera lok samtidigt hud
+1739 	Icke angiven lok hud
+1741 	H bröstkörtel
+1742 	V bröstkörtel
+1743 	H bröst mult
+1744 	V bröst mult
+1749 	Icke spec bröst
+1799 	Livmoder uns sarkom
+1809 	Livmoderhals
+1819 	Placenta
+1820 	Livmoderns slemhinna
+1821 	Livmodern
+1830 	Äggstock
+1832 	Äggledare
+1833 	Breda ligamentet
+1834 	Parametrium
+1835 	Runda ligamentet
+1838 	Flera lok samtidigt livmo
+1839 	Icke spec lok livmod+samm
+1840 	Vagina
+1841 	Labia majora
+1842 	Labia minora
+1843 	Klitoris
+1844 	Vulva
+1848 	Flera lok samtidigt kv kö
+1849 	Annan/icke spec lok kv kö
+1859 	Prostata
+1869 	Testikel
+1871 	Preputiet
+1872 	Glans penis
+1873 	Peniskroppen
+1874 	Penis även hud
+1875 	Bitestikel
+1876 	Sädesledaren
+1877 	Scrotum hud
+1878 	Flera lok samtidigt m kön
+1879 	Annan/spec lok m könsorg
+1887 	Urachus
+1888 	Urinblåsa mult
+1889 	Urinblåsa
+1890 	Njurparenkym
+1891 	Njurbäcken
+1892 	Urinledare
+1893 	Urinröret
+1894 	Parauretrala körtlar
+1895 	Annan spec lok urinorg
+1896 	Icke spec del av njure
+1898 	Flera lok samtidigt njure
+1899 	Urinorgan uns
+1900 	Öga ögonlob
+1901 	Ögonhåla retrobulbär lok
+1902 	Tårkörtel
+1903 	Bindehinna
+1904 	Cornea
+1905 	Näthinna
+1906 	Regnbågshinna
+1907 	Annan spec lok occuli
+1908 	Flera lok samtidigt occul
+1909 	Icke spec lok occuli
+1910 	Hypothalamus
+1911 	Frontal-parietal lob
+1912 	Temporal lob
+1913 	Parietal lob
+1914 	Occipital lob
+1915 	Ventrikel hjärna
+1916 	Cerebellum
+1917 	Corpus callosum centrala
+1918 	Flera lok samtidigt hjärn
+1919 	Annan/icke spec lok hjärn
+1920 	Hjärnnerv kraniala nerver
+1921 	Hjärnhinnor
+1922 	Ryggmärg
+1923 	Ryggmärgshinna
+1924 	Synnerv
+1928 	Flera lok samtidigt nervs
+1929 	Annan spec lok i centr ne
+1939 	Sköldkörteln
+1940 	Binjure
+1941 	Bisköldkörtel
+1943 	Hypofys
+1944 	Tallkottkörtel
+1945 	Glomus caroticum
+1946 	Paraganglier
+1948 	Mult lok endokrin körtel
+1949 	Endokrin körtel uns
+1950 	Huvud ansikte hals uns
+1951 	Icke spec lok i bröstkorg
+1952 	Icke spec lok i buk
+1953 	Icke spec lok i lilla bäc
+1954 	Ö extr uns
+1955 	N extr uns
+1959 	Andra spec lok
+1960 	Sekundär huvud ansikte ha
+1961 	Sekundär intratorakalt
+1962 	Sekundär intraabdominellt
+1963 	Sekundär axill ö extr
+1965 	Sekundär ljumske n extr
+1966 	Sekundär bäckenet
+1968 	Mult lok i lgll
+1969 	Icke spec lok i lgll
+1970 	Met lunga
+1971 	Met mediastinum
+1972 	Met lungsäck
+1973 	Met andra respirationsorg
+1974 	Met tunn-tolvfingertarm
+1975 	Met tjock-ändtarm
+1976 	Met bukhinna
+1977 	Met lever
+1979 	Met annan spec lok
+1980 	Met njure
+1981 	Met andra urinorg
+1982 	Met hud
+1983 	Met i hjärna
+1984 	Met i nervsyst
+1985 	Met ben
+1986 	Met ovarium
+1989 	Met andra ställen
+1990 	Mult lok ej spec /mult nu
+1991 	Utan spec lok aliud nud
+2001 	Malignt lymfom
+2008 	Immunoproliferativa sjukdomar
+2019 	Mb hodgkin
+2021 	Mycosis fungoides
+2022 	SeZarys syndrom
+2024 	Hårcellsleukemi
+2025 	Letterer siwe
+2028 	Lymfoma malignum uns
+2029 	Retikulos ospec
+2030 	Myelomatos
+2031 	Plasmacellsleukemi
+2039 	Annan immunoproliferativ
+2040 	Akut lymfatisl leukemi
+2041 	Kronisk lymfatisk leukemi
+2042 	Subakut lymfatisk leukemi
+2049 	Lymfatisk leukemi uns
+2050 	Akut myeloisk leukemi
+2051 	Kronisk myeloisk leukemi
+2052 	Subakut myeloisk leukemi
+2053 	Myeloid sarkom
+2059 	Myeloisk leukemi uns
+2060 	Akut monocytleukemi
+2061 	Kronisk monocytleukemi
+2062 	Subakut monocytleukemi
+2069 	Monocytleukemi uns
+2070 	Akut erythraemia
+2072 	Megakaryocytleukemi
+2080 	Akut leukemi uns
+2081 	Kronisk leukemi uns
+2082 	Subakut leukemi
+2089 	Leukemi uns
+2090 	Myelofibros
+2091 	Polycythaemia vera
+2092 	Makroglobulinemi mb walde
+2384 	PCV

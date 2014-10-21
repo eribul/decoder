@@ -1,0 +1,326 @@
+Kod 	Klartext
+C000 	Överläppens yttersida eller det läppröda
+C001 	Underläppens yttersida eller det läppröda
+C002 	Läppens yttersida eller det läppröda, läpp ej angiven
+C003 	Överläppens insida
+C004 	Underläppens insida
+C005 	Läppens insida, läpp ej angiven
+C006 	Läppkommissur eller mungipa
+C008 	Överväxt till/från angränsande sublokal inom läpp (C00) med okänt ursprung
+C009 	Läpp UNS
+C019 	Tungbasens dorsala sida, tungbas UNS, bakre 1/3av tungan
+C020 	Tungans översida, främre 2/3, medellinje
+C021 	Tungans kant/rand och spets
+C022 	Tungans undersida, främre 2/3 och tungband
+C023 	Tungans rörliga del UNS (främre 2/3)
+C024 	Tungtonsill
+C028 	Överväxt till/från angränsande sublokal inom tungan (C020 - C024) med okänt urs
+C029 	Tunga UNS
+C030 	Överkäkens tandkött (maxillär gingiva)
+C031 	Underkäkens tandkött (mandibulär gingiva)
+C039 	Tandkött (gingiva) UNS
+C040 	Munbotten främre del
+C041 	Munbotten lateral del
+C048 	Överväxt till/från angränsande sublokal inom munbotten (C04) med okänt ursprung
+C049 	Munbotten UNS
+C050 	Hårda gommen
+C051 	Mjuka gommen
+C052 	Uvula (gomsegel)
+C058 	Överväxt till/från angränsande sublokal inom gom (C05) med okänt ursprung
+C059 	Gom (muntak) UNS
+C060 	Kindslemhinna,( buccalslemhinna) UNS
+C061 	Kindfåra, läppfåra, alveolarfåra
+C062 	Retromolär yta (bakom kindtänderna)
+C068 	Överväxt till/från angränsande sublokal i andra och ospecificerade delar av munh
+C069 	Munhåla UNS inkl små spottkörtlar UNS
+C079 	Öronspottkörtel, inkl utförsgång ( Stensens gång)
+C080 	Submandibulariskörtel, submaxillariskörtel inkl utförsgång (Whartons gång)
+C081 	Sublingualiskörtel inkl utförsgång
+C088 	Överväxt till/från angränsande stora spottkörtlar (C07 + C08) med okänt ursprung
+C089 	Stora spottkörtlar UNS
+C090 	Fossa tonsillaris
+C091 	Gombågar, främre och bakre
+C098 	Överväxt till/från angränsande sublokal inom tonsill (C09) med okänt ursprung
+C099 	Gomtonsill och tonsill UNS
+C100 	Vallecula epiglottica (struplocksinsänkning)
+C101 	Epiglottis främre yta och fria kanter
+C102 	Lateral vägg
+C103 	Bakre vägg
+C104 	Brankialveck (gälveck hos foster) samt brankialcysta (lateral halscysta), som pl
+C108 	Överväxt till/från angränsande sublokal inom mellansvalg (C10) med okänt ursprun
+C109 	Mellansvalg UNS
+C110 	Övre vägg (naso- eller epifarynxtak)
+C111 	Bakre vägg inklusive adenoid, svalgtonsill (farynxtonsill)
+C112 	Sidovägg inklusive Rosenmüllers ficka (fossa)
+C113 	Främre vägg inklusive bakre kant av nässeptum, koaner och nasofaryngeal yta av m
+C118 	Överväxt till/från angränsande sublokal inom övre svalgrum (C1) med okänt urspru
+C119 	Övre svalgrum UNS
+C129 	Fossa (sinus) piriformis
+C130 	Postkrikoidalt rum, (krikofarynx)
+C131 	Aryepiglottiska veckets hypofaryngeala del eller aryepiglottiska vecket UNS
+C132 	Bakre vägg
+C138 	Överväxt till/från angränsande sublokal inom nedre svalg (C13) med okänt ursprun
+C139 	Svalg / nedre svalg UNS
+C140 	Svalg UNS
+C142 	Waldeyers ring (lymfoid vävnad)
+C148 	Överväxt till/från läpp, munhåla och svalg (C00-C14) med okänt ursprung
+C150 	Cervikal del (tractus superioris) tom 18 cm
+C153 	matstrupe övre tredjedel
+C154 	Mellersta tredjedelen from 25 tom 32 cm
+C155 	matstrupe nedre tredjedel
+C158 	Överväxt till/från angränsande sublokal inom matstrupen (C15) med okänt ursprung
+C159 	Matstrupe UNS
+C160 	Cardia UNS (övre magmun, gastroesofageal gränszon)
+C161 	Fundus (övre del av magsäck)
+C162 	Corpus (mellersta delen)
+C163 	Antrum (nedre del)
+C164 	Pylorus (nedre magmunn)
+C165 	Curvatura minor UNS
+C166 	Curvatura major UNS
+C168 	Överväxt till/från angränsande sublokal inom magsäcken (C16) med okänt ursprung
+C169 	Magsäck UNS
+C170 	Duodenum (tolvfingertarm)
+C171 	Jejunum (övre del av tunntarm)
+C172 	Ileum (nedre del av tunntarm) (exkl ileocekal gränszon/valvula Bauhini)
+C173 	Meckels divertikel
+C178 	Överväxt till/från angränsande sublokal inom tunntarmen (C17) med okänt ursprung
+C179 	Tunntarm UNS
+C180 	Caecum/Valvula Bauhini
+C181 	Appendix vermiformis, (maskformigt bihang)
+C182 	Ascendens (hö colon)
+C183 	Flexura hepatica (hö flexur)
+C184 	Transversum
+C185 	Flexura lienalis (vä flexur)
+C186 	Descendens (vä colon )
+C187 	Sigmoideum
+C188 	Överväxt till/från angränsande sublokal inom tjocktarmen (C18) med okänt ursprun
+C189 	Tjocktarm UNS
+C199 	Övergång ändtarm-tjocktarm (rektosigmoidal gränszon)
+C209 	Ändtarm UNS
+C210 	Anus UNS *
+C211 	Analkanalen inklanalsfinktern (ringmuskeln)
+C212 	Kloakogen zon
+C218 	Överväxt till/från angränsande sublokal inom rektum/anus (C20 - C21) med okänt u
+C220 	Lever
+C221 	Intrahepatiska gallvägar
+C239 	Gallblåsa
+C240 	Extrahepatiska gallvägar (ductus hepaticus, ductus choledochus, ductus cysticus)
+C241 	Ampulla/Papilla Vateri
+C248 	Överväxt till/från angränsande sublokal inom intrahepatiska och extrahepatiska g
+C249 	Gallvägssystemet UNS
+C250 	Caput (huvud)
+C251 	Corpus (kropp)
+C252 	Cauda (svans)
+C253 	Ductus (pankreasgång)
+C254 	Langerhanska öarna (endokrin del av pankreas)
+C258 	Överväxt till/från angränsande sublokal inom bukspottkörtel (C25) med okänt ursp
+C259 	Bukspottkörteln UNS
+C260 	Tarmkanalen (C17 - C21) UNS
+C268 	Överväxt till/från angränsande organ med okänt ursprung som inte kan klassificer
+C269 	Gastrointestinalkanalen (C15 - C21), UNS Digestionsorganen (C22 - C25), NUS
+C300 	Näshåla:inre näsrum
+C301 	Mellanöra: Eustachiska röret (örontrumpeten)
+C310 	Maxillarsinus (överkäkshåla)
+C311 	Etmoidalsinus (silbenshåla)
+C312 	Frontalsinus (pannhåla)
+C313 	Sfenoidalsinus (kilbenshåla)
+C318 	Överväxt till/från angränsande sublokal inom näsans bihålor (C31) med okänt ursp
+C319 	Näsans bihålor UNS
+C320 	Glottis:inre larynx
+C321 	Supraglottis (larynx övre del): aryepiglottiska veckets laryngealadel
+C322 	Subglottis (larynx undre del)
+C323 	Larynxbrosk
+C328 	Överväxt till/från angränsande sublokal inom struphuvud (C32) med okänt ursprung
+C329 	Larynx UNS
+C339 	Luftstrupe (trachea)
+C340 	Huvudbronk (stambronk) inkl carina, hilus
+C341 	Överlob, bronk och lunga (superioris) samt lingula
+C342 	Mellanlob, bronk och lunga (medii)
+C343 	Underlob, bronk och lunga (inferioris)
+C348 	Överväxt till/från angränsande sublokal inom bronk eller lunga (34) med okänt ur
+C349 	Bronk eller lunga UNS
+C379 	Bräss
+C380 	Hjärta, perikardium
+C381 	Främre mediastinum
+C382 	Bakre mediastinum
+C383 	Lämplig text, tack!
+C384 	Lungsäck UNS (parietal, visceral)
+C388 	Överväxt till/från angränsande sublokal inom hjärta, lungmellanrum, lungsäck (C3
+C390 	Övre luftvägar UNS (C11, C300, C32)
+C399 	Andningsorgan UNS
+C400 	Lämplig text, tack!
+C401 	Lämplig text, tack!
+C402 	Lämplig text, tack!
+C403 	nedre extr korta ben/plasmocytom
+C408 	Lämplig text, tack!
+C409 	Lämplig text, tack!
+C410 	Lämplig text, tack!
+C411 	Lämplig text, tack!
+C412 	Lämplig text, tack!
+C413 	Lämplig text, tack!
+C414 	Bäckenben korsben svansben
+C418 	Lämplig text, tack!
+C419 	Lämplig text, tack!
+C420 	Waldenström/MGUS
+C421 	Leukemi
+C422 	Spleniskt marginalzonslymfom
+C424 	Lymfomatoid granulomatos
+C440 	Hud-läpp, över- och under
+C441 	Hud-ögonlock övre/nedre inkl ögonvrån
+C442 	Hud ytteröra inkl yttre hörselgång
+C443 	Hud - ansikte
+C444 	Hud-huvudsvål, hals/nacke
+C445 	Hud-bål,anus/perianalt,axill,ljumske,perineum
+C446 	Hud-övre extremitet inkl axel/skuldra
+C447 	Hud-nedre extremitet inkl höft
+C448 	Hud-överväxt mellan sublokaler inom C44
+C449 	Hud-lokal UNS
+C470 	Huvud inkl ansikte samt hals(exkl perifera nerver och autonoma nervsystemet i or
+C471 	Övre extremitet och skuldra
+C472 	Nedre extremitet och höft
+C473 	Böstkorg??*se kommentar
+C474 	Buk inkl bukvägg
+C475 	Lämplig text, tack!
+C476 	Bål och rygg UNS
+C478 	Överväxt till/från angränsande sublokal med okänt ursprung inom C47
+C479 	Autonoma nervsystemet UNS
+C480 	Retroperitoneala rummet
+C481 	Bukhinna, specificerad del
+C482 	Bukhinna, icke specificerad del, och bukhåla
+C488 	Överväxt till/från angränsande sublokal inom C48 med okänt ursprung
+C490 	Huvud inkl ansikte och ytteröra samt hals (exkl orbita (C696 och näsbrosk (C300)
+C491 	Övre extremitet och skuldra
+C492 	Nedre extremitet och höft
+C493 	Bröstkorg/thorax (exkl thymus (C379), hjärta och mediastinum (C38))
+C494 	Buk
+C495 	Bäcken
+C496 	Bål UNS inkl rygg och flank
+C498 	Överväxt till/från angränsande sublokal inom C49 med okänt ursprung
+C499 	Icke specificerat läge inom C49
+C500 	bröstvårta o vårtgård
+C501 	bröst, centr del
+C502 	bröst, övre,inre kvadr
+C503 	bröst, nedre,inre kvadr
+C504 	bröst, övre,yttre kvadr
+C505 	bröst, nedre,yttre kvadr
+C506 	bröst, axillary tail
+C508 	bröst överväxt fler lober
+C509 	bröst, uns
+C510 	Labia majora, Bartholins körtlar
+C511 	Labia minora
+C512 	Klitoris
+C518 	Överväxt till/från angränsande sublokal inom vulva (C51) med okänt ursprung
+C519 	Vulva UNS
+C529 	Vagina UNS
+C530 	Endocervix
+C531 	Exocervix/portio
+C538 	Överväxt till/från angränsande sublokal inom livmoderhalsen (C53) med okänt ursp
+C539 	Cervix uteri UNS
+C540 	Istmus
+C541 	Lämplig text, tack!
+C542 	Myometrium
+C543 	Fundus uteri
+C548 	Lämplig text, tack!
+C549 	Corups uteri / fundus uteri
+C559 	Uterus UNS
+C569 	Ovarium
+C570 	Äggledare
+C571 	Breda ligamentet
+C572 	Runda ligamentet
+C573 	Parametrium
+C574 	Uterina adnexa UNS
+C577 	Andra spec delar
+C578 	Lämplig text, tack!
+C579 	Kvinnliga könsorgan UNS
+C589 	Placenta
+C600 	Förhud (preputium)
+C601 	Glans
+C602 	Skaft
+C608 	Överväxt till/från angränsande sublokal inom penis (C60) med okäntursprung
+C609 	Penis UNS inkl penishud
+C619 	Blåshalskörtel
+C620 	Icke nedvandrad (retinerad) testikel och ektopisk testikel
+C621 	Nedvandrad testikel dvs i skrotum
+C629 	Testikel UNS
+C630 	Bitestikel (epididymis)
+C631 	Sädesledare (vas deferens)
+C632 	Scrotum mel,övr,UNS
+C637 	Andra specificerade manliga könsorgan inkl sädesblåsa, tunicavaginalis
+C638 	Överväxt till/från angränsande sublokal inom manliga könsorgan (C60 - C637) med
+C639 	Manliga könsorgan UNS
+C649 	Njure UNS exkl njurbäcken
+C659 	Njurbäcken UNS
+C669 	Urinledare
+C670 	Trigonum
+C671 	Blåstak
+C672 	Sidovägg
+C673 	Framvägg
+C674 	Bakvägg
+C675 	Blåshals, inre uretramynning
+C676 	Uretäröppning
+C677 	Urachus
+C678 	Överväxt till/från angränsande sublokal inom urinblåsa (C67) med okänt ursprung
+C679 	Urinblåsa UNS
+C680 	Urinrör (uretra)
+C681 	Parauretrala körtlar
+C688 	Överväxt till/från angränsande sublokal inom andra och icke specificerade urinor
+C689 	Urinorgan UNS
+C690 	Konjunktiva (bindehinna)
+C691 	Kornea (hornhinna)
+C692 	Retina (näthinna)
+C693 	Korioidea (åderhinna)
+C694 	Iris (regnbågshinna) och övrig ciliarkropp
+C695 	tårsäck och tårkanal
+C696 	Ögonhåla (orbita)*
+C698 	Överväxt till/från angränsande sublokal inom C69 med okänt ursprung
+C699 	Öga UNS
+C700 	Hjärnhinnor
+C701 	Ryggmärgshinnor
+C709 	Hinnor UNS
+C710 	Storhjärna (cerebrum)
+C711 	Frontallob
+C712 	Temporallob
+C713 	Parietallob
+C714 	Occipitallob
+C715 	Hjärnventriklar (exkl fjärde ventrikeln)
+C716 	Lillhjärna (cerebellum)
+C717 	Hjärnstam inkl fjärde ventrikeln
+C718 	Lämplig text, tack!
+C719 	Hjärna UNS inkl intrakraniellt läge
+C720 	Ryggmärg (medulla spinalis)
+C721 	Cauda equina
+C722 	Luktnerv (nervus olfactorius) inkl luktbulb
+C723 	Synnerv (nervus opticus)
+C724 	Hörselnerv (nervus acusticus)
+C725 	Kranialnerver UNS
+C728 	Överväxt till/från angränsande sublokal som inte kan klassificeras under C70-C72
+C729 	Centrala nervsystemet UNS
+C739 	Sköldkörteln (thyreoidea)
+C740 	Cortex (bark)
+C741 	Medulla (märg)
+C749 	Binjure, UNS
+C750 	Bisköldkörteln (parathyreoidea)
+C751 	Hypofysen
+C752 	Ductus craniopharyngealis (hypofysgången)
+C753 	Tallkottkörteln (corpus pineale)
+C754 	Glomus caroticum
+C755 	Lämplig text, tack!
+C758 	Multifokal lokalisation (inkl familjär kromaffinomatos och multifokal endokrin a
+C759 	Annan endokrin körtel eller UNS
+C760 	Icke närmare specificerad lokalisation på huvudet, i ansiktet eller på halsen
+C761 	Icke närmare specificerad lokalisation i brösthålan (thorax)
+C762 	Icke närmare specificerad lokalisation i buken
+C763 	Icke närmare specificerad lokalisation i lilla bäckenet
+C764 	Icke närmare specificerad lokalisation i övre extremiteterna, inkl skulderregion
+C765 	Icke närmare specificerad lokalisation i nedre extremiteterna
+C767 	Tumör med annan ospecificerad lokalisation
+C768 	Tumör med annan och ofullständigt angiven lokalisation och med övergripande växt
+C770 	Huvud, ansikte och hals
+C771 	Intratorakalt
+C772 	Intraabdominellt
+C773 	Axill och övre extremitet
+C774 	Ljumske och nedre extremitet
+C775 	Bäcken
+C778 	Lymfkörlar i multipla kroppsregioner
+C779 	Lymfkörtel UNS
+C809 	Sekundär malign tumör
