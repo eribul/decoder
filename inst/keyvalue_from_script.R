@@ -11,7 +11,7 @@ sjukvardsomrade <-
         Norra_Halland   = c(1382,1383,1384),
         Kungalv         = c(1482, 1415, 1419, 1440)
     )
-sjukvardsomrade <- as.keyvaluem1(sjukvardsomrade)
+sjukvardsomrade <- as.keyvalue(sjukvardsomrade)
 
 
 
@@ -26,13 +26,13 @@ region <-
                    "Väst",
                    "Norr")
     )
-region <- as.keyvalue11(region, standard_var_names = "Region")
+region <- as.keyvalue(region, standard_var_names = "Region")
 
 
 
 ##################################### Kön ######################################
 
 kon <- data.frame(key = 1:2, value = c("Man", "Kvinna"))
-kon <- as.keyvalue11(kon, standard_var_names =  c("KON_VALUE", "kön", "sex"))
+kon <- as.keyvalue(kon, standard_var_names =  c("KON_VALUE", "kön", "sex"))
 
 

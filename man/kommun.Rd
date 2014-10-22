@@ -12,13 +12,11 @@ Data from 2014-08-12.
 \url{http://www.scb.se/sv_/Hitta-statistik/Regional-statistik-och-kartor/Regionala-indelningar/Lan-och-kommuner/}
 }
 \seealso{
-Other key_value_data: \code{\link{as.keyvaluem1}},
-  \code{\link{is.keyvaluem1}}, \code{\link{keyvaluem1}};
-  \code{\link{figo}}; \code{\link{forsamling}};
-  \code{\link{icd10}}; \code{\link{icd7}};
-  \code{\link{icd9}}; \code{\link{icdo3}};
-  \code{\link{icdo}}; \code{\link{key_value_data}};
-  \code{\link{keyvaluem1_data}}; \code{\link{klinik}};
+Other key_value_data: \code{\link{figo}};
+  \code{\link{forsamling}}; \code{\link{icd10}};
+  \code{\link{icd7}}; \code{\link{icd9}};
+  \code{\link{icdo3}}; \code{\link{icdo}};
+  \code{\link{key_value_data}}; \code{\link{klinik}};
   \code{\link{kon}}; \code{\link{lan}};
   \code{\link{m_rtr}}; \code{\link{n_rtr}};
   \code{\link{pad}}; \code{\link{patologiavdelning}};

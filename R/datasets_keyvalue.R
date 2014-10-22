@@ -89,6 +89,38 @@ NULL
 
 
 
+#' Geographical healthcare areas
+#'
+#' Key-value codes for health care areas.
+#'
+#' \itemize{
+#'      \item{Key: the first four digits from the LKF-code}
+#'      \item{Value: A geographical area (sub area of county/lan) with special interest}
+#' }
+#'
+#' The object currently only applies to the Western healthcare region
+#' \itemize{
+#'      \item{Storgoteborg}
+#'      \item{Fyrbodal}
+#'      \item{Sodra_Alvsborg}
+#'      \item{Skaraborg}
+#'      \item{Norra_Halland}
+#' }
+#' Updates for other regions needs to be requested (please do!).
+#'
+#' @section Kungalv:
+#'  Kungalv is an independent area by default. There are situations when Kungalv should be dealt with as an
+#'  independent healthcare region or as a part of Storgoteborg. See section "extra_functions" in \link{decode}
+#'  to handle this.
+#'
+#' @docType data
+#' @keywords datasets
+#' @name sjukvardsomrade
+#' @seealso separate_kungalv kungalv2Storgoteborg
+#' @family key_value_data
+NULL
+
+
 #' Kommun code (municipality code)
 #'
 #' Key-value codes for the Swedish municipalities (kommuner).

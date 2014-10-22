@@ -1,15 +1,22 @@
 Package: decoder
 Type: Package
-Title: What the package does (short line)
-Version: 1.0
+Title: Decode coded variables to plain text (and vice versa)
+Version: 0.2
 Date: 2014-10-21
-Author: Who wrote it
-Maintainer: Who to complain to <yourfault@somewhere.net>
-Description: More about what it does (maybe more than one line)
-License: What license is it under?
+Author: Erik Bulow
+Maintainer: Erik Bulow <erik.bulow@rccvast.se>
+Description: Main function decode is used to decode coded key values to plain
+    text. Function code can be used to code plain text to code if there is a
+    1:1 relation between the two. The concept relies on keyvalue-objcts used
+    for translation. There are several keyvalue objects included in the areas
+    of geographical regional codes, administrative health care unit codes,
+    diagnosis codes etcetera.
+License: GPL-2
+Depends:
+    R (>= 2.10)
 Imports:
     stringr,
-    dplyr
 Suggests:
     testthat,
-    rccmisc
+    rccmisc,
+    XLConnect

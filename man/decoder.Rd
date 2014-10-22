@@ -12,12 +12,13 @@ code(y, keyvalue)
 decode(x, keyvalue, extra_functions = NULL, exact = FALSE)
 }
 \arguments{
-\item{y}{value to be coded (to be matched againt the \code{value} element) in a \link{keyvalue}/\link{keyvalue11} object.}
+\item{y}{value to be coded (to be matched againt the \code{value} element) in a \link{keyvalue} object.}
 
-\item{keyvalue}{a name (as character string) of a \link{keyvalue} or \link{keyvaluem1} object to be used for the decoding/coding.}
+\item{keyvalue}{either a name (as character string) of one of the \link{keyvalue} objects listed here: \link{key_value_data},
+or a user defined keyvalue object (see \link{as.keyvalue}).}
 
-\item{x}{key to be decoded (to be matched againt the \code{key} element) in a \link{keyvalue}/\link{keyvalue11}
-object or to the list elements of a \link{keyvaluem1} object).}
+\item{x}{key to be decoded (to be matched againt the \code{key} element) in a \link{keyvalue}
+object.}
 
 \item{extra_functions}{is a list of functions (or names of functions as character vector) to be applied to the decoded data
 after decoding (see section "extra_functions" below).}
@@ -32,15 +33,13 @@ The function returns a vector of the same length as \code{x} but with all cells 
 }
 \description{
 The function takes a coded variable (as a vector) and translate it to plain text (or reversed).
-It can also group the codes before decoding.
 }
 \section{extra_functions}{
 
-The default functionality of decode/code is to map a key to a value. This mapping is either 1:1 for keyvalue objects of type
-\link{keyvalue11}, m:1 for \link{keyvaluem1} or mostly 1:1 (but sometimes m:1) for \link{keyvalue}.
-The mapping is pretty straight forward in the cases of 1:1. With m:1 however, different applications might require slightly
-different groupings of the keys. One solution is to have several versions of the \link{keyvaluem1} object. Another
-(which we prefer) is to use the same \link{keyvaluem1} object (if possible) but to call one or several extra function(s)
+The relationship betwen the key and the value in a keyvalue object is either 1:1 or m:1.
+The mapping is straight forward for 1:1 but with m:1, different applications might require slightly
+different groupings of the keys. One solution is to have several versions of the \link{keyvalue} object. Another
+(which we prefer) is to use the same \link{keyvalue} object (if possible) but to call one or several extra function(s)
 to further process the result. These functions are either built in package functions that should be called by quoted names
 or user defined functions that can be called by either quoted or unquoted names (if available in the current environment).
 Note that the order of the functions could matter since they are called in turn (the output from the first function is passed
@@ -63,7 +62,7 @@ KON_VALUE <- sample(1:2, 20, replace = TRUE)
 code(kon, "kon")
 
 # Get a sample of Snomed-codes (in the real world we obviously avoid this step) ...
-snomed2 <- sample(rcc:::snomed$key, 30, replace = TRUE)
+snomed2 <- sample(decoder:::snomed$key, 30, replace = TRUE)
 # ... then decode them:
 (snomed3 <- decode(snomed2, "snomed"))
 
@@ -71,8 +70,8 @@ snomed2 <- sample(rcc:::snomed$key, 30, replace = TRUE)
 # Decoding and grouping are performed seamlessly if the keyvalue
 # argument is of class keyvaluem1.
 # Let's first make a sample of some LK-codes (first four digits of the LKF-code)
-set.seed(0700823428 + 19850504)
-healtcare_areas_west <- sample(unlist(rcc:::sjukvardsomrade), 100, replace = TRUE)
+set.seed(123456789)
+healtcare_areas_west <- sample(unlist(decoder:::sjukvardsomrade), 100, replace = TRUE)
 (areas <- decode(healtcare_areas_west, "sjukvardsomrade"))
 table(areas)
 
@@ -88,7 +87,7 @@ table(areas2)
 
 # Note that only the first four digits of the LKF-code were used abowe?
 # What if we use the full LKF-code?
-lkfs <- sample(rcc:::forsamling$key, 100, replace = TRUE)
+lkfs <- sample(decoder:::forsamling$key, 100, replace = TRUE)
 decode(lkfs, "sjukvardsomrade")
 # That work's just as fine when argument exact = FALSE (which it is by default).
 
@@ -96,9 +95,9 @@ decode(lkfs, "sjukvardsomrade")
 # Sometimes we have keyvalue objects with some key-value pairs without a 1:1 relation.
 # This is true for snomed
 # Show all non 1:1 pairs:
-summary(rcc:::snomed)$nonunique
+summary(decoder:::snomed)$nonunique
 # Save them for later:
-non_unique_snomeds <- summary(rcc:::snomed)$nonunique$key
+non_unique_snomeds <- summary(decoder:::snomed)$nonunique$key
 
 # Use these snomed codes for decoding and coding
 # Decoding works fine (all keys are unique) ...

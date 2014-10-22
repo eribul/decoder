@@ -7,7 +7,7 @@
 ##########################################################################################
 
 rm(list = ls())
-options(stringsAsFactors = FALSE)
+currentwd <- getwd()
 setwd("~/Documents/R-kod/decoder/inst")
 
 
@@ -19,6 +19,7 @@ setwd("~/Documents/R-kod/decoder/inst")
 #                                                                                        #
 ##########################################################################################
 
+## Order of the files matter!
 source("keyvalue_from_best.R")
 source("keyvalue_from_other_sources.R")
 source("keyvalue_from_script.R")
@@ -27,4 +28,6 @@ source("keyvalue_from_script.R")
 ############################ Save all objects to sysdata.rda #############################
 
 rm(kv_names)
-save(list = ls(), file = "../R/sysdata.rda", compress = "xz", ascii = TRUE)
+save(list = ls(), file = "../R/sysdata.rda")
+
+setwd(currentwd)
