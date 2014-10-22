@@ -13,21 +13,18 @@ Note that key codes are given without dots, i e C569, not C56.9.
 \url{http://www.socialstyrelsen.se/klassificeringochkoder/laddaner/kodtextfiler#1}
 }
 \seealso{
-Other key_value_data: \code{\link{as.keyvaluem1}},
-  \code{\link{is.keyvaluem1}}, \code{\link{keyvaluem1}};
-  \code{\link{figo}}; \code{\link{forsamling}};
-  \code{\link{icd7}}; \code{\link{icd9}};
-  \code{\link{icdo3}}; \code{\link{icdo}};
-  \code{\link{key_value_data}};
-  \code{\link{keyvaluem1_data}}; \code{\link{klinik}};
-  \code{\link{kommun}}; \code{\link{kon}};
-  \code{\link{lan}}; \code{\link{m_rtr}};
-  \code{\link{n_rtr}}; \code{\link{pad}};
-  \code{\link{patologiavdelning}}; \code{\link{region}};
-  \code{\link{sida}}; \code{\link{sjukhus}};
-  \code{\link{sjukvardsomrade}}; \code{\link{snomed3}};
-  \code{\link{snomed}}; \code{\link{t_rtr}};
-  \code{\link{tnmgrund}}
+Other key_value_data: \code{\link{figo}};
+  \code{\link{forsamling}}; \code{\link{icd7}};
+  \code{\link{icd9}}; \code{\link{icdo3}};
+  \code{\link{icdo}}; \code{\link{key_value_data}};
+  \code{\link{klinik}}; \code{\link{kommun}};
+  \code{\link{kon}}; \code{\link{lan}};
+  \code{\link{m_rtr}}; \code{\link{n_rtr}};
+  \code{\link{pad}}; \code{\link{patologiavdelning}};
+  \code{\link{region}}; \code{\link{sida}};
+  \code{\link{sjukhus}}; \code{\link{sjukvardsomrade}};
+  \code{\link{snomed3}}; \code{\link{snomed}};
+  \code{\link{t_rtr}}; \code{\link{tnmgrund}}
 }
 \keyword{datasets}
 

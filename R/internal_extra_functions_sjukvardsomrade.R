@@ -30,10 +30,10 @@ kungalv2Fyrbodal <- function(x){
 #' @rdname extra_functions
 #' @export
 real_names <- function(x){
-    plyr::revalue(x, c(
-        "Kungalv"        = "Kung\u00E4lv",
-        "Norra_Halland"  = "Norra Halland",
-        "Sodra_Alvsborg" = "S\u00F6dra \u00C4lvsborg",
-        "Storgoteborg"   = "Storg\u00F6teborg")
-    )
+    x <- as.character(x)
+    x[x == "Kungalv"]  <- "Kung\u00E4lv"
+    x[x == "Norra_Halland"]  <- "Norra Halland"
+    x[x == "Sodra_Alvsborg"]  <- "S\u00F6dra \u00C4lvsborg"
+    x[x == "Storgoteborg"]  <- "Storg\u00F6teborg"
+    as.factor(x)
 }
