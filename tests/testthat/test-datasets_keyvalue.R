@@ -1,6 +1,5 @@
 
-
-context("Decode")
+context("datasets_keyvalue")
 
 
 test_that("correct classes",{

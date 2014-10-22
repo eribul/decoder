@@ -3,6 +3,10 @@
 # Try to transform x in order to fit the key from keyvalue
 format_as_key <- function(x, keyvalue){
     
+    if (is.character(keyvalue)){
+        keyvalue <- get(keyvalue)
+    }
+    
     x_name <- deparse(substitute(x))
     keyvalue_name <- deparse(substitute(keyvalue))
     

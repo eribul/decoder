@@ -1,9 +1,11 @@
 
 #' Decode codes to plain text (and vice versa)
 #'
-#' The function takes a coded variable (as a vector) and translate it to plain text (or reversed).
+#' Translate coded values into meaningful plain text (or reversed).
+#' Use \code{list_keyvalues()} to see a list of all keyvalue objects ("dictionaries") included in the package.
 #'
-#' @param x key to be decoded (to be matched againt the \code{key} element) in a \link{keyvalue}
+#' @param x object to decode. Either a key vector to be matched againt the \code{key} column in \code{keyvalue},
+#' or a data.frame (see section \code{decode.data.frame}). 
 #' object.
 #' @param y value to be coded (to be matched againt the \code{value} element) in a \link{keyvalue} object.
 #' @param keyvalue either a name (as character string) of one of the \link{keyvalue} objects listed here: \link{key_value_data}, 
@@ -13,10 +15,28 @@
 #' and strings that are too long might be substringed).
 #' @param extra_functions is a list of functions (or names of functions as character vector) to be applied to the decoded data
 #' after decoding (see section "extra_functions" below).
-#'
-#' @return The function returns a vector of the same length as \code{x} but with all cells decoded (or coded) to plain text
+#' @param verbose (only for \code{code}) can be set to \code{FALSE} to avoid a printed message to the console 
+#' if an error occur (\code{TRUE} as default). 
+#' @param ... ignored
+#' 
+#' @return 
+#' \itemize{
+#' \item For default S3 method: A vector of the same length as \code{x} but with all cells decoded (or coded) to plain text
 #' (or code).
+#' \item For S3 method for class 'data.frame': Data.frame \code{x} is returned, 
+#' possibly with some extra columns (names ending in '_Beskrivning'), 
+#' decoded from columns with names corresponding to attribute \code{standard_var_names} 
+#' for keyvalue objects listed by \code{list_keyvalues()}.
+#'}
 #'
+#' @section decode.data.frame:
+#' If \code{x} is a data.frame, all column names of \code{x} are matched to attribute
+#' \code{standard_var_names} for all keyvalue objects in the package (see \code{list_keyvalues()}).
+#' If the column name is a standard name used for a coding, the corresponding keyvalue object is used
+#' to decode the column and to add an extra column to \code{x} with its original 
+#' name with suffix \code{_Beskrivning}. This is done for all identified columns. Please report additional 
+#' suggestions of standard names to \url{https://github.com/cancercentrum/decoder/issues}.
+#' 
 #' @section extra_functions:
 #' The relationship betwen the key and the value in a keyvalue object is either 1:1 or m:1.
 #' The mapping is straight forward for 1:1 but with m:1, different applications might require slightly
@@ -40,6 +60,9 @@
 #'
 #' @seealso \link{key_value_data}, \link{keyvalue}, \link{extra_functions}
 #' @examples
+#'
+#' # We can start to list all available keyvalue objects included in the package:
+#' list_keyvalues()
 #'
 #' KON_VALUE <- sample(1:2, 20, replace = TRUE)
 #' (kon <- decode(KON_VALUE, "kon"))

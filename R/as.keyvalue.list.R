@@ -62,7 +62,6 @@ as.keyvalue.list <- function(x, ...){
         value = rep(names(x), sapply(x, length)),
         row.names = NULL
     )
-    
     as.keyvalue(x, ...)
 }
 

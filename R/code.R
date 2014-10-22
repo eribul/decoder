@@ -1,7 +1,7 @@
 
 #' @rdname decoder
 #' @export
-code <- function(y, keyvalue){
+code <- function(y, keyvalue, verbose = TRUE){
     
     if (is.character(keyvalue)){
         keyvalue <- get(keyvalue)
@@ -13,8 +13,12 @@ code <- function(y, keyvalue){
         dangerous_values <- summary(keyvalue)$nonunique$value
         not11 <- y %in% dangerous_values
         if (any(not11)){
-            print(summary(keyvalue)$nonunique[dangerous_values %in% y, ])
-            stop("Values above have a non 1:1 relation to their key. A safe coding can not be made for this variable!")
+            if (verbose){ 
+                print(summary(keyvalue)$nonunique[dangerous_values %in% y, ])
+                stop("Values above have a non 1:1 relation to their key. A safe coding can not be made for this variable!")
+            } else{
+                stop("Some values have a non 1:1 relation to their key. Use parameter verbose = TRUE to see a list!")
+            }
         }
     }
     

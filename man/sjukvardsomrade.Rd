@@ -29,7 +29,7 @@ Updates for other regions needs to be requested (please do!).
  to handle this.
 }
 \seealso{
-separate_kungalv kungalv2Storgoteborg
+\link{extra_functions}
 
 Other key_value_data: \code{\link{figo}};
   \code{\link{forsamling}}; \code{\link{icd10}};

@@ -9,11 +9,9 @@
 #' @export
 #' @seealso \link{keyvalue}
 summary.keyvalue <- function(object, ...){
-    # writeLines("\n Summary from the underlaying data.frame object:\n")
     data.frame.summary <- summary.data.frame(object)
     
-    # writeLines("\n standard_var_names: \n")
-    standard_var_names <- object$standard_var_names
+    standard_var_names <- attr(object, "standard_var_names")
     
     if (!is.keyvalue11(object)){
         # writeLines("\n\nThe following entries in the keyvalue-object are not 1:1!\n")

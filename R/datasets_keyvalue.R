@@ -116,7 +116,7 @@ NULL
 #' @docType data
 #' @keywords datasets
 #' @name sjukvardsomrade
-#' @seealso separate_kungalv kungalv2Storgoteborg
+#' @seealso  \link{extra_functions}
 #' @family key_value_data
 NULL
 
