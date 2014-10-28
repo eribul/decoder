@@ -15,7 +15,7 @@ License: GPL-2
 Depends:
     R (>= 2.10)
 Imports:
-    stringr,
+    stringr
 Suggests:
     testthat,
     rccmisc,

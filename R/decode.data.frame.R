@@ -7,7 +7,7 @@ decode.data.frame <- function(x, ...){
         warning("Additional arguments to decode.data.frame ignored!")
     }
     
-    cols_to_change <- x[, names(x) %in% ALL_STANDARD_VAR_NAMES$key]
+    cols_to_change <- x[, names(x) %in% ALL_STANDARD_VAR_NAMES$key, drop = FALSE]
     cols_to_change_names <- paste0(names(cols_to_change), "_Beskrivning")
     
     if (length(cols_to_change) == 0 || identical(cols_to_change, character(0))){
