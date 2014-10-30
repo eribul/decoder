@@ -3,7 +3,7 @@
 #' @export
 as.keyvalue.data.frame <- function(x, standard_var_names = NULL){
     
-    if (ncol(x) != 2 | !all((c("key", "value") %in% names(x)))){
+    if (ncol(x) != 2 || !all((c("key", "value") %in% names(x)))){
         stop("A keyvalue object must have exactly two columns: 'key' and 'value'!")
     }
     

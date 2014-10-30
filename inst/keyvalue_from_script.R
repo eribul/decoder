@@ -16,23 +16,14 @@ sjukvardsomrade <- as.keyvalue(sjukvardsomrade)
 
 
 #################################### Region ####################################
-region <-
-    data.frame(key = 1:6,
-               value = c(
-                   "Stockholm/Gotland",
-                   "Uppsala/Örebro",
-                   "Sydost",
-                   "Syd",
-                   "Väst",
-                   "Norr")
-    )
+region <- c(`Stockholm/Gotland` = 1, `Uppsala/Örebro` = 2, Sydost = 3, Syd = 4, Väst = 5, Norr = 6)
 region <- as.keyvalue(region, standard_var_names = "Region")
 
 
 
 ##################################### Kön ######################################
 
-kon <- data.frame(key = 1:2, value = c("Man", "Kvinna"))
+kon <- c(Man = 1, Kvinna = 2)
 kon <- as.keyvalue(kon, standard_var_names =  c("KON_VALUE", "kön", "sex"))
 
 

@@ -10,7 +10,7 @@ as.keyvalue(x, standard_var_names = NULL)
 is.keyvalue(x)
 }
 \arguments{
-\item{x}{a data.frame with a unique \code{key} and a (not necessarly unique) \code{value} column.}
+\item{x}{object to test for, or coerce to, keyvalue (see the details).}
 
 \item{standard_var_names}{a character vector with standard names for variables decoded with this key-values.}
 }
@@ -22,6 +22,14 @@ with a 1:1 relation between its keys and values (otherwise FALSE).
 }
 \description{
 Functions to check if an object is a keyvalue object, or coerce it if possible.
+}
+\details{
+\code{x} can be of three types:
+\itemize{
+\item a \code{data.frame} with two columns "key" (that should be unique) and "value".
+\item a list as described in \code{\link{as.keyvalue.list}}
+\item a named vector vitl all names unique
+}
 }
 \examples{
 snomed <- decoder:::snomed
