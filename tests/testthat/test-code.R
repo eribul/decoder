@@ -7,5 +7,5 @@ test_that("doesn't work", {
 
 
 test_that("works", {
-    expect_that(code(kon$value, "kon"), is_equivalent_to(as.character(1:2)))
+    expect_that(code(kon$value, "kon"), is_equivalent_to(as.factor(1:2)))
 })

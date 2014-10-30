@@ -1,10 +1,11 @@
 #' Coerce to a keyvalue object
 #'
 #' Functions to check if an object is a keyvalue object, or coerce it if possible.
+#' 
 #' @name keyvalue
 #' @param x a data.frame with a unique \code{key} and a (not necessarly unique) \code{value} column.
 #' @param standard_var_names a character vector with standard names for variables decoded with this key-values.
-#' 
+#'
 #' @return 
 #' \code{as.keyvalue} returns a data.frame with additional class \code{keyvalue} that fullfills the requirements
 #' for a \code{keyvalue} object and with the \code{key} column as character. It also has two extra attributes

@@ -16,11 +16,12 @@ best2keyvalue <- function () {
       obj <- as.keyvalue(obj)
       assign(obj_name, obj, envir = globalenv())
   }
-  rm(best2keyvalue, envir = globalenv())
 
 }
 
 best2keyvalue()
+rm(best2keyvalue, envir = globalenv())
+
 
 
 ################################# Add standard_var_names #################################

@@ -16,10 +16,13 @@ decode.default <- function(x, keyvalue, extra_functions = NULL, exact = FALSE, .
     if (!exact){
         x <- format_as_key(x, keyvalue)
     }
-    
+        
     ## Translate key to value
     positions <- match(x, keyvalue$key)
     res <- keyvalue[positions, "value", drop = TRUE]
+    
+    res <- factor(res, levels = sort(unique(keyvalue$value)))
+    
     
     ## Apply extra functions if given
     if (!is.null(extra_functions)){
