@@ -10,5 +10,5 @@ as.keyvalue.default <- function(x, ...){
     }
     
     x <- data.frame(key = x, value = names(x), row.names = NULL)
-    as.keyvalue(x)
+    as.keyvalue(x, ...)
 }
