@@ -10,6 +10,9 @@ decode.default <- function(x, keyvalue, extra_functions = NULL, exact = FALSE, .
     
     if (is.character(keyvalue)){
         keyvalue <- get(keyvalue)
+    } else{
+        keyvalue <- tryCatch(as.keyvalue(keyvalue), 
+                             error = function(x) stop("'keyvalue' is neither a keyvalue object, nor an object that can be easily coerced to such! See '?as.keyvalue'"))
     }
     
     ## We might try to convert x in order to better match the format of the key
