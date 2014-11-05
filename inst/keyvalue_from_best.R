@@ -26,7 +26,7 @@ rm(best2keyvalue, envir = globalenv())
 
 ################################# Add standard_var_names #################################
 
-attr(hemort,   "standard_var_names")  <-  c("a_lkf", "hemfr", "hemnu", "hemdia", "lkf", "LKF_VALUE")
+attr(hemort,   "standard_var_names")  <-  c("a_lkf", "hemfr", "hemnu", "hemdia", "lkf", "lkf_value")
 attr(sjukhus,  "standard_var_names")  <- "anlas"
 attr(m_rtr,    "standard_var_names")  <- "cam"
 attr(n_rtr,    "standard_var_names")  <- "can"
@@ -38,6 +38,6 @@ attr(icdo,     "standard_var_names")  <- "icdo"
 attr(icdo3,    "standard_var_names")  <- "icdo3"
 attr(sida,     "standard_var_names")  <- "sida"
 attr(tnmgrund, "standard_var_names")  <- "tnmgrund"
-attr(pad,      "standard_var_names")  <- "PAD"
+attr(pad,      "standard_var_names")  <- "pad"
 attr(snomed,   "standard_var_names")  <- "snomed"
 attr(snomed3,  "standard_var_names")  <- "snomed3"

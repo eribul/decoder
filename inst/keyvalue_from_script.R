@@ -17,13 +17,66 @@ sjukvardsomrade <- as.keyvalue(sjukvardsomrade)
 
 #################################### Region ####################################
 region <- c(`Stockholm/Gotland` = 1, `Uppsala/Örebro` = 2, Sydost = 3, Syd = 4, Väst = 5, Norr = 6)
-region <- as.keyvalue(region, standard_var_names = "Region")
+region <- as.keyvalue(region, standard_var_names = "region")
 
 
 
 ##################################### Kön ######################################
 
 kon <- c(Man = 1, Kvinna = 2)
-kon <- as.keyvalue(kon, standard_var_names =  c("KON_VALUE", "kön", "sex"))
+kon <- as.keyvalue(kon, standard_var_names =  c("kon_value", "kön", "kon", "sex"))
 
 
+
+
+##################################### Avgångsmarkering #########################
+
+avgm <- c(`lever i regionen` = "", `utflyttad ur regionen` = 1, avliden = 2, 
+          `obefintlig (sep-06)` = 4, utvandrad = 5, `Tekniskt avreg (sep-06)` = 6, 
+          `okänd ej från Västfolket` = 7, `okänt enl bestånd 991007` = 8, okänd = 9)
+avgm <- as.keyvalue(avgm, standard_var_names =  c("avgm"))
+
+
+
+##################################### Manuell #########################
+
+manuell <- as.keyvalue(c(ja = 1), standard_var_names =  c("manuell"))
+
+
+
+##################################### ben #########################
+
+ben <- as.keyvalue(c(malign = "", benign = 3), standard_var_names =  c("ben"))
+
+
+
+##################################### digr #########################
+digr <- c(`klinisk us` = 1, rtg = 2, `provex. el op m pad` = 3, 
+         `obduktion m pad` = 4, `cyt us` = 5, `op utan pad` = 6 , 
+         `obduktion utan pad` = 7, `annan labundersökning (sep-03)` = 8)
+
+digr <- as.keyvalue(digr, standard_var_names =  c("digr"))
+
+
+
+
+##################################### obd #########################
+
+obd <- as.keyvalue(c(`tumören upptäckt vid obduktion`= 1, 
+                     `tumören känd innan obduktion` = 2), 
+                   standard_var_names =  c("obd"))
+
+
+
+
+##################################### dödca #########################
+
+dödca <- as.keyvalue(c(ja = 1, nej = 2, `dödsorsak okänd`= 3), 
+                   standard_var_names =  c("dödca"))
+
+
+
+##################################### status #########################
+
+status <- as.keyvalue(c(ofullständig = "", fullständig = 1, `skickad till SOS` = 2), 
+                     standard_var_names =  c("status"))

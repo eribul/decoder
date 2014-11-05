@@ -34,8 +34,8 @@ format_as_key <- function(x, keyvalue){
     }
     
     # If the key is shorter than x, x is substringed
-    key_length <- max(stringr::str_length(keyvalue$key))
-    if (max(stringr::str_length(x)) > key_length){
+    key_length <- max(stringr::str_length(keyvalue$key), na.rm = TRUE)
+    if (max(stringr::str_length(x), na.rm = TRUE) > key_length){
         x <- substr(x, 1, key_length)
         warning("Entries in ", x_name, " have too many characters to be matched to ",
                 x_name, " and is threfore substringed to match its length!")

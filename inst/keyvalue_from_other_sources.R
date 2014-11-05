@@ -8,7 +8,7 @@ lan$Län <- stringr::str_trim(lan$Län)
 lan <- subset(lan, select = c("Kod", "Län"))
 names(lan) <- kv_names
 lan$key <- stringr::str_pad(lan$key, 2, pad = "0")
-lan <- as.keyvalue(lan, standard_var_names = "LAN_VALUE")
+lan <- as.keyvalue(lan, standard_var_names = "lan_value")
 
 
 
@@ -42,6 +42,7 @@ comment(forsamling) <- "Data from http://www.scb.se/Grupp/Hitta_statistik/Region
 ################################### Kliniker ####################################
 klinik <- rbind(klinik, klinik_extra_rockan)
 klinik$key <- stringr::str_pad(klinik$key, 3, pad = "0")
+klinik <- unique(klinik)
 klinik <- as.keyvalue(klinik, standard_var_names = c("ankli"))
 
 
@@ -52,15 +53,15 @@ klinik <- as.keyvalue(klinik, standard_var_names = c("ankli"))
 # http://www.socialstyrelsen.se/SiteCollectionDocuments/sosfs-2006-15-bilaga-5.pdf
 patologiavdelningar_sos_2006 <- read.delim("inst/data_other_sources/patologavdelningar_sos_2006.tab"
                                            , dec=",", stringsAsFactors = FALSE)
-patologiavdelning$key <- as.numeric(patologiavdelning$key)
+# patologiavdelning$key <- as.numeric(patologiavdelning$key)
 
 # Lägg till de koder som finns i Rockan-data men inte från SoS
 patologiavdelning <- rbind(subset(patologiavdelning, !(key %in% patologiavdelningar_sos_2006$key)),
                           patologiavdelningar_sos_2006
                           )
 patologiavdelning <- subset(patologiavdelning, !is.na(key)) 
-
 patologiavdelning$key <- stringr::str_pad(patologiavdelning$key, 3, pad = "0")
+patologiavdelning <- patologiavdelning[!duplicated(patologiavdelning$key),]
 patologiavdelning <- as.keyvalue(patologiavdelning, standard_var_names = "pat")
 
 
