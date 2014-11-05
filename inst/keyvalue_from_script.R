@@ -31,7 +31,7 @@ kon <- as.keyvalue(kon, standard_var_names =  c("kon_value", "kön", "kon", "sex
 
 ##################################### Avgångsmarkering #########################
 
-avgm <- c(`lever i regionen` = "", `utflyttad ur regionen` = 1, avliden = 2, 
+avgm <- c(`lever i regionen` = NA, `utflyttad ur regionen` = 1, avliden = 2, 
           `obefintlig (sep-06)` = 4, utvandrad = 5, `Tekniskt avreg (sep-06)` = 6, 
           `okänd ej från Västfolket` = 7, `okänt enl bestånd 991007` = 8, okänd = 9)
 avgm <- as.keyvalue(avgm, standard_var_names =  c("avgm"))
@@ -46,7 +46,7 @@ manuell <- as.keyvalue(c(ja = 1), standard_var_names =  c("manuell"))
 
 ##################################### ben #########################
 
-ben <- as.keyvalue(c(malign = "", benign = 3), standard_var_names =  c("ben"))
+ben <- as.keyvalue(c(malign = NA, benign = 3), standard_var_names =  c("ben"))
 
 
 
@@ -78,5 +78,5 @@ dödca <- as.keyvalue(c(ja = 1, nej = 2, `dödsorsak okänd`= 3),
 
 ##################################### status #########################
 
-status <- as.keyvalue(c(ofullständig = "", fullständig = 1, `skickad till SOS` = 2), 
+status <- as.keyvalue(c(ofullständig = NA, fullständig = 1, `skickad till SOS` = 2), 
                      standard_var_names =  c("status"))
