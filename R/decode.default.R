@@ -6,6 +6,8 @@ decode.default <- function(x, keyvalue, extra_functions = NULL, exact = FALSE, .
     
     if (!is.atomic(x)){
         stop("decode only works for atomic vectors or data.frames!")
+    } else if (all(is.na(x))){
+        return(x)
     }
     
     if (is.character(keyvalue)){
