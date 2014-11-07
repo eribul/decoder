@@ -77,4 +77,25 @@ icd10 <- as.keyvalue(icd10)
 
 
 
+####################################### ICDO3_grov #######################################
+
+x <- read.delim("inst/data_other_sources/icdo3_fran_manual", header=FALSE)
+x <- as.character(unlist(x))
+x <- gsub(".", " ", x, fixed = TRUE)
+x <- substring(x, 1, nchar(x) - 3)
+x <- gdata::trim(x)
+x <- strsplit(x, "  ")
+
+x <- data.frame(key = substring(x, nchar(x) - 2),
+                value = substring(x, 1, nchar(x) - 4),
+                stringsAsFactors = FALSE)
+
+## Hud finns uppdelat i två poster (med och utan melanom), vi nöjer oss med en
+x <- x[!duplicated(x$key), ]
+x$value[x$key == "C44"] <- "Hud (inkl melanom)"
+
+comment(x) <- "Data from http://www.socialstyrelsen.se/Lists/Artikelkatalog/Attachments/19446/2014-5-12.pdf"
+
+icdo3_grov <- as.keyvalue(x)
+
 

@@ -26,15 +26,16 @@ The intention of these data files is to be used by the \link{decode} and \link{c
 Other key_value_data: \code{\link{figo}};
   \code{\link{forsamling}}; \code{\link{icd10}};
   \code{\link{icd7}}; \code{\link{icd9}};
-  \code{\link{icdo3}}; \code{\link{icdo}};
-  \code{\link{klinik}}; \code{\link{kommun}};
-  \code{\link{kon}}; \code{\link{lan}};
-  \code{\link{m_rtr}}; \code{\link{n_rtr}};
-  \code{\link{pad}}; \code{\link{patologiavdelning}};
-  \code{\link{region}}; \code{\link{sida}};
-  \code{\link{sjukhus}}; \code{\link{sjukvardsomrade}};
-  \code{\link{snomed3}}; \code{\link{snomed}};
-  \code{\link{t_rtr}}; \code{\link{tnmgrund}}
+  \code{\link{icdo3_grov}}; \code{\link{icdo3}};
+  \code{\link{icdo}}; \code{\link{klinik}};
+  \code{\link{kommun}}; \code{\link{kon}};
+  \code{\link{lan}}; \code{\link{m_rtr}};
+  \code{\link{n_rtr}}; \code{\link{pad}};
+  \code{\link{patologiavdelning}}; \code{\link{region}};
+  \code{\link{sida}}; \code{\link{sjukhus}};
+  \code{\link{sjukvardsomrade}}; \code{\link{snomed3}};
+  \code{\link{snomed}}; \code{\link{t_rtr}};
+  \code{\link{tnmgrund}}
 }
 \keyword{datasets}
 

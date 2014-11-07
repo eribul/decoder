@@ -311,6 +311,19 @@ NULL
 #' @family key_value_data
 NULL
 
+#' ICD-O3 Grov
+#'
+#' Key-value codes for just the first two digits of the ICDO-3 code.
+#' This gives broader grouping.
+#' Based on the table of contents from:
+#' http://www.socialstyrelsen.se/Lists/Artikelkatalog/Attachments/19446/2014-5-12.pdf
+#'
+#' @docType data
+#' @keywords datasets
+#' @name icdo3_grov
+#' @family key_value_data
+NULL
+
 #' Sida
 #'
 #' Key-value codes for sida (Sida, 1 = Hoger, 2 = Vanster, 9 = Okant).
