@@ -6,8 +6,9 @@
 #                                                                                        #
 ##########################################################################################
 
+library(decoder)
 rm(list = ls())
-
+old_wd <- setwd("./data-raw")
 
 
 ##########################################################################################
@@ -18,15 +19,15 @@ rm(list = ls())
 ##########################################################################################
 
 ## Order of the files matter!
-source("inst/keyvalue_from_best.R")
-source("inst/keyvalue_from_other_sources.R")
-source("inst/keyvalue_from_script.R")
+source("keyvalue_from_best.R")
+source("keyvalue_from_other_sources.R")
+source("keyvalue_from_script.R")
 rm(kv_names)
 
 
 ######## Create a keyvalue object with all standard names used for all keyvalues #########
 
-ALL_KEYVALUE_OBJECTS <- ls()
+ALL_KEYVALUE_OBJECTS <- ls()[ls() != "old_wd"]
 x <- as.list(ALL_KEYVALUE_OBJECTS)
 names(x) <- x
 x <- lapply(x, function(x) NA)
@@ -35,11 +36,15 @@ for (i in names(x)){
 }
 x$forsamling <- NULL
 ALL_STANDARD_VAR_NAMES <- as.keyvalue(x)
-rm(i, x)
 
 ############################ Save all objects to sysdata.rda #############################
 
+setwd(old_wd)
+rm(i, x, old_wd)
 
-save(list = ls(), file = "R/sysdata.rda")
+
+args <- Vectorize(as.name)(ls())
+args$internal = TRUE
+do.call(use_data, args)
 
 

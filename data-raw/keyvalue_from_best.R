@@ -7,8 +7,8 @@
 ##########################################################################################
 
 best2keyvalue <- function () {
-  for (x in dir("inst/best/")){
-      file_name <- paste0("inst/best/", x)
+  for (x in dir("best/")){
+      file_name <- paste0("best/", x)
       obj_name <- gsub(".tab", "", x)
       obj <- read.delim(file_name, stringsAsFactors = FALSE)
       names(obj) <- c("key", "value")
