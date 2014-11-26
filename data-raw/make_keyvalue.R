@@ -44,7 +44,8 @@ rm(i, x, old_wd)
 
 
 args <- Vectorize(as.name)(ls())
-args$internal = TRUE
+args$internal  <-  TRUE
+args$overwrite <- TRUE
 do.call(use_data, args)
 
 

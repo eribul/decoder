@@ -75,11 +75,17 @@ names(icd10) <- kv_names
 icd10 <- as.keyvalue(icd10)
 
 
+####################################### ICD7_grov #######################################
+
+x <- read.delim("data_other_sources/icd7_grov_from_SoS.tab", sep = " ")
+icd7_grov <- as.keyvalue(x)
+
+
 
 
 ####################################### ICDO3_grov #######################################
 
-x <- read.delim("data_other_sources/icdo3_fran_manual", header=FALSE)
+x <- read.delim("data_other_sources/icdo3_fran_manual.tab", header = FALSE)
 x <- as.character(unlist(x))
 x <- gsub(".", " ", x, fixed = TRUE)
 x <- substring(x, 1, nchar(x) - 3)
