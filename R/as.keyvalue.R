@@ -4,13 +4,15 @@
 #' 
 #' \code{x} can be of three types:
 #' \itemize{
-#' \item a \code{data.frame} with two columns "key" (that should be unique) and "value".
+#' \item a \code{data.frame} with two columns "key" (with unique cells) and "value".
 #' \item a list as described in \code{\link{as.keyvalue.list}}
-#' \item a named vector vitl all names unique 
+#' \item a named vector with all names unique 
+#' \item an unnamed vector with unique cells if supplemented by additional vector (y)
 #' }
 #' 
 #' @name keyvalue
 #' @param x object to test for, or coerce to, keyvalue (see the details).
+#' @param y a value vector if \code{x} is an unnamed vector
 #' @param standard_var_names a character vector with standard names for variables decoded with this key-values.
 #'
 #' @return 

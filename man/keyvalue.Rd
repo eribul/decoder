@@ -13,6 +13,8 @@ is.keyvalue(x)
 \item{x}{object to test for, or coerce to, keyvalue (see the details).}
 
 \item{standard_var_names}{a character vector with standard names for variables decoded with this key-values.}
+
+\item{y}{a value vector if \code{x} is an unnamed vector}
 }
 \value{
 \code{as.keyvalue} returns a data.frame with additional class \code{keyvalue} that fullfills the requirements
@@ -26,9 +28,10 @@ Functions to check if an object is a keyvalue object, or coerce it if possible.
 \details{
 \code{x} can be of three types:
 \itemize{
-\item a \code{data.frame} with two columns "key" (that should be unique) and "value".
+\item a \code{data.frame} with two columns "key" (with unique cells) and "value".
 \item a list as described in \code{\link{as.keyvalue.list}}
-\item a named vector vitl all names unique
+\item a named vector with all names unique
+\item an unnamed vector with unique cells if supplemented by additional vector (y)
 }
 }
 \examples{
