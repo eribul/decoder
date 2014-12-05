@@ -1,6 +1,7 @@
 
 
 #' @export
+#' @rdname keyvalue
 as.keyvalue.default <- function(x, y, ...){
     
     stopifnot(is.atomic(x))

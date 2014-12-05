@@ -12,8 +12,9 @@
 #' 
 #' @name keyvalue
 #' @param x object to test for, or coerce to, keyvalue (see the details).
-#' @param y a value vector if \code{x} is an unnamed vector
+#' @param y a value vector if \code{x} is an unnamed vector (argument must be named 'y = .')
 #' @param standard_var_names a character vector with standard names for variables decoded with this key-values.
+#' @param ... arguments passed between methods
 #'
 #' @return 
 #' \code{as.keyvalue} returns a data.frame with additional class \code{keyvalue} that fullfills the requirements
@@ -29,6 +30,6 @@
 #' is.keyvalue(snomed2)
 #' summary(snomed2)
 
-as.keyvalue <- function(x, standard_var_names = NULL){
+as.keyvalue <- function(x, ...){
     UseMethod("as.keyvalue")
 }
