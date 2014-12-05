@@ -3,3 +3,4 @@
 inst/*
 ^data-raw$
 ^\.travis\.yml$
+inst/*

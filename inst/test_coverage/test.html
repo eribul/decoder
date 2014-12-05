@@ -1,0 +1,1112 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>testCoverage Report </title>
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.1/themes/black-tie/jquery-ui.css" />
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+    
+    <script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.1/jquery-ui.min.js"></script>
+	  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script><!--<script>
+        $(function() {
+          $( "#tabs" ).tabs().addClass( "ui-tabs-vertical ui-helper-clearfix" );
+          $( "#tabs li" ).removeClass( "ui-corner-top" ).addClass( "ui-corner-left" );
+        });
+    </script>-->
+    <style>
+	.footer {
+		padding-top: 19px;
+		color: #777;
+		border-top: 1px solid #e5e5e5;
+	}
+  .btn,
+  .nav-pills>li>a,
+  .ui-corner-all,
+  .ui-corner-top,
+  .ui-corner-left,
+  .ui-corner-tl {
+    border-radius: 0;
+  }
+  .ui-widget-header {
+    border: 1px solid #aaa;
+  	background: #FAA531;
+  	color: #222222;
+  	font-weight: bold;
+  }
+  .fail {
+    color: #A94442;
+  background-color: #F2DEDE;
+  }
+  .pass {
+    color: #3C763D;
+  background-color: #DFF0D8;
+  }
+    </style>
+</head>
+<body>
+  <script>
+  var tagList = ["1_25","1_37","1_40","1_48","1_51","1_88","1_91","1_94","1_113","1_128","1_154","1_157","1_165","1_220","2_33","2_48","2_52","2_67","2_90","2_112","2_115","2_118","2_121","2_148","2_151","2_170","2_173","2_198","2_231","2_248","2_251","2_254","2_257","2_297","2_300","3_28","3_31","3_50","3_62","3_65","3_89","3_104","3_107","3_121","3_124","3_146","3_167","3_170","3_193","3_196","3_225","4_159","4_173","4_193","4_196","4_199","4_215","4_233","4_252","4_255","4_276","4_296","4_299","4_322","4_350","4_353","4_359","4_374","4_377","4_389","4_424","5_109","6_42","6_54","6_57","6_65","6_68","6_115","6_123","6_174","7_31","7_44","7_47","7_77","7_91","7_94","7_113","7_116","7_128","7_143","7_149","7_152","7_165","7_184","7_203","7_250","7_253","7_270","9_26","9_40","9_62","9_65","9_70","9_73","9_86","9_89","9_98","9_101","9_114","9_117","9_150","9_153","9_156","9_182","9_196","9_204","9_222","9_234","9_253","9_256","9_259","9_262","9_265","9_297","9_299","9_330","9_333","9_346","9_371","9_379","9_402","10_43","10_57","10_76","10_79","10_96","10_122","10_135","10_138","10_164","10_178","10_181","10_184","10_204","10_238","10_245","10_248","10_278","10_281","10_289","10_302","10_305","10_332","10_335","10_345","10_348","10_351","10_382","10_398","10_406","10_409","10_422","10_425","11_41","13_54","13_57","13_90","13_129","13_132","13_165","13_204","13_207","13_300","14_24","14_37","14_40","14_63","14_66","14_69","14_86","14_89","14_92","14_111","14_119","14_122","14_146","14_154","14_157","14_181","14_189","14_192","14_223","14_234","14_237","14_252","14_257","14_280","14_317","14_328","14_331","14_346","14_349","14_362","14_393","14_404","14_407","14_422","14_425","14_438","14_469","14_472","14_477","14_480","14_506","14_511","14_539","14_542","14_565","15_17","15_55","15_65","16_44","16_47","16_62","16_65","16_88","16_104","16_107","16_110","16_116","16_119","16_122","16_125","16_135","16_138","16_174","16_177","16_180","16_183","16_212","17_17"];
+var sumTags = [1,0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,1,0,0,1,1,1,1,0,1,1,1,1,1,1,1,1,1,1,0,1,1,1,1,1,1,1,1,1,0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,1,1,1,1,1,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,0,1,1,1,1,0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,1,1,1,0,0,0,1,1,1,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1];
+var allTags = [[1,0,0,0,0,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,1,0,0,1,0,0,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,1,1,1,1,1,1,1,1,0,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,1,0,0,0,0,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,0,1,0,0,1,0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,1,1,1,0,0,0,1,1,1,0,0,0,1,1,1,1,1,1,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0],[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,0,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1]];
+var coverage = [[[10,4],[0,21],[0,16],[0,20],[0,1],[3,5],[0,18],[0,0],[0,33],[0,32],[0,1],[0,0],[0,9],[0,45],[0,3],[0,19],[0,1]],[[0,14],[19,2],[0,16],[0,20],[0,1],[0,8],[0,18],[0,0],[0,33],[0,32],[0,1],[0,0],[0,9],[0,45],[3,0],[0,19],[0,1]],[[0,14],[2,19],[12,4],[0,20],[1,0],[0,8],[0,18],[0,0],[0,33],[0,32],[0,1],[0,0],[0,9],[0,45],[0,3],[0,19],[0,1]],[[0,14],[0,21],[0,16],[18,2],[0,1],[0,8],[0,18],[0,0],[0,33],[0,32],[0,1],[0,0],[0,9],[0,45],[0,3],[0,19],[0,1]],[[0,14],[0,21],[0,16],[0,20],[0,1],[0,8],[0,18],[0,0],[0,33],[0,32],[0,1],[0,0],[0,9],[0,45],[0,3],[0,19],[0,1]],[[0,14],[0,21],[0,16],[0,20],[0,1],[1,7],[0,18],[0,0],[0,33],[0,32],[0,1],[0,0],[0,9],[0,45],[0,3],[0,19],[0,1]],[[0,14],[0,21],[0,16],[0,20],[0,1],[0,8],[14,4],[0,0],[0,33],[19,13],[1,0],[0,0],[0,9],[31,14],[0,3],[19,0],[0,1]],[[0,14],[0,21],[0,16],[0,20],[0,1],[0,8],[0,18],[0,0],[0,33],[0,32],[0,1],[0,0],[0,9],[0,45],[0,3],[0,19],[0,1]],[[0,14],[0,21],[0,16],[0,20],[0,1],[0,8],[0,18],[0,0],[17,16],[2,30],[0,1],[0,0],[0,9],[0,45],[0,3],[0,19],[0,1]],[[0,14],[0,21],[0,16],[0,20],[0,1],[0,8],[0,18],[0,0],[0,33],[5,27],[0,1],[0,0],[9,0],[0,45],[0,3],[0,19],[0,1]],[[0,14],[0,21],[0,16],[0,20],[0,1],[0,8],[0,18],[0,0],[0,33],[0,32],[0,1],[0,0],[0,9],[5,40],[0,3],[0,19],[0,1]],[[0,14],[0,21],[0,16],[0,20],[0,1],[0,8],[0,18],[0,0],[0,33],[0,32],[0,1],[0,0],[0,9],[0,45],[0,3],[0,19],[0,1]],[[0,14],[0,21],[0,16],[0,20],[0,1],[0,8],[0,18],[0,0],[0,33],[0,32],[0,1],[0,0],[0,9],[0,45],[0,3],[0,19],[0,1]],[[0,14],[0,21],[0,16],[0,20],[0,1],[0,8],[0,18],[0,0],[0,33],[0,32],[0,1],[0,0],[0,9],[0,45],[0,3],[0,19],[1,0]]];
+var all_coverage = [[10,4],[21,0],[12,4],[18,2],[1,0],[4,4],[14,4],[0,0],[17,16],[26,6],[1,0],[0,0],[9,0],[36,9],[3,0],[19,0],[1,0]];
+var sumAllTraces = {"0":241,"1":192};
+docolor = function(j, bb) {
+// $("#t_" + tagList[j]).css("backgroundColor", bb ? "lightgreen" : "lightpink");
+    if(bb > 0) {
+        $("#t_" + tagList[j]).removeClass("fail").addClass("pass");
+	} else {
+        $("#t_" + tagList[j]).removeClass("pass").addClass("fail");
+    }
+};
+pbsummed = function(j, cov) {
+    pct = 100 * (cov[0] / (cov[0] + cov[1]));
+    $("#progress-" + (j + 1)).progressbar({
+        value: pct
+    });
+};
+$(document).ready(function() {
+    $.each(sumTags, docolor);
+    $.each(all_coverage, pbsummed);
+    $("#trace_all").click(function() {
+        $.each(sumTags, docolor);
+        $.each(all_coverage, pbsummed)
+    });
+    $.each(allTags, function(i, dum) {
+        $("#run_" + (i + 1)).click(
+            function() {
+                $.each(allTags[i], docolor);
+                $.each(coverage[i], function(j, cov) {
+                    pct = 100 * (cov[0] / (cov[0] + cov[1]));
+                    $("#progress-" + (j + 1)).progressbar({
+                        value: pct
+                    });
+                })
+            });
+    });
+
+    //This will only run if jQuery has loaded.
+    $(".internet-connectivity").hide();
+});
+$( document ).ready(function() {
+  $(".internet-connectivity").hide();
+})
+  </script>
+  <div class="alert alert-danger internet-connectivity" role="alert"><h1><strong>Warning:</strong> An internet connection is required to load external assets.</h1></div>
+  <div class="container">
+  <div class="jumbotron">
+    <h1>testCoverage Report <small></small></h1>
+  </div>
+  <h2>Summary</h2>
+<!-- html table generated in R 3.1.2 by xtable 1.7-4 package -->
+<!-- Fri Dec  5 10:41:14 2014 -->
+<table class="table table-bordered">
+<tr> <th>  </th> <th> Total # Tracepoints </th> <th> # Executed </th> <th> % Coverage </th>  </tr>
+  <tr> <td align="right"> 1 </td> <td> 241 </td> <td> 192 </td> <td>  80% </td> </tr>
+   </table>
+<h2>testthat Tests</h2>
+	<button type="button" class="btn btn-default" id="trace_all">All Tests</button>&nbsp;<button type='button' class='btn btn-default' id='run_1'>test-as.key.R</button>&nbsp;<button type='button' class='btn btn-default' id='run_2'>test-as.keyvalue.data.frame.R</button>&nbsp;<button type='button' class='btn btn-default' id='run_3'>test-as.keyvalue.default.R</button>&nbsp;<button type='button' class='btn btn-default' id='run_4'>test-as.keyvalue.list.R</button>&nbsp;<button type='button' class='btn btn-default' id='run_5'>test-as.keyvalue.R</button>&nbsp;<button type='button' class='btn btn-default' id='run_6'>test-as.value.R</button>&nbsp;<button type='button' class='btn btn-default' id='run_7'>test-code.R</button>&nbsp;<button type='button' class='btn btn-default' id='run_8'>test-datasets_keyvalue.R</button>&nbsp;<button type='button' class='btn btn-default' id='run_9'>test-decode.R</button>&nbsp;<button type='button' class='btn btn-default' id='run_10'>test-internal_extra_functions_sjukvardsomrade.R</button>&nbsp;<button type='button' class='btn btn-default' id='run_11'>test-internal_format_as_key.R</button>&nbsp;<button type='button' class='btn btn-default' id='run_12'>test-is.keyvalue.R</button>&nbsp;<button type='button' class='btn btn-default' id='run_13'>test-keyvalue_methods.R</button>&nbsp;<button type='button' class='btn btn-default' id='run_14'>test-list_keyvalues.R</button>&nbsp;<h2>Resource Files</h2><div class="row">
+       <div class="col-md-4">
+        <ul class="nav nav-pills nav-stacked" role="tablist"><li class="active"><a role="tab" data-toggle="tab" href="#tabs-1">as.key.R</a><div id="progress-1" ></div></li>
+<li class=""><a role="tab" data-toggle="tab" href="#tabs-2">as.keyvalue.data.frame.R</a><div id="progress-2" ></div></li>
+<li class=""><a role="tab" data-toggle="tab" href="#tabs-3">as.keyvalue.default.R</a><div id="progress-3" ></div></li>
+<li class=""><a role="tab" data-toggle="tab" href="#tabs-4">as.keyvalue.list.R</a><div id="progress-4" ></div></li>
+<li class=""><a role="tab" data-toggle="tab" href="#tabs-5">as.keyvalue.R</a><div id="progress-5" ></div></li>
+<li class=""><a role="tab" data-toggle="tab" href="#tabs-6">as.value.R</a><div id="progress-6" ></div></li>
+<li class=""><a role="tab" data-toggle="tab" href="#tabs-7">code.R</a><div id="progress-7" ></div></li>
+<li class=""><a role="tab" data-toggle="tab" href="#tabs-8">datasets_keyvalue.R</a><div id="progress-8" ></div></li>
+<li class=""><a role="tab" data-toggle="tab" href="#tabs-9">decode.data.frame.R</a><div id="progress-9" ></div></li>
+<li class=""><a role="tab" data-toggle="tab" href="#tabs-10">decode.default.R</a><div id="progress-10" ></div></li>
+<li class=""><a role="tab" data-toggle="tab" href="#tabs-11">decode.R</a><div id="progress-11" ></div></li>
+<li class=""><a role="tab" data-toggle="tab" href="#tabs-12">decoder.R</a><div id="progress-12" ></div></li>
+<li class=""><a role="tab" data-toggle="tab" href="#tabs-13">internal_extra_functions_sjukvardsomrade.R</a><div id="progress-13" ></div></li>
+<li class=""><a role="tab" data-toggle="tab" href="#tabs-14">internal_format_as_key.R</a><div id="progress-14" ></div></li>
+<li class=""><a role="tab" data-toggle="tab" href="#tabs-15">is.keyvalue.R</a><div id="progress-15" ></div></li>
+<li class=""><a role="tab" data-toggle="tab" href="#tabs-16">keyvalue_methods.R</a><div id="progress-16" ></div></li>
+<li class=""><a role="tab" data-toggle="tab" href="#tabs-17">list_keyvalues.R</a><div id="progress-17" ></div></li>
+</ul>
+    </div> 
+    <div class="col-md-8">
+    <div class="tab-content"><div class="tab-pane active" id="tabs-1"><pre>
+
+#' @rdname key_and_value
+#' @export
+<span id="t_1_11">as.key</span> &lt;- function(x){
+    
+    if (!<span id="t_1_25">is.atomic(x)</span>) <span id="t_1_37">stop(<span id="t_1_40">gettextf("cannot coerce class \"%s\" to a value object", <span id="t_1_48">deparse(<span id="t_1_51">class(x)</span>)</span>)</span>, domain = NA)</span>
+    
+    # We have the same requirements for key as for values but the key must also be unique and coerced to character.
+    <span id="t_1_88">x</span> &lt;- <span id="t_1_91">as.value(<span id="t_1_94">as.character(x)</span>)</span>
+    if (<span id="t_1_113">anyDuplicated(x)</span> != 0) <span id="t_1_128">stop("All keys must be unique!")</span>
+    
+    class(x) &lt;- <span id="t_1_154">unique(<span id="t_1_157">c("key", <span id="t_1_165">class(x)</span>)</span>)</span>
+    x
+}
+
+
+#' @rdname key_and_value
+#' @export
+<span id="t_1_210">is.key</span> &lt;- function(x){
+    <span id="t_1_220">inherits(x, "key")</span>
+}
+</pre></div><div class="tab-pane " id="tabs-2"><pre>
+
+#' @export
+#' @rdname keyvalue
+<span id="t_2_11">as.keyvalue.data.frame</span> &lt;- function(x, standard_var_names = NULL, ...){
+    
+    if (<span id="t_2_33">ncol(x)</span> != 2 || !<span id="t_2_48">all((<span id="t_2_52">c("key", "value")</span> %in% <span id="t_2_67">names(x)</span>))</span>){
+        <span id="t_2_90">stop("A keyvalue object must have exactly two columns: 'key' and 'value'!")</span>
+    }
+    
+    <span id="t_2_112">x</span> &lt;- <span id="t_2_115">x</span>[<span id="t_2_118">order(<span id="t_2_121">x</span>$key)</span>,]
+    
+    x$value &lt;- <span id="t_2_148">as.value(<span id="t_2_151">x</span>$value)</span>
+    x$key   &lt;- <span id="t_2_170">as.key(<span id="t_2_173">x</span>$key)</span>
+    
+    class(x) &lt;- <span id="t_2_198">c("keyvalue", "data.frame")</span>
+    attr(x, "standard_var_names") &lt;- <span id="t_2_231">standard_var_names</span>
+    
+    ## If there is a 1:1-relation between the key and the value, 
+    ## this is declared in an extra attribute
+    if (!<span id="t_2_248">inherits(<span id="t_2_251">try(<span id="t_2_254">as.key(<span id="t_2_257">x</span>$value)</span>, silent = TRUE)</span>, "try-error")</span>){
+        x$value  &lt;- <span id="t_2_297">as.key(<span id="t_2_300">x</span>$value)</span>
+        attr(x, "keyvalue11") &lt;- TRUE
+    } else{
+        attr(x, "keyvalue11") &lt;- FALSE
+    }
+    
+    x
+}</pre></div><div class="tab-pane " id="tabs-3"><pre>
+
+#' @export
+#' @rdname keyvalue
+<span id="t_3_11">as.keyvalue.default</span> &lt;- function(x, y, ...){
+    
+    <span id="t_3_28">stopifnot(<span id="t_3_31">is.atomic(x)</span>)</span>
+    if (!<span id="t_3_50">missing(y)</span>) <span id="t_3_62">stopifnot(<span id="t_3_65">is.atomic(y)</span>)</span>
+    
+    ## If only x supplied, x should be a named vector
+    if (<span id="t_3_89">missing(y)</span>){
+        if (<span id="t_3_104">is.null(<span id="t_3_107">names(x)</span>)</span> || <span id="t_3_121">any(<span id="t_3_124">names(x)</span> == "")</span>){
+            <span id="t_3_146">stop("All elements of vector 'x' must be named!")</span>
+        }
+        <span id="t_3_167">y</span> &lt;- <span id="t_3_170">names (x)</span>   
+    }
+    
+    <span id="t_3_193">df</span> &lt;- <span id="t_3_196">data.frame(key = x, value = y, row.names = NULL)</span>
+    <span id="t_3_225">as.keyvalue(df, ...)</span>
+}</pre></div><div class="tab-pane " id="tabs-4"><pre>
+#' Coerce a list to keyvalue object
+#'
+#' \code{x} should be a list with properties descrobed in section "Details".
+#' 
+#' \itemize{
+#'    \item{All names of the list elements should be unique.}
+#'    \item{All elements of the list should be named.}
+#'    \item{All keys should be unique (a key should only be mappad to one value).}
+#'    \item{All elements of the list should be atomic vectors.}
+#' }
+#'
+#' @param x a \code{list} with properties described in the details section.
+#' @param  ... further arguments passed to \code{\link{as.keyvalue}}.
+#' 
+#' @return The function returns an object of class \code{keyvalue} (and \code{list}.
+#' @export
+#' @seealso \link{as.keyvalue}
+#' @examples
+#'
+#' ex &lt;- list(
+#'          fruit  = c("banana", "orange", "kiwi"),
+#'          car    = c("SAAB", "Volvo", "taxi", "truck"),
+#'          animal = c("elefant")
+#' )
+#' as.keyvalue(ex)
+#' is.keyvalue(ex)
+#'
+#' \donttest{
+#' # An invalid list (non unique names; not because of silly classification)
+#' ex2 &lt;- list(
+#'          fruit  = c("banana", "orange", "kiwi"),
+#'          car    = c("SAAB", "Volvo", "taxi", "truck"),
+#'          animal = c("elefant"),
+#'          fruit  = c("President_Obama")
+#' )
+#' as.keyvalue(ex2)
+#'
+#' # An invalid list (non unique keys; kiwi appear twice)
+#' ex3 &lt;- list(
+#'          fruit  = c("banana", "orange", "kiwi"),
+#'          car    = c("SAAB", "Volvo", "taxi", "truck"),
+#'          animal = c("elefant", "kiwi")
+#' )
+#' as.keyvalue(ex3)
+#' }
+<span id="t_4_138">as.keyvalue.list</span> &lt;- function(x, ...){
+    
+    # Tests
+    if ("" %in% <span id="t_4_159">names(x)</span>){
+        <span id="t_4_173">stop("All elements of x must be named (values must be given for all keys)!")</span>
+    } else if (!<span id="t_4_193">identical(<span id="t_4_196">unique(<span id="t_4_199">names(x)</span>)</span>, <span id="t_4_215">names(x)</span>)</span>){
+        <span id="t_4_233">stop("All list element names must be unique!")</span>
+    } else if (<span id="t_4_252">anyDuplicated(<span id="t_4_255">unlist(x)</span>)</span> &gt; 0){
+        <span id="t_4_276">stop("Some key(s) have duplicates! A key should only be mapped to one value (be found in one element of the list)")</span>
+    } else if (!<span id="t_4_296">all(<span id="t_4_299">sapply(x, is.atomic)</span>)</span>){
+        <span id="t_4_322">stop("All elements of the list should be atomic!")</span>
+    }
+    
+    <span id="t_4_350">x</span> &lt;- <span id="t_4_353">data.frame(
+        key = <span id="t_4_359">unlist(x)</span>,
+        value = <span id="t_4_374">rep(<span id="t_4_377">names(x)</span>, <span id="t_4_389">sapply(x, length)</span>)</span>,
+        row.names = NULL
+    )</span>
+    <span id="t_4_424">as.keyvalue(x, ...)</span>
+}
+</pre></div><div class="tab-pane " id="tabs-5"><pre>#' Coerce to a keyvalue object
+#'
+#' Functions to check if an object is a keyvalue object, or coerce it if possible.
+#' 
+#' \code{x} can be of three types:
+#' \itemize{
+#' \item a \code{data.frame} with two columns "key" (with unique cells) and "value".
+#' \item a list as described in \code{\link{as.keyvalue.list}}
+#' \item a named vector with all names unique 
+#' \item an unnamed vector with unique cells if supplemented by additional vector (y)
+#' }
+#' 
+#' @name keyvalue
+#' @param x object to test for, or coerce to, keyvalue (see the details).
+#' @param y a value vector if \code{x} is an unnamed vector (argument must be named 'y = .')
+#' @param standard_var_names a character vector with standard names for variables decoded with this key-values.
+#' @param ... arguments passed between methods
+#'
+#' @return 
+#' \code{as.keyvalue} returns a data.frame with additional class \code{keyvalue} that fullfills the requirements
+#' for a \code{keyvalue} object and with the \code{key} column as character. It also has two extra attributes
+#' \code{standard_var_names} as described above and \code{keyvalue11} which is \code{TRUE} for keyvalue objects
+#' with a 1:1 relation between its keys and values (otherwise FALSE).
+#' 
+#' @export
+#' @seealso \link{as.keyvalue.list}, \link{key_value_data}, \link{decode}, \link{summary.keyvalue}, \link{key_and_value}
+#' @examples
+#' snomed &lt;- decoder:::snomed
+#' snomed2 &lt;- as.keyvalue(snomed)
+#' is.keyvalue(snomed2)
+#' summary(snomed2)
+
+<span id="t_5_96">as.keyvalue</span> &lt;- function(x, ...){
+    <span id="t_5_109">UseMethod("as.keyvalue")</span>
+}</pre></div><div class="tab-pane " id="tabs-6"><pre>
+
+#' Coerce to key or value in objects in a key-value pair
+#'
+#' Functions to check if an object is a valid key or value in a keyvalue pair, or coerce it if possible.
+#' @name key_and_value
+#' @param x a vector
+#' @return \code{as.value} returns a value-object (currently the vector itself but with class "value").
+#' \code{as.key} returns a key-object (building on \code{value} but with unique entries and as character).
+#' @export
+<span id="t_6_29">as.value</span> &lt;- function(x){
+    if (!<span id="t_6_42">is.atomic(x)</span>) <span id="t_6_54">stop(<span id="t_6_57">gettextf("cannot coerce class \"%s\" to a value object", <span id="t_6_65">deparse(<span id="t_6_68">class(x)</span>)</span>)</span>, domain = NA)</span>
+    
+    # We could add more requirements here in the future!
+    class(x) &lt;- <span id="t_6_115">c("value", <span id="t_6_123">class(x)</span>)</span>
+    x
+}
+
+
+#' @rdname key_and_value
+#' @export
+<span id="t_6_164">is.value</span> &lt;- function(x){
+    <span id="t_6_174">inherits(x, "value")</span>
+}
+</pre></div><div class="tab-pane " id="tabs-7"><pre>
+#' @rdname decoder
+#' @export
+<span id="t_7_9">code</span> &lt;- function(y, keyvalue, verbose = TRUE){
+    
+    if (<span id="t_7_31">is.character(keyvalue)</span>){
+        <span id="t_7_44">keyvalue</span> &lt;- <span id="t_7_47">get(keyvalue)</span>
+    }
+    
+    ## If there is a no 1:1 relation between key and value,
+    ## the process continues just if the particular translation can be done safely!
+    if (!<span id="t_7_77">is.keyvalue11(keyvalue)</span>){
+        <span id="t_7_91">dangerous_values</span> &lt;- <span id="t_7_94">summary(keyvalue)</span>$nonunique$value
+        <span id="t_7_113">not11</span> &lt;- <span id="t_7_116">y</span> %in% dangerous_values
+        if (<span id="t_7_128">any(not11)</span>){
+            if (<span id="t_7_143">verbose</span>){ 
+                <span id="t_7_149">print(<span id="t_7_152">summary(keyvalue)</span>$nonunique[<span id="t_7_165">dangerous_values</span> %in% y, ])</span>
+                <span id="t_7_184">stop("Values above have a non 1:1 relation to their key. A safe coding can not be made for this variable!")</span>
+            } else{
+                <span id="t_7_203">stop("Some values have a non 1:1 relation to their key. Use parameter verbose = TRUE to see a list!")</span>
+            }
+        }
+    }
+    
+    names(keyvalue) &lt;- <span id="t_7_250">rev(<span id="t_7_253">names(keyvalue)</span>)</span>
+    <span id="t_7_270">decode(y, keyvalue)</span>
+}</pre></div><div class="tab-pane " id="tabs-8"><pre>
+################################################################################
+#                                                                              #
+# Purpose:       Documentation for data sets used for key2value                #
+#                                                                              #
+# Author:        Erik Bülow                                                    #
+# Contact:       erik.bulow@rccvast.se                                         #
+# Client:        Erik Bülow                                                    #
+#                                                                              #
+# Code created:  2014-08-15                                                    #
+# Last updated:  2014-09-02                                                    #
+# Source:        /Users/erikbulow/Documents/R-kod/rcc                          #
+#                                                                              #
+# Comment:       The data sets themselves are constructed elsewhere!           #
+#                                                                              #
+################################################################################
+
+
+
+
+################################################################################
+#                                                                              #
+#                            General documentation                             #
+#                                                                              #
+################################################################################
+
+
+
+#' Key-value datasets for code translation
+#'
+#' Dictionary files to translate key codes to value in plain text (or reverse).
+#'
+#' Each file has two columns, "key" and "value". The key is a unique (mostly) numeric code
+#' and the key is a character string description.
+#' The data sets can be divided into four categories:
+#' \itemize{
+#'  \item Geographic codes: \link{region}, \link{lan}, \link{kommun} and \link{forsamling}
+#'  \item Administrative codes: \link{sjukhus}, \link{klinik} and \link{patologiavdelning}
+#'  \item Diagnose codes: \link{t_rtr}, \link{n_rtr}, \link{m_rtr}, \link{figo},
+#'  \link{tnmgrund}, \link{sida}, \link{icd7}, \link{icd9}, \link{icd10}, \link{icdo}, \link{icdo3},
+#'   \link{snomed}, \link{snomed3} and \link{pad}
+#'  \item Other codes: \link{kon}
+#' }
+#' The intention of these data files is to be used by the \link{decode} and \link{code} functions.
+#'
+#'
+#' @docType data
+#' @keywords datasets
+#' @name key_value_data
+#' @family key_value_data
+#' @seealso \link{decode}, \link{keyvalue}
+NULL
+
+
+
+
+
+################################################################################
+#                                                                              #
+#                              Geographical codes                              #
+#                                                                              #
+################################################################################
+
+
+#' Regional code
+#'
+#' Key-value codes for the Swedish healthcare regions (1-6).
+#'
+#' @docType data
+#' @keywords datasets
+#' @name region
+#' @family key_value_data
+NULL
+
+
+
+
+#' Lan code (county code)
+#'
+#' Key-value codes for the Swedish counties (lan).
+#' Two first digits in the LKF code.
+#' Be aware of the spelling ("lan")!
+#'
+#' @docType data
+#' @keywords datasets
+#' @name lan
+#' @family key_value_data
+NULL
+
+
+
+#' Geographical healthcare areas
+#'
+#' Key-value codes for health care areas.
+#'
+#' \itemize{
+#'      \item{Key: the first four digits from the LKF-code}
+#'      \item{Value: A geographical area (sub area of county/lan) with special interest}
+#' }
+#'
+#' The object currently only applies to the Western healthcare region
+#' \itemize{
+#'      \item{Storgoteborg}
+#'      \item{Fyrbodal}
+#'      \item{Sodra_Alvsborg}
+#'      \item{Skaraborg}
+#'      \item{Norra_Halland}
+#' }
+#' Updates for other regions needs to be requested (please do!).
+#'
+#' @section Kungalv:
+#'  Kungalv is an independent area by default. There are situations when Kungalv should be dealt with as an
+#'  independent healthcare region or as a part of Storgoteborg. See section "extra_functions" in \link{decode}
+#'  to handle this.
+#'
+#' @docType data
+#' @keywords datasets
+#' @name sjukvardsomrade
+#' @seealso  \link{extra_functions}
+#' @family key_value_data
+NULL
+
+
+#' Kommun code (municipality code)
+#'
+#' Key-value codes for the Swedish municipalities (kommuner).
+#' First four digits in the LKF code.
+#' Data from 2014-08-12.
+#'
+#' @docType data
+#' @keywords datasets
+#' @name kommun
+#' @family key_value_data
+#' @references \url{http://www.scb.se/sv_/Hitta-statistik/Regional-statistik-och-kartor/Regionala-indelningar/Lan-och-kommuner/}
+NULL
+
+
+
+#' Forsamling code (parish code)
+#'
+#' Key-value codes for the Swedish parisches (forsamlingar).
+#' All six digits in the LKF code.
+#' Data from 2014-08-12.
+#' Be aware of the spelling ("forsamling").
+#'
+#' @docType data
+#' @keywords datasets
+#' @name forsamling
+#' @family key_value_data
+#' @references \url{http://www.scb.se/sv_/Hitta-statistik/Regional-statistik-och-kartor/Regionala-indelningar/Lan-och-kommuner/}
+NULL
+
+
+
+
+
+################################################################################
+#                                                                              #
+#                             Administrative codes                             #
+#                                                                              #
+################################################################################
+
+
+#' Hospital codes
+#'
+#' Key-value codes for Swedish hospitals and some primary health care units.
+#'
+#' Data from Rockan. Note that this is an old version of the classification!
+#' See the reference link below for the new version.
+#' The old version should be used of historical reasons.
+#' One difference is for example that the Sahlgrenska university hospital is one hospital
+#' in the new version of the classification but the Swedish regional cancer centers
+#' still classify it as three different hospitals.
+#' Note also that primary health care units did recieve their own codes until 1992 (?)
+#' but not later!
+#'
+#' @docType data
+#' @keywords datasets
+#' @name sjukhus
+#' @family key_value_data
+#' @references \url{http://www.socialstyrelsen.se/klassificeringochkoder/andrakodverk/sjukhuskoder}
+NULL
+
+
+#' Clinic codes
+#'
+#' Key-value codes for the Swedish clinic types.
+#' Data mainly from url below (taken from the PDF).
+#' Some extra codes are added from Rockan (290, 291, 292, 446, 921 and 999 for unknown).
+#'
+#' @docType data
+#' @keywords datasets
+#' @name klinik
+#' @family key_value_data
+#' @references \url{http://www.socialstyrelsen.se/klassificeringochkoder/andrakodverk/sjukhuskoder}
+#' \url{http://www.socialstyrelsen.se/klassificeringochkoder/andrakodverk/sjukhuskoder/Documents/Verksamhetskodslista2006.pdf}
+NULL
+
+
+
+
+#' Patology department codes
+#'
+#' Key-value codes for the Swedish "laboratories".
+#' Data is combined from two sources.
+#' \enumerate{
+#'  \item The official list from SOFS 2006:15 (see url below). This is the primary source for codes
+#'  appearing in both sources.
+#'  \item Extra codes are also added from the old Rockan registry for historical reasons.
+#' }
+#' @docType data
+#' @keywords datasets
+#' @name patologiavdelning
+#' @family key_value_data
+#' @references \url{http://www.socialstyrelsen.se/SiteCollectionDocuments/sosfs-2006-15-bilaga-5.pdf}
+NULL
+
+
+################################################################################
+#                                                                              #
+#                              Diagnostics codes                               #
+#                                                                              #
+################################################################################
+
+
+#' M-stadium
+#'
+#' Key-value codes for M-stadium (sep-03).
+#' Data from Rockan (Rocen).
+#'
+#' @docType data
+#' @keywords datasets
+#' @name m_rtr
+#' @family key_value_data
+NULL
+
+#' N-stadium
+#'
+#' Key-value codes for N-stadium (sep-03).
+#' Data from Rockan (Rocen).
+#'
+#' @docType data
+#' @keywords datasets
+#' @name n_rtr
+#' @family key_value_data
+NULL
+
+#' T-stadium
+#'
+#' Key-value codes for T-stadium (sep 2003).
+#' Data from Rockan (Rocen).
+#'
+#' @docType data
+#' @keywords datasets
+#' @name t_rtr
+#' @family key_value_data
+NULL
+
+#' FIGO-stadium
+#'
+#' Key-value codes for FIGO-stadium (Tumorutbredning enl FIGO, sep 2003).
+#' Data from Rockan (Rocen).
+#'
+#' @docType data
+#' @keywords datasets
+#' @name figo
+#' @family key_value_data
+NULL
+
+
+#' ICD-7 Grov
+#'
+#' Key-value codes for just the first three digits of the ICDO-7 code.
+#' This gives broader grouping.
+#' Based on the grouping used by:
+#' \url{http://www.socialstyrelsen.se/statistik/statistikdatabas/cancer}
+#'
+#' @docType data
+#' @keywords datasets
+#' @name icd7_grov
+#' @family key_value_data
+NULL
+
+
+#' ICD-7
+#'
+#' Key-value codes for ICD-7.
+#' Data from Rockan (Rocen).
+#'
+#' @docType data
+#' @keywords datasets
+#' @name icd7
+#' @family key_value_data
+NULL
+
+#' ICD-9
+#'
+#' Key-value codes for ICD-9.
+#' Data from Rockan (Rocen).
+#'
+#' @docType data
+#' @keywords datasets
+#' @name icd9
+#' @family key_value_data
+NULL
+
+#' ICD-O
+#'
+#' Key-value codes for ICD-O.
+#' Data from Rockan (Rocen).
+#'
+#' @docType data
+#' @keywords datasets
+#' @name icdo
+#' @family key_value_data
+NULL
+
+#' ICD-O3
+#'
+#' Key-value codes for ICD-O3.
+#' Data from Rockan (Rocen).
+#'
+#' @docType data
+#' @keywords datasets
+#' @name icdo3
+#' @family key_value_data
+NULL
+
+#' ICD-O3 Grov
+#'
+#' Key-value codes for just the first two digits of the ICDO-3 code.
+#' This gives broader grouping.
+#' Based on the table of contents from:
+#' http://www.socialstyrelsen.se/Lists/Artikelkatalog/Attachments/19446/2014-5-12.pdf
+#'
+#' @docType data
+#' @keywords datasets
+#' @name icdo3_grov
+#' @family key_value_data
+NULL
+
+#' Sida
+#'
+#' Key-value codes for sida (Sida, 1 = Hoger, 2 = Vanster, 9 = Okant).
+#' Data from Rockan (Rocen).
+#'
+#' @docType data
+#' @keywords datasets
+#' @name sida
+#' @family key_value_data
+NULL
+
+#' Grund till TNM (patologisk/klinisk)
+#'
+#' Key-value codes for TNM-grund (Grund till TNM, 1=patologisk, 2=klinisk).
+#' Data from Rockan (Rocen).
+#'
+#' @docType data
+#' @keywords datasets
+#' @name tnmgrund
+#' @family key_value_data
+NULL
+
+#' ICD-10 code
+#'
+#' Key-value codes for ICD-10-SE (Swedish version).
+#' Includes all ICD-10-codes (not only the C- and D-codes).
+#' Data from Socialstyrelsen.
+#' Note that key codes are given without dots, i e C569, not C56.9.
+#'
+#' @docType data
+#' @keywords datasets
+#' @name icd10
+#' @family key_value_data
+#' @references \url{http://www.socialstyrelsen.se/klassificeringochkoder/laddaner/kodtextfiler#1}
+NULL
+
+
+#' Snomed code
+#'
+#' Key-value codes for Snomed. Data from Rockan 2012-10-05.
+#' Note tht this variable is the same as \code{snomed} from Rockan.
+#' It should not be confused with the later version \code{snomed3}!
+#'
+#' @docType data
+#' @keywords datasets
+#' @name snomed
+#' @family key_value_data
+NULL
+
+
+
+#' Snomed 3
+#'
+#' Key-value codes for Snomed3 (fr 2005).
+#' Data from Rockan (Rocen).
+#'
+#' @docType data
+#' @keywords datasets
+#' @name snomed3
+#' @family key_value_data
+NULL
+
+
+
+#' PAD (C24) code
+#'
+#' Key-value codes for PAD (C24) Data from Rockan 2012-09-18.
+#'
+#' @docType data
+#' @keywords datasets
+#' @name pad
+#' @family key_value_data
+NULL
+
+
+
+################################################################################
+#                                                                              #
+#                                 Other codes                                  #
+#                                                                              #
+################################################################################
+
+
+
+
+#' Gender code (kon)
+#'
+#' Key-value codes for gender (1 = man (Male) and 2 = Kvinna (female)).
+#' Be aware of the spelling ("kon")!
+#'
+#' @docType data
+#' @keywords datasets
+#' @name kon
+#' @family key_value_data
+NULL</pre></div><div class="tab-pane " id="tabs-9"><pre>#' @export
+#' @rdname decoder
+
+<span id="t_9_9">decode.data.frame</span> &lt;- function(x, ...){
+    
+    if (!<span id="t_9_26">missing(...)</span>){
+        <span id="t_9_40">warning("Additional arguments to decode.data.frame ignored!")</span>
+    }
+    
+    <span id="t_9_62">cols_to_change</span> &lt;- <span id="t_9_65">x</span>[, <span id="t_9_70">intersect(<span id="t_9_73">names(x)</span>, 
+                                    <span id="t_9_86">c(<span id="t_9_89">ALL_STANDARD_VAR_NAMES</span>$key, 
+                              <span id="t_9_98">tolower(<span id="t_9_101">ALL_STANDARD_VAR_NAMES</span>$key)</span>, 
+                              <span id="t_9_114">toupper(<span id="t_9_117">ALL_STANDARD_VAR_NAMES</span>$key)</span>)</span>)</span>, 
+                        drop = FALSE]
+    <span id="t_9_150">cols_to_change_names</span> &lt;- <span id="t_9_153">paste0(<span id="t_9_156">names(cols_to_change)</span>, "_Beskrivning")</span>
+    
+    if (<span id="t_9_182">length(cols_to_change)</span> == 0 || <span id="t_9_196">identical(cols_to_change, <span id="t_9_204">character(0)</span>)</span>){
+        <span id="t_9_222">warning("No column names recognised as standard_var_names for any keyvalue object. No decoding made!")</span>
+        <span id="t_9_234">return(x)</span>
+    } else{
+        <span id="t_9_253">kv</span> &lt;- <span id="t_9_256">as.character(<span id="t_9_259">decode(<span id="t_9_262">tolower(<span id="t_9_265">names(cols_to_change)</span>)</span>, "ALL_STANDARD_VAR_NAMES")</span>)</span>
+        for (<span id="t_9_297">i</span> in <span id="t_9_299">seq_along(cols_to_change)</span>){
+            x[[cols_to_change_names[i]]] &lt;- <span id="t_9_330">decode(<span id="t_9_333">cols_to_change</span>[[i]], <span id="t_9_346">kv</span>[i])</span>
+        }
+        <span id="t_9_371">message("New decoded columns added: \n* ", <span id="t_9_379">paste(cols_to_change_names, collapse = "\n* ")</span> )</span>
+        <span id="t_9_402">return(x)</span>
+    }
+}</pre></div><div class="tab-pane " id="tabs-10"><pre>
+
+#' @export
+#' @rdname decoder
+<span id="t_10_11">decode.default</span> &lt;- function(x, keyvalue, extra_functions = NULL, exact = FALSE, ...){
+    
+    if (!<span id="t_10_43">is.atomic(x)</span>){
+        <span id="t_10_57">stop("decode only works for atomic vectors or data.frames!")</span>
+    } else if (<span id="t_10_76">all(<span id="t_10_79">is.na(x)</span>)</span>){
+        <span id="t_10_96">return(x)</span>
+    }
+    
+    if (<span id="t_10_122">is.character(keyvalue)</span>){
+        <span id="t_10_135">keyvalue</span> &lt;- <span id="t_10_138">get(keyvalue)</span>
+    } 
+    
+    if (!<span id="t_10_164">is.keyvalue(keyvalue)</span>){
+        <span id="t_10_178">keyvalue</span> &lt;- <span id="t_10_181">tryCatch(<span id="t_10_184">as.keyvalue(keyvalue)</span>, 
+                             error = function(x) <span id="t_10_204">stop("'keyvalue' is neither a keyvalue object, nor an object that can be easily coerced to such! See '?as.keyvalue'")</span>)</span>
+    }
+    
+    ## We might try to convert x in order to better match the format of the key
+    if (!<span id="t_10_238">exact</span>){
+        <span id="t_10_245">x</span> &lt;- <span id="t_10_248">format_as_key(x, keyvalue)</span>
+    }
+        
+    ## Translate key to value
+    <span id="t_10_278">positions</span> &lt;- <span id="t_10_281">match(x, <span id="t_10_289">keyvalue</span>$key)</span>
+    <span id="t_10_302">res</span> &lt;- <span id="t_10_305">keyvalue</span>[positions, "value", drop = TRUE]
+    
+    <span id="t_10_332">res</span> &lt;- <span id="t_10_335">factor(res, levels = <span id="t_10_345">sort(<span id="t_10_348">unique(<span id="t_10_351">keyvalue</span>$value)</span>)</span>)</span>
+    
+    
+    ## Apply extra functions if given
+    if (!<span id="t_10_382">is.null(extra_functions)</span>){
+        for (<span id="t_10_398">fun</span> in extra_functions){
+            <span id="t_10_406">FUN</span> &lt;- <span id="t_10_409">match.fun(fun)</span>
+            <span id="t_10_422">res</span> &lt;- <span id="t_10_425">FUN(res)</span>
+        }
+    }
+    
+    res
+}</pre></div><div class="tab-pane " id="tabs-11"><pre>
+
+##########################################################################################
+#                                                                                        #
+#                             Main function for the package                              #
+#                                                                                        #
+##########################################################################################
+
+#' @export
+#' @rdname decoder
+<span id="t_11_28">decode</span> &lt;- function(x, ...){
+    <span id="t_11_41">UseMethod("decode")</span>
+}</pre></div><div class="tab-pane " id="tabs-12"><pre>
+#' Decode codes to plain text (and vice versa)
+#'
+#' Translate coded values into meaningful plain text (or reversed).
+#' Use \code{list_keyvalues()} to see a list of all keyvalue objects ("dictionaries") included in the package.
+#'
+#' @param x object to decode. Either a key vector to be matched againt the \code{key} column in \code{keyvalue},
+#' or a data.frame (see section \code{decode.data.frame}). 
+#' object.
+#' @param y value to be coded (to be matched againt the \code{value} element) in a \link{keyvalue} object.
+#' @param keyvalue either a name (as character string) of one of the \link{keyvalue} objects listed here: \link{key_value_data}, 
+#' or a user defined keyvalue object (see \link{as.keyvalue}).
+#' @param exact Should \code{x} have an exact match from the key? Default is \code{FALSE}. When \code{FALSE},
+#' \code{x} might be transformed to fit the key (punctuation might be removed, upper case changed to lower case or vice versa
+#' and strings that are too long might be substringed).
+#' @param extra_functions is a list of functions (or names of functions as character vector) to be applied to the decoded data
+#' after decoding (see section "extra_functions" below).
+#' @param verbose (only for \code{code}) can be set to \code{FALSE} to avoid a printed message to the console 
+#' if an error occur (\code{TRUE} as default). 
+#' @param ... ignored
+#' 
+#' @return 
+#' \itemize{
+#' \item For default S3 method: A vector of the same length as \code{x} but with all cells decoded (or coded) to plain text
+#' (or code) and coerced to factor.
+#' \item For S3 method for class 'data.frame': Data.frame \code{x} is returned, 
+#' possibly with some extra columns (names ending in '_Beskrivning'), 
+#' decoded from columns with names corresponding to attribute \code{standard_var_names} 
+#' for keyvalue objects listed by \code{list_keyvalues()}.
+#'}
+#'
+#' @section decode.data.frame:
+#' If \code{x} is a data.frame, all column names of \code{x} are matched to attribute
+#' \code{standard_var_names} for all keyvalue objects in the package (see \code{list_keyvalues()}).
+#' If the column name is a standard name used for a coding, the corresponding keyvalue object is used
+#' to decode the column and to add an extra column to \code{x} with its original 
+#' name with suffix \code{_Beskrivning}. This is done for all identified columns. Please report additional 
+#' suggestions of standard names to \url{https://github.com/cancercentrum/decoder/issues}.
+#' 
+#' @section extra_functions:
+#' The relationship betwen the key and the value in a keyvalue object is either 1:1 or m:1.
+#' The mapping is straight forward for 1:1 but with m:1, different applications might require slightly
+#' different groupings of the keys. One solution is to have several versions of the \link{keyvalue} object. Another
+#' (which we prefer) is to use the same \link{keyvalue} object (if possible) but to call one or several extra function(s)
+#' to further process the result. These functions are either built in package functions that should be called by quoted names
+#' or user defined functions that can be called by either quoted or unquoted names (if available in the current environment).
+#' Note that the order of the functions could matter since they are called in turn (the output from the first function is passed
+#' as input to the second function etc).
+#'
+#' Standard functions and how to use them:
+#'
+#' To use with \link{sjukvardsomrade}:
+#' \describe{
+#'      \item{\code{kungalv2Fyrbodal}}{The default classification used in \link{sjukvardsomrade} is to make Kungalv a
+#'      region of its own. Use this function if Kungalv should be included in Fyrbodal. See example section below.}
+#'      \item{\code{kungalv2Storgoteborg}}{As \code{kungalv2Fyrbodal} but classifies Kungalv as a part of Storgoteborg.}
+#'      \item{\code{real_names}}{Give the area names with correct Swedish spelling (including spaces). This is not as default
+#'      due to compability reasons and because names with spaces must be back-ticked when reffered to.}
+#'  }
+#'
+#' @seealso \link{key_value_data}, \link{keyvalue}, \link{extra_functions}
+#' @examples
+#'
+#' # We can start to list all available keyvalue objects included in the package:
+#' list_keyvalues()
+#'
+#' KON_VALUE &lt;- sample(1:2, 20, replace = TRUE)
+#' (kon &lt;- decode(KON_VALUE, "kon"))
+#' code(kon, "kon")
+#'
+#' # Get a sample of Snomed-codes (in the real world we obviously avoid this step) ...
+#' snomed2 &lt;- sample(decoder:::snomed$key, 30, replace = TRUE)
+#' # ... then decode them:
+#' (snomed3 &lt;- decode(snomed2, "snomed"))
+#'
+#'
+#' # Decoding and grouping are performed seamlessly if the keyvalue
+#' # argument is of class keyvaluem1.
+#' # Let's first make a sample of some LK-codes (first four digits of the LKF-code)
+#' set.seed(123456789)
+#' healtcare_areas_west &lt;- sample(unlist(decoder:::sjukvardsomrade), 100, replace = TRUE)
+#' (areas &lt;- decode(healtcare_areas_west, "sjukvardsomrade"))
+#' table(areas)
+#'
+#' # But if we want Kungalv to be a part of Storgoteborg
+#' # (which is common practice for example with lung cancer data):
+#' (areas2 &lt;- decode(healtcare_areas_west, "sjukvardsomrade", "kungalv2Storgoteborg"))
+#' table(areas2)
+#'
+#' # We can also combine several extra_functions if we for example
+#' # also want the area names with correct Swedish spelling.
+#' (areas3 &lt;- decode(healtcare_areas_west, "sjukvardsomrade", c("kungalv2Storgoteborg", "real_names")))
+#'
+#'
+#' # Note that only the first four digits of the LKF-code were used abowe?
+#' # What if we use the full LKF-code?
+#' lkfs &lt;- sample(decoder:::forsamling$key, 100, replace = TRUE)
+#' decode(lkfs, "sjukvardsomrade")
+#' # That work's just as fine when argument exact = FALSE (which it is by default).
+#'
+#' ### --- code --- ###
+#' # Sometimes we have keyvalue objects with some key-value pairs without a 1:1 relation.
+#' # This is true for snomed
+#' # Show all non 1:1 pairs:
+#' summary(decoder:::snomed)$nonunique
+#' # Save them for later:
+#' non_unique_snomeds &lt;- summary(decoder:::snomed)$nonunique$key
+#'
+#' # Use these snomed codes for decoding and coding
+#' # Decoding works fine (all keys are unique) ...
+#' (a &lt;- decode(non_unique_snomeds, "snomed"))
+#' # ... but coding these values back to their key does not
+#' \donttest{
+#' code(a, "snomed")
+#' }
+#' @author Erik Bulow
+#' @docType package
+#' @name decoder
+NULL</pre></div><div class="tab-pane " id="tabs-13"><pre>
+################################################################################
+#                                                                              #
+#                        extra_functions for keyvaluem1                        #
+#                                                                              #
+################################################################################
+
+#'Extra functions to apply to decoded variables using decode
+#'
+#'See section "extra_functions" at the \link{decode} help page!
+#'
+#' @param x The decoded variable to be further processed. This argument should not be set by the user.
+#' It is used only internally by the function from which it is called.
+#' @name extra_functions
+#' @export
+<span id="t_13_44">kungalv2Storgoteborg</span> &lt;- function(x){
+    <span id="t_13_54">x</span> &lt;- <span id="t_13_57">as.character(x)</span>
+    x[x == "Kungalv"] &lt;- "Storgoteborg"
+    <span id="t_13_90">as.factor(x)</span>
+}
+
+#' @rdname extra_functions
+#' @export
+<span id="t_13_119">kungalv2Fyrbodal</span> &lt;- function(x){
+    <span id="t_13_129">x</span> &lt;- <span id="t_13_132">as.character(x)</span>
+    x[x == "Kungalv"] &lt;- "Fyrbodal"
+    <span id="t_13_165">as.factor(x)</span>
+}
+
+#' @rdname extra_functions
+#' @export
+<span id="t_13_194">real_names</span> &lt;- function(x){
+    <span id="t_13_204">x</span> &lt;- <span id="t_13_207">as.character(x)</span>
+    x[x == "Kungalv"]  &lt;- "Kung\u00E4lv"
+    x[x == "Norra_Halland"]  &lt;- "Norra Halland"
+    x[x == "Sodra_Alvsborg"]  &lt;- "S\u00F6dra \u00C4lvsborg"
+    x[x == "Storgoteborg"]  &lt;- "Storg\u00F6teborg"
+    <span id="t_13_300">as.factor(x)</span>
+}</pre></div><div class="tab-pane " id="tabs-14"><pre>
+
+# Try to transform x in order to fit the key from keyvalue
+<span id="t_14_8">format_as_key</span> &lt;- function(x, keyvalue){
+    
+    if (<span id="t_14_24">is.character(keyvalue)</span>){
+        <span id="t_14_37">keyvalue</span> &lt;- <span id="t_14_40">get(keyvalue)</span>
+    }
+    
+    <span id="t_14_63">x_name</span> &lt;- <span id="t_14_66">deparse(<span id="t_14_69">substitute(x)</span>)</span>
+    <span id="t_14_86">keyvalue_name</span> &lt;- <span id="t_14_89">deparse(<span id="t_14_92">substitute(keyvalue)</span>)</span>
+    
+    <span id="t_14_111">has_punct</span>    &lt;- function(y) <span id="t_14_119">any(<span id="t_14_122">grepl("[[:punct:]]", y)</span>)</span>
+    <span id="t_14_146">has_capitals</span> &lt;- function(y) <span id="t_14_154">any(<span id="t_14_157">grepl("[[:upper:]]", y)</span>)</span>
+    <span id="t_14_181">has_anylow</span>   &lt;- function(y) <span id="t_14_189">any(<span id="t_14_192">grepl("[[:lower:]]", y)</span>)</span>
+    
+    # If x has punctuations but the key has not, punctuations are removed from x
+    if (<span id="t_14_223">has_punct(x)</span> & !<span id="t_14_234">has_punct(<span id="t_14_237">keyvalue</span>$key)</span>){
+        <span id="t_14_252">x</span> &lt;- stringr<span id="t_14_257">::</span>str_replace_all(x, "[[:punct:]]", "")
+        <span id="t_14_280">warning(x_name, " contained punctuation. Punctuations are removed and capital letters",
+                " are changed to lower case before decoding!")</span>
+    }
+    
+    # If key has no capitals, all letters in x are made lowercase
+    if (<span id="t_14_317">has_capitals(x)</span> & !<span id="t_14_328">has_capitals(<span id="t_14_331">keyvalue</span>$key)</span>){
+        <span id="t_14_346">x</span> &lt;- <span id="t_14_349">tolower(x)</span>
+        <span id="t_14_362">warning(x_name, " contains upper case letters but the key does not. Capitals are changed to lower case!")</span>
+        
+        
+        # If key has no capitals, all letters in x are made lowercase
+    } else if (<span id="t_14_393">has_anylow(x)</span> & !<span id="t_14_404">has_anylow(<span id="t_14_407">keyvalue</span>$key)</span>){
+        <span id="t_14_422">x</span> &lt;- <span id="t_14_425">toupper(x)</span>
+        <span id="t_14_438">warning(x_name, " contains lower case letters but the key does not. Lower case are changed to upper case!")</span>
+    }
+    
+    # If the key is shorter than x, x is substringed
+    <span id="t_14_469">key_length</span> &lt;- <span id="t_14_472">max(stringr<span id="t_14_477">::</span>str_length(<span id="t_14_480">keyvalue</span>$key), na.rm = TRUE)</span>
+    if (<span id="t_14_506">max(stringr<span id="t_14_511">::</span>str_length(x), na.rm = TRUE)</span> &gt; key_length){
+        <span id="t_14_539">x</span> &lt;- <span id="t_14_542">substr(x, 1, key_length)</span>
+        <span id="t_14_565">warning("Entries in ", x_name, " have too many characters to be matched to ",
+                x_name, " and is threfore substringed to match its length!")</span>
+    }
+    
+    x
+}</pre></div><div class="tab-pane " id="tabs-15"><pre>#' @rdname keyvalue
+#' @export
+<span id="t_15_7">is.keyvalue</span> &lt;- function(x){
+    <span id="t_15_17">inherits(x, "keyvalue")</span>
+}
+
+<span id="t_15_45">is.keyvalue11</span> &lt;- function(x){
+    <span id="t_15_55">is.keyvalue(x)</span> && <span id="t_15_65">attr(x, "keyvalue11")</span>
+}</pre></div><div class="tab-pane " id="tabs-16"><pre>#' Object summary for keyvalue objects
+#'
+#' Objects of type \code{keyvalue11} are summarised as data.frames with an additional display of possible
+#' \code{standard_var_names}. Objects of type \code{keyvalue} also gives a list of non 1:1 key-value pairs.
+#' @param object a keyvalue object
+#' @param ... ignored
+#' @return A list with three elements: a summmary of the underlying data.frame,
+#' the standard_var_names and possibly a data.frame with all non 1:1 relations.
+#' @export
+#' @seealso \link{keyvalue}
+<span id="t_16_31">summary.keyvalue</span> &lt;- function(object, ...){
+    <span id="t_16_44">data.frame.summary</span> &lt;- <span id="t_16_47">summary.data.frame(object)</span>
+    
+    <span id="t_16_62">standard_var_names</span> &lt;- <span id="t_16_65">attr(object, "standard_var_names")</span>
+    
+    if (!<span id="t_16_88">is.keyvalue11(object)</span>){
+        # writeLines("\n\nThe following entries in the keyvalue-object are not 1:1!\n")
+        <span id="t_16_104">nonunique</span> &lt;- <span id="t_16_107">object</span>[<span id="t_16_110">object</span>$value %in% <span id="t_16_116">unlist(<span id="t_16_119">dimnames(<span id="t_16_122">table(<span id="t_16_125">object</span>$value)</span>[<span id="t_16_135">table(<span id="t_16_138">object</span>$value)</span> &gt; 1])</span>)</span>, ]
+        <span id="t_16_174">nonunique</span> &lt;- <span id="t_16_177">nonunique</span>[<span id="t_16_180">order(<span id="t_16_183">nonunique</span>$value)</span>,]
+    }
+    
+    <span id="t_16_212">list(data.frame.summary = data.frame.summary,
+         standard_var_names = standard_var_names,
+         nonunique = nonunique)</span>
+}</pre></div><div class="tab-pane " id="tabs-17"><pre>
+#' @rdname decoder
+#' @export
+<span id="t_17_9">list_keyvalues</span> &lt;- function(){
+    <span id="t_17_17">ALL_KEYVALUE_OBJECTS</span>
+}</pre></div>
+    </div>
+    </div>
+  </div>
+  <div class="footer">
+    <p> Generated on2014-12-05 10:41:14 by <a href="http://www.mango-solutions.com/wp/products-services/r-services/r-packages/testcoverage/">testCoverage</a>.</p>
+  </div>
+  </div>
+</body> 
+</html>
