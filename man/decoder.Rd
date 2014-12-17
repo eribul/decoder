@@ -12,12 +12,12 @@
 \usage{
 code(y, keyvalue, verbose = TRUE)
 
+decode(x, ...)
+
 \method{decode}{data.frame}(x, ...)
 
 \method{decode}{default}(x, keyvalue, extra_functions = NULL, exact = FALSE,
   ...)
-
-decode(x, ...)
 
 list_keyvalues()
 }

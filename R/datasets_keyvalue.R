@@ -121,6 +121,31 @@ NULL
 NULL
 
 
+
+
+#' HSN code (Hälso- och sjukvårdsnämnd)
+#'
+#' Key-value codes for the HSN:s in VGR valid from 2015.
+#' Based on municipalaty codes (\code{\link{kommun}}).
+#' Data from 2014-12-17.
+#'
+#' Categorisation:
+#' \describe{
+#' \item{Norra}{Lysekil, Munkedal, Orust, Sotenäs, Strömstad, Tanum, Bengtsfors, Dals-Ed, Färgelanda, Mellerud, Åmål, Trollhättan, Uddevalla och Vänersborg}
+#' \item{Västra}{Lilla Edet, Ale, Kungälv, Stenungsund, Tjörn, Öckerö, Härryda, Mölndal, Partille, Lerum och Alingsås}
+#' \item{Södra}{Herrljunga, Vårgårda, Bollebygd, Borås, Mark, Svenljunga, Tranemo och Ulricehamn}
+#' \item{Göteborg}{Göteborg}
+#' \item{Östra}{Essunga, Falköping, Grästorp, Götene, Lidköping, Skara, Vara, Gullspång, Hjo, Karlsborg, Mariestad, Skövde, Tibro, Tidaholm och Töreboda}
+#' }
+#' @docType data
+#' @keywords datasets
+#' @name hsn
+#' @family key_value_data
+#' @references \url{http://www.vgregion.se/sv/Vastra-Gotalandsregionen/startsida/Politik/Namnder-och-styrelser/Namnder-och-styrelser-for-halso--och-sjukvard/Halso--och-sjukvardsnamnder/Ny-politisk-organisation-fran-1-januari-2015/}
+NULL
+
+
+
 #' Kommun code (municipality code)
 #'
 #' Key-value codes for the Swedish municipalities (kommuner).

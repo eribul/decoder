@@ -23,7 +23,12 @@ kommun$key <- stringr::str_pad(kommun$key, 4, pad = "0")
 kommun <- as.keyvalue(kommun)
 
 
+#################################### HSN ####################################
 
+# Baseras på ett dokument i et mail från Erik H som jag sedan kompletterat med kommunkoder
+hsn <- XLConnect::readWorksheetFromFile("data_other_sources/HSN och kommuner före och från och med 2015.xlsx",
+                                                 sheet = "Organisation", startRow = 5, startCol = 5, endCol = 6)
+hsn <- unique(hsn)
 
 
 ################################## Församling ##################################
