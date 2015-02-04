@@ -16,7 +16,12 @@ sjukvardsomrade <- as.keyvalue(sjukvardsomrade)
 
 
 #################################### Region ####################################
-region <- c(`Stockholm/Gotland` = 1, `Uppsala/Örebro` = 2, Sydost = 3, Syd = 4, Väst = 5, Norr = 6)
+region <- c(`Region Sthlm/Gotland` = 1, 
+            `RegionUppsala/Örebro` = 2, 
+            `Region Sydöstra` = 3, 
+            `Region Syd` = 4, 
+            `Region Väst` = 5, 
+            `Region Norr` = 6)
 region <- as.keyvalue(region, standard_var_names = "region")
 
 
