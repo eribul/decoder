@@ -23,5 +23,5 @@ code <- function(y, keyvalue, verbose = TRUE){
     }
     
     names(keyvalue) <- rev(names(keyvalue))
-    decode(y, keyvalue)
+    decode(y, keyvalue, exact = TRUE)
 }

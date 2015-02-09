@@ -23,72 +23,82 @@ decode(x, ...)
 list_keyvalues()
 }
 \arguments{
-\item{y}{value to be coded (to be matched againt the \code{value} element) in a \link{keyvalue} object.}
+\item{y}{value to be coded (to be matched againt the \code{value} element) in
+a \link{keyvalue} object.}
 
-\item{keyvalue}{either a name (as character string) of one of the \link{keyvalue} objects listed here: \link{key_value_data},
-or a user defined keyvalue object (see \link{as.keyvalue}).}
+\item{keyvalue}{either a name (as character string) of one of the
+\link{keyvalue} objects listed here: \link{key_value_data}, or a user
+defined keyvalue object (see \link{as.keyvalue}).}
 
-\item{verbose}{(only for \code{code}) can be set to \code{FALSE} to avoid a printed message to the console
-if an error occur (\code{TRUE} as default).}
+\item{verbose}{(only for \code{code}) can be set to \code{FALSE} to avoid a
+printed message to the console if an error occur (\code{TRUE} as default).}
 
-\item{x}{object to decode. Either a key vector to be matched againt the \code{key} column in \code{keyvalue},
-or a data.frame (see section \code{decode.data.frame}).
-object.}
+\item{x}{object to decode. Either a key vector to be matched againt the
+\code{key} column in \code{keyvalue}, or a data.frame (see section
+\code{decode.data.frame}). object.}
 
 \item{...}{ignored}
 
-\item{extra_functions}{is a list of functions (or names of functions as character vector) to be applied to the decoded data
-after decoding (see section "extra_functions" below).}
+\item{extra_functions}{is a list of functions (or names of functions as
+character vector) to be applied to the decoded data after decoding (see
+section "extra_functions" below).}
 
-\item{exact}{Should \code{x} have an exact match from the key? Default is \code{FALSE}. When \code{FALSE},
-\code{x} might be transformed to fit the key (punctuation might be removed, upper case changed to lower case or vice versa
-and strings that are too long might be substringed).}
+\item{exact}{Should \code{x} have an exact match from the key? Default is
+\code{FALSE}. When \code{FALSE}, \code{x} might be transformed to fit the
+key (punctuation might be removed, upper case changed to lower case or vice
+versa and strings that are too long might be substringed). (\code{code}
+only accept excact matches.)}
 }
 \value{
-\itemize{
-\item For default S3 method: A vector of the same length as \code{x} but with all cells decoded (or coded) to plain text
-(or code) as character.
-\item For S3 method for class 'data.frame': Data.frame \code{x} is returned,
-possibly with some extra columns (names ending in '_Beskrivning'),
-decoded from columns with names corresponding to attribute \code{standard_var_names}
-for keyvalue objects listed by \code{list_keyvalues()}.
-}
+\itemize{ \item For default S3 method: A vector of the same length as
+\code{x} but with all cells decoded (or coded) to plain text (or code) as
+character. \item For S3 method for class 'data.frame': Data.frame \code{x} is
+returned, possibly with some extra columns (names ending in '_Beskrivning'),
+decoded from columns with names corresponding to attribute
+\code{standard_var_names} for keyvalue objects listed by
+\code{list_keyvalues()}. }
 }
 \description{
-Translate coded values into meaningful plain text (or reversed).
-Use \code{list_keyvalues()} to see a list of all keyvalue objects ("dictionaries") included in the package.
+Translate coded values into meaningful plain text (or reversed). Use
+\code{list_keyvalues()} to see a list of all keyvalue objects ("dictionaries")
+included in the package.
 }
 \section{decode.data.frame}{
-
-If \code{x} is a data.frame, all column names of \code{x} are matched to attribute
-\code{standard_var_names} for all keyvalue objects in the package (see \code{list_keyvalues()}).
-If the column name is a standard name used for a coding, the corresponding keyvalue object is used
-to decode the column and to add an extra column to \code{x} with its original
-name with suffix \code{_Beskrivning}. This is done for all identified columns. Please report additional
-suggestions of standard names to \url{https://github.com/cancercentrum/decoder/issues}.
+ If \code{x} is a data.frame, all column names of
+ \code{x} are matched to attribute \code{standard_var_names} for all keyvalue
+ objects in the package (see \code{list_keyvalues()}). If the column name is
+ a standard name used for a coding, the corresponding keyvalue object is used
+ to decode the column and to add an extra column to \code{x} with its
+ original name with suffix \code{_Beskrivning}. This is done for all
+ identified columns. Please report additional suggestions of standard names
+ to \url{https://github.com/cancercentrum/decoder/issues}.
 }
 
 \section{extra_functions}{
+ The relationship betwen the key and the value in a
+ keyvalue object is either 1:1 or m:1. The mapping is straight forward for
+ 1:1 but with m:1, different applications might require slightly different
+ groupings of the keys. One solution is to have several versions of the
+ \link{keyvalue} object. Another (which we prefer) is to use the same
+ \link{keyvalue} object (if possible) but to call one or several extra
+ function(s) to further process the result. These functions are either built
+ in package functions that should be called by quoted names or user defined
+ functions that can be called by either quoted or unquoted names (if
+ available in the current environment). Note that the order of the functions
+ could matter since they are called in turn (the output from the first
+ function is passed as input to the second function etc).
 
-The relationship betwen the key and the value in a keyvalue object is either 1:1 or m:1.
-The mapping is straight forward for 1:1 but with m:1, different applications might require slightly
-different groupings of the keys. One solution is to have several versions of the \link{keyvalue} object. Another
-(which we prefer) is to use the same \link{keyvalue} object (if possible) but to call one or several extra function(s)
-to further process the result. These functions are either built in package functions that should be called by quoted names
-or user defined functions that can be called by either quoted or unquoted names (if available in the current environment).
-Note that the order of the functions could matter since they are called in turn (the output from the first function is passed
-as input to the second function etc).
+ Standard functions and how to use them:
 
-Standard functions and how to use them:
-
-To use with \link{sjukvardsomrade}:
-\describe{
-     \item{\code{kungalv2Fyrbodal}}{The default classification used in \link{sjukvardsomrade} is to make Kungalv a
-     region of its own. Use this function if Kungalv should be included in Fyrbodal. See example section below.}
-     \item{\code{kungalv2Storgoteborg}}{As \code{kungalv2Fyrbodal} but classifies Kungalv as a part of Storgoteborg.}
-     \item{\code{real_names}}{Give the area names with correct Swedish spelling (including spaces). This is not as default
-     due to compability reasons and because names with spaces must be back-ticked when reffered to.}
- }
+ To use with \link{sjukvardsomrade}: \describe{
+ \item{\code{kungalv2Fyrbodal}}{The default classification used in
+ \link{sjukvardsomrade} is to make Kungalv a region of its own. Use this
+ function if Kungalv should be included in Fyrbodal. See example section
+ below.} \item{\code{kungalv2Storgoteborg}}{As \code{kungalv2Fyrbodal} but
+ classifies Kungalv as a part of Storgoteborg.} \item{\code{real_names}}{Give
+ the area names with correct Swedish spelling (including spaces). This is not
+ as default due to compability reasons and because names with spaces must be
+ back-ticked when reffered to.} }
 }
 \examples{
 # We can start to list all available keyvalue objects included in the package:
