@@ -47,7 +47,7 @@ and strings that are too long might be substringed).}
 \value{
 \itemize{
 \item For default S3 method: A vector of the same length as \code{x} but with all cells decoded (or coded) to plain text
-(or code) and coerced to factor.
+(or code) as character.
 \item For S3 method for class 'data.frame': Data.frame \code{x} is returned,
 possibly with some extra columns (names ending in '_Beskrivning'),
 decoded from columns with names corresponding to attribute \code{standard_var_names}
