@@ -52,13 +52,13 @@ format_as_key <- function(x, keyvalue){
     }
     
     # If key has no capitals, all letters in x are made lowercase
-    if (has_capitals(x) & !has_capitals(keyvalue$key)){
+    if (has_capitals(x) && has_anylow(keyvalue$key)  && !has_capitals(keyvalue$key)){
         x <- tolower(x)
         msg <- paste(msg, "Capitals are changed to lower case.")
         
         
     # If key has no lowercase, all letters in x are made upper case
-    } else if (has_anylow(x) & !has_anylow(keyvalue$key)){
+    } else if (has_anylow(x) && has_capitals(keyvalue$key) && !has_anylow(keyvalue$key)){
         x <- toupper(x)
         msg <- paste(msg, "Lower case are changed to upper case.")
     }
