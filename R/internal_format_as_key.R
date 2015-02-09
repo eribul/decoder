@@ -8,9 +8,6 @@ format_as_key <- function(x, keyvalue){
         keyvalue <- get(keyvalue)
     }
     
-    x_name <- deparse(substitute(x))
-    keyvalue_name <- deparse(substitute(keyvalue))
-    
     # initiate warning message
     msg <- ""
     
@@ -18,11 +15,22 @@ format_as_key <- function(x, keyvalue){
     has_punct    <- function(y) any(grepl("[[:punct:]]", y))
     has_capitals <- function(y) any(grepl("[[:upper:]]", y))
     has_anylow   <- function(y) any(grepl("[[:lower:]]", y))
+    start_0      <- function(y) any(substr(y, 1, 1) == 0) 
     
     # Trim spaces 
     if (has_blank(x)){
         x <- stringr::str_trim(x)
         msg <- "Spaces are removed from beginning and end."
+    }
+    
+    # If x starts with zero but the key do not, zeroes are removed
+    if (start_0(x) & !start_0(keyvalue$key)){
+        msg <- paste(msg, "Leading 0:s are ignored.")
+    }
+    while (start_0(x) & !start_0(keyvalue$key)){
+        x <- ifelse(substr(x, 1, 1) == "0", # If leading 0 ...
+                    substring(x, 2),        # ... remove the 0 ...
+                    x)                      # ... otherwise leave unchanged
     }
     
     # If x has punctuations but the key has not, punctuations are removed from x
@@ -52,7 +60,7 @@ format_as_key <- function(x, keyvalue){
     
     ## Print warning if any changes made
     if (msg != ""){
-        warning(x_name, "has been transformed to match", keyvalue_name, ":", msg)
+        warning("x has been transformed to match the code: ", msg)
     }
     
     x
