@@ -33,6 +33,18 @@ format_as_key <- function(x, keyvalue){
                     x)                      # ... otherwise leave unchanged
     }
     
+    # If code starts with 0 but x does not, pad with zeros!
+    # Only applies if all codes have the same length and x is shorter than this length
+    key_length <- stringr::str_length(keyvalue$key)[1]
+    if (!start_0(x) && 
+        start_0(keyvalue$key) && 
+        do.call(all.equal, as.list(stringr::str_length(keyvalue$key))) && 
+        key_length > min(stringr::str_length(x))){
+            x <- stringr::str_pad(x, key_length, pad = "0")
+    msg <- paste(msg, "Leading 0:s are introduced for short characters.")
+    }
+    
+    
     # If x has punctuations but the key has not, punctuations are removed from x
     if (has_punct(x) & !has_punct(keyvalue$key)){
         x <- stringr::str_replace_all(x, "[[:punct:]]", "")
