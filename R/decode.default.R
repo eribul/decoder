@@ -20,8 +20,8 @@ decode.default <- function(x, keyvalue, extra_functions = NULL, exact = FALSE, .
     }
     
     ## If all cells in x and the key are numeric, we convert both to numeric (ignoring leading 0:s).
-    if (!exact && all(rccmisc::is_numeric(x)) && all(rccmisc::is_numeric(keyvalue$key)) && anyDuplicated(rccmisc::as_numeric(keyvalue$key)) == 0){
-        if (!all(x == rccmisc::as_numeric(x))){
+    if (!exact && all(rccmisc::is_numeric(x), na.rm = TRUE) && all(rccmisc::is_numeric(keyvalue$key)) && anyDuplicated(rccmisc::as_numeric(keyvalue$key)) == 0){
+        if (!all(x == rccmisc::as_numeric(x), na.rm = TRUE)){
             warning("x coerced to numeric to match the key.")
         }
         x <- rccmisc::as_numeric(x)
