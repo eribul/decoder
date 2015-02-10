@@ -22,7 +22,7 @@ decode.data.frame <- function(x, ...){
         for (i in seq_along(cols_to_change)){
             x[[cols_to_change_names[i]]] <- decode(cols_to_change[[i]], kv[i])
         }
-        message("\n\nNew decoded columns added: \n* ", paste(cols_to_change_names, collapse = "\n* ") )
+        message("\nNew decoded columns added: \n* ", paste(cols_to_change_names, collapse = "\n* ") )
         return(x)
     }
 }
