@@ -25,8 +25,8 @@ format_as_key <- function(x, keyvalue){
     
     ## If key is numeric & if removing leading 0:s from key is safe:
     ## leading 0:s are removed from both x and key
-    if (all(rccmisc::is_numeric(keyvalue$key)) && 
-        anyDuplicated(rccmisc::as_numeric(keyvalue$key)) == 0){ 
+    if (all(rccmisc::is_numeric(keyvalue$key), na.rm = TRUE) && 
+        !any(duplicated(rccmisc::as_numeric(keyvalue$key)), na.rm = TRUE)){ 
       
         if (!all(x == suppressWarnings(rccmisc::as_numeric(x)), na.rm = TRUE)){
             msg <- paste(msg, "Coerced to numeric.")        
@@ -46,13 +46,13 @@ format_as_key <- function(x, keyvalue){
                     x)                      # ... otherwise leave unchanged
     }
     
-    # If code starts with 0 but x does not, pad with zeros!
+    # If key starts with 0 but x does not, pad with zeros!
     # Only applies if all codes have the same length and x is shorter than this length
     key_length <- stringr::str_length(keyvalue$key)[1]
     if (!start_0(x) && 
         start_0(keyvalue$key) && 
-        do.call(all.equal, as.list(stringr::str_length(keyvalue$key))) && 
-        key_length > min(stringr::str_length(x))){
+        do.call(all.equal, as.list(na.omit(stringr::str_length(keyvalue$key)))) && 
+        key_length > min(stringr::str_length(x), na.rm = TRUE)){
             x <- stringr::str_pad(x, key_length, pad = "0")
     msg <- paste(msg, "Leading 0:s are introduced for short characters.")
     }
@@ -85,7 +85,7 @@ format_as_key <- function(x, keyvalue){
     
     ## Print warning if any changes made
     if (msg != ""){
-        warning("x has been transformed to match the code: ", msg)
+        warning("x has been transformed to match the code: ", msg, call. = FALSE)
     }
     
     list(x = x, keyvalue = keyvalue)

@@ -20,7 +20,11 @@ decode.data.frame <- function(x, ...){
     } else{
         kv <- as.character(decode(tolower(names(cols_to_change)), "ALL_STANDARD_VAR_NAMES"))
         for (i in seq_along(cols_to_change)){
-            x[[cols_to_change_names[i]]] <- decode(cols_to_change[[i]], kv[i])
+            tryCatch(x[[cols_to_change_names[i]]] <- decode(cols_to_change[[i]], kv[i]),
+                     warning = function(msg){
+                         warning(paste("column", names(cols_to_change)[i], substring(msg, 18)), call. = FALSE)
+                     }
+            )
         }
         message("\nNew decoded columns added: \n* ", paste(cols_to_change_names, collapse = "\n* ") )
         return(x)
