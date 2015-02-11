@@ -1,7 +1,7 @@
 Package: decoder
 Type: Package
 Title: Decode coded variables to plain text (and vice versa)
-Version: 0.3
+Version: 0.4
 Date: 2014-10-21
 Author: Erik Bulow
 Maintainer: Erik Bulow <erik.bulow@rccvast.se>
