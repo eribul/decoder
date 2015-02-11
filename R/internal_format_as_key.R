@@ -11,11 +11,11 @@ format_as_key <- function(x, keyvalue){
     # initiate warning message
     msg <- ""
     
-    has_blank    <- function(y) any(grepl("[[:blank:]]", y))
-    has_punct    <- function(y) any(grepl("[[:punct:]]", y))
-    has_capitals <- function(y) any(grepl("[[:upper:]]", y))
-    has_anylow   <- function(y) any(grepl("[[:lower:]]", y))
-    start_0      <- function(y) any(substr(y, 1, 1) == 0) 
+    has_blank    <- function(y) any(grepl("[[:blank:]]", y), na.rm = TRUE)
+    has_punct    <- function(y) any(grepl("[[:punct:]]", y), na.rm = TRUE)
+    has_capitals <- function(y) any(grepl("[[:upper:]]", y), na.rm = TRUE)
+    has_anylow   <- function(y) any(grepl("[[:lower:]]", y), na.rm = TRUE)
+    start_0      <- function(y) any(substr(as.character(y), 1, 1) == 0, na.rm = TRUE) 
     
     # Trim spaces 
     if (has_blank(x)){
@@ -23,7 +23,20 @@ format_as_key <- function(x, keyvalue){
         msg <- "Spaces are removed from beginning and end."
     }
     
+    ## If key is numeric & if removing leading 0:s from key is safe:
+    ## leading 0:s are removed from both x and key
+    if (all(rccmisc::is_numeric(keyvalue$key)) && 
+        anyDuplicated(rccmisc::as_numeric(keyvalue$key)) == 0){ 
+      
+        if (!all(x == suppressWarnings(rccmisc::as_numeric(x)), na.rm = TRUE)){
+            msg <- paste(msg, "Coerced to numeric.")        
+        }
+        x <- suppressWarnings(rccmisc::as_numeric(x))
+        keyvalue$key <- rccmisc::as_numeric(keyvalue$key)
+    }
+    
     # If x starts with zero but the key do not, zeroes are removed
+    # This applies even if x is still character (and is therefore not an ifelse statement)
     if (start_0(x) & !start_0(keyvalue$key)){
         msg <- paste(msg, "Leading 0:s are ignored.")
     }
@@ -75,5 +88,5 @@ format_as_key <- function(x, keyvalue){
         warning("x has been transformed to match the code: ", msg)
     }
     
-    x
+    list(x = x, keyvalue = keyvalue)
 }
