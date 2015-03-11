@@ -1,6 +1,8 @@
 
 context("decode")
 
+set.seed(12345)
+suppressMessages({
 suppressWarnings({
     
     test_that("decode.default", {
@@ -13,7 +15,11 @@ suppressWarnings({
     
     
     test_that("decode.data.frame", {
-        expect_that(decode(iris), gives_warning())    
         expect_that(decode(iris), is_equivalent_to(iris))
+        expect_that(decode(data.frame(KON_VALUE = 1:2))$KON_VALUE_beskrivning,
+                    is_equivalent_to(c("Man", "Kvinna"))
+                    )        
+        
     })
+})
 })
