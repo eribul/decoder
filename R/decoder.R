@@ -57,15 +57,26 @@
 #'  
 #'  Standard functions and how to use them:
 #'  
-#'  To use with \link{sjukvardsomrade}: \describe{ 
+#'  To use with \link{sjukvardsomrade}:
+#'  
+#'  \describe{ 
 #'  \item{\code{kungalv2Fyrbodal}}{The default classification used in
 #'  \link{sjukvardsomrade} is to make Kungalv a region of its own. Use this
 #'  function if Kungalv should be included in Fyrbodal. See example section
-#'  below.} \item{\code{kungalv2Storgoteborg}}{As \code{kungalv2Fyrbodal} but
-#'  classifies Kungalv as a part of Storgoteborg.} \item{\code{real_names}}{Give
+#'  below.} 
+#'  \item{\code{kungalv2Storgoteborg}}{As \code{kungalv2Fyrbodal} but
+#'  classifies Kungalv as a part of Storgoteborg.} 
+#'  \item{\code{real_names}}{Give
 #'  the area names with correct Swedish spelling (including spaces). This is not
 #'  as default due to compability reasons and because names with spaces must be
-#'  back-ticked when reffered to.} }
+#'  back-ticked when reffered to.} 
+#'  }
+#'  
+#'  To use with \link{region}
+#'  \describe{
+#'  \item{\code{short_region_names}}{Exclude the prefix 'Region' from the region names,
+#'  hence 'Syd' instead of 'Region Syd' etcetera.}
+#'  }
 #'  
 #'@seealso \link{key_value_data}, \link{keyvalue}, \link{extra_functions}
 #' @examples
@@ -100,6 +111,11 @@
 #' # also want the area names with correct Swedish spelling.
 #' (areas3 <- decode(healtcare_areas_west, "sjukvardsomrade", c("kungalv2Storgoteborg", "real_names")))
 #'
+#'
+#' # The region names can be both with and without prefix:
+#' regs <- sample(6, 10, replace = TRUE)
+#' decode(regs, "region") # With prefix
+#' decode(regs, "region", "short_region_names") # without prefix
 #'
 #' # Note that only the first four digits of the LKF-code were used abowe?
 #' # What if we use the full LKF-code?

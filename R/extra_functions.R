@@ -16,7 +16,7 @@
 kungalv2Storgoteborg <- function(x){
     x <- as.character(x)
     x[x == "Kungalv"] <- "Storgoteborg"
-    as.factor(x)
+    x
 }
 
 #' @rdname extra_functions
@@ -24,7 +24,7 @@ kungalv2Storgoteborg <- function(x){
 kungalv2Fyrbodal <- function(x){
     x <- as.character(x)
     x[x == "Kungalv"] <- "Fyrbodal"
-    as.factor(x)
+    x
 }
 
 #' @rdname extra_functions
@@ -35,5 +35,11 @@ real_names <- function(x){
     x[x == "Norra_Halland"]  <- "Norra Halland"
     x[x == "Sodra_Alvsborg"]  <- "S\u00F6dra \u00C4lvsborg"
     x[x == "Storgoteborg"]  <- "Storg\u00F6teborg"
-    as.factor(x)
+    x
+}
+
+#' @rdname extra_functions
+#' @export
+short_region_names <- function(x){
+    gsub("Region ", "", as.character(x))
 }
