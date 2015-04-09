@@ -4,6 +4,8 @@
 #' @rdname decoder
 decode.default <- function(x, keyvalue, extra_functions = NULL, exact = FALSE, ...){
     
+    name_x <- deparse(substitute(x))
+    
     if (!is.atomic(x)){
         stop("decode only works for atomic vectors or data.frames!")
     } else if (all(is.na(x))){
@@ -20,7 +22,7 @@ decode.default <- function(x, keyvalue, extra_functions = NULL, exact = FALSE, .
     }
       
    if (!exact){
-        transformed <- format_as_key(x, keyvalue)
+        transformed <- format_as_key(x, keyvalue, name_x)
         x <- transformed$x
         keyvalue <- transformed$keyvalue
     }

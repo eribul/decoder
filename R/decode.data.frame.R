@@ -50,7 +50,12 @@ decode.data.frame <- function(x, ...){
                              warning = function(msg){
                                 warning(paste("column", 
                                   names(cols_to_change)[i], substring(msg, 18)), call. = FALSE)
-                             }
+                                 
+                             },
+                             finally = suppressWarnings(
+                                        x[[cols_to_change_names[i]]] <- 
+                                        decode(cols_to_change[[i]], kv[i])
+                             )
                     )
             }
         }
