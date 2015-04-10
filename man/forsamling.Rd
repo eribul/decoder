@@ -3,12 +3,42 @@
 \docType{data}
 \name{forsamling}
 \alias{forsamling}
-\title{Forsamling code (parish code)}
+\alias{hemort}
+\title{Forsamling  and hemort code (parish code)}
 \description{
 Key-value codes for the Swedish parisches (forsamlingar).
 All six digits in the LKF code.
-Data from 2014-08-12.
+\code{hemort} is the official (but rather old) code used within RCC.
+\code{forsamling} is a later updated version.
+}
+\section{forsamling}{
+
+Data from SCB 2014-08-12 according to reference.
 Be aware of the spelling ("forsamling").
+Contains 1377 key-value pairs.
+}
+
+\section{hemort}{
+
+Data from tabla "hemort" in Rockan.
+Contains 5893 key-value pairs.
+}
+\examples{
+library(dplyr)
+
+# List all codes from hemort that does not exist in forsamling (5102 rows)
+anti_join(decoder:::hemort, decoder:::forsamling)
+
+# List all codes from forsamling that does not exist in hemort (586 rows)
+anti_join(decoder:::forsamling, decoder:::hemort)
+
+# List all key-codes that exists in both but with different values (471 rows)
+inner_join(decoder:::hemort, decoder:::forsamling, by = "key") \%>\%
+filter(value.x != value.y)
+
+# List all key-codes that exists in both and have the same values (791 rows)
+inner_join(decoder:::hemort, decoder:::forsamling, by = "key") \%>\%
+filter(value.x == value.y)
 }
 \references{
 \url{http://www.scb.se/sv_/Hitta-statistik/Regional-statistik-och-kartor/Regionala-indelningar/Lan-och-kommuner/}

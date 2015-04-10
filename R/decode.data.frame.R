@@ -21,7 +21,6 @@ decode.data.frame <- function(x, ...){
     
     # If x has variables named "_Beskrivning/_Värde" and no "_beskrivning/_värde", "_Beskrivning" is used
     # otherwise "_beskrivning
-    
     beskrivning <- 
         if (
             (any(grepl("_Beskrivning", nms)) || any(grepl("_V\u00E4rde", nms))) && 
@@ -40,7 +39,8 @@ decode.data.frame <- function(x, ...){
     cols_to_change <- cols_to_change[, vars_to_decode, drop = FALSE]
     
     if (length(cols_to_change) == 0 || identical(cols_to_change, character(0))){
-        warning("No column names recognised as standard_var_names for any keyvalue object. No decoding made!")
+        warning("No column names recognised as standard_var_names for any ", 
+                "keyvalue object. No decoding made!")
         return(x)
     } else{
         kv <- as.character(decode(tolower(names(cols_to_change)), "ALL_STANDARD_VAR_NAMES"))
@@ -50,8 +50,9 @@ decode.data.frame <- function(x, ...){
                              warning = function(msg){
                                 warning(paste("column", 
                                   names(cols_to_change)[i], substring(msg, 18)), call. = FALSE)
-                                 
                              },
+                             # This is not a nice solution (to run the same 
+                             # expression again but it works as a quick fix)!
                              finally = suppressWarnings(
                                         x[[cols_to_change_names[i]]] <- 
                                         decode(cols_to_change[[i]], kv[i])
