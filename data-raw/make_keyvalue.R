@@ -8,6 +8,7 @@
 
 library(decoder)
 rm(list = ls())
+# Note! For this to work, the current working directory must first be set to match the package!
 old_wd <- setwd("./data-raw")
 
 
@@ -34,8 +35,9 @@ x <- lapply(x, function(x) NA)
 for (i in names(x)){
     x[[i]] <- attr(get(i), "standard_var_names")
 }
-x$forsamling <- NULL
-ALL_STANDARD_VAR_NAMES <- as.keyvalue(x)
+# x$forsamling <- NULL ## forsamling can be removed to avoid duplicates from both forsamling and hemort
+ALL_STANDARD_VAR_NAMES <- decoder:::internal_as.keyvalue.list(x)
+ALL_STANDARD_VAR_NAMES <- as.data.frame(lapply(ALL_STANDARD_VAR_NAMES, as.character), stringsAsFactors = FALSE)
 
 ############################ Save all objects to sysdata.rda #############################
 

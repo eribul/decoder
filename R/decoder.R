@@ -94,9 +94,8 @@
 #' (snomed3 <- decode(snomed2, "snomed"))
 #'
 #'
-#' # Decoding and grouping are performed seamlessly if the keyvalue
-#' # argument is of class keyvaluem1.
-#' # Let's first make a sample of some LK-codes (first four digits of the LKF-code)
+#' # Health care regions can be defined in more than one way
+#' # By default Kungalv define a region of its own:
 #' set.seed(123456789)
 #' healtcare_areas_west <- sample(unlist(decoder:::sjukvardsomrade), 100, replace = TRUE)
 #' (areas <- decode(healtcare_areas_west, "sjukvardsomrade"))
@@ -122,6 +121,14 @@
 #' lkfs <- sample(decoder:::forsamling$key, 100, replace = TRUE)
 #' decode(lkfs, "sjukvardsomrade")
 #' # That work's just as fine when argument exact = FALSE (which it is by default).
+#' 
+#' # decode can also be used for data.frames with recognised column names
+#' d <- data.frame(
+#'      kon = sample(1:2, 10, replace = TRUE), 
+#'      sex = sample(1:2, 10, replace = TRUE),
+#'      lkf = sample(decoder:::hemort$key, 10, replace = TRUE)
+#'  )
+#'  decode(d)
 #'
 #' ### --- code --- ###
 #' # Sometimes we have keyvalue objects with some key-value pairs without a 1:1 relation.

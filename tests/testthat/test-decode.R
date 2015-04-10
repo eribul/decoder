@@ -2,6 +2,13 @@
 context("decode")
 
 set.seed(12345)
+
+d <- data.frame(
+         kon = sample(1:2, 10, replace = TRUE), 
+         sex = sample(1:2, 10, replace = TRUE),
+         lkf = sample(decoder:::hemort$key, 10, replace = TRUE)
+    )
+
 suppressMessages({
 suppressWarnings({
     
@@ -19,6 +26,8 @@ suppressWarnings({
         expect_that(decode(data.frame(KON_VALUE = 1:2))$KON_VALUE_beskrivning,
                     is_equivalent_to(c("Man", "Kvinna"))
                     )        
+        expect_that(ncol(decode(d)), is_equivalent_to(9)) 
+        
         
     })
 })

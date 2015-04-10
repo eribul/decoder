@@ -1,7 +1,7 @@
 Package: decoder
 Type: Package
 Title: Decode coded variables to plain text (and vice versa)
-Version: 0.4
+Version: 0.5
 Date: 2014-10-21
 Author: Erik Bulow
 Maintainer: Erik Bulow <erik.bulow@rccvast.se>
@@ -15,6 +15,8 @@ License: GPL-2
 Depends:
     R (>= 2.10)
 Imports:
+    plyr,
+    dplyr,
     stringr
 Suggests:
     testthat,
