@@ -80,7 +80,7 @@ format_as_key <- function(x, keyvalue, name_x = "x"){
     key_length <- max(stringr::str_length(keyvalue$key), na.rm = TRUE)
     if (max(stringr::str_length(x), na.rm = TRUE) > key_length){
         x <- substr(x, 1, key_length)
-        msg <- paste(msg, "Only the first", key_length, "characters are used")
+        msg <- paste(msg, "Only the first", key_length, "characters are used.")
     }
     
     ## Print warning if any changes made
