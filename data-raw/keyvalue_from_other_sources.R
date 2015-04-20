@@ -26,8 +26,9 @@ kommun <- as.keyvalue(kommun, standard_var_names = c("a_lkf", "hemfr", "hemnu", 
 #################################### HSN ####################################
 
 # Baseras på ett dokument i et mail från Erik H som jag sedan kompletterat med kommunkoder
-hsn <- XLConnect::readWorksheetFromFile("data_other_sources/HSN2015.xlsx",
-                                                 sheet = "Organisation", startRow = 5, startCol = 5, endCol = 6)
+hsn <- readxl::read_excel("data_other_sources/HSN2015.xlsx",
+                           sheet = "Organisation", skip = 4)
+hsn <- hsn[, c("key", "value")]
 hsn <- unique(hsn)
 
 
@@ -74,7 +75,7 @@ patologiavdelning <- as.keyvalue(patologiavdelning, standard_var_names = "pat")
 
 
 #################################### ICD-10 ####################################
-icd10 <- XLConnect::readWorksheetFromFile("data_other_sources/icd-koder-2014-klassifikationer-och-koder.xls",
+icd10 <- readxl::read_excel("data_other_sources/icd-koder-2014-klassifikationer-och-koder.xls",
                                           sheet = "KSH97_KOD")
 names(icd10) <- kv_names
 icd10 <- as.keyvalue(icd10)
@@ -110,3 +111,21 @@ comment(x) <- "Data from http://www.socialstyrelsen.se/Lists/Artikelkatalog/Atta
 icdo3_grov <- as.keyvalue(x)
 
 
+if (FALSE){
+####################################### Sjukhus #######################################
+sjh_koder <- gdata::read.xls("data_other_sources/enhetskoder_preiminara_infor_caninca.xlsx")
+sjh_koder <- sjh_koder %>% 
+    #select(Leveranskod_sjukhus, Sjukhus_Enhet) %>% 
+    mutate(Sjukhus_Enhet = stringr::str_trim(Sjukhus_Enhet)) %>% 
+    distinct(Leveranskod_sjukhus, Sjukhus_Enhet) 
+    #rename(
+    #    key = Leveranskod_sjukhus,
+    #    value = Sjukhus_Enhet)
+
+# dublettkoder
+dublettkoder <- sjh_koder[sjh_koder$Leveranskod_sjukhus %in% 
+                            names(table(sjh_koder$Leveranskod_sjukhus)[table(sjh_koder$Leveranskod_sjukhus) >1]), ] %>% 
+    arrange(Leveranskod_sjukhus)
+
+write.csv2(dublettkoder, "data_other_sources/dublettlista_till_SAN.csv")
+}

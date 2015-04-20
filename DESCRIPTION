@@ -20,5 +20,4 @@ Imports:
     stringr
 Suggests:
     testthat,
-    rccmisc,
-    XLConnect
+    rccmisc

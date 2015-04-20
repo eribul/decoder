@@ -1,3 +1,7 @@
 .Rproj.user
 .Rhistory
 .RData
+/inst/test_coordinates/*
+data-raw/best/*
+data-raw/data_other_sources/*
+
