@@ -1,7 +1,7 @@
 
 
 # Try to transform x in order to fit the key from keyvalue
-format_as_key <- function(x, keyvalue, name_x = "x"){
+format_as_key <- function(x, keyvalue, name_x = "x", name_keyvalue = "keyvalue"){
     
     ## Get the keyvalue object if specified by character name
     if (is.character(keyvalue)){
@@ -85,7 +85,9 @@ format_as_key <- function(x, keyvalue, name_x = "x"){
     
     ## Print warning if any changes made
     if (msg != ""){
-        warning(name_x, " has been transformed to match the code: ", msg, call. = FALSE)
+        warning(name_x, " has been transformed to match the code for ", name_keyvalue, 
+                ": ", msg, call. = FALSE
+        )
     }
     
     list(x = x, keyvalue = keyvalue)

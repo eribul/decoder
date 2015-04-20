@@ -5,7 +5,7 @@
 decode.default <- function(x, keyvalue, extra_functions = NULL, exact = FALSE, ...){
     
     name_x <- deparse(substitute(x))
-    
+        
     if (!is.atomic(x)){
         stop("decode only works for atomic vectors or data.frames!")
     } else if (all(is.na(x))){
@@ -13,8 +13,11 @@ decode.default <- function(x, keyvalue, extra_functions = NULL, exact = FALSE, .
     }
     
     if (is.character(keyvalue)){
+        name_keyvalue <- keyvalue
         keyvalue <- get(keyvalue)
-    } 
+    } else{
+        name_keyvalue <- deparse(substitute(keyvalue))
+    }
     
     if (!is.keyvalue(keyvalue)){
         keyvalue <- tryCatch(as.keyvalue(keyvalue), 
@@ -25,7 +28,7 @@ decode.default <- function(x, keyvalue, extra_functions = NULL, exact = FALSE, .
     }
       
    if (!exact){
-        transformed <- format_as_key(x, keyvalue, name_x)
+        transformed <- format_as_key(x, keyvalue, name_x, name_keyvalue)
         x <- transformed$x
         keyvalue <- transformed$keyvalue
     }
