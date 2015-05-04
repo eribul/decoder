@@ -27,7 +27,7 @@ kommun <- as.keyvalue(kommun, standard_var_names = c("a_lkf", "hemfr", "hemnu", 
 
 # Baseras på ett dokument i et mail från Erik H som jag sedan kompletterat med kommunkoder
 hsn <- readxl::read_excel("data_other_sources/HSN2015.xlsx",
-                           sheet = "Organisation", skip = 4)
+                           sheet = "Organisation", skip = 3)
 hsn <- hsn[, c("key", "value")]
 hsn <- unique(hsn)
 
