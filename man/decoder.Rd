@@ -46,23 +46,28 @@ section "extra_functions" below).}
 \item{exact}{Should \code{x} have an exact match from the key? Default is
 \code{FALSE}. When \code{FALSE}, \code{x} might be transformed to fit the
 key (punctuation might be removed, upper case changed to lower case or vice
-versa and strings that are too long might be substringed). (\code{code}
-only accept excact matches.)}
+versa and strings that are too long might be substringed). (\code{code} only
+accept excact matches.)}
 }
 \value{
 \itemize{ \item For default S3 method: A vector of the same length as
-\code{x} but with all cells decoded (or coded) to plain text (or code) as
-character. \item For S3 method for class 'data.frame': Data.frame \code{x} is
-returned, possibly with some extra columns (names ending in '_Beskrivning'),
-decoded from columns with names corresponding to attribute
-\code{standard_var_names} for keyvalue objects listed by
-\code{list_keyvalues()}. }
+ \code{x} but with all cells decoded (or coded) to plain text (or code) as
+ character. \item For S3 method for class 'data.frame': Data.frame \code{x}
+ is returned, possibly with some extra columns (names ending in
+ '_Beskrivning'), decoded from columns with names corresponding to attribute
+ \code{standard_var_names} for keyvalue objects listed by
+ \code{list_keyvalues()}. }
 }
 \description{
 Translate coded values into meaningful plain text (or reversed). Use
 \code{list_keyvalues()} to see a list of all keyvalue objects ("dictionaries")
 included in the package.
 }
+\section{Vignette}{
+ See the vignette for a longer introduction to the package:
+ \code{vignette("decoder")}
+}
+
 \section{decode.data.frame}{
  If \code{x} is a data.frame, all column names of
  \code{x} are matched to attribute \code{standard_var_names} for all keyvalue
@@ -92,24 +97,18 @@ included in the package.
 
  To use with \link{sjukvardsomrade}:
 
- \describe{
- \item{\code{kungalv2Fyrbodal}}{The default classification used in
+ \describe{ \item{\code{kungalv2Fyrbodal}}{The default classification used in
  \link{sjukvardsomrade} is to make Kungalv a region of its own. Use this
  function if Kungalv should be included in Fyrbodal. See example section
- below.}
- \item{\code{kungalv2Storgoteborg}}{As \code{kungalv2Fyrbodal} but
- classifies Kungalv as a part of Storgoteborg.}
- \item{\code{real_names}}{Give
+ below.} \item{\code{kungalv2Storgoteborg}}{As \code{kungalv2Fyrbodal} but
+ classifies Kungalv as a part of Storgoteborg.} \item{\code{real_names}}{Give
  the area names with correct Swedish spelling (including spaces). This is not
  as default due to compability reasons and because names with spaces must be
- back-ticked when reffered to.}
- }
+ back-ticked when reffered to.} }
 
- To use with \link{region}
- \describe{
- \item{\code{short_region_names}}{Exclude the prefix 'Region' from the region names,
- hence 'Syd' instead of 'Region Syd' etcetera.}
- }
+ To use with \link{region} \describe{
+ \item{\code{short_region_names}}{Exclude the prefix 'Region' from the region
+ names, hence 'Syd' instead of 'Region Syd' etcetera.} }
 }
 \examples{
 # We can start to list all available keyvalue objects included in the package:
