@@ -15,7 +15,7 @@ code <- function(y, keyvalue, verbose = TRUE){
         if (any(not11)){
             if (verbose){ 
                 print(summary(keyvalue)$nonunique[dangerous_values %in% y, ])
-                stop("Values above have a non 1:1 relation to their key. A safe coding can not be made for this variable!")
+                stop("Values above have a non 1:1 relation to their key. \nA safe coding can not be made for this variable!")
             } else{
                 stop("Some values have a non 1:1 relation to their key. Use parameter verbose = TRUE to see a list!")
             }
