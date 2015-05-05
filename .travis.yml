@@ -17,3 +17,5 @@ notifications:
 r_github_packages:
    - cancercentrum/rccmisc
    
+r_packages:
+   - knitr
