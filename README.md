@@ -28,10 +28,6 @@ vignette("decoder")
 ```
 
 
-
-# Encoding
-The package was developed under Mac OSX. There might be some difficulties with the encoding when run in Windows. Comments and bug reposrts are welcome!
-
 # Bug reports
 Please report to:
 https://github.com/cancercentrum/decoder/issues
