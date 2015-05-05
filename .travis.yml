@@ -9,7 +9,7 @@ env:
    - CRAN: http://cran.rstudio.com
 
 notifications:
-  email: erik.bulow@rccvast.se
+  email:
     on_success: change
     on_failure: change
 
