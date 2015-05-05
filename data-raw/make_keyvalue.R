@@ -32,12 +32,23 @@ ALL_KEYVALUE_OBJECTS <- ls()[ls() != "old_wd"]
 x <- as.list(ALL_KEYVALUE_OBJECTS)
 names(x) <- x
 x <- lapply(x, function(x) NA)
-for (i in names(x)){
+for (i in names(x)) {
     x[[i]] <- attr(get(i), "standard_var_names")
 }
 # x$forsamling <- NULL ## forsamling can be removed to avoid duplicates from both forsamling and hemort
 ALL_STANDARD_VAR_NAMES <- decoder:::internal_as.keyvalue.list(x)
 ALL_STANDARD_VAR_NAMES <- as.data.frame(lapply(ALL_STANDARD_VAR_NAMES, as.character), stringsAsFactors = FALSE)
+
+
+
+################################ Chance encoding to UTF-8 ################################
+for (kv_name in ALL_KEYVALUE_OBJECTS) {
+    kv_obj <- get(kv_name)
+    kv_obj$key <- iconv(kv_obj$key, to = "UTF-8")    
+    kv_obj$value <- iconv(kv_obj$value, to = "UTF-8")    
+    assign(kv_name, kv_obj)
+}
+
 
 ############################ Save all objects to sysdata.rda #############################
 
@@ -48,6 +59,6 @@ rm(i, x, old_wd)
 args <- Vectorize(as.name)(ls())
 args$internal  <-  TRUE
 args$overwrite <- TRUE
-do.call(use_data, args)
+do.call(devtools::use_data, args)
 
 
