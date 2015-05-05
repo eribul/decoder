@@ -1,4 +1,4 @@
-# Sample .travis.yml for R projects
+# Sample .travis.yml for R projects 
 
 language: r
 warnings_are_errors: true
@@ -15,3 +15,4 @@ notifications:
 
 r_github_packages:
  - cancercentrum/rccmisc
+
