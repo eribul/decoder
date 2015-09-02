@@ -246,7 +246,6 @@ NULL
 #' @name klinik
 #' @family key_value_data
 #' @references \url{http://www.socialstyrelsen.se/klassificeringochkoder/andrakodverk/sjukhuskoder}
-#' \url{http://www.socialstyrelsen.se/klassificeringochkoder/andrakodverk/sjukhuskoder/Documents/Verksamhetskodslista2006.pdf}
 NULL
 
 

@@ -10,12 +10,15 @@ env:
 
 notifications:
   email:
+    recipients:
+      - erik.bulow@rccvast.se
     on_success: change
     on_failure: change
 
 
 r_github_packages:
    - cancercentrum/rccmisc
+   - jimhester/covr
    
-r_packages:
-   - knitr
+after_success:
+  - Rscript -e 'library(covr);coveralls()'

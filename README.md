@@ -1,4 +1,5 @@
 [![Travis-CI Build Status](https://travis-ci.org/cancercentrum/decoder.png?branch=master)](https://travis-ci.org/cancercentrum/decoder)
+[![Coverage Status](https://img.shields.io/coveralls/cancercentrum/decoder.svg)](https://coveralls.io/r/cancercentrum/decoder?branch=master)
 
 decoder
 ==========

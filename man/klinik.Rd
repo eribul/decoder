@@ -11,7 +11,6 @@ Some extra codes are added from Rockan (290, 291, 292, 446, 921 and 999 for unkn
 }
 \references{
 \url{http://www.socialstyrelsen.se/klassificeringochkoder/andrakodverk/sjukhuskoder}
-\url{http://www.socialstyrelsen.se/klassificeringochkoder/andrakodverk/sjukhuskoder/Documents/Verksamhetskodslista2006.pdf}
 }
 \seealso{
 Other key_value_data: \code{\link{figo}};
