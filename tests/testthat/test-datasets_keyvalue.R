@@ -9,6 +9,7 @@ test_that("correct classes",{
     expect_that(lan, is_a("keyvalue"))
     expect_that(kommun, is_a("keyvalue"))
     expect_that(forsamling, is_a("keyvalue"))
+    expect_that(distrikt, is_a("keyvalue"))
     
     ## Administration
     expect_that(sjukhus, is_a("keyvalue"))
