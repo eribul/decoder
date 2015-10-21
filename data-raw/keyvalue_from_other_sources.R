@@ -45,6 +45,18 @@ comment(forsamling) <- "Data from http://www.scb.se/Grupp/Hitta_statistik/Region
 
 
 
+
+################################### Distrikt ###################################
+
+# Data och beskrivning: 
+# http://www.scb.se/sv_/Hitta-statistik/Regional-statistik-och-kartor/Regionala-indelningar/Distrikt/
+distrikt <- readxl::read_excel("data_other_sources/Distrikt-i-kodnummerordning.xlsx", skip = 1)
+distrikt <- distrikt[!is.na(distrikt$Distriktskod),]
+names(distrikt) <- kv_names
+distrikt <- decoder::as.keyvalue(distrikt)
+comment(distrikt) <- "Data from www.scb.se/sv_/Hitta-statistik/Regional-statistik-och-kartor/Regionala-indelningar/Distrikt/"
+
+
 ################################### Kliniker ####################################
 klinik <- rbind(klinik, klinik_extra_rockan)
 klinik$key <- stringr::str_pad(klinik$key, 3, pad = "0")
@@ -111,7 +123,7 @@ comment(x) <- "Data from http://www.socialstyrelsen.se/Lists/Artikelkatalog/Atta
 icdo3_grov <- as.keyvalue(x)
 
 
-if (FALSE){
+if (FALSE) {
 ####################################### Sjukhus #######################################
 sjh_koder <- gdata::read.xls("data_other_sources/enhetskoder_preiminara_infor_caninca.xlsx")
 sjh_koder <- sjh_koder %>% 

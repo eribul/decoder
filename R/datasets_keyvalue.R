@@ -89,6 +89,20 @@ NULL
 
 
 
+
+#' Distrikt code (district code)
+#'
+#' Key-value codes for the Swedish districts (introduced 2016-01-01).
+#'
+#' @docType data
+#' @keywords datasets
+#' @name distrikt
+#' @family key_value_data
+#' @seealso \url{www.scb.se/sv_/Hitta-statistik/Regional-statistik-och-kartor/Regionala-indelningar/Distrikt/}
+NULL
+
+
+
 #' Geographical healthcare areas
 #'
 #' Key-value codes for health care areas.

@@ -23,7 +23,7 @@ format_as_key <- function(x, keyvalue, name_x = "x", name_keyvalue = "keyvalue")
         msg <- "Spaces are removed from beginning and end."
     }
     
-    # If x starts with zero but the key do not, zeroes are removed
+    # If x starts with zero but the key does not, zeroes are removed
     # This applies even if x is still character (and is therefore not an ifelse statement)
     if (start_0(x) & !start_0(keyvalue$key)) {
         msg <- paste(msg, "Leading 0:s are ignored.")
