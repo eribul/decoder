@@ -30,7 +30,7 @@ hsn <- readxl::read_excel("data_other_sources/HSN2015.xlsx",
                            sheet = "Organisation", skip = 3)
 hsn <- hsn[, c("key", "value")]
 hsn <- unique(hsn)
-
+hsn <- as.keyvalue(hsn)
 
 ################################## Församling ##################################
 
@@ -44,6 +44,9 @@ forsamling <- as.keyvalue(forsamling, standard_var_names = c("a_lkf", "hemfr", "
 comment(forsamling) <- "Data from http://www.scb.se/Grupp/Hitta_statistik/Regional%20statistik/Indelningar/_Dokument/lkf2015.pdf"
 
 
+
+##### Combined keyvalue for lan, kommun and forsamling, similair to hemort #####
+hemort2 <- as.keyvalue(dplyr::bind_rows(lan, kommun, forsamling))
 
 
 ################################### Distrikt ###################################

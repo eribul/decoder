@@ -174,41 +174,16 @@ NULL
 NULL
 
 
-
-#' Forsamling  and hemort code (parish code)
+#' Forsamling (parish code)
 #'
 #' Key-value codes for the Swedish parisches (forsamlingar).
 #' All six digits in the LKF code.
-#' \code{hemort} is the official (but rather old) code used within RCC. 
-#' \code{forsamling} is a later updated version.
 #' 
 #' @section forsamling:
 #' Data from SCB 2014-08-12 according to reference.
 #' Be aware of the spelling ("forsamling").
 #' Contains 1377 key-value pairs.
 #'
-#'@section hemort:
-#' Data from tabla "hemort" in Rockan. 
-#' Contains 5893 key-value pairs. 
-#' 
-#' @examples 
-#' 
-#' library(dplyr)
-#' 
-#' # List all codes from hemort that does not exist in forsamling (5102 rows)
-#' anti_join(decoder:::hemort, decoder:::forsamling)
-#' 
-#' # List all codes from forsamling that does not exist in hemort (586 rows)
-#' anti_join(decoder:::forsamling, decoder:::hemort)
-#' 
-#' # List all key-codes that exists in both but with different values (471 rows)
-#' inner_join(decoder:::hemort, decoder:::forsamling, by = "key") %>% 
-#' filter(value.x != value.y)
-#' 
-#' # List all key-codes that exists in both and have the same values (791 rows)
-#' inner_join(decoder:::hemort, decoder:::forsamling, by = "key") %>% 
-#' filter(value.x == value.y)
-#' 
 #' @docType data
 #' @keywords datasets
 #' @name forsamling
@@ -216,10 +191,24 @@ NULL
 #' @references \url{http://www.scb.se/sv_/Hitta-statistik/Regional-statistik-och-kartor/Regionala-indelningar/Lan-och-kommuner/}
 NULL
 
-#' @rdname forsamling
+
+#' hemort and hemort2 codes (geographical codes)
+#'
+#' Both \code{hemort} and \code{hemort2} combines regional codes for lan, 
+#' kommun and forsamling.
+#' \code{hemort} is the official (but rather old) code used within RCC. 
+#' \code{hemort2} is an updated version combining \code{\link{lan}}, 
+#' \code{\link{kommun}} and \code{\link{forsamling}}
+#' 
+#' @docType data
+#' @keywords datasets
 #' @name hemort
+#' @family key_value_data
 NULL
 
+#' @rdname hemort
+#' @name hemort2
+NULL
 
 ################################################################################
 #                                                                              #

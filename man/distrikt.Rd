@@ -11,20 +11,20 @@ Key-value codes for the Swedish districts (introduced 2016-01-01).
 \url{www.scb.se/sv_/Hitta-statistik/Regional-statistik-och-kartor/Regionala-indelningar/Distrikt/}
 
 Other key_value_data: \code{\link{figo}};
-  \code{\link{forsamling}}, \code{\link{hemort}};
-  \code{\link{hsn}}; \code{\link{icd10}};
-  \code{\link{icd7_grov}}; \code{\link{icd7}};
-  \code{\link{icd9}}; \code{\link{icdo3_grov}};
-  \code{\link{icdo3}}; \code{\link{icdo}};
-  \code{\link{key_value_data}}; \code{\link{klinik}};
-  \code{\link{kommun}}; \code{\link{kon}};
-  \code{\link{lan}}; \code{\link{m_rtr}};
-  \code{\link{n_rtr}}; \code{\link{pad}};
-  \code{\link{patologiavdelning}}; \code{\link{region}};
-  \code{\link{sida}}; \code{\link{sjukhus}};
-  \code{\link{sjukvardsomrade}}; \code{\link{snomed3}};
-  \code{\link{snomed}}; \code{\link{t_rtr}};
-  \code{\link{tnmgrund}}
+  \code{\link{forsamling}}; \code{\link{hemort}},
+  \code{\link{hemort2}}; \code{\link{hsn}};
+  \code{\link{icd10}}; \code{\link{icd7_grov}};
+  \code{\link{icd7}}; \code{\link{icd9}};
+  \code{\link{icdo3_grov}}; \code{\link{icdo3}};
+  \code{\link{icdo}}; \code{\link{key_value_data}};
+  \code{\link{klinik}}; \code{\link{kommun}};
+  \code{\link{kon}}; \code{\link{lan}};
+  \code{\link{m_rtr}}; \code{\link{n_rtr}};
+  \code{\link{pad}}; \code{\link{patologiavdelning}};
+  \code{\link{region}}; \code{\link{sida}};
+  \code{\link{sjukhus}}; \code{\link{sjukvardsomrade}};
+  \code{\link{snomed3}}; \code{\link{snomed}};
+  \code{\link{t_rtr}}; \code{\link{tnmgrund}}
 }
 \keyword{datasets}
 
