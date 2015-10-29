@@ -38,11 +38,21 @@ decode.default <- function(x, keyvalue, extra_functions = NULL, exact = FALSE, .
     res <- keyvalue[positions, "value", drop = TRUE]
      
     ## Apply extra functions if given
-    if (!is.null(extra_functions)){
-        for (fun in extra_functions){
+    if (!is.null(extra_functions)) {
+        for (fun in extra_functions) {
             FUN <- match.fun(fun)
             res <- FUN(res)
         }
+    }
+    
+    # Inform if some values could not be translated
+    # Return these values if no more than five
+    failed <- x[is.na(res) & !is.na(x)]
+    if (length(failed) > 0 ) {
+        msg <- paste0("Some codes could not be translated using \"", name_keyvalue, "\" as keyvalue object")
+        msg2 <- if (length(failed) %in% 1:5) paste(failed, collapse = ", ") else paste(length(failed), "cells")
+        msg <- paste0(msg, " (", msg2, ")")
+        warning(msg, call. = FALSE)
     }
     
     res

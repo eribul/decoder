@@ -18,6 +18,8 @@ suppressWarnings({
         expect_that(decode("      0000001", "kon"), gives_warning())
         expect_that(decode("      0000001", "kon"), is_equivalent_to("Man"))
         expect_that(decode(c(0002425, 2425, "df"), "kommun"), is_equivalent_to(c("Dorotea", "Dorotea", NA)))
+        expect_warning(decode(c(1:6, letters[1:5]), "region"), "(a, b, c, d, e)")
+        expect_warning(decode(c(1:6, letters[1:10]), "region"), "(10 cells)")
     })
     
     
