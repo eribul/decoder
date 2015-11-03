@@ -4,7 +4,7 @@
 #' @rdname decoder
 decode.default <- function(x, keyvalue, extra_functions = NULL, exact = FALSE, ...){
     
-    name_x <- deparse(substitute(x))
+    name_x <- deparse(substitute(x, parent.frame()))
     original_x <- x
         
     if (!is.atomic(x)) {
