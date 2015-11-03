@@ -74,8 +74,7 @@ format_as_key <- function(x, keyvalue, name_x = "x", name_keyvalue = "keyvalue")
     ## Print warning if any changes made
     if (msg != "") {
         warning(name_x, " has been transformed to match the code for ", name_keyvalue, 
-                ": ", msg, call. = FALSE
-        )
+                ": ", msg)
     }
     
     list(x = x, keyvalue = keyvalue)

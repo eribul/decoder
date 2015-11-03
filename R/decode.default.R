@@ -4,7 +4,9 @@
 #' @rdname decoder
 decode.default <- function(x, keyvalue, extra_functions = NULL, exact = FALSE, ...){
     
-    name_x <- deparse(substitute(x))
+    # Name used in warnings but can be very long
+    name_x <- deparse(substitute(x)) 
+    if (length(name_x) > 1 || nchar(name_x) > 30) name_x <- "x"
     original_x <- x
         
     if (!is.atomic(x)) {
