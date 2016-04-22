@@ -1,8 +1,8 @@
 Package: decoder
 Type: Package
 Title: Decode Coded Variables to Plain Text (and Vice Versa)
-Version: 1.0.3
-Date: 2015-11-03
+Version: 1.0.4
+Date: 2016-03-22
 Authors@R: person("Erik", "Bulow", email = "erik.bulow@rccvast.se",
   role = c("aut", "cre"))
 Description: Main function decode is used to decode coded key values to plain
@@ -12,18 +12,18 @@ Description: Main function decode is used to decode coded key values to plain
     of geographical regional codes, administrative health care unit codes,
     diagnosis codes etcetera.
 License: GPL-2
-Depends: 
+Depends:
     R (>= 2.10)
-Imports: 
+Imports:
     plyr,
     dplyr,
     stringr
-Suggests: 
+Suggests:
     testthat,
     rccmisc,
     knitr
 VignetteBuilder: knitr
 Encoding: UTF-8
 URL: https://www.github.com/cancercentrum/decoder
-BugReports:https://www.github.com/cancercentrum/decoder/issues
-
+BugReports: https://www.github.com/cancercentrum/decoder/issues
+RoxygenNote: 5.0.1

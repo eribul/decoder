@@ -242,5 +242,5 @@ knitr::kable(as.keyvalue(ex))
 
 # Comments and suggestion
 
-You are always welcome to suggest enhancement, such as added kayvalue objects (dictionaries), report bugs or point out pieces of unclear documentation etcetera at https://www.github.com/cancercentrum/decoder/issues
+You are always welcome to suggest enhancement, such as added kayvalue objects (dictionaries), report bugs or point out pieces of unclear documentation etcetera at www.bitbucket.com/cancercentrum/decoder/issues
 

@@ -418,7 +418,7 @@ NULL
 
 #' ICD-10 code
 #'
-#' Key-value codes for ICD-10-SE (Swedish version).
+#' Key-value codes for ICD-10-SE 2016 (Swedish version).
 #' Includes all ICD-10-codes (not only the C- and D-codes).
 #' Data from Socialstyrelsen.
 #' Note that key codes are given without dots, i e C569, not C56.9.

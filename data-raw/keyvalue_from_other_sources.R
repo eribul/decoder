@@ -90,8 +90,10 @@ patologiavdelning <- as.keyvalue(patologiavdelning, standard_var_names = "pat")
 
 
 #################################### ICD-10 ####################################
-icd10 <- readxl::read_excel("data_other_sources/icd-koder-2014-klassifikationer-och-koder.xls",
-                                          sheet = "KSH97_KOD")
+# icd10 <- readxl::read_excel("data_other_sources/icd-koder-2014-klassifikationer-och-koder.xls",
+#                                          sheet = "KSH97_KOD")
+icd10 <- readxl::read_excel("data_other_sources/ICD10SE-2016.xls",
+                            sheet = "KSH97_KOD")
 names(icd10) <- kv_names
 icd10 <- as.keyvalue(icd10)
 
