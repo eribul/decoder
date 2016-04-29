@@ -3,3 +3,4 @@
 ^data-raw$
 ^\.travis\.yml$
 ^inst/test_*
+^appveyor\.yml$
