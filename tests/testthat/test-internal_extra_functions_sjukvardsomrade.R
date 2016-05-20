@@ -15,8 +15,8 @@ test_that("kungalv2Fyrbodal", {
 
 test_that("real_names", {
     expect_that(unique(decode(x, "sjukvardsomrade", "real_names")), 
-                is_equivalent_to(c("Norra Halland", "Storgöteborg", "Kungälv", 
-                                   "Fyrbodal", "Södra Älvsborg", "Skaraborg")))
+                is_equivalent_to(c("Norra Halland", "Storg\u00F6teborg", "Kung\u00E4lv", 
+                                   "Fyrbodal", "S\u00F6dra \u00C4lvsborg", "Skaraborg")))
 })
 
 
