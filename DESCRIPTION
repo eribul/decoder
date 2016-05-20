@@ -22,6 +22,6 @@ Suggests:
     knitr
 VignetteBuilder: knitr
 Encoding: UTF-8
-URL: https://www.github.com/cancercentrum/decoder
-BugReports: https://www.github.com/cancercentrum/decoder/issues
+URL: https://www.bitbucket.com/cancercentrum/decoder
+BugReports: https://www.bitbucket.com/cancercentrum/decoder/issues
 RoxygenNote: 5.0.1

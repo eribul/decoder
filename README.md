@@ -8,13 +8,11 @@ The decoder package holds function to decode coded variables to plain text (and 
 
 # Installation
 
-The package is primary a sub-package of the `rcc` package. 
-Installation as described at https://github.com/cancercentrum/rcc is recommended.
-But it is also possible to install only this package by:
+Install package by:
 ```
 # install package devtools if not already done:
 install.packages("devtools")
-devtools::install_github("cancercentrum/decoder")
+devtools::install_bitbucket("cancercentrum/decoder")
 ```
 
 
@@ -30,4 +28,4 @@ vignette("decoder")
 
 # Bug reports
 Please report to:
-https://github.com/cancercentrum/decoder/issues
+https://bitbucket.com/cancercentrum/decoder/issues
