@@ -3,6 +3,8 @@
 # Try to transform x in order to fit the key from keyvalue
 format_as_key <- function(x, keyvalue, name_x = "x", name_keyvalue = "keyvalue"){
     
+    x <- as.character(x)
+    
     ## Get the keyvalue object if specified by character name
     if (is.character(keyvalue)) {
         keyvalue <- get(keyvalue)
@@ -19,7 +21,7 @@ format_as_key <- function(x, keyvalue, name_x = "x", name_keyvalue = "keyvalue")
     
     # Trim spaces 
     if (has_blank(x)) {
-        x <- stringr::str_trim(x)
+        x <- trimws(x)
         msg <- "Spaces are removed from beginning and end."
     }
     
@@ -36,19 +38,19 @@ format_as_key <- function(x, keyvalue, name_x = "x", name_keyvalue = "keyvalue")
     
     # If key starts with 0 but x does not, pad with zeros!
     # Only applies if all codes have the same length and x is shorter than this length
-    key_length <- stringr::str_length(keyvalue$key)[1]
+    key_length <- nchar(keyvalue$key)[1]
     if (!start_0(x) && 
         start_0(keyvalue$key) && 
-        do.call(all.equal, as.list(na.omit(stringr::str_length(keyvalue$key)))) && 
-        key_length > min(stringr::str_length(x), na.rm = TRUE)) {
-            x <- stringr::str_pad(x, key_length, pad = "0")
+        do.call(all.equal, as.list(stats::na.omit(nchar(keyvalue$key)))) && 
+        key_length > min(nchar(x), na.rm = TRUE)) {
+            x <- pad0(x, key_length)
     msg <- paste(msg, "Leading 0:s are introduced for short characters.")
     }
     
     
     # If x has punctuations but the key has not, punctuations are removed from x
     if (has_punct(x) & !has_punct(keyvalue$key)) {
-        x <- stringr::str_replace_all(x, "[[:punct:]]", "")
+        x <- gsub("[[:punct:]]", "", x)
         msg <- paste(msg, "Punctuations are removed")
     }
     
@@ -65,8 +67,8 @@ format_as_key <- function(x, keyvalue, name_x = "x", name_keyvalue = "keyvalue")
     }
     
     # If the key is shorter than x, x is substringed
-    key_length <- max(stringr::str_length(keyvalue$key), na.rm = TRUE)
-    if (max(stringr::str_length(x), na.rm = TRUE) > key_length) {
+    key_length <- max(nchar(keyvalue$key), na.rm = TRUE)
+    if (max(nchar(x), na.rm = TRUE) > key_length) {
         x <- substr(x, 1, key_length)
         msg <- paste(msg, "Only the first", key_length, "characters are used.")
     }

@@ -4,10 +4,10 @@ kv_names <- c("key", "value")
 ##################################### Län ######################################
 
 lan <- read.csv2("data_other_sources/lan.csv", stringsAsFactors = FALSE)
-lan$Län <- stringr::str_trim(lan$Län)
+lan$Län <- trimws(lan$Län)
 lan <- subset(lan, select = c("Kod", "Län"))
 names(lan) <- kv_names
-lan$key <- stringr::str_pad(lan$key, 2, pad = "0")
+lan$key <- pad0(lan$key, 2)
 lan <- as.keyvalue(lan, standard_var_names = c("lan_value", "a_lkf", "hemfr", "hemnu", "hemdia", "lkf", "lkf_value"))
 
 
@@ -18,7 +18,7 @@ lan <- as.keyvalue(lan, standard_var_names = c("lan_value", "a_lkf", "hemfr", "h
 kommun <- read.delim("data_other_sources/kommun.tab", stringsAsFactors = FALSE)
 names(kommun) <- kv_names
 kommun <- subset(kommun, !is.na(key)) 
-kommun$key <- stringr::str_pad(kommun$key, 4, pad = "0")
+kommun$key <- pad0(kommun$key, 4)
 kommun <- as.keyvalue(kommun, standard_var_names = c("a_lkf", "hemfr", "hemnu", "hemdia", "lkf", "lkf_value"))
 
 
@@ -37,7 +37,7 @@ hsn <- as.keyvalue(hsn)
 # Data hämtad från
 # http://www.scb.se/Grupp/Hitta_statistik/Regional%20statistik/Indelningar/_Dokument/lkf2015.pdf
 forsamling <- read.delim("data_other_sources/lkf.csv", stringsAsFactors = FALSE)
-forsamling$Församling <- as.character(stringr::str_pad(forsamling$Församling, 6, pad = "0"))
+forsamling$Församling <- pad0(forsamling$Församling, 6)
 forsamling <- subset(forsamling, select = c("Församling", "Församlingsnamn"))
 names(forsamling) <- kv_names
 forsamling <- as.keyvalue(forsamling, standard_var_names = c("a_lkf", "hemfr", "hemnu", "hemdia", "lkf", "lkf_value"))
@@ -62,7 +62,7 @@ comment(distrikt) <- "Data from www.scb.se/sv_/Hitta-statistik/Regional-statisti
 
 ################################### Kliniker ####################################
 klinik <- rbind(klinik, klinik_extra_rockan)
-klinik$key <- stringr::str_pad(klinik$key, 3, pad = "0")
+klinik$key <- pad0(klinik$key, 3)
 klinik <- unique(klinik)
 klinik <- as.keyvalue(klinik, standard_var_names = c("ankli"))
 
@@ -81,7 +81,7 @@ patologiavdelning <- rbind(subset(patologiavdelning, !(key %in% patologiavdelnin
                           patologiavdelningar_sos_2006
                           )
 patologiavdelning <- subset(patologiavdelning, !is.na(key)) 
-patologiavdelning$key <- stringr::str_pad(patologiavdelning$key, 3, pad = "0")
+patologiavdelning$key <- pad0(patologiavdelning$key, 3)
 patologiavdelning <- patologiavdelning[!duplicated(patologiavdelning$key),]
 patologiavdelning <- as.keyvalue(patologiavdelning, standard_var_names = "pat")
 
@@ -112,7 +112,7 @@ x <- read.delim("data_other_sources/icdo3_fran_manual.tab", header = FALSE)
 x <- as.character(unlist(x))
 x <- gsub(".", " ", x, fixed = TRUE)
 x <- substring(x, 1, nchar(x) - 3)
-x <- gdata::trim(x)
+x <- trimws(x)
 x <- strsplit(x, "  ")
 
 x <- data.frame(key = substring(x, nchar(x) - 2),
@@ -133,7 +133,7 @@ if (FALSE) {
 sjh_koder <- gdata::read.xls("data_other_sources/enhetskoder_preiminara_infor_caninca.xlsx")
 sjh_koder <- sjh_koder %>% 
     #select(Leveranskod_sjukhus, Sjukhus_Enhet) %>% 
-    mutate(Sjukhus_Enhet = stringr::str_trim(Sjukhus_Enhet)) %>% 
+    mutate(Sjukhus_Enhet = trimws(Sjukhus_Enhet)) %>% 
     distinct(Leveranskod_sjukhus, Sjukhus_Enhet) 
     #rename(
     #    key = Leveranskod_sjukhus,

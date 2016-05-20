@@ -12,7 +12,7 @@ best2keyvalue <- function () {
       obj_name <- gsub(".tab", "", x)
       obj <- read.delim(file_name, stringsAsFactors = FALSE)
       names(obj) <- c("key", "value")
-      obj$key <- stringr::str_trim(obj$key)
+      obj$key <- trimws(obj$key)
       obj <- as.keyvalue(obj)
       assign(obj_name, obj, envir = globalenv())
   }

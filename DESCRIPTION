@@ -17,10 +17,8 @@ Depends:
 Imports:
     plyr,
     dplyr,
-    stringr
 Suggests:
     testthat,
-    rccmisc,
     knitr
 VignetteBuilder: knitr
 Encoding: UTF-8
