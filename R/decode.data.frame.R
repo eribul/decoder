@@ -1,10 +1,9 @@
 #' @export
 #' @rdname decoder
-#' @import dplyr
 
 decode.data.frame <- function(x, ...){
     
-    if (!missing(...)){
+    if (!missing(...)) {
         warning("Additional arguments to decode.data.frame ignored!")
     }
    
@@ -16,15 +15,15 @@ decode.data.frame <- function(x, ...){
         if (
             (any(grepl("_Beskrivning", nms)) || any(grepl("_V\u00E4rde", nms))) && 
             (!any(grepl("_beskrivning", nms)) || !any(grepl("_v\u00E4rde", nms)))
-            ){
+            ) {
             "_Beskrivning"
-        } else{
+        } else {
             "_beskrivning"
         }
     
     # Create a table describing all variables to decode
     decode_table <- 
-        dplyr::inner_join(
+        merge(
             data.frame(
                 x.var = nms,
                 key = tolower(nms),
@@ -35,38 +34,24 @@ decode.data.frame <- function(x, ...){
         )
     
     # Return x unchanged if no variables to decode:
-    if (nrow(decode_table) == 0){
+    if (nrow(decode_table) == 0) {
         message("No variables decoded!")
         return(x)
     }
     
     # Otherwise, make names for new columns
-    decode_table <- 
-        decode_table %>%  
-        plyr::ddply(
-            "x.var",
-            function(x) {
-                value <- if (nrow(x) > 1) paste0("_", x$value) else ""
-                x$new_name <- 
-                    paste0(
-                        x$x.var, 
-                        value,
-                        beskrivning
-                    )
-                x
-            }
-        )
-            
+    decode_table$new_name <- paste0(decode_table$x.var, "_", decode_table$value, beskrivning)
+        
     # Do not override existing _beskivnings-variables!
-    already_beskrivning <-  dplyr::intersect(decode_table$new_name, tolower(nms))
-    if (!identical(already_beskrivning, character(0))){
+    already_beskrivning <-  intersect(decode_table$new_name, tolower(nms))
+    if (!identical(already_beskrivning, character(0))) {
         message("\n\nVariable(s) ", paste(already_beskrivning, collapse = ", "),
                 " seems to be already decoded and therefore left unchanged.")
-        decode_table <- decode_table %>% dplyr::filter_(!(~new_name %in% already_beskrivning))
+        decode_table <- decode_table[!(decode_table$new_name %in% already_beskrivning), ]
     }
     
     # Decode each column
-    for (i in seq_len(nrow(decode_table))){
+    for (i in seq_len(nrow(decode_table))) {
         d <- decode_table[i, , drop = FALSE]
         tryCatch(x[[d$new_name]] <- decode(x[[d$x.var]], d$value),
                  warning = function(msg){
@@ -78,10 +63,9 @@ decode.data.frame <- function(x, ...){
     }
     
     # Inform about new columns
-    if (!identical(decode_table$new_name, character(0))){
+    if (!identical(decode_table$new_name, character(0))) {
         message("\nNew decoded columns added: \n* ", 
                 paste(decode_table$new_name, collapse = "\n* ") )
-        
     } 
     
     x

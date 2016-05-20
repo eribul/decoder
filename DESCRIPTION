@@ -14,9 +14,6 @@ Description: Main function decode is used to decode coded key values to plain
 License: GPL-2
 Depends:
     R (>= 2.10)
-Imports:
-    plyr,
-    dplyr,
 Suggests:
     testthat,
     knitr

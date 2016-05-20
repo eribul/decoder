@@ -46,7 +46,7 @@ comment(forsamling) <- "Data from http://www.scb.se/Grupp/Hitta_statistik/Region
 
 
 ##### Combined keyvalue for lan, kommun and forsamling, similair to hemort #####
-hemort2 <- as.keyvalue(dplyr::bind_rows(lan, kommun, forsamling))
+hemort2 <- as.keyvalue(rbind(lan, kommun, forsamling))
 
 
 ################################### Distrikt ###################################

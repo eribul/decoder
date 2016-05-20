@@ -25,7 +25,7 @@ suppressWarnings({
     
     test_that("decode.data.frame", {
         expect_that(decode(iris), is_equivalent_to(iris))
-        expect_that(decode(data.frame(KON_VALUE = 1:2))$KON_VALUE_beskrivning,
+        expect_that(decode(data.frame(KON_VALUE = 1:2))$KON_VALUE_kon_beskrivning,
                     is_equivalent_to(c("Man", "Kvinna"))
                     )        
         expect_that(ncol(decode(d)), is_equivalent_to(9)) 
