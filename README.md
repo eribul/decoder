@@ -1,5 +1,4 @@
-[![Travis-CI Build Status](https://travis-ci.org/cancercentrum/decoder.png?branch=master)](https://travis-ci.org/cancercentrum/decoder)
-[![Coverage Status](https://coveralls.io/repos/cancercentrum/decoder/badge.svg?branch=master&service=github)](https://coveralls.io/github/cancercentrum/decoder?branch=master)
+[![Build status](https://ci.appveyor.com/api/projects/status/3xomdnvdgw5a7dxm?svg=true)](https://ci.appveyor.com/project/erik_bulow/decoder)
 
 decoder
 ==========
