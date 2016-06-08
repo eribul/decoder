@@ -19,9 +19,6 @@ Categorisation:
 \item{Östra}{Essunga, Falköping, Grästorp, Götene, Lidköping, Skara, Vara, Gullspång, Hjo, Karlsborg, Mariestad, Skövde, Tibro, Tidaholm och Töreboda}
 }
 }
-\references{
-\url{http://www.vgregion.se/sv/Vastra-Gotalandsregionen/startsida/Politik/Namnder-och-styrelser/Namnder-och-styrelser-for-halso--och-sjukvard/Halso--och-sjukvardsnamnder/Ny-politisk-organisation-fran-1-januari-2015/}
-}
 \seealso{
 Other key_value_data: \code{\link{distrikt}},
   \code{\link{figo}}, \code{\link{forsamling}},

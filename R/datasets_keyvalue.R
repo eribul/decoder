@@ -155,7 +155,6 @@ NULL
 #' @keywords datasets
 #' @name hsn
 #' @family key_value_data
-#' @references \url{http://www.vgregion.se/sv/Vastra-Gotalandsregionen/startsida/Politik/Namnder-och-styrelser/Namnder-och-styrelser-for-halso--och-sjukvard/Halso--och-sjukvardsnamnder/Ny-politisk-organisation-fran-1-januari-2015/}
 NULL
 
 
