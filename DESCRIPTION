@@ -1,12 +1,12 @@
 Package: decoder
 Type: Package
 Title: Decode Coded Variables to Plain Text (and Vice Versa)
-Version: 1.1.1
-Date: 2016-06-08
+Version: 1.1.2
+Date: 2016-06-17
 Authors@R: person("Erik", "Bulow", email = "erik.bulow@rccvast.se",
   role = c("aut", "cre"))
 Description: Main function "decode" is used to decode coded key values to plain
-    text. Function "code"" can be used to code plain text to code if there is a
+    text. Function "code" can be used to code plain text to code if there is a
     1:1 relation between the two. The concept relies on "keyvalue" objects used
     for translation. There are several "keyvalue"" objects included in the areas
     of geographical regional codes, administrative health care unit codes,
