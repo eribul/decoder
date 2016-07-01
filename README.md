@@ -21,7 +21,7 @@ devtools::install_bitbucket("cancercentrum/decoder")
 
 # Vignette
 See the vignette for an introduction to the package.
-Online: https://rawgit.com/cancercentrum/decoder/master/vignettes/decoder.html
+Online: https://mran.revolutionanalytics.com/web/packages/decoder/vignettes/decoder.html
 
 Within R when package installed:
 ```
