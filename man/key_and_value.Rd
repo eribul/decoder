@@ -20,10 +20,13 @@ is.value(x)
 \item{x}{a vector}
 }
 \value{
-\code{as.value} returns a value-object (currently the vector itself but with class "value").
-\code{as.key} returns a key-object (building on \code{value} but with unique entries and as character).
+\code{as.value} returns a value-object (currently the vector itself 
+but with class "value").
+\code{as.key} returns a key-object (building on \code{value} but with unique 
+entries and as character).
 }
 \description{
-Functions to check if an object is a valid key or value in a keyvalue pair, or coerce it if possible.
+Functions to check if an object is a valid key or value in a keyvalue pair, 
+or coerce it if possible.
 }
 

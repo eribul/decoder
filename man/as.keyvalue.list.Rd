@@ -12,7 +12,8 @@
 \item{...}{further arguments passed to \code{\link{as.keyvalue}}.}
 }
 \value{
-The function returns an object of class \code{keyvalue} (and \code{list}.
+The function returns an object of class \code{keyvalue} 
+(and \code{list}.
 }
 \description{
 \code{x} should be a list with properties descrobed in section "Details".
@@ -21,7 +22,8 @@ The function returns an object of class \code{keyvalue} (and \code{list}.
 \itemize{
    \item{All names of the list elements should be unique.}
    \item{All elements of the list should be named.}
-   \item{All keys should be unique (a key should only be mappad to one value).}
+   \item{All keys should be unique (a key should only be mappad to 
+   one value).}
    \item{All elements of the list should be atomic vectors.}
 }
 }

@@ -35,8 +35,10 @@ with a 1:1 relation between its keys and values (otherwise FALSE).
 Functions to check if an object is a keyvalue object, or coerce it if possible.
 }
 \details{
-\code{x} can be of three types:
+\code{x} can be of:
 \itemize{
+\item a name of a package internal (or external) keyvalue object 
+(character of length one)
 \item a \code{data.frame} with two columns "key" (with unique cells) and "value".
 \item a list as described in \code{\link{as.keyvalue.list}}
 \item a named vector with all names unique 

@@ -11,10 +11,13 @@ Key-value codes for Swedish hospitals and some primary health care units.
 Data from Rockan. Note that this is an old version of the classification!
 See the reference link below for the new version.
 The old version should be used of historical reasons.
-One difference is for example that the Sahlgrenska university hospital is one hospital
-in the new version of the classification but the Swedish regional cancer centers
+One difference is for example that the Sahlgrenska university hospital is 
+one hospital
+in the new version of the classification but the Swedish regional cancer 
+centers
 still classify it as three different hospitals.
-Note also that primary health care units did recieve their own codes until 1992 (?)
+Note also that primary health care units did recieve their own codes until 
+1992 (?)
 but not later!
 }
 \references{

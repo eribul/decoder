@@ -8,18 +8,23 @@
 Dictionary files to translate key codes to value in plain text (or reverse).
 }
 \details{
-Each file has two columns, "key" and "value". The key is a unique (mostly) numeric code
+Each file has two columns, "key" and "value". The key is a unique (mostly) 
+numeric code
 and the key is a character string description.
 The data sets can be divided into four categories:
 \itemize{
- \item Geographic codes: \link{region}, \link{lan}, \link{kommun} and \link{forsamling}
- \item Administrative codes: \link{sjukhus}, \link{klinik} and \link{patologiavdelning}
+ \item Geographic codes: \link{region}, \link{lan}, \link{kommun} and 
+ \link{forsamling}
+ \item Administrative codes: \link{sjukhus}, \link{klinik} and 
+ \link{patologiavdelning}
  \item Diagnose codes: \link{t_rtr}, \link{n_rtr}, \link{m_rtr}, \link{figo},
- \link{tnmgrund}, \link{sida}, \link{icd7}, \link{icd9}, \link{icd10}, \link{icdo}, \link{icdo3},
+ \link{tnmgrund}, \link{sida}, \link{icd7}, \link{icd9}, \link{icd10}, 
+ \link{icdo}, \link{icdo3},
   \link{snomed}, \link{snomed3} and \link{pad}
  \item Other codes: \link{kon}
 }
-The intention of these data files is to be used by the \link{decode} and \link{code} functions.
+The intention of these data files is to be used by the \link{decode} and 
+\link{code} functions.
 }
 \seealso{
 \link{decode}, \link{keyvalue}

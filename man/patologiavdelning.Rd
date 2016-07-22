@@ -8,9 +8,11 @@
 Key-value codes for the Swedish "laboratories".
 Data is combined from two sources.
 \enumerate{
- \item The official list from SOFS 2006:15 (see url below). This is the primary source for codes
+ \item The official list from SOFS 2006:15 (see url below). 
+ This is the primary source for codes
  appearing in both sources.
- \item Extra codes are also added from the old Rockan registry for historical reasons.
+ \item Extra codes are also added from the old Rockan registry for historical 
+ reasons.
 }
 }
 \references{

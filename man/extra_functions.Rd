@@ -17,7 +17,8 @@ real_names(x)
 short_region_names(x)
 }
 \arguments{
-\item{x}{The decoded variable to be further processed. This argument should not be set by the user.
+\item{x}{The decoded variable to be further processed. 
+This argument should not be set by the user.
 It is used only internally by the function from which it is called.}
 }
 \description{

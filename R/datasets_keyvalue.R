@@ -30,18 +30,23 @@
 #'
 #' Dictionary files to translate key codes to value in plain text (or reverse).
 #'
-#' Each file has two columns, "key" and "value". The key is a unique (mostly) numeric code
+#' Each file has two columns, "key" and "value". The key is a unique (mostly) 
+#' numeric code
 #' and the key is a character string description.
 #' The data sets can be divided into four categories:
 #' \itemize{
-#'  \item Geographic codes: \link{region}, \link{lan}, \link{kommun} and \link{forsamling}
-#'  \item Administrative codes: \link{sjukhus}, \link{klinik} and \link{patologiavdelning}
+#'  \item Geographic codes: \link{region}, \link{lan}, \link{kommun} and 
+#'  \link{forsamling}
+#'  \item Administrative codes: \link{sjukhus}, \link{klinik} and 
+#'  \link{patologiavdelning}
 #'  \item Diagnose codes: \link{t_rtr}, \link{n_rtr}, \link{m_rtr}, \link{figo},
-#'  \link{tnmgrund}, \link{sida}, \link{icd7}, \link{icd9}, \link{icd10}, \link{icdo}, \link{icdo3},
+#'  \link{tnmgrund}, \link{sida}, \link{icd7}, \link{icd9}, \link{icd10}, 
+#'  \link{icdo}, \link{icdo3},
 #'   \link{snomed}, \link{snomed3} and \link{pad}
 #'  \item Other codes: \link{kon}
 #' }
-#' The intention of these data files is to be used by the \link{decode} and \link{code} functions.
+#' The intention of these data files is to be used by the \link{decode} and 
+#' \link{code} functions.
 #'
 #'
 #' @docType data
@@ -109,7 +114,8 @@ NULL
 #'
 #' \itemize{
 #'      \item{Key: the first four digits from the LKF-code}
-#'      \item{Value: A geographical area (sub area of county/lan) with special interest}
+#'      \item{Value: A geographical area (sub area of county/lan) with special 
+#'      interest}
 #' }
 #'
 #' The object currently only applies to the Western healthcare region
@@ -123,8 +129,10 @@ NULL
 #' Updates for other regions needs to be requested (please do!).
 #'
 #' @section Kungalv:
-#'  Kungalv is an independent area by default. There are situations when Kungalv should be dealt with as an
-#'  independent healthcare region or as a part of Storgoteborg. See section "extra_functions" in \link{decode}
+#'  Kungalv is an independent area by default. There are situations when Kungalv 
+#'  should be dealt with as an
+#'  independent healthcare region or as a part of Storgoteborg. 
+#'  See section "extra_functions" in \link{decode}
 #'  to handle this.
 #'
 #' @docType data
@@ -145,11 +153,15 @@ NULL
 #'
 #' Categorisation:
 #' \describe{
-#' \item{Norra}{Lysekil, Munkedal, Orust, Sotenäs, Strömstad, Tanum, Bengtsfors, Dals-Ed, Färgelanda, Mellerud, Åmål, Trollhättan, Uddevalla och Vänersborg}
-#' \item{Västra}{Lilla Edet, Ale, Kungälv, Stenungsund, Tjörn, Öckerö, Härryda, Mölndal, Partille, Lerum och Alingsås}
-#' \item{Södra}{Herrljunga, Vårgårda, Bollebygd, Borås, Mark, Svenljunga, Tranemo och Ulricehamn}
+#' \item{Norra}{Lysekil, Munkedal, Orust, Sotenäs, Strömstad, Tanum, Bengtsfors, 
+#' Dals-Ed, Färgelanda, Mellerud, Åmål, Trollhättan, Uddevalla och Vänersborg}
+#' \item{Västra}{Lilla Edet, Ale, Kungälv, Stenungsund, Tjörn, Öckerö, Härryda, 
+#' Mölndal, Partille, Lerum och Alingsås}
+#' \item{Södra}{Herrljunga, Vårgårda, Bollebygd, Borås, Mark, Svenljunga, 
+#' Tranemo och Ulricehamn}
 #' \item{Göteborg}{Göteborg}
-#' \item{Östra}{Essunga, Falköping, Grästorp, Götene, Lidköping, Skara, Vara, Gullspång, Hjo, Karlsborg, Mariestad, Skövde, Tibro, Tidaholm och Töreboda}
+#' \item{Östra}{Essunga, Falköping, Grästorp, Götene, Lidköping, Skara, Vara, 
+#' Gullspång, Hjo, Karlsborg, Mariestad, Skövde, Tibro, Tidaholm och Töreboda}
 #' }
 #' @docType data
 #' @keywords datasets
@@ -223,10 +235,13 @@ NULL
 #' Data from Rockan. Note that this is an old version of the classification!
 #' See the reference link below for the new version.
 #' The old version should be used of historical reasons.
-#' One difference is for example that the Sahlgrenska university hospital is one hospital
-#' in the new version of the classification but the Swedish regional cancer centers
+#' One difference is for example that the Sahlgrenska university hospital is 
+#' one hospital
+#' in the new version of the classification but the Swedish regional cancer 
+#' centers
 #' still classify it as three different hospitals.
-#' Note also that primary health care units did recieve their own codes until 1992 (?)
+#' Note also that primary health care units did recieve their own codes until 
+#' 1992 (?)
 #' but not later!
 #'
 #' @docType data
@@ -258,9 +273,11 @@ NULL
 #' Key-value codes for the Swedish "laboratories".
 #' Data is combined from two sources.
 #' \enumerate{
-#'  \item The official list from SOFS 2006:15 (see url below). This is the primary source for codes
+#'  \item The official list from SOFS 2006:15 (see url below). 
+#'  This is the primary source for codes
 #'  appearing in both sources.
-#'  \item Extra codes are also added from the old Rockan registry for historical reasons.
+#'  \item Extra codes are also added from the old Rockan registry for historical 
+#'  reasons.
 #' }
 #' @docType data
 #' @keywords datasets
