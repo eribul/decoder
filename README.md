@@ -2,6 +2,7 @@
 [![Build status](https://ci.appveyor.com/api/projects/status/3xomdnvdgw5a7dxm?svg=true)](https://ci.appveyor.com/project/erik_bulow/decoder)
 ![Monthly downloads](http://cranlogs.r-pkg.org/badges/decoder) 
 ![Total downloads](http://cranlogs.r-pkg.org/badges/grand-total/decoder)
+[![Project Status: Active - The project has reached a stable, usable state and is being actively developed.](http://www.repostatus.org/badges/latest/active.svg)](http://www.repostatus.org/#active)
 
 decoder
 ==========
