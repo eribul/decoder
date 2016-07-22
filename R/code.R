@@ -1,4 +1,4 @@
-#' @rdname decoder
+#' @rdname decode
 #' @export
 code <- function(y, keyvalue, verbose = TRUE){
   

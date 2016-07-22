@@ -5,7 +5,6 @@
 \alias{decode}
 \alias{decode.data.frame}
 \alias{decode.default}
-\alias{decoder}
 \alias{list_keyvalues}
 \title{Decode codes to plain text (and vice versa)}
 \usage{
@@ -171,7 +170,7 @@ non_unique_snomeds <- summary(decoder:::snomed)$nonunique$key
 # Decoding works fine (all keys are unique) ...
 (a <- decode(non_unique_snomeds, "snomed"))
 # ... but coding these values back to their key does not
-\donttest{
+\dontrun{
 code(a, "snomed")
 }
 }

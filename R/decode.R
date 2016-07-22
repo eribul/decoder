@@ -138,9 +138,10 @@
 #' # Decoding works fine (all keys are unique) ...
 #' (a <- decode(non_unique_snomeds, "snomed"))
 #' # ... but coding these values back to their key does not
-#' \donttest{
+#' \dontrun{
 #' code(a, "snomed")
 #' }
 #'@author Erik Bulow
-#'@name decoder
+#'@name decode
+#' @export
 decode <- function(x, ...)  UseMethod("decode")

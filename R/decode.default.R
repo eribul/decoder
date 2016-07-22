@@ -1,5 +1,5 @@
 #' @export
-#' @rdname decoder
+#' @rdname decode
 decode.default <- function(x, keyvalue, extra_functions = NULL, 
                            exact = FALSE, ...) {
   

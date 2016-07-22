@@ -1,5 +1,5 @@
 #' @export
-#' @rdname decoder
+#' @rdname decode
 decode.data.frame <- function(x, ...){
   
   nms <- names(x)
