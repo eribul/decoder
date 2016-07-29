@@ -14,7 +14,8 @@ test_that("decode.default", {
   expect_equal(length(decode(snomed$key, "snomed")), length(snomed$key))
   expect_warning(decode("      0000001", "kon"))
   expect_equal(decode("      0000001", "kon"), "Man")
-  expect_equal(decode(c(0002425, 2425, "df"), "kommun"), c("Dorotea", "Dorotea", NA))
+  expect_equal(decode(c(0002425, 2425, "df"), "kommun"), 
+               c("Dorotea", "Dorotea", NA))
   expect_warning(decode(c(1:6, letters[1:5]), "region"), "(a, b, c, d, e)")
   expect_warning(decode(c(1:6, letters[1:10]), "region"), "(10 cells)")
 })
@@ -26,5 +27,8 @@ test_that("decode.data.frame", {
               c("Man", "Kvinna")
   )        
   expect_equal(ncol(decode(d)), 9)
+  expect_message(
+    decode(data.frame(KON_VALUE = 1, KON_VALUE_kon_beskrivning = "Man")),
+    "seems to be already decoded")
 })
 

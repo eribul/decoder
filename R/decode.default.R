@@ -22,7 +22,8 @@ decode.default <- function(x, keyvalue, extra_functions = NULL,
   ## Apply extra functions if given
   if (!is.null(extra_functions)) {
     for (fun in extra_functions) {
-      FUN <- match.fun(fun)
+      FUN <- get0(fun, mode = "function")
+      if (is.null(FUN)) FUN <- match.fun(fun)
       res <- FUN(res)
     }
   }

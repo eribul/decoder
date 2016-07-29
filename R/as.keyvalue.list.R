@@ -1,4 +1,3 @@
-
 #' Coerce a list to keyvalue object
 #'
 #' \code{x} should be a list with properties descrobed in section "Details".
@@ -49,14 +48,14 @@
 as.keyvalue.list <- function(x, ...){
   
   # Tests
-  if ("" %in% names(x)) {
+  if (is.null(names(x)) || "" %in% names(x)) {
     stop("All elements of x must be named (values must be given for all keys)!")
   } else if (!identical(unique(names(x)), names(x))) {
     stop("All list element names must be unique!")
   } else if (anyDuplicated(unlist(x)) > 0) {
     stop("Some key(s) have duplicates! A key should only be mapped to one ", 
          "value (be found in one element of the list)")
-  } else if (!all(sapply(x, is.atomic))) {
+  } else if (!all(vapply(x, is.atomic, logical(1)))) {
     stop("All elements of the list should be atomic!")
   }
   
@@ -69,7 +68,7 @@ as.keyvalue.list <- function(x, ...){
 internal_as.keyvalue.list <- function(x){
   data.frame(
     key = unlist(x),
-    value = rep(names(x), sapply(x, length)),
+    value = rep(names(x), vapply(x, length, numeric(1))),
     row.names = NULL
   ) 
 }

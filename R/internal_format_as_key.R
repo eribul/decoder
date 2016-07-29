@@ -46,7 +46,7 @@ format_as_key <- function(x, keyvalue){
   if (has(x,             "[[:punct:]]") && 
       !has(keyvalue$key, "[[:punct:]]")) {
     x <- gsub("[[:punct:]]", "", x)
-    msg <- paste(msg, "Punctuations are removed")
+    msg <- paste(msg, "Punctuations are removed.")
   }
   
   # If key has no capitals, all letters in x are made lowercase

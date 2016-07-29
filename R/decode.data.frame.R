@@ -4,7 +4,8 @@ decode.data.frame <- function(x, ...){
   
   nms <- names(x)
   
-  # If x has variables named "_Beskrivning/_Värde" and no "_beskrivning/_värde", 
+  # If x has variables named "_Beskrivning/_Värde" and no 
+  # "_beskrivning/_värde", 
   # "_Beskrivning" is used otherwise "_beskrivning
   any_name <- function(x) any(endsWith(x, nms))
   beskrivning <- if (
@@ -30,12 +31,13 @@ decode.data.frame <- function(x, ...){
     paste0(decode_table$x.var, "_", decode_table$value, beskrivning)
   
   # Do not override existing _beskivnings-variables!
-  already_beskrivning <-  intersect(decode_table$new_name, tolower(nms))
+  already_beskrivning <- 
+    intersect(tolower(decode_table$new_name), tolower(nms))
   if (!identical(already_beskrivning, character(0))) {
-    message("\nVariable(s) ", paste(already_beskrivning, collapse = ", "),
+    message("Variable(s) ", paste(already_beskrivning, collapse = ", "),
             " seems to be already decoded and therefore left unchanged.")
     decode_table <- 
-      decode_table[!(decode_table$new_name %in% already_beskrivning), ]
+      decode_table[!(tolower(decode_table$new_name) %in% already_beskrivning), ]
   }
   
   # Decode each column

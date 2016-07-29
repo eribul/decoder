@@ -26,4 +26,7 @@ test_that("misc", {
   expect_error(as.keyvalue.list(ex2), 
     "All list element names must be unique!")
   expect_error(as.keyvalue.list(ex3), "Some key\\(s\\) have duplicates!")
+  expect_error(as.keyvalue(list(1:10)), "All elements of x must be named")
+  expect_error(as.keyvalue(list(a = list(1:10))), 
+    "All elements of the list should be atomic!")
 })

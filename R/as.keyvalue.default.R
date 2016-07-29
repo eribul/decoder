@@ -6,7 +6,8 @@ as.keyvalue.default <- function(x, y, ...){
   if (!missing(y)) stopifnot(is.atomic(y))
   
   # Possibly get keyvalue object by name 
-  if (length(x) == 1 && missing(y) && exists(x))
+  if (length(x) == 1 && is.character(x) && 
+      is.null(names(x)) && missing(y) && exists(x))
     return(as.keyvalue(get(x)))
   
   ## If only x supplied, x should be a named vector
