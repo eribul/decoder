@@ -20,7 +20,6 @@ test_that("real_names", {
 
 
 test_that("short_region_names", {
-  expect_equal(decode(1:6, "region", "short_region_names"),
-   c("Sthlm/Gotland", "Uppsala/Örebro", "Sydöstra", "Syd", "Väst", 
-     "Norr"))
+  expect_equal(decode(3:6, "region", "short_region_names"),
+   c("Syd\u00F6stra", "Syd", "V\u00E4st", "Norr"))
 })
