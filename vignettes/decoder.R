@@ -65,11 +65,17 @@ non_unique <- c(90703, 90723, 96153, 99403, 89643, 90443)
 decode(non_unique, "snomed")
 
 ## ------------------------------------------------------------------------
-unique <- c("Mucinöst kystadenom (kystom) borderline-typ ( 2 B)", "Medullärt carcinom, atypiskt", 
-            "Mb Paget non invasiv och intraduktal", "Lymfangiosarcom, misst", 
-            "Fibröst histiocytom, malignt", "Ganglioneurom", "Carcinoid (exkl appendix)", 
-            "Langerhans cell histiocytos, UNS, Histiocytosis X, UNS", "Brenner tumör, malign", 
-            "Lymfatisk leukemi, UNS")
+unique <- c(
+  "Mucinöst kystadenom (kystom) borderline-typ ( 2 B)", 
+  "Medullärt carcinom, atypiskt", 
+  "Mb Paget non invasiv och intraduktal", 
+  "Lymfangiosarcom, misst", 
+  "Fibröst histiocytom, malignt", 
+  "Ganglioneurom", 
+  "Carcinoid (exkl appendix)", 
+  "Langerhans cell histiocytos, UNS, Histiocytosis X, UNS", 
+  "Brenner tumör, malign", 
+  "Lymfatisk leukemi, UNS")
 code(unique, "snomed")
 
 ## ------------------------------------------------------------------------

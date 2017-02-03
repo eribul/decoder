@@ -2,10 +2,10 @@
 % Please edit documentation in R/as.key.R, R/as.value.R
 \name{as.key}
 \alias{as.key}
-\alias{as.value}
 \alias{is.key}
-\alias{is.value}
 \alias{key_and_value}
+\alias{as.value}
+\alias{is.value}
 \title{Coerce to key or value in objects in a key-value pair}
 \usage{
 as.key(x)
@@ -29,4 +29,3 @@ entries and as character).
 Functions to check if an object is a valid key or value in a keyvalue pair, 
 or coerce it if possible.
 }
-

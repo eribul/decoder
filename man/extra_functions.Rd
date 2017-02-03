@@ -2,10 +2,12 @@
 % Please edit documentation in R/extra_functions.R
 \name{extra_functions}
 \alias{extra_functions}
-\alias{kungalv2Fyrbodal}
 \alias{kungalv2Storgoteborg}
+\alias{kungalv2Fyrbodal}
 \alias{real_names}
 \alias{short_region_names}
+\alias{rc_sjukhus_namn}
+\alias{rc_forvaltning_namn}
 \title{Extra functions to apply to decoded variables using decode}
 \usage{
 kungalv2Storgoteborg(x)
@@ -15,6 +17,10 @@ kungalv2Fyrbodal(x)
 real_names(x)
 
 short_region_names(x)
+
+rc_sjukhus_namn(x)
+
+rc_forvaltning_namn(x)
 }
 \arguments{
 \item{x}{The decoded variable to be further processed. 
@@ -24,4 +30,3 @@ It is used only internally by the function from which it is called.}
 \description{
 See section "extra_functions" at the \link{decode} help page!
 }
-

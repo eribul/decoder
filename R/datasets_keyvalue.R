@@ -251,6 +251,37 @@ NULL
 #' @references \url{http://www.socialstyrelsen.se/klassificeringochkoder/andrakodverk/sjukhuskoder}
 NULL
 
+#' Codes used by RC's kvartalen
+#' 
+#'  Key-value codes for VGR hospitals and organisatuional units according to RC.
+#'  
+#'  Function \code{rc_sjukhus_namn} and \code{rc_forvaltning_namn}
+#'  (see\code{\link{extra_functions}}) can be 
+#'  used to translate codes into text, see examples below.
+#'  
+#' @seealso See the vignette \code{vignette("RC_units", "decoder")} 
+#'  for more details and examples (Swedish).
+#'  
+#' @examples 
+#'  # From RCC hospital code to RC hospital code
+#'  decode(51012, "rc_sjukhus")
+#'  
+#'  # From RCC code to RC name
+#'  decode(51012, "rc_sjukhus", "rc_sjukhus_namn")
+#'  
+#'  # From RCC hospital code to RC organisational unit code
+#'  decode(51012, "rc_forvaltning")
+#'  
+#'  # From RCC code to RC name
+#'  decode(51012, "rc_forvaltning", "rc_forvaltning_namn")
+#'      
+#' @docType data
+#' @keywords datasets
+#' @name rc
+#' @aliases rc_sjukhus rc_forvaltning
+#' @family key_value_data
+NULL
+
 
 #' Clinic codes
 #'

@@ -19,11 +19,10 @@ Other key_value_data: \code{\link{distrikt}},
   \code{\link{kommun}}, \code{\link{kon}},
   \code{\link{lan}}, \code{\link{m_rtr}},
   \code{\link{n_rtr}}, \code{\link{pad}},
-  \code{\link{patologiavdelning}}, \code{\link{region}},
-  \code{\link{sida}}, \code{\link{sjukhus}},
-  \code{\link{sjukvardsomrade}}, \code{\link{snomed3}},
-  \code{\link{snomed}}, \code{\link{t_rtr}},
-  \code{\link{tnmgrund}}
+  \code{\link{patologiavdelning}}, \code{\link{rc}},
+  \code{\link{region}}, \code{\link{sida}},
+  \code{\link{sjukhus}}, \code{\link{sjukvardsomrade}},
+  \code{\link{snomed3}}, \code{\link{snomed}},
+  \code{\link{t_rtr}}, \code{\link{tnmgrund}}
 }
 \keyword{datasets}
-

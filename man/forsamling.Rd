@@ -14,6 +14,7 @@ Data from SCB 2014-08-12 according to reference.
 Be aware of the spelling ("forsamling").
 Contains 1377 key-value pairs.
 }
+
 \references{
 \url{http://www.scb.se/sv_/Hitta-statistik/Regional-statistik-och-kartor/Regionala-indelningar/Lan-och-kommuner/}
 }
@@ -28,11 +29,10 @@ Other key_value_data: \code{\link{distrikt}},
   \code{\link{kommun}}, \code{\link{kon}},
   \code{\link{lan}}, \code{\link{m_rtr}},
   \code{\link{n_rtr}}, \code{\link{pad}},
-  \code{\link{patologiavdelning}}, \code{\link{region}},
-  \code{\link{sida}}, \code{\link{sjukhus}},
-  \code{\link{sjukvardsomrade}}, \code{\link{snomed3}},
-  \code{\link{snomed}}, \code{\link{t_rtr}},
-  \code{\link{tnmgrund}}
+  \code{\link{patologiavdelning}}, \code{\link{rc}},
+  \code{\link{region}}, \code{\link{sida}},
+  \code{\link{sjukhus}}, \code{\link{sjukvardsomrade}},
+  \code{\link{snomed3}}, \code{\link{snomed}},
+  \code{\link{t_rtr}}, \code{\link{tnmgrund}}
 }
 \keyword{datasets}
-
