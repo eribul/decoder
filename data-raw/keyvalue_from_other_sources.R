@@ -198,7 +198,7 @@ if (FALSE) {
 rc <- read.csv2("data_other_sources/organisationslista_rc.tab", 
   stringsAsFactors = FALSE)
 
-rc_sjukhus <- 
+sjukhus_rc <- 
   rc %>% 
     select(
       key = usesjhkod,
@@ -206,7 +206,7 @@ rc_sjukhus <-
     ) %>% 
     as.keyvalue()
 
-rc_forvaltning <- 
+forvaltning_rc <- 
   rc %>% 
   select(
     key = usesjhkod,
@@ -216,7 +216,7 @@ rc_forvaltning <-
 
 # Hjälpöversättningar för kod till klartext
 
-rc_sjukhus_code2klartext <- 
+sjukhus_rc_code2klartext <- 
   rc %>% 
   select(
     key = s_administration,
@@ -225,7 +225,7 @@ rc_sjukhus_code2klartext <-
   as.keyvalue()
 
 
-rc_forvaltning_code2klartext <- 
+forvaltning_rc_code2klartext <- 
   rc %>% 
   select(
     key = Administration,
@@ -236,3 +236,79 @@ rc_forvaltning_code2klartext <-
 
 rm(rc)
   
+
+
+
+##################### Koder från INCA:s organisationsregister###################
+
+incaorg <- read.csv2("data_other_sources/N58 Organisationsenheter i INCA 2.txt", 
+                     stringsAsFactors = FALSE)
+
+
+trim0 <- function(x) gsub("^0(\\w*)$", "\\1", x)
+
+x <- 
+  incaorg %>% 
+  filter(
+    TopPosCode %in% 1:6,
+    PosLevel == 2,
+    UnitCode != "30199",     # This code used by two units. Skip it by now
+    trimws(UnitCode) != "",
+    trimws(UnitName) != ""
+  ) %>% 
+  group_by(UnitCode) %>% 
+  filter(n() == 1 | PosEnabled == "True") %>%
+  ungroup() 
+
+# Koder som bara skiljer sig med avseende på ev inledande nolla
+problematic_keys <- 
+  x %>% 
+    filter(
+      startsWith(UnitCode, "0"),
+      trim0(UnitCode) %in% UnitCode
+    ) %>% 
+  select(UnitCode)
+
+
+sjukhus_inca <- 
+  x %>% 
+    transmute(
+      key = ifelse(UnitCode %in% problematic_keys$UnitCode, UnitCode, 
+                   trim0(UnitCode)),
+      value = UnitName
+    ) %>% 
+    distinct(key, value, .keep_all = TRUE) %>% 
+    as.keyvalue()
+
+rm(incaorg, trim0, x, problematic_keys)
+
+
+
+########################## Sjukhuskoder från SOS/PAR ###########################
+
+# download.file("http://www.socialstyrelsen.se/SiteCollectionDocuments/patientregistret-sjukhus-klinikkoder-sluten-vard-2014.xls", "data_other_sources/sos_par_sjukhus_sluten.xls")
+# 
+# download.file("http://www.socialstyrelsen.se/SiteCollectionDocuments/patientregistret-sjukhus-klinikkoder-oppen-vard-2014.xls", "data_other_sources/sos_par_sjukhus_oppen.xls")
+
+oppen <- readxl::read_excel("data_other_sources/sos_par_sjukhus_oppen.xls", 
+  "Öppenvård", col_names = FALSE)
+sluten <- readxl::read_excel("data_other_sources/sos_par_sjukhus_sluten.xls", 
+                            "Slutenvård", col_names = FALSE)
+
+sjukhus_par <- 
+  oppen %>% 
+  bind_rows(sluten) %>% 
+  select(
+    key = X2,
+    value = X3
+  ) %>% 
+  filter(
+    !is.na(key),
+    key != value,
+    !is.na(value)
+  ) %>% 
+  distinct(key, .keep_all = TRUE) %>% 
+  arrange(key) %>% 
+  as.keyvalue()
+
+rm(oppen, sluten)

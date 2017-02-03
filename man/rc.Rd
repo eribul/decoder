@@ -3,28 +3,28 @@
 \docType{data}
 \name{rc}
 \alias{rc}
-\alias{rc_sjukhus}
-\alias{rc_forvaltning}
+\alias{sjukhus_rc}
+\alias{forvaltning_rc}
 \title{Codes used by RC's kvartalen}
 \description{
 Key-value codes for VGR hospitals and organisatuional units according to RC.
  
- Function \code{rc_sjukhus_namn} and \code{rc_forvaltning_namn}
+ Function \code{sjukhus_rc_namn} and \code{forvaltning_rc_namn}
  (see\code{\link{extra_functions}}) can be 
  used to translate codes into text, see examples below.
 }
 \examples{
  # From RCC hospital code to RC hospital code
- decode(51012, "rc_sjukhus")
+ decode(51012, "sjukhus_rc")
  
  # From RCC code to RC name
- decode(51012, "rc_sjukhus", "rc_sjukhus_namn")
+ decode(51012, "sjukhus_rc", "sjukhus_rc_namn")
  
  # From RCC hospital code to RC organisational unit code
- decode(51012, "rc_forvaltning")
+ decode(51012, "forvaltning_rc")
  
  # From RCC code to RC name
- decode(51012, "rc_forvaltning", "rc_forvaltning_namn")
+ decode(51012, "forvaltning_rc", "forvaltning_rc_namn")
      
 }
 \seealso{
@@ -37,14 +37,15 @@ Other key_value_data: \code{\link{distrikt}},
   \code{\link{icd10}}, \code{\link{icd7_grov}},
   \code{\link{icd7}}, \code{\link{icd9}},
   \code{\link{icdo3_grov}}, \code{\link{icdo3}},
-  \code{\link{icdo}}, \code{\link{key_value_data}},
-  \code{\link{klinik}}, \code{\link{kommun}},
-  \code{\link{kon}}, \code{\link{lan}},
-  \code{\link{m_rtr}}, \code{\link{n_rtr}},
-  \code{\link{pad}}, \code{\link{patologiavdelning}},
-  \code{\link{region}}, \code{\link{sida}},
-  \code{\link{sjukhus}}, \code{\link{sjukvardsomrade}},
-  \code{\link{snomed3}}, \code{\link{snomed}},
-  \code{\link{t_rtr}}, \code{\link{tnmgrund}}
+  \code{\link{icdo}}, \code{\link{klinik}},
+  \code{\link{kommun}}, \code{\link{kon}},
+  \code{\link{lan}}, \code{\link{m_rtr}},
+  \code{\link{n_rtr}}, \code{\link{pad}},
+  \code{\link{patologiavdelning}}, \code{\link{region}},
+  \code{\link{sida}}, \code{\link{sjukhus_inca}},
+  \code{\link{sjukhus_par}}, \code{\link{sjukhus}},
+  \code{\link{sjukvardsomrade}}, \code{\link{snomed3}},
+  \code{\link{snomed}}, \code{\link{t_rtr}},
+  \code{\link{tnmgrund}}
 }
 \keyword{datasets}

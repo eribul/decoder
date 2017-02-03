@@ -6,8 +6,8 @@
 \alias{kungalv2Fyrbodal}
 \alias{real_names}
 \alias{short_region_names}
-\alias{rc_sjukhus_namn}
-\alias{rc_forvaltning_namn}
+\alias{sjukhus_rc_namn}
+\alias{forvaltning_rc_namn}
 \title{Extra functions to apply to decoded variables using decode}
 \usage{
 kungalv2Storgoteborg(x)
@@ -18,9 +18,9 @@ real_names(x)
 
 short_region_names(x)
 
-rc_sjukhus_namn(x)
+sjukhus_rc_namn(x)
 
-rc_forvaltning_namn(x)
+forvaltning_rc_namn(x)
 }
 \arguments{
 \item{x}{The decoded variable to be further processed. 

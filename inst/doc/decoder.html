@@ -282,16 +282,18 @@ y &lt;-<span class="st"> </span><span class="kw">as.numeric</span>(<span class="
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">df &lt;-<span class="st"> </span><span class="kw">data.frame</span>(<span class="dt">LKF =</span> <span class="kw">c</span>(<span class="st">&quot;149804&quot;</span>, <span class="st">&quot;147104&quot;</span>, <span class="st">&quot;012704&quot;</span>, <span class="st">&quot;143505&quot;</span>, <span class="st">&quot;126502&quot;</span>, <span class="st">&quot;232602&quot;</span>))
 knitr::<span class="kw">kable</span>(<span class="kw">suppressWarnings</span>(<span class="kw">decode</span>(df)))</code></pre></div>
 <pre><code>## New decoded columns added: 
-## * LKF_forsamling_beskrivning
+## * LKF_hemort2_beskrivning
 ## * LKF_hemort_beskrivning
+## * LKF_forsamling_beskrivning
 ## * LKF_lan_beskrivning
 ## * LKF_kommun_beskrivning</code></pre>
 <table>
 <thead>
 <tr class="header">
 <th align="left">LKF</th>
-<th align="left">LKF_forsamling_beskrivning</th>
+<th align="left">LKF_hemort2_beskrivning</th>
 <th align="left">LKF_hemort_beskrivning</th>
+<th align="left">LKF_forsamling_beskrivning</th>
 <th align="left">LKF_lan_beskrivning</th>
 <th align="left">LKF_kommun_beskrivning</th>
 </tr>
@@ -301,6 +303,7 @@ knitr::<span class="kw">kable</span>(<span class="kw">suppressWarnings</span>(<s
 <td align="left">149804</td>
 <td align="left">NA</td>
 <td align="left">Velinga</td>
+<td align="left">NA</td>
 <td align="left">Västra Götalands län</td>
 <td align="left">Tidaholm</td>
 </tr>
@@ -308,6 +311,7 @@ knitr::<span class="kw">kable</span>(<span class="kw">suppressWarnings</span>(<s
 <td align="left">147104</td>
 <td align="left">NA</td>
 <td align="left">Holmestad</td>
+<td align="left">NA</td>
 <td align="left">Västra Götalands län</td>
 <td align="left">Götene</td>
 </tr>
@@ -315,6 +319,7 @@ knitr::<span class="kw">kable</span>(<span class="kw">suppressWarnings</span>(<s
 <td align="left">012704</td>
 <td align="left">NA</td>
 <td align="left">Salem</td>
+<td align="left">NA</td>
 <td align="left">Stockholms län</td>
 <td align="left">Botkyrka</td>
 </tr>
@@ -322,6 +327,7 @@ knitr::<span class="kw">kable</span>(<span class="kw">suppressWarnings</span>(<s
 <td align="left">143505</td>
 <td align="left">NA</td>
 <td align="left">Mo</td>
+<td align="left">NA</td>
 <td align="left">Västra Götalands län</td>
 <td align="left">Tanum</td>
 </tr>
@@ -329,11 +335,13 @@ knitr::<span class="kw">kable</span>(<span class="kw">suppressWarnings</span>(<s
 <td align="left">126502</td>
 <td align="left">NA</td>
 <td align="left">Björka</td>
+<td align="left">NA</td>
 <td align="left">Skåne län</td>
 <td align="left">Sjöbo</td>
 </tr>
 <tr class="even">
 <td align="left">232602</td>
+<td align="left">Hackås</td>
 <td align="left">Hackås</td>
 <td align="left">Hackås</td>
 <td align="left">Jämtlands län</td>

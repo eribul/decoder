@@ -18,13 +18,13 @@ Dessutom tillämpas kodsättning på förvaltningsnivå för sjukhus inom region
 
 `decoder`-paketet innehåller två översättningsmatriser till nytta vid data-export till RC:
 
-* `rc_sjukhus` översätter RCC:s sjkhuskoder till motsvarande koder som används av RC
-* `rc_forvaltning` Översätter RCC:s sjukhuskoder till förvaltningskoder som används av RC
+* `sjukhus_rc` översätter RCC:s sjkhuskoder till motsvarande koder som används av RC
+* `forvaltning_rc` Översätter RCC:s sjukhuskoder till förvaltningskoder som används av RC
 
 Utöver  dessa båda huvudmatriser finns ytterligare två hjälpmatriser som inte är avsedda för (men som trots allt går) att använda direkt (se nedan:
  
- * `rc_sjukhus_kod2klartext` översätter RC:s koder till deras motsvarande sjukhusnamn i klartext. Observera att dessa namn inte nödvändigtvis överrensstämmer med motsvarande namn hos RCC (se nedan).
- * `rc_forvaltning_kod2klartext` översätter RC:s förvaltningskoder till klartext. Dessa koder kanske i någon mån kan sägas motsvara RCC_s sjukhusområden (som dock baseras på folkbokföring) och inte som här, på VGR:s interna förvaltningsstruktur.
+ * `sjukhus_rc_kod2klartext` översätter RC:s koder till deras motsvarande sjukhusnamn i klartext. Observera att dessa namn inte nödvändigtvis överrensstämmer med motsvarande namn hos RCC (se nedan).
+ * `forvaltning_rc_kod2klartext` översätter RC:s förvaltningskoder till klartext. Dessa koder kanske i någon mån kan sägas motsvara RCC_s sjukhusområden (som dock baseras på folkbokföring) och inte som här, på VGR:s interna förvaltningsstruktur.
  
 
 # Exempel
@@ -52,8 +52,8 @@ library(decoder)
 
 df %>% 
   mutate(
-    rc_sjukhus     = decode(sjukhus, "rc_sjukhus"),
-    rc_forvaltning = decode(sjukhus, "rc_forvaltning")
+    sjukhus_rc     = decode(sjukhus, "sjukhus_rc"),
+    forvaltning_rc = decode(sjukhus, "forvaltning_rc")
   ) %>% 
   knitr::kable()
 ```
@@ -64,10 +64,10 @@ Kanske är detta tillräckligt för RC? Men kanske vill vi också se sjukhus-och
 ```{r}
 df %>% 
   mutate(
-    rc_sjukhus_kod      = decode(sjukhus, "rc_sjukhus"),
-    rc_forvaltning_kod  = decode(sjukhus, "rc_forvaltning"),
-    rc_sjukhus_namn     = decode(sjukhus, "rc_sjukhus", "rc_sjukhus_namn"),
-    rc_forvaltning_namn = decode(sjukhus, "rc_forvaltning", "rc_forvaltning_namn")
+    sjukhus_rc_kod      = decode(sjukhus, "sjukhus_rc"),
+    forvaltning_rc_kod  = decode(sjukhus, "forvaltning_rc"),
+    sjukhus_rc_namn     = decode(sjukhus, "sjukhus_rc", "sjukhus_rc_namn"),
+    forvaltning_rc_namn = decode(sjukhus, "forvaltning_rc", "forvaltning_rc_namn")
   ) %>% 
   knitr::kable()
 ```
@@ -78,34 +78,34 @@ df %>%
 ```{r, eval = FALSE}
 df %>% 
   mutate(
-    rc_sjukhus_kod      = decode(sjukhus, "rc_sjukhus"),
-    rc_forvaltning_kod  = decode(sjukhus, "rc_forvaltning"),
-    rc_sjukhus_namn     = decode(rc_sjukhus_kod, "rc_sjukhus_code2klartext"),
-    rc_forvaltning_namn = decode(rc_forvaltning_kod, "rc_forvaltning_code2klartext")
+    sjukhus_rc_kod      = decode(sjukhus, "sjukhus_rc"),
+    forvaltning_rc_kod  = decode(sjukhus, "forvaltning_rc"),
+    sjukhus_rc_namn     = decode(sjukhus_rc_kod, "sjukhus_rc_code2klartext"),
+    forvaltning_rc_namn = decode(forvaltning_rc_kod, "forvaltning_rc_code2klartext")
   ) 
 ```
 
-En fördel med den fösra metoden framför den andra är att översättningen kan ske i ett steg istället för två. Just i detta exempel hade vi redan skapat `rc_sjukhus_kod` respektive `rc_forvaltning_kod` och kunde då utgå från dessa som mellansteg (något som också underlättas av att vi använder `dplyr::mutate`). Om så inte hade varit fallet skulle det krävas omkodning i två steg såsom:
+En fördel med den fösra metoden framför den andra är att översättningen kan ske i ett steg istället för två. Just i detta exempel hade vi redan skapat `sjukhus_rc_kod` respektive `forvaltning_rc_kod` och kunde då utgå från dessa som mellansteg (något som också underlättas av att vi använder `dplyr::mutate`). Om så inte hade varit fallet skulle det krävas omkodning i två steg såsom:
 ```{r}
-decode(decode(df$sjukhus, "rc_sjukhus"), "rc_sjukhus_code2klartext")
+decode(decode(df$sjukhus, "sjukhus_rc"), "sjukhus_rc_code2klartext")
 ```
 
 # Skillnader i sjukhusnamn
 
-Vi illustrerar här skillnaderna mellan sjukhusnamn som används av RC och RCC genom att utgå från RCC:s sjukhuskoder som återfinns i översättningstabellerna, det vill säga internt i översättningsobjektet `rc_sjukhus$key`:
+Vi illustrerar här skillnaderna mellan sjukhusnamn som används av RC och RCC genom att utgå från RCC:s sjukhuskoder som återfinns i översättningstabellerna, det vill säga internt i översättningsobjektet `sjukhus_rc$key`:
 
 ```{r}
 sjukhusnamn <- 
   data_frame(
-    rcc_sjukhus_kod = decoder:::rc_sjukhus$key,
+    rcc_sjukhus_kod = decoder:::sjukhus_rc$key,
     rcc_sjukhus_namn = decode(rcc_sjukhus_kod, "sjukhus"),
-    rc_sjukhus_namn = decode(rcc_sjukhus_kod, "rc_sjukhus", "rc_sjukhus_namn")
+    sjukhus_rc_namn = decode(rcc_sjukhus_kod, "sjukhus_rc", "sjukhus_rc_namn")
   ) 
 
 knitr::kable(sjukhusnamn)
 ```
 
-Vi finner att `r nrow(filter(sjukhusnamn, rcc_sjukhus_namn != rc_sjukhus_namn))` namn av `r nrow(decoder:::rc_sjukhus)` skiljer sig åt.
+Vi finner att `r nrow(filter(sjukhusnamn, rcc_sjukhus_namn != sjukhus_rc_namn))` namn av `r nrow(decoder:::sjukhus_rc)` skiljer sig åt.
 
 Att RCC saknar namnöversättning för Angereds närsjukhus kan bero på att paketet än så länge utgår från en gammal översättningstabell (detta kommer uppdateras inom kort).
 

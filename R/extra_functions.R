@@ -40,13 +40,13 @@ short_region_names <- function(x){
 
 #' @rdname extra_functions
 #' @export
-rc_sjukhus_namn <- function(x) {
-  decode(x, "rc_sjukhus_code2klartext")
+sjukhus_rc_namn <- function(x) {
+  decode(x, "sjukhus_rc_code2klartext")
 }
   
 
 #' @rdname extra_functions
 #' @export
-rc_forvaltning_namn <- function(x) {
-  decode(x, "rc_forvaltning_code2klartext")
+forvaltning_rc_namn <- function(x) {
+  decode(x, "forvaltning_rc_code2klartext")
 }

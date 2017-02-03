@@ -36,7 +36,7 @@ format_as_key <- function(x, keyvalue){
   key_length <- nchar(keyvalue$key)[1]
   if (!start_0(x) && 
       start_0(keyvalue$key) && 
-      do.call(all.equal, as.list(stats::na.omit(nchar(keyvalue$key)))) && 
+      Reduce(`==`, stats::na.omit(nchar(keyvalue$key))) &&
       key_length > min(nchar(x), na.rm = TRUE)) {
     x <- pad0(x, key_length)
     msg <- paste(msg, "Leading 0:s are introduced for short characters.")
