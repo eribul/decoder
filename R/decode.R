@@ -1,16 +1,14 @@
 #'Decode codes to plain text (and vice versa)
 #'
-#'Translate coded values into meaningful plain text (or reversed). Use 
-#'\code{list_keyvalues()} to see a list of all keyvalue objects ("dictionaries")
-#'included in the package.
+#'Translate coded values into meaningful plain text (or reversed). 
 #'
 #'@param x object to decode. Either a key vector to be matched againt the 
 #'  \code{key} column in \code{keyvalue}, or a data.frame (see section 
 #'  \code{decode.data.frame}). object.
 #'@param y value to be coded (to be matched againt the \code{value} element) in 
 #'  a \link{keyvalue} object.
-#'@param keyvalue either a name (as character string) of one of the 
-#'  \link{keyvalue} objects listed here: \link{key_value_data}, or a user 
+#'@param keyvalue either a name (as character string) of a package internal 
+#'  \link{keyvalue} object, or a user 
 #'  defined keyvalue object (see \link{as.keyvalue}).
 #'@param exact Should \code{x} have an exact match from the key? Default is 
 #'  \code{FALSE}. When \code{FALSE}, \code{x} might be transformed to fit the 
@@ -76,9 +74,6 @@
 #'  
 #'@seealso \link{keyvalue}, \link{extra_functions}
 #' @examples
-#'
-#' # We can start to list all available keyvalue objects included in the package:
-#' list_keyvalues()
 #'
 #' KON_VALUE <- sample(1:2, 20, replace = TRUE)
 #' (kon <- decode(KON_VALUE, "kon"))

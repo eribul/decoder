@@ -8,9 +8,8 @@
 ##########################################################################################
 
 library(decoder)
+library(dplyr)
 rm(list = ls())
-# Note! For this to work, the current working directory must first be set to match the package!
-old_wd <- setwd("./data-raw")
 
 
 ##########################################################################################
@@ -21,35 +20,25 @@ old_wd <- setwd("./data-raw")
 ##########################################################################################
 
 ## Order of the files matter!
-source("keyvalue_from_best.R")
-source("keyvalue_from_other_sources.R")
-source("keyvalue_from_script.R")
+source("data-raw/keyvalue_from_best.R")
+source("data-raw/keyvalue_from_other_sources.R")
+source("data-raw/keyvalue_from_script.R")
 rm(kv_names)
 
 
 ######## Create a keyvalue object with all standard names used for all keyvalues #########
+ls       <- ls()
+x        <- lapply(ls, function(i) attr(get(i), "standard_var_names"))
+names(x) <- ls
+x        <- Filter(Negate(is.null), x)
 
-ALL_KEYVALUE_OBJECTS <- ls()[ls() != "old_wd"]
-x <- as.list(ALL_KEYVALUE_OBJECTS)
-names(x) <- x
-x <- lapply(x, function(x)
-  NA)
-for (i in names(x)) {
-  x[[i]] <- attr(get(i), "standard_var_names")
-}
-# x$forsamling <- NULL ## forsamling can be removed to avoid duplicates from both forsamling and hemort
 ALL_STANDARD_VAR_NAMES <- decoder:::internal_as.keyvalue.list(x)
-ALL_STANDARD_VAR_NAMES <-
-  as.data.frame(lapply(ALL_STANDARD_VAR_NAMES, as.character),
-                stringsAsFactors = FALSE)
-
-
 
 ################################ Chance encoding to UTF-8 ################################
-for (kv_name in ALL_KEYVALUE_OBJECTS) {
+for (kv_name in ls) {
   print(kv_name)
-  kv_obj <- get(kv_name)
-  kv_obj$key <- iconv(kv_obj$key, to = "UTF-8")
+  kv_obj       <- get(kv_name)
+  kv_obj$key   <- iconv(kv_obj$key, to = "UTF-8")
   kv_obj$value <- iconv(kv_obj$value, to = "UTF-8")
   assign(kv_name, kv_obj)
 }
@@ -57,11 +46,12 @@ for (kv_name in ALL_KEYVALUE_OBJECTS) {
 
 ############################ Save all objects to sysdata.rda #############################
 
-setwd(old_wd)
-rm(i, x, old_wd)
+rm(kv_name, x)
 
 
 args <- Vectorize(as.name)(ls())
 args$internal  <-  TRUE
 args$overwrite <- TRUE
 do.call(devtools::use_data, args)
+
+rm(list = ls())

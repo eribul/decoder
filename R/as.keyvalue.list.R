@@ -60,16 +60,16 @@ as.keyvalue.list <- function(x, ...) {
     stop("All elements of the list should be atomic!")
   }
   
-  x <- internal_as.keyvalue.list(x)
-  as.keyvalue(x, ...)
+  as.keyvalue(internal_as.keyvalue.list(x), ...)
 }
 
 
 # Helper function 
 internal_as.keyvalue.list <- function(x){
   data.frame(
-    key = unlist(x),
-    value = rep(names(x), vapply(x, length, numeric(1))),
-    row.names = NULL
+    key       = unlist(x),
+    value     = rep(names(x), vapply(x, length, numeric(1))),
+    row.names = NULL,
+    stringsAsFactors = FALSE
   ) 
 }

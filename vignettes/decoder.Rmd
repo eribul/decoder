@@ -129,7 +129,10 @@ Note that use of `exact = FALSE` (which is the default for convenience) always p
 Using non exact decoding, the same code might be simultaneously decoded by more that one keyvalue object using the data.frame method:
 
 ```{r}
-df <- data.frame(LKF = c("149804", "147104", "012704", "143505", "126502", "232602"))
+df <- 
+  data.frame(
+    LKF = c("149804", "147104", "012704", "143505", "126502", "232602")
+  )
 knitr::kable(suppressWarnings(decode(df)))
 ```
 

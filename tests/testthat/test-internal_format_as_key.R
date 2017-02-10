@@ -12,4 +12,6 @@ test_that("lkf", {
     "Capitals are changed to lower case.")
   expect_warning(format_as_key("a", c("B" = "A")),
     "Lower case are changed to upper case.")
+  expect_warning(format_as_key(1, c(a = "01")),
+    "Leading 0:s are introduced for short characters.")
 })

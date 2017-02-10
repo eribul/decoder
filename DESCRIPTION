@@ -1,7 +1,7 @@
 Package: decoder
 Type: Package
 Title: Decode Coded Variables to Plain Text (and Vice Versa)
-Version: 1.1.9
+Version: 1.1.10
 Authors@R: person("Erik", "Bulow", email = "erik.bulow@rccvast.se",
   role = c("aut", "cre"))
 Description: Main function "decode" is used to decode coded key values to plain
@@ -22,4 +22,4 @@ VignetteBuilder: knitr
 Encoding: UTF-8
 URL: https://www.bitbucket.com/cancercentrum/decoder
 BugReports: https://www.bitbucket.com/cancercentrum/decoder/issues
-RoxygenNote: 6.0.0
+RoxygenNote: 6.0.1

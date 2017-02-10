@@ -113,28 +113,28 @@ knitr::<span class="kw">kable</span>(df)</code></pre></div>
 <tbody>
 <tr class="odd">
 <td align="left">51012</td>
-<td align="left">o</td>
-<td align="left">N</td>
+<td align="left">v</td>
+<td align="left">Z</td>
 </tr>
 <tr class="even">
 <td align="left">53011</td>
-<td align="left">f</td>
-<td align="left">Z</td>
+<td align="left">d</td>
+<td align="left">Y</td>
 </tr>
 <tr class="odd">
 <td align="left">53013</td>
-<td align="left">z</td>
-<td align="left">Q</td>
+<td align="left">a</td>
+<td align="left">P</td>
 </tr>
 <tr class="even">
 <td align="left">52011</td>
-<td align="left">q</td>
-<td align="left">E</td>
+<td align="left">y</td>
+<td align="left">O</td>
 </tr>
 <tr class="odd">
 <td align="left">50070</td>
-<td align="left">t</td>
-<td align="left">V</td>
+<td align="left">p</td>
+<td align="left">H</td>
 </tr>
 </tbody>
 </table>
@@ -162,36 +162,36 @@ df %&gt;%<span class="st"> </span>
 <tbody>
 <tr class="odd">
 <td align="left">51012</td>
-<td align="left">o</td>
-<td align="left">N</td>
+<td align="left">v</td>
+<td align="left">Z</td>
 <td align="left">510121</td>
 <td align="left">51012</td>
 </tr>
 <tr class="even">
 <td align="left">53011</td>
-<td align="left">f</td>
-<td align="left">Z</td>
+<td align="left">d</td>
+<td align="left">Y</td>
 <td align="left">530143</td>
 <td align="left">53014</td>
 </tr>
 <tr class="odd">
 <td align="left">53013</td>
-<td align="left">z</td>
-<td align="left">Q</td>
+<td align="left">a</td>
+<td align="left">P</td>
 <td align="left">530141</td>
 <td align="left">53014</td>
 </tr>
 <tr class="even">
 <td align="left">52011</td>
-<td align="left">q</td>
-<td align="left">E</td>
+<td align="left">y</td>
+<td align="left">O</td>
 <td align="left">510141</td>
 <td align="left">51014</td>
 </tr>
 <tr class="odd">
 <td align="left">50070</td>
-<td align="left">t</td>
-<td align="left">V</td>
+<td align="left">p</td>
+<td align="left">H</td>
 <td align="left">500701</td>
 <td align="left">50070</td>
 </tr>
@@ -200,10 +200,10 @@ df %&gt;%<span class="st"> </span>
 <p>Kanske är detta tillräckligt för RC? Men kanske vill vi också se sjukhus-och förvaltningsnamn i klartext för att exempelvis kunna felsöka:</p>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">df %&gt;%<span class="st"> </span>
 <span class="st">  </span><span class="kw">mutate</span>(
-    <span class="dt">sjukhus_rc_kod      =</span> <span class="kw">decode</span>(sjukhus, <span class="st">&quot;sjukhus_rc&quot;</span>),
-    <span class="dt">forvaltning_rc_kod  =</span> <span class="kw">decode</span>(sjukhus, <span class="st">&quot;forvaltning_rc&quot;</span>),
-    <span class="dt">sjukhus_rc_namn     =</span> <span class="kw">decode</span>(sjukhus, <span class="st">&quot;sjukhus_rc&quot;</span>, <span class="st">&quot;sjukhus_rc_namn&quot;</span>),
-    <span class="dt">forvaltning_rc_namn =</span> <span class="kw">decode</span>(sjukhus, <span class="st">&quot;forvaltning_rc&quot;</span>, <span class="st">&quot;forvaltning_rc_namn&quot;</span>)
+    <span class="dt">sjukhus_rc_kod  =</span> <span class="kw">decode</span>(sjukhus, <span class="st">&quot;sjukhus_rc&quot;</span>),
+    <span class="dt">forv_rc_kod     =</span> <span class="kw">decode</span>(sjukhus, <span class="st">&quot;forvaltning_rc&quot;</span>),
+    <span class="dt">sjukhus_rc_namn =</span> <span class="kw">decode</span>(sjukhus, <span class="st">&quot;sjukhus_rc&quot;</span>, <span class="st">&quot;sjukhus_rc_namn&quot;</span>),
+    <span class="dt">forv_rc_namn    =</span> <span class="kw">decode</span>(sjukhus, <span class="st">&quot;forvaltning_rc&quot;</span>, <span class="st">&quot;forvaltning_rc_namn&quot;</span>)
   ) %&gt;%<span class="st"> </span>
 <span class="st">  </span>knitr::<span class="kw">kable</span>()</code></pre></div>
 <table>
@@ -213,16 +213,16 @@ df %&gt;%<span class="st"> </span>
 <th align="left">something</th>
 <th align="left">something_else</th>
 <th align="left">sjukhus_rc_kod</th>
-<th align="left">forvaltning_rc_kod</th>
+<th align="left">forv_rc_kod</th>
 <th align="left">sjukhus_rc_namn</th>
-<th align="left">forvaltning_rc_namn</th>
+<th align="left">forv_rc_namn</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
 <td align="left">51012</td>
-<td align="left">o</td>
-<td align="left">N</td>
+<td align="left">v</td>
+<td align="left">Z</td>
 <td align="left">510121</td>
 <td align="left">51012</td>
 <td align="left">Kungälvs sjukhus</td>
@@ -230,8 +230,8 @@ df %&gt;%<span class="st"> </span>
 </tr>
 <tr class="even">
 <td align="left">53011</td>
-<td align="left">f</td>
-<td align="left">Z</td>
+<td align="left">d</td>
+<td align="left">Y</td>
 <td align="left">530143</td>
 <td align="left">53014</td>
 <td align="left">Lidköping</td>
@@ -239,8 +239,8 @@ df %&gt;%<span class="st"> </span>
 </tr>
 <tr class="odd">
 <td align="left">53013</td>
-<td align="left">z</td>
-<td align="left">Q</td>
+<td align="left">a</td>
+<td align="left">P</td>
 <td align="left">530141</td>
 <td align="left">53014</td>
 <td align="left">Skövde</td>
@@ -248,8 +248,8 @@ df %&gt;%<span class="st"> </span>
 </tr>
 <tr class="even">
 <td align="left">52011</td>
-<td align="left">q</td>
-<td align="left">E</td>
+<td align="left">y</td>
+<td align="left">O</td>
 <td align="left">510141</td>
 <td align="left">51014</td>
 <td align="left">SÄS Borås</td>
@@ -257,8 +257,8 @@ df %&gt;%<span class="st"> </span>
 </tr>
 <tr class="odd">
 <td align="left">50070</td>
-<td align="left">t</td>
-<td align="left">V</td>
+<td align="left">p</td>
+<td align="left">H</td>
 <td align="left">500701</td>
 <td align="left">50070</td>
 <td align="left">Lundby sjukhus</td>
@@ -276,8 +276,8 @@ df %&gt;%<span class="st"> </span>
   ) </code></pre></div>
 <p>En fördel med den fösra metoden framför den andra är att översättningen kan ske i ett steg istället för två. Just i detta exempel hade vi redan skapat <code>sjukhus_rc_kod</code> respektive <code>forvaltning_rc_kod</code> och kunde då utgå från dessa som mellansteg (något som också underlättas av att vi använder <code>dplyr::mutate</code>). Om så inte hade varit fallet skulle det krävas omkodning i två steg såsom:</p>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">decode</span>(<span class="kw">decode</span>(df$sjukhus, <span class="st">&quot;sjukhus_rc&quot;</span>), <span class="st">&quot;sjukhus_rc_code2klartext&quot;</span>)</code></pre></div>
-<pre><code>## [1] &quot; Kungälvs sjukhus&quot; &quot; Lidköping&quot;        &quot; Skövde&quot;          
-## [4] &quot; SÄS Borås&quot;        &quot; Lundby sjukhus&quot;</code></pre>
+<pre><code>## [1] &quot;Kungälvs sjukhus&quot; &quot;Lidköping&quot;        &quot;Skövde&quot;          
+## [4] &quot;SÄS Borås&quot;        &quot;Lundby sjukhus&quot;</code></pre>
 </div>
 <div id="skillnader-i-sjukhusnamn" class="section level1">
 <h1>Skillnader i sjukhusnamn</h1>
@@ -396,7 +396,7 @@ df %&gt;%<span class="st"> </span>
 </tr>
 </tbody>
 </table>
-<p>Vi finner att 18 namn av 19 skiljer sig åt.</p>
+<p>Vi finner att 14 namn av 19 skiljer sig åt.</p>
 <p>Att RCC saknar namnöversättning för Angereds närsjukhus kan bero på att paketet än så länge utgår från en gammal översättningstabell (detta kommer uppdateras inom kort).</p>
 </div>
 <div id="hela-regionen" class="section level1">

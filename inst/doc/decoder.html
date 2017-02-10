@@ -12,7 +12,7 @@
 
 <meta name="author" content="Erik Bulow" />
 
-<meta name="date" content="2017-02-03" />
+<meta name="date" content="2017-02-10" />
 
 <title>Decode coded variables to plain text (and vice versa)</title>
 
@@ -70,7 +70,7 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 
 <h1 class="title toc-ignore">Decode coded variables to plain text (and vice versa)</h1>
 <h4 class="author"><em>Erik Bulow</em></h4>
-<h4 class="date"><em>2017-02-03</em></h4>
+<h4 class="date"><em>2017-02-10</em></h4>
 
 
 
@@ -279,7 +279,10 @@ y &lt;-<span class="st"> </span><span class="kw">as.numeric</span>(<span class="
 <div id="more-than-one-decoded-variable-from-the-same-code" class="section level2">
 <h2>More than one decoded variable from the same code</h2>
 <p>Using non exact decoding, the same code might be simultaneously decoded by more that one keyvalue object using the data.frame method:</p>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">df &lt;-<span class="st"> </span><span class="kw">data.frame</span>(<span class="dt">LKF =</span> <span class="kw">c</span>(<span class="st">&quot;149804&quot;</span>, <span class="st">&quot;147104&quot;</span>, <span class="st">&quot;012704&quot;</span>, <span class="st">&quot;143505&quot;</span>, <span class="st">&quot;126502&quot;</span>, <span class="st">&quot;232602&quot;</span>))
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">df &lt;-<span class="st"> </span>
+<span class="st">  </span><span class="kw">data.frame</span>(
+    <span class="dt">LKF =</span> <span class="kw">c</span>(<span class="st">&quot;149804&quot;</span>, <span class="st">&quot;147104&quot;</span>, <span class="st">&quot;012704&quot;</span>, <span class="st">&quot;143505&quot;</span>, <span class="st">&quot;126502&quot;</span>, <span class="st">&quot;232602&quot;</span>)
+  )
 knitr::<span class="kw">kable</span>(<span class="kw">suppressWarnings</span>(<span class="kw">decode</span>(df)))</code></pre></div>
 <pre><code>## New decoded columns added: 
 ## * LKF_hemort2_beskrivning

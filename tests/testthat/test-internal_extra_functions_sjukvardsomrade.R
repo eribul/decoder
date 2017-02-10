@@ -23,3 +23,10 @@ test_that("short_region_names", {
   expect_equal(decode(3:6, "region", "short_region_names"),
    c("Syd\u00F6stra", "Syd", "V\u00E4st", "Norr"))
 })
+
+test_that("RC names", {
+  expect_equal(
+    decode(500004, "sjukhus_rc", "sjukhus_rc_namn"), "Angereds Närsjukhus")
+  expect_equal(
+    decode(500004, "sjukhus_rc", "forvaltning_rc_namn"), "Angereds närsjukhus")
+})

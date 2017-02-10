@@ -23,10 +23,10 @@ df %>%
 ## ------------------------------------------------------------------------
 df %>% 
   mutate(
-    sjukhus_rc_kod      = decode(sjukhus, "sjukhus_rc"),
-    forvaltning_rc_kod  = decode(sjukhus, "forvaltning_rc"),
-    sjukhus_rc_namn     = decode(sjukhus, "sjukhus_rc", "sjukhus_rc_namn"),
-    forvaltning_rc_namn = decode(sjukhus, "forvaltning_rc", "forvaltning_rc_namn")
+    sjukhus_rc_kod  = decode(sjukhus, "sjukhus_rc"),
+    forv_rc_kod     = decode(sjukhus, "forvaltning_rc"),
+    sjukhus_rc_namn = decode(sjukhus, "sjukhus_rc", "sjukhus_rc_namn"),
+    forv_rc_namn    = decode(sjukhus, "forvaltning_rc", "forvaltning_rc_namn")
   ) %>% 
   knitr::kable()
 
