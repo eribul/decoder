@@ -25,7 +25,7 @@
 #' with a 1:1 relation between its keys and values (otherwise FALSE).
 #' 
 #' @export
-#' @seealso \link{as.keyvalue.list}, \link{key_value_data}, \link{decode}, \link{summary.keyvalue}, \link{key_and_value}
+#' @seealso \link{as.keyvalue.list}, \link{decode}, \link{summary.keyvalue}, \link{key_and_value}
 #' @examples
 #' snomed <- decoder:::snomed
 #' snomed2 <- as.keyvalue(snomed)

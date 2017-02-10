@@ -1,7 +1,7 @@
 Package: decoder
 Type: Package
 Title: Decode Coded Variables to Plain Text (and Vice Versa)
-Version: 1.1.7
+Version: 1.1.8
 Authors@R: person("Erik", "Bulow", email = "erik.bulow@rccvast.se",
   role = c("aut", "cre"))
 Description: Main function "decode" is used to decode coded key values to plain

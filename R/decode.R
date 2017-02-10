@@ -74,7 +74,7 @@
 #'  \item{\code{short_region_names}}{Exclude the prefix 'Region' from the region
 #'  names, hence 'Syd' instead of 'Region Syd' etcetera.} }
 #'  
-#'@seealso \link{key_value_data}, \link{keyvalue}, \link{extra_functions}
+#'@seealso \link{keyvalue}, \link{extra_functions}
 #' @examples
 #'
 #' # We can start to list all available keyvalue objects included in the package:
