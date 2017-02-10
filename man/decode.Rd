@@ -177,7 +177,7 @@ code(a, "snomed")
 }
 }
 \seealso{
-\link{key_value_data}, \link{keyvalue}, \link{extra_functions}
+\link{keyvalue}, \link{extra_functions}
 }
 \author{
 Erik Bulow

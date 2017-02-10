@@ -53,5 +53,5 @@ is.keyvalue(snomed2)
 summary(snomed2)
 }
 \seealso{
-\link{as.keyvalue.list}, \link{key_value_data}, \link{decode}, \link{summary.keyvalue}, \link{key_and_value}
+\link{as.keyvalue.list}, \link{decode}, \link{summary.keyvalue}, \link{key_and_value}
 }

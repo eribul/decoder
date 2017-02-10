@@ -46,7 +46,8 @@ decode.data.frame <- function(x, ...){
     tryCatch(
       x[[d$new_name]] <- decode(x[[d$x.var]], d$value),
       warning = function(msg) {
-        warning("For column ", d$x.var, ": ", msg, call. = FALSE)
+        warning(d$x.var, " -> ", d$new_name, ": ", 
+                sub("simpleWarning: ", "", msg), call. = FALSE)
       },
       finally = 
         suppressWarnings(x[[d$new_name]] <- decode(x[[d$x.var]], d$value))
