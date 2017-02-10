@@ -26,7 +26,7 @@ test_that("short_region_names", {
 
 test_that("RC names", {
   expect_equal(
-    decode(500004, "sjukhus_rc", "sjukhus_rc_namn"), "Angereds Närsjukhus")
+    decode(500004, "sjukhus_rc", "sjukhus_rc_namn"), "Angereds N\u00E4rsjukhus")
   expect_equal(
-    decode(500004, "sjukhus_rc", "forvaltning_rc_namn"), "Angereds närsjukhus")
+    decode(500004, "sjukhus_rc", "forvaltning_rc_namn"), "Angereds n\u00E4rsjukhus")
 })
