@@ -39,8 +39,7 @@
 #'  a standard name used for a coding, the corresponding keyvalue object is used
 #'  to decode the column and to add an extra column to \code{x} with its 
 #'  original name with suffix \code{_Beskrivning}. This is done for all 
-#'  identified columns. Please report additional suggestions of standard names 
-#'  to \url{https://github.com/cancercentrum/decoder/issues}.
+#'  identified columns. 
 #'  
 #'@section extra_functions: The relationship betwen the key and the value in a 
 #'  keyvalue object is either 1:1 or m:1. The mapping is straight forward for 

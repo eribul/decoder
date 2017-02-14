@@ -68,8 +68,7 @@ Translate coded values into meaningful plain text (or reversed).
  a standard name used for a coding, the corresponding keyvalue object is used
  to decode the column and to add an extra column to \code{x} with its 
  original name with suffix \code{_Beskrivning}. This is done for all 
- identified columns. Please report additional suggestions of standard names 
- to \url{https://github.com/cancercentrum/decoder/issues}.
+ identified columns.
 }
 
 \section{extra_functions}{

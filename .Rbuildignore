@@ -4,3 +4,4 @@
 ^\.travis\.yml$
 ^inst/test_*
 ^appveyor\.yml$
+^cran-comments\.md$
