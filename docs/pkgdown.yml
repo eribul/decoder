@@ -1,0 +1,8 @@
+pandoc: 2.3.1
+pkgdown: 1.3.0
+pkgdown_sha: ~
+articles:
+  RC_units: RC_units.html
+  decoder: decoder.html
+  sjukhus: sjukhus.html
+

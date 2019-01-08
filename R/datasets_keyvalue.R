@@ -41,7 +41,7 @@ NULL
 #' @keywords datasets
 #' @name distrikt
 #' @family key_value_data
-#' @seealso \url{www.scb.se/sv_/Hitta-statistik/Regional-statistik-och-kartor/Regionala-indelningar/Distrikt/}
+#' @seealso \url{https://www.scb.se/hitta-statistik/regional-statistik-och-kartor/regionala-indelningar/distrikt/}
 NULL
 
 
@@ -119,7 +119,7 @@ NULL
 #' @keywords datasets
 #' @name kommun
 #' @family key_value_data
-#' @references \url{http://www.scb.se/sv_/Hitta-statistik/Regional-statistik-och-kartor/Regionala-indelningar/Lan-och-kommuner/}
+#' @references \url{https://www.scb.se/hitta-statistik/regional-statistik-och-kartor/regionala-indelningar/lan-och-kommuner/}
 NULL
 
 
@@ -137,7 +137,7 @@ NULL
 #' @keywords datasets
 #' @name forsamling
 #' @family key_value_data
-#' @references \url{http://www.scb.se/sv_/Hitta-statistik/Regional-statistik-och-kartor/Regionala-indelningar/Lan-och-kommuner/}
+#' @references \url{https://www.scb.se/hitta-statistik/regional-statistik-och-kartor/regionala-indelningar/lan-och-kommuner/}
 NULL
 
 

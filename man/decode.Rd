@@ -14,8 +14,8 @@ decode(x, ...)
 
 \method{decode}{data.frame}(x, ...)
 
-\method{decode}{default}(x, keyvalue, extra_functions = NULL, exact = FALSE,
-  ...)
+\method{decode}{default}(x, keyvalue, extra_functions = NULL,
+  exact = FALSE, ...)
 }
 \arguments{
 \item{y}{value to be coded (to be matched againt the \code{value} element) in 

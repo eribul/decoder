@@ -1,3 +1,4 @@
+^CODE_OF_CONDUCT\.md$
 ^.*\.Rproj$
 ^\.Rproj\.user$
 ^data-raw$
@@ -5,3 +6,4 @@
 ^inst/test_*
 ^appveyor\.yml$
 ^cran-comments\.md$
+^MAKE.R$
