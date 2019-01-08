@@ -28,7 +28,8 @@ Suggests:
   testthat,
   knitr,
   rmarkdown,
-  tidyr
+  tidyr,
+  webshot
 VignetteBuilder: knitr
 Encoding: UTF-8
 URL: https://www.bitbucket.com/cancercentrum/decoder
