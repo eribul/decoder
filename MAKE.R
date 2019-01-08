@@ -7,6 +7,11 @@ update.packages(ask = FALSE)
 # knitr::knit("README.Rmd")
 
 # Checks
+
+# Reverse dependencies
+# source("https://install-github.me/r-lib/revdepcheck")
+revdepcheck::revdep_check()
+
 devtools::spell_check(, FALSE)
 goodpractice::goodpractice(checks = setdiff(goodpractice::all_checks(), "covr"))
 covr::report(covr::package_coverage())
@@ -19,4 +24,5 @@ devtools::check_win_release()
 # Rebuild website
 pkgdown::build_site()
 
+# CRAN release
 devtools::release()
