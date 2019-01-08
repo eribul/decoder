@@ -9,3 +9,4 @@
 ^cran-comments\.md$
 ^MAKE.R$
 ^revdep/*
+^_pkgdown.yml$
