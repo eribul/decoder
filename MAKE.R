@@ -7,6 +7,7 @@ update.packages(ask = FALSE)
 # knitr::knit("README.Rmd")
 
 # Checks
+devtools::spell_check(, FALSE)
 goodpractice::goodpractice(checks = setdiff(goodpractice::all_checks(), "covr"))
 covr::report(covr::package_coverage())
 devtools::check()

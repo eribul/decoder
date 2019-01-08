@@ -3,7 +3,7 @@
 \docType{data}
 \name{patologiavdelning}
 \alias{patologiavdelning}
-\title{Patology department codes}
+\title{Pathology department codes}
 \description{
 Key-value codes for the Swedish "laboratories".
 Data is combined from two sources.

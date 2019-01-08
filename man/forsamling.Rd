@@ -5,7 +5,7 @@
 \alias{forsamling}
 \title{Forsamling (parish code)}
 \description{
-Key-value codes for the Swedish parisches (forsamlingar).
+Key-value codes for the Swedish parishes (forsamlingar).
 All six digits in the LKF code.
 }
 \section{forsamling}{

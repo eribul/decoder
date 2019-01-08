@@ -86,10 +86,10 @@ NULL
 #' HSN code (Hälso- och sjukvårdsnämnd)
 #'
 #' Key-value codes for the HSN:s in VGR valid from 2015.
-#' Based on municipalaty codes (\code{\link{kommun}}).
+#' Based on municipality codes (\code{\link{kommun}}).
 #' Data from 2014-12-17.
 #'
-#' Categorisation:
+#' Categorization:
 #' \describe{
 #' \item{Norra}{Lysekil, Munkedal, Orust, Sotenäs, Strömstad, Tanum, Bengtsfors, 
 #' Dals-Ed, Färgelanda, Mellerud, Åmål, Trollhättan, Uddevalla och Vänersborg}
@@ -125,7 +125,7 @@ NULL
 
 #' Forsamling (parish code)
 #'
-#' Key-value codes for the Swedish parisches (forsamlingar).
+#' Key-value codes for the Swedish parishes (forsamlingar).
 #' All six digits in the LKF code.
 #' 
 #' @section forsamling:
@@ -178,7 +178,7 @@ NULL
 #' in the new version of the classification but the Swedish regional cancer 
 #' centers
 #' still classify it as three different hospitals.
-#' Note also that primary health care units did recieve their own codes until 
+#' Note also that primary health care units did receive their own codes until 
 #' 1992 (?)
 #' but not later!
 #'
@@ -191,7 +191,7 @@ NULL
 
 #' Codes used by RC's kvartalen
 #' 
-#'  Key-value codes for VGR hospitals and organisatuional units according to RC.
+#'  Key-value codes for VGR hospitals and organizational units according to RC.
 #'  
 #'  Function \code{sjukhus_rc_namn} and \code{forvaltning_rc_namn}
 #'  (see\code{\link{extra_functions}}) can be 
@@ -207,7 +207,7 @@ NULL
 #'  # From RCC code to RC name
 #'  decode(51012, "sjukhus_rc", "sjukhus_rc_namn")
 #'  
-#'  # From RCC hospital code to RC organisational unit code
+#'  # From RCC hospital code to RC organizational unit code
 #'  decode(51012, "forvaltning_rc")
 #'  
 #'  # From RCC code to RC name
@@ -236,7 +236,7 @@ NULL
 
 #' Hospital codes used by INCA
 #'
-#' Codes taken from INCA's organisational register 2017-02-03.
+#' Codes taken from INCA's organizational register 2017-02-03.
 #'
 #' @docType data
 #' @keywords datasets
@@ -261,7 +261,7 @@ NULL
 
 
 
-#' Patology department codes
+#' Pathology department codes
 #'
 #' Key-value codes for the Swedish "laboratories".
 #' Data is combined from two sources.
