@@ -10,3 +10,4 @@
 ^MAKE.R$
 ^revdep/*
 ^_pkgdown.yml$
+^docs/*
