@@ -197,9 +197,6 @@ NULL
 #'  (see\code{\link{extra_functions}}) can be 
 #'  used to translate codes into text, see examples below.
 #'  
-#' @seealso See the vignette \code{vignette("RC_units", "decoder")} 
-#'  for more details and examples (Swedish).
-#'  
 #' @examples 
 #'  # From RCC hospital code to RC hospital code
 #'  decode(51012, "sjukhus_rc")
