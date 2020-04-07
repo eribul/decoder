@@ -1,7 +1,7 @@
 Package: decoder
 Type: Package
 Title: Decode Coded Variables to Plain Text and the Other Way Around
-Version: 1.1.13
+Version: 1.1.14
 Authors@R: 
   person(
     "Erik", 
@@ -28,10 +28,9 @@ Suggests:
   testthat,
   knitr,
   rmarkdown,
-  tidyr,
-  webshot
+  tidyr
 VignetteBuilder: knitr
 Encoding: UTF-8
 URL: https://www.bitbucket.com/cancercentrum/decoder
 BugReports: https://www.bitbucket.com/cancercentrum/decoder/issues
-RoxygenNote: 6.1.1
+RoxygenNote: 7.1.0

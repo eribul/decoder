@@ -7,13 +7,13 @@
 ##########################################################################################
 
 best2keyvalue <- function () {
-  for (x in dir("best/")){
-      file_name <- paste0("best/", x)
-      obj_name <- gsub(".tab", "", x)
-      obj <- read.delim(file_name, stringsAsFactors = FALSE)
+  for (x in dir("data-raw/best/")){
+      file_name  <- paste0("data-raw/best/", x)
+      obj_name   <- gsub(".tab", "", x)
+      obj        <- read.delim(file_name, stringsAsFactors = FALSE)
       names(obj) <- c("key", "value")
-      obj$key <- trimws(obj$key)
-      obj <- as.keyvalue(obj)
+      obj$key    <- trimws(obj$key)
+      obj        <- as.keyvalue(obj)
       assign(obj_name, obj, envir = globalenv())
   }
 

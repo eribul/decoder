@@ -119,7 +119,7 @@ NULL
 #' @keywords datasets
 #' @name kommun
 #' @family key_value_data
-#' @references \url{https://www.scb.se/hitta-statistik/regional-statistik-och-kartor/regionala-indelningar/lan-och-kommuner/}
+#' @source \url{https://www.scb.se/hitta-statistik/regional-statistik-och-kartor/regionala-indelningar/lan-och-kommuner/}
 NULL
 
 
@@ -137,7 +137,7 @@ NULL
 #' @keywords datasets
 #' @name forsamling
 #' @family key_value_data
-#' @references \url{https://www.scb.se/hitta-statistik/regional-statistik-och-kartor/regionala-indelningar/lan-och-kommuner/}
+#' @source \url{https://www.scb.se/hitta-statistik/regional-statistik-och-kartor/regionala-indelningar/lan-och-kommuner/}
 NULL
 
 
@@ -186,7 +186,7 @@ NULL
 #' @keywords datasets
 #' @name sjukhus
 #' @family key_value_data
-#' @references \url{http://www.socialstyrelsen.se/klassificeringochkoder/andrakodverk/sjukhuskoder}
+#' @source \url{http://www.socialstyrelsen.se/klassificeringochkoder/andrakodverk/sjukhuskoder}
 NULL
 
 #' Codes used by RC's kvartalen
@@ -230,7 +230,7 @@ NULL
 #' @keywords datasets
 #' @name sjukhus_par
 #' @family key_value_data
-#' @references \url{http://www.socialstyrelsen.se/klassificeringochkoder/andrakodverk/sjukhuskoder}
+#' @source \url{http://www.socialstyrelsen.se/klassificeringochkoder/andrakodverk/sjukhuskoder}
 NULL
 
 
@@ -255,7 +255,7 @@ NULL
 #' @keywords datasets
 #' @name klinik
 #' @family key_value_data
-#' @references \url{http://www.socialstyrelsen.se/klassificeringochkoder/andrakodverk/sjukhuskoder}
+#' @source \url{http://www.socialstyrelsen.se/klassificeringochkoder/andrakodverk/sjukhuskoder}
 NULL
 
 
@@ -276,7 +276,7 @@ NULL
 #' @keywords datasets
 #' @name patologiavdelning
 #' @family key_value_data
-#' @references \url{http://www.socialstyrelsen.se/SiteCollectionDocuments/sosfs-2006-15-bilaga-5.pdf}
+#' @source \url{http://www.socialstyrelsen.se/SiteCollectionDocuments/sosfs-2006-15-bilaga-5.pdf}
 NULL
 
 
@@ -436,9 +436,24 @@ NULL
 #' @keywords datasets
 #' @name icd10
 #' @family key_value_data
-#' @references \url{http://www.socialstyrelsen.se/klassificeringochkoder/laddaner/kodtextfiler#1}
+#' @source \url{http://www.socialstyrelsen.se/klassificeringochkoder/laddaner/kodtextfiler#1}
 NULL
 
+#' ICD-9-CM diagnosis and procedure codes
+#'
+#' Key-value codes for ICD-9-CM diagnostics (\code{icd9cmd}) and 
+#' procedure (\code{icd9cmp}) codes (version 32).
+#'
+#' @docType data
+#' @keywords datasets
+#' @name icd9cmd
+#' @family key_value_data
+#' @source \url{https://www.cms.gov/Medicare/Coding/ICD9ProviderDiagnosticCodes/codes}
+NULL
+
+#' @rdname icd9cmd
+#' @name icd9cmp
+NULL
 
 #' Snomed code
 #'

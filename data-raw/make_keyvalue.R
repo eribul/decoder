@@ -20,9 +20,9 @@ rm(list = ls())
 ##########################################################################################
 
 ## Order of the files matter!
-source("data-raw/keyvalue_from_best.R")
-source("data-raw/keyvalue_from_other_sources.R")
-source("data-raw/keyvalue_from_script.R")
+source("data-raw/keyvalue_from_best.R", encoding = "UTF-8")
+source("data-raw/keyvalue_from_other_sources.R", encoding = "UTF-8")
+source("data-raw/keyvalue_from_script.R", encoding = "UTF-8")
 rm(kv_names)
 
 
@@ -52,6 +52,6 @@ rm(kv_name, x)
 args <- Vectorize(as.name)(ls())
 args$internal  <-  TRUE
 args$overwrite <- TRUE
-do.call(devtools::use_data, args)
+do.call(usethis::use_data, args)
 
 rm(list = ls())

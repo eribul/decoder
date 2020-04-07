@@ -3,11 +3,17 @@ kv_names <- c("key", "value")
 ##################################### Län ######################################
 
 lan <-
-  read.csv2("data-raw/data_other_sources/lan.csv", stringsAsFactors = FALSE)
-lan$Län <- trimws(lan$Län)
-lan <- subset(lan, select = c("Kod", "Län"))
+  read.csv2(
+    "data-raw/data_other_sources/lan.csv", 
+    stringsAsFactors = FALSE, 
+    fileEncoding = "UTF-8"
+  )
+
+lan$Län    <- trimws(lan$Län)
+lan        <- subset(lan, select = c("Kod", "Län"))
 names(lan) <- kv_names
-lan$key <- decoder:::pad0(lan$key, 2)
+lan$key    <- decoder:::pad0(lan$key, 2)
+
 lan <-
   as.keyvalue(
     lan,
@@ -26,21 +32,32 @@ lan <-
 
 # http://www.scb.se/Grupp/Hitta_statistik/Regional%20statistik/Indelningar/_Dokument/knkopplingar.xls
 kommun <-
-  read.delim("data-raw/data_other_sources/kommun.tab", stringsAsFactors = FALSE)
+  read.delim(
+    "data-raw/data_other_sources/kommun.tab", 
+    stringsAsFactors = FALSE, 
+    fileEncoding = "UTF-8"
+  )
+
 names(kommun) <- kv_names
-kommun <- subset(kommun, !is.na(key))
-kommun$key <- decoder:::pad0(kommun$key, 4)
+kommun        <- subset(kommun, !is.na(key))
+kommun$key    <- decoder:::pad0(kommun$key, 4)
+
 kommun <-
-  as.keyvalue(kommun,
-              standard_var_names = c("a_lkf", "hemfr", "hemnu", "hemdia", "lkf", "lkf_value"))
+  as.keyvalue(
+    kommun,
+    standard_var_names = 
+      c("a_lkf", "hemfr", "hemnu", "hemdia", "lkf", "lkf_value")
+  )
 
 
 #################################### HSN ####################################
 
 # Baseras på ett dokument i et mail från Erik H som jag sedan kompletterat med kommunkoder
-hsn <- readxl::read_excel("data-raw/data_other_sources/HSN2015.xlsx",
-                          sheet = "Organisation",
-                          skip = 3)
+hsn <- readxl::read_excel(
+  "data-raw/data_other_sources/HSN2015.xlsx",
+  sheet = "Organisation",
+  skip = 4
+)
 hsn <- hsn[, c("key", "value")]
 hsn <- unique(hsn)
 hsn <- as.keyvalue(hsn)
@@ -52,7 +69,12 @@ hsn <- as.keyvalue(hsn)
 # Data hämtad från
 # http://www.scb.se/Grupp/Hitta_statistik/Regional%20statistik/Indelningar/_Dokument/lkf2015.pdf
 forsamling <-
-  read.delim("data-raw/data_other_sources/lkf.csv", stringsAsFactors = FALSE)
+  read.delim(
+    "data-raw/data_other_sources/lkf.csv", 
+    stringsAsFactors = FALSE,
+    fileEncoding = "UTF-8"
+  )
+
 forsamling$Församling <- decoder:::pad0(forsamling$Församling, 6)
 forsamling <-
   subset(forsamling, select = c("Församling", "Församlingsnamn"))
@@ -86,12 +108,17 @@ comment(distrikt) <-
 
 
 ################################### Kliniker ####################################
-klinik <- read.delim("data-raw/best/klinik.tab")
+klinik <- 
+  read.delim(
+    "data-raw/best/klinik.tab", 
+    stringsAsFactors = FALSE,
+    fileEncoding = "UTF-8"
+  )
 klinik_extra_rockan <- read.delim("data-raw/best/klinik_extra_rockan.tab")
-klinik <- rbind(klinik, klinik_extra_rockan)
-klinik$key <- decoder:::pad0(klinik$key, 3)
-klinik <- unique(klinik)
-klinik <- as.keyvalue(klinik, standard_var_names = c("ankli"))
+klinik              <- rbind(klinik, klinik_extra_rockan)
+klinik$key          <- decoder:::pad0(klinik$key, 3)
+klinik              <- unique(klinik)
+klinik              <- as.keyvalue(klinik, standard_var_names = c("ankli"))
 
 
 
@@ -101,10 +128,10 @@ klinik <- as.keyvalue(klinik, standard_var_names = c("ankli"))
 # http://www.socialstyrelsen.se/SiteCollectionDocuments/sosfs-2006-15-bilaga-5.pdf
 patologiavdelningar_sos_2006 <-
   read.delim(
-    "data-raw/data_other_sources/patologavdelningar_sos_2006.tab"
-    ,
+    "data-raw/data_other_sources/patologavdelningar_sos_2006.tab",
     dec = ",",
-    stringsAsFactors = FALSE
+    stringsAsFactors = FALSE,
+    fileEncoding = "UTF-8"
   )
 # patologiavdelning$key <- as.numeric(patologiavdelning$key)
 
@@ -124,6 +151,17 @@ patologiavdelning <-
 
 
 
+# ICD-9-CM Disease -------------------------------------------------------------
+# File from https://www.cms.gov/Medicare/Coding/ICD9ProviderDiagnosticCodes/codes
+# version 32
+icd9cmd <- readxl::read_excel("data-raw/data_other_sources/CMS32_DESC_LONG_SHORT_DX.xlsx") %>% 
+  dplyr::select(key = 1, value = 3) %>% 
+  as.keyvalue()
+
+# ICD-9-CM Procedure -------------------------------------------------------------
+icd9cmp <- readxl::read_excel("data-raw/data_other_sources/CMS32_DESC_LONG_SHORT_SG.xlsx") %>% 
+  dplyr::select(key = 1, value = 3) %>% 
+  as.keyvalue()
 
 
 #################################### ICD-10 ####################################
@@ -138,7 +176,12 @@ icd10 <- as.keyvalue(icd10)
 ####################################### ICD7_grov #######################################
 
 x <-
-  read.delim("data-raw/data_other_sources/icd7_grov_from_SoS.tab", sep = " ")
+  read.delim(
+    "data-raw/data_other_sources/icd7_grov_from_SoS.tab", 
+    sep = " ",
+    fileEncoding = "UTF-8",
+    stringsAsFactors = FALSE
+  )
 icd7_grov <- as.keyvalue(x)
 
 
@@ -147,7 +190,12 @@ icd7_grov <- as.keyvalue(x)
 ####################################### ICDO3_grov #######################################
 
 x <-
-  read.delim("data-raw/data_other_sources/icdo3_fran_manual.tab", header = FALSE)
+  read.delim(
+    "data-raw/data_other_sources/icdo3_fran_manual.tab", 
+    header = FALSE,
+    stringsAsFactors = FALSE,
+    fileEncoding = "UTF-8",
+  )
 x <- as.character(unlist(x))
 x <- gsub(".", " ", x, fixed = TRUE)
 x <- substring(x, 1, nchar(x) - 3)
@@ -170,34 +218,18 @@ comment(x) <-
 icdo3_grov <- as.keyvalue(x)
 
 
-if (FALSE) {
-  ####################################### Sjukhus #######################################
-  sjh_koder <-
-    gdata::read.xls("data-raw/data-raw/data_other_sources/enhetskoder_preiminara_infor_caninca.xlsx")
-  sjh_koder <- sjh_koder %>%
-    #select(Leveranskod_sjukhus, Sjukhus_Enhet) %>%
-    mutate(Sjukhus_Enhet = trimws(Sjukhus_Enhet)) %>%
-    distinct(Leveranskod_sjukhus, Sjukhus_Enhet)
-  
-  # dublettkoder
-  dublettkoder <- sjh_koder[sjh_koder$Leveranskod_sjukhus %in%
-                              names(table(sjh_koder$Leveranskod_sjukhus)[table(sjh_koder$Leveranskod_sjukhus) >
-                                                                           1]),] %>%
-    arrange(Leveranskod_sjukhus)
-  
-  write.csv2(dublettkoder,
-             "data-raw/data_other_sources/dublettlista_till_SAN.csv")
-}
-
-
 ################################## sjukhus_rc ##################################
 
-rc <- read.csv2("data-raw/data_other_sources/organisationslista_rc.tab", 
-  stringsAsFactors = FALSE)
+rc <- 
+  read.csv2(
+    "data-raw/data_other_sources/organisationslista_rc.tab", 
+    stringsAsFactors = FALSE,
+    fileEncoding = "UTF-8",
+  )
 
 sjukhus_rc <- 
   rc %>% 
-    select(
+    dplyr::select(
       key = usesjhkod,
       value = s_administration
     ) %>% 
@@ -238,10 +270,14 @@ rm(rc)
 
 ##################### Koder från INCA:s organisationsregister###################
 
-incaorg <- read.csv2("data-raw/data_other_sources/N58 Organisationsenheter i INCA 2.txt", 
-                     stringsAsFactors = FALSE)
-
-
+incaorg <- 
+  readr::read_delim(
+    "data-raw/data_other_sources/N58 Organisationsenheter i INCA 2.txt", 
+    ";", 
+    escape_double = FALSE, 
+    trim_ws = TRUE
+  )
+  
 trim0 <- function(x) gsub("^0(\\w*)$", "\\1", x)
 
 x <- 
@@ -284,25 +320,33 @@ rm(incaorg, trim0, x, problematic_keys)
 ########################## Sjukhuskoder från SOS/PAR ###########################
 
 # download.file("http://www.socialstyrelsen.se/SiteCollectionDocuments/patientregistret-sjukhus-klinikkoder-sluten-vard-2014.xls", "data_other_sources/sos_par_sjukhus_sluten.xls")
-# 
 # download.file("http://www.socialstyrelsen.se/SiteCollectionDocuments/patientregistret-sjukhus-klinikkoder-oppen-vard-2014.xls", "data_other_sources/sos_par_sjukhus_oppen.xls")
 
-oppen <- readxl::read_excel("data-raw/data_other_sources/sos_par_sjukhus_oppen.xls", 
-  "Öppenvård", col_names = FALSE)
-sluten <- readxl::read_excel("data-raw/data_other_sources/sos_par_sjukhus_sluten.xls", 
-                            "Slutenvård", col_names = FALSE)
+oppen <- 
+  readxl::read_excel(
+    "data-raw/data_other_sources/sos_par_sjukhus_oppen.xls", 
+    "Öppenvård", 
+    range = "B3:C2058",
+    col_names = c("key", "value"),
+    col_types = c("numeric", "text")
+  ) %>% 
+  na.omit()
+
+sluten <- 
+  readxl::read_excel(
+    "data-raw/data_other_sources/sos_par_sjukhus_sluten.xls", 
+    "Slutenvård", 
+    range = "B3:C979",
+    col_names = c("key", "value"),
+    col_types = c("numeric", "text")
+  ) %>% 
+  na.omit()
 
 sjukhus_par <- 
   oppen %>% 
   bind_rows(sluten) %>% 
-  select(
-    key = X2,
-    value = X3
-  ) %>% 
   filter(
-    !is.na(key),
     key != value,
-    !is.na(value)
   ) %>% 
   distinct(key, .keep_all = TRUE) %>% 
   arrange(key) %>% 

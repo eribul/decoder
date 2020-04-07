@@ -6,6 +6,9 @@ update.packages(ask = FALSE)
 # Update README
 # knitr::knit("README.Rmd")
 
+source("data-raw/make_keyvalue.R")
+devtools::document()
+
 # Checks
 
 # Reverse dependencies
