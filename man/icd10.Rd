@@ -5,12 +5,10 @@
 \alias{icd10}
 \title{ICD-10 code}
 \source{
-\url{http://www.socialstyrelsen.se/klassificeringochkoder/laddaner/kodtextfiler#1}
+\url{https://www.socialstyrelsen.se/utveckla-verksamhet/e-halsa/klassificering-och-koder/kodtextfiler/}
 }
 \description{
-Key-value codes for ICD-10-SE 2016 (Swedish version).
-Includes all ICD-10-codes (not only the C- and D-codes).
-Data from Socialstyrelsen.
+Key-value codes for ICD-10-SE 2020 (Swedish version).
 Note that key codes are given without dots, i e C569, not C56.9.
 }
 \seealso{

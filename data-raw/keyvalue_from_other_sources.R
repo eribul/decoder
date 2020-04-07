@@ -165,12 +165,25 @@ icd9cmp <- readxl::read_excel("data-raw/data_other_sources/CMS32_DESC_LONG_SHORT
 
 
 #################################### ICD-10 ####################################
-# icd10 <- readxl::read_excel("data_other_sources/icd-koder-2014-klassifikationer-och-koder.xls",
-#                                          sheet = "KSH97_KOD")
-icd10 <- readxl::read_excel("data-raw/data_other_sources/ICD10SE-2016.xls",
-                            sheet = "KSH97_KOD")
-names(icd10) <- kv_names
-icd10 <- as.keyvalue(icd10)
+icd10se1 <- 
+  readxl::read_excel(
+    "data-raw/data_other_sources/icd10se-inkl-andringar-2020.xlsx",
+    sheet = "ICD10SE_KOD" # All codes except chapter 20
+  ) %>% 
+  dplyr::select(key = Kod, value = Kodtext)
+
+icd10se2 <- 
+  readxl::read_excel(
+    "data-raw/data_other_sources/icd10se-inkl-andringar-2020.xlsx",
+    sheet = "ICD10SE_K20" # Codes from chapter 20
+  ) %>% 
+  dplyr::select(key = Kod, value = Kodtext)
+
+icd10 <- 
+  dplyr::bind_rows(icd10se1, icd10se2) %>% 
+  as.keyvalue()
+
+rm(icd10se1, icd10se2)
 
 
 ####################################### ICD7_grov #######################################

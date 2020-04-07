@@ -3,7 +3,7 @@
 \docType{data}
 \name{hsn}
 \alias{hsn}
-\title{HSN code (Hälso- och sjukvårdsnämnd)}
+\title{HSN code (Hälso- och sjukvårdsnamnd)}
 \description{
 Key-value codes for the HSN:s in VGR valid from 2015.
 Based on municipality codes (\code{\link{kommun}}).

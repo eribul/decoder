@@ -11,7 +11,7 @@
 Key-value codes for Swedish hospitals and some primary health care units.
 }
 \details{
-Data from Rockan. Note that this is an old version of the classification!
+Data from 'Rockan'. Note that this is an old version of the classification!
 See the reference link below for the new version.
 The old version should be used of historical reasons.
 One difference is for example that the Sahlgrenska university hospital is 

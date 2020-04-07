@@ -3,10 +3,10 @@
 \docType{data}
 \name{lan}
 \alias{lan}
-\title{Lan code (county code)}
+\title{Swedish county codes}
 \description{
 Key-value codes for the Swedish counties (lan).
-Two first digits in the LKF code.
+Two first digits of the LKF code.
 Be aware of the spelling ("lan")!
 }
 \seealso{

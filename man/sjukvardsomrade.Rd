@@ -3,24 +3,24 @@
 \docType{data}
 \name{sjukvardsomrade}
 \alias{sjukvardsomrade}
-\title{Geographical healthcare areas}
+\title{Geographical health care areas}
 \description{
 Key-value codes for health care areas.
 }
 \details{
 \itemize{
-     \item{Key: the first four digits from the LKF-code}
-     \item{Value: A geographical area (sub area of county/lan) with special 
-     interest}
+  \item{Key: the first four digits from the LKF-code}
+  \item{Value: A geographical area (sub area of county/lan) with special 
+    interest}
 }
 
-The object currently only applies to the Western healthcare region
+The object currently only applies to the Western healt hcare region
 \itemize{
-     \item{Storgoteborg}
-     \item{Fyrbodal}
-     \item{Sodra_Alvsborg}
-     \item{Skaraborg}
-     \item{Norra_Halland}
+  \item{Storgoteborg}
+  \item{Fyrbodal}
+  \item{Sodra_Alvsborg}
+  \item{Skaraborg}
+  \item{Norra_Halland}
 }
 Updates for other regions needs to be requested (please do!).
 }
@@ -28,7 +28,7 @@ Updates for other regions needs to be requested (please do!).
 
  Kungalv is an independent area by default. There are situations when Kungalv 
  should be dealt with as an
- independent healthcare region or as a part of Storgoteborg. 
+ independent health care region or as a part of greater Gothenburg. 
  See section "extra_functions" in \link{decode}
  to handle this.
 }

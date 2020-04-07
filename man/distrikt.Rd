@@ -3,13 +3,14 @@
 \docType{data}
 \name{distrikt}
 \alias{distrikt}
-\title{Distrikt code (district code)}
+\title{Swedish district codes}
+\source{
+\url{https://www.scb.se/hitta-statistik/regional-statistik-och-kartor/regionala-indelningar/distrikt/}
+}
 \description{
 Key-value codes for the Swedish districts (introduced 2016-01-01).
 }
 \seealso{
-\url{https://www.scb.se/hitta-statistik/regional-statistik-och-kartor/regionala-indelningar/distrikt/}
-
 Other key_value_data: 
 \code{\link{figo}},
 \code{\link{forsamling}},

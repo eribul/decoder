@@ -28,9 +28,6 @@ Key-value codes for VGR hospitals and organizational units according to RC.
      
 }
 \seealso{
-See the vignette \code{vignette("RC_units", "decoder")} 
- for more details and examples (Swedish).
-
 Other key_value_data: 
 \code{\link{distrikt}},
 \code{\link{figo}},

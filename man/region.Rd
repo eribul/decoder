@@ -3,9 +3,9 @@
 \docType{data}
 \name{region}
 \alias{region}
-\title{Regional code}
+\title{Swedish health care regional codes}
 \description{
-Key-value codes for the Swedish healthcare regions (1-6).
+Key-value codes for the Swedish health care regions (1-6).
 }
 \seealso{
 Other key_value_data: 

@@ -3,12 +3,12 @@
 \docType{data}
 \name{kommun}
 \alias{kommun}
-\title{Kommun code (municipality code)}
+\title{Swedish municipality codes}
 \source{
 \url{https://www.scb.se/hitta-statistik/regional-statistik-och-kartor/regionala-indelningar/lan-och-kommuner/}
 }
 \description{
-Key-value codes for the Swedish municipalities (kommuner).
+Key-value codes for the Swedish municipalities.
 First four digits in the LKF code.
 Data from 2014-08-12.
 }

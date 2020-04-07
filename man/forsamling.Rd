@@ -3,7 +3,7 @@
 \docType{data}
 \name{forsamling}
 \alias{forsamling}
-\title{Forsamling (parish code)}
+\title{Swedish parish codes}
 \source{
 \url{https://www.scb.se/hitta-statistik/regional-statistik-och-kartor/regionala-indelningar/lan-och-kommuner/}
 }
@@ -11,13 +11,6 @@
 Key-value codes for the Swedish parishes (forsamlingar).
 All six digits in the LKF code.
 }
-\section{forsamling}{
-
-Data from SCB 2014-08-12 according to reference.
-Be aware of the spelling ("forsamling").
-Contains 1377 key-value pairs.
-}
-
 \seealso{
 Other key_value_data: 
 \code{\link{distrikt}},
