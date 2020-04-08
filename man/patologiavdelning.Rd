@@ -4,9 +4,6 @@
 \name{patologiavdelning}
 \alias{patologiavdelning}
 \title{Pathology department codes}
-\source{
-\url{http://www.socialstyrelsen.se/SiteCollectionDocuments/sosfs-2006-15-bilaga-5.pdf}
-}
 \description{
 Key-value codes for the Swedish "laboratories".
 Data is combined from two sources.

@@ -4,9 +4,6 @@
 \name{klinik}
 \alias{klinik}
 \title{Clinic codes}
-\source{
-\url{http://www.socialstyrelsen.se/klassificeringochkoder/andrakodverk/sjukhuskoder}
-}
 \description{
 Key-value codes for the Swedish clinic types.
 Data mainly from url below (taken from the PDF).

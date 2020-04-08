@@ -7,8 +7,6 @@
 \description{
 Key-value codes for just the first three digits of the ICDO-7 code.
 This gives broader grouping.
-Based on the grouping used by:
-\url{http://www.socialstyrelsen.se/statistik/statistikdatabas/cancer}
 }
 \seealso{
 Other key_value_data: 

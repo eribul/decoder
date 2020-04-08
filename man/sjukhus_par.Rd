@@ -4,9 +4,6 @@
 \name{sjukhus_par}
 \alias{sjukhus_par}
 \title{Hospital codes used by Socialstyrelsen and the National Patient Register}
-\source{
-\url{http://www.socialstyrelsen.se/klassificeringochkoder/andrakodverk/sjukhuskoder}
-}
 \description{
 Codes taken from Excel sheets 2014 from link below.
 }

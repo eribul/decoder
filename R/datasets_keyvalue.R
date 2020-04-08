@@ -166,7 +166,7 @@ NULL
 #' @keywords datasets
 #' @name sjukhus
 #' @family key_value_data
-#' @source \url{http://www.socialstyrelsen.se/klassificeringochkoder/andrakodverk/sjukhuskoder}
+
 NULL
 
 
@@ -178,7 +178,7 @@ NULL
 #' @keywords datasets
 #' @name sjukhus_par
 #' @family key_value_data
-#' @source \url{http://www.socialstyrelsen.se/klassificeringochkoder/andrakodverk/sjukhuskoder}
+
 NULL
 
 
@@ -203,7 +203,6 @@ NULL
 #' @keywords datasets
 #' @name klinik
 #' @family key_value_data
-#' @source \url{http://www.socialstyrelsen.se/klassificeringochkoder/andrakodverk/sjukhuskoder}
 NULL
 
 
@@ -222,7 +221,6 @@ NULL
 #' @keywords datasets
 #' @name patologiavdelning
 #' @family key_value_data
-#' @source \url{http://www.socialstyrelsen.se/SiteCollectionDocuments/sosfs-2006-15-bilaga-5.pdf}
 NULL
 
 
@@ -293,8 +291,6 @@ NULL
 #'
 #' Key-value codes for just the first three digits of the ICDO-7 code.
 #' This gives broader grouping.
-#' Based on the grouping used by:
-#' \url{http://www.socialstyrelsen.se/statistik/statistikdatabas/cancer}
 #'
 #' @docType data
 #' @keywords datasets

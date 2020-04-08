@@ -4,9 +4,6 @@
 \name{sjukhus}
 \alias{sjukhus}
 \title{Hospital codes}
-\source{
-\url{http://www.socialstyrelsen.se/klassificeringochkoder/andrakodverk/sjukhuskoder}
-}
 \description{
 Key-value codes for Swedish hospitals and some primary health care units.
 }
