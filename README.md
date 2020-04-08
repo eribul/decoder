@@ -24,8 +24,3 @@ And the development version from [BitBucket](https://bitbucket.org/) with:
 # install.packages("remotes")
 remotes::install_bitbucket("cancercentrum/decoder")
 ```
-
-
-## Code of conduct
-
-Please note that the `decoder` project is released with a [Contributor Code of Conduct](CODE_OF_CONDUCT.md). By contributing to this project, you agree to abide by its terms.
