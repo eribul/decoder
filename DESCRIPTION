@@ -1,7 +1,7 @@
 Package: decoder
 Type: Package
 Title: Decode Coded Variables to Plain Text and the Other Way Around
-Version: 1.1.14
+Version: 1.2
 Authors@R: 
   person(
     "Erik", 
@@ -20,8 +20,6 @@ Description: Main function "decode" is used to decode coded key values to plain
 License: GPL-2
 Depends:
     R (>= 2.10)
-Imports:
-  backports
 Suggests:
   dplyr,
   DT,
@@ -34,3 +32,4 @@ Encoding: UTF-8
 URL: https://www.bitbucket.com/cancercentrum/decoder
 BugReports: https://www.bitbucket.com/cancercentrum/decoder/issues
 RoxygenNote: 7.1.0
+LazyData: TRUE

@@ -170,35 +170,6 @@ NULL
 NULL
 
 
-#' Codes used by RC's kvartalen
-#' 
-#'  Key-value codes for VGR hospitals and organizational units according to RC.
-#'  
-#'  Function \code{sjukhus_rc_namn} and \code{forvaltning_rc_namn}
-#'  (see\code{\link{extra_functions}}) can be 
-#'  used to translate codes into text, see examples below.
-#'  
-#' @examples 
-#'  # From RCC hospital code to RC hospital code
-#'  decode(51012, "sjukhus_rc")
-#'  
-#'  # From RCC code to RC name
-#'  decode(51012, "sjukhus_rc", "sjukhus_rc_namn")
-#'  
-#'  # From RCC hospital code to RC organizational unit code
-#'  decode(51012, "forvaltning_rc")
-#'  
-#'  # From RCC code to RC name
-#'  decode(51012, "forvaltning_rc", "forvaltning_rc_namn")
-#'      
-#' @docType data
-#' @keywords datasets
-#' @name rc
-#' @aliases sjukhus_rc forvaltning_rc
-#' @family key_value_data
-NULL
-
-
 #' Hospital codes used by Socialstyrelsen and the National Patient Register
 #'
 #' Codes taken from Excel sheets 2014 from link below.
@@ -257,6 +228,17 @@ NULL
 
 
 # Diagnostics -------------------------------------------------------------
+
+#' Klassifikation av vardatgarder (KVA)
+#'
+#' Key-value codes for KVA (for surgery and medicine.
+#'
+#' @docType data
+#' @keywords datasets
+#' @name kva
+#' @family key_value_data
+#' @source \url{https://www.socialstyrelsen.se/utveckla-verksamhet/e-halsa/klassificering-och-koder/kva/}
+NULL
 
 
 #' M-stadium
@@ -484,4 +466,26 @@ NULL
 #' @keywords datasets
 #' @name kon
 #' @family key_value_data
+NULL
+
+#' Anatomical Therapeutic Chemical (ATC) Classification System codes
+#'
+#' Key-value codes for ATC from the Swedish Medical Products Agency (2020-04-07).
+#'
+#' @docType data
+#' @keywords datasets
+#' @name atc
+#' @family key_value_data
+#' @source \url{https://nsl.mpa.se/}
+NULL
+
+#' Help tables from Rockan
+#'
+#' Key-value codes from old help tables used with Rockan 
+#' (by Swedish regional cancer centers) 
+#' @docType data
+#' @keywords datasets
+#' @name rockan
+#' @family key_value_data
+#' @aliases avgm ben digr dodca manuell obd status manuell
 NULL

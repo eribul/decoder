@@ -32,7 +32,7 @@ The function returns an object of class \code{keyvalue}
 ex <- list(
  fruit  = c("banana", "orange", "kiwi"),
  car    = c("SAAB", "Volvo", "taxi", "truck"),
- animal = c("elefant")
+ animal = c("elephant")
 )
 as.keyvalue(ex)
 is.keyvalue(ex)
@@ -42,7 +42,7 @@ is.keyvalue(ex)
 ex2 <- list(
  fruit  = c("banana", "orange", "kiwi"),
  car    = c("SAAB", "Volvo", "taxi", "truck"),
- animal = c("elefant"),
+ animal = c("elephant"),
  fruit  = c("President_Obama")
 )
 as.keyvalue(ex2)
@@ -51,7 +51,7 @@ as.keyvalue(ex2)
 ex3 <- list(
  fruit  = c("banana", "orange", "kiwi"),
  car    = c("SAAB", "Volvo", "taxi", "truck"),
- animal = c("elefant", "kiwi")
+ animal = c("elephant", "kiwi")
 )
 as.keyvalue(ex3)
 }

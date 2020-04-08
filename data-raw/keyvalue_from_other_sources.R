@@ -1,6 +1,7 @@
 kv_names <- c("key", "value")
 
-##################################### Län ######################################
+
+# Län ---------------------------------------------------------------------
 
 lan <-
   read.csv2(
@@ -28,7 +29,8 @@ lan <-
     )
   )
 
-#################################### Kommun ####################################
+
+# Kommun ------------------------------------------------------------------
 
 # http://www.scb.se/Grupp/Hitta_statistik/Regional%20statistik/Indelningar/_Dokument/knkopplingar.xls
 kommun <-
@@ -50,21 +52,23 @@ kommun <-
   )
 
 
-#################################### HSN ####################################
+
+# HSN ---------------------------------------------------------------------
 
 # Baseras på ett dokument i et mail från Erik H som jag sedan kompletterat med kommunkoder
-hsn <- readxl::read_excel(
-  "data-raw/data_other_sources/HSN2015.xlsx",
-  sheet = "Organisation",
-  skip = 4
-)
-hsn <- hsn[, c("key", "value")]
-hsn <- unique(hsn)
-hsn <- as.keyvalue(hsn)
+# Har kopierat över till dat-fil pga problem med Excels encoding
+
+hsn <- 
+  readr::read_table2(
+    "data-raw/data_other_sources/HSN2015_copied_columns.dat",
+    col_types = "ic"
+  ) %>% 
+  dplyr::distinct() %>% 
+  as.keyvalue()
 
 
 
-################################## Församling ##################################
+# Församling --------------------------------------------------------------
 
 # Data hämtad från
 # http://www.scb.se/Grupp/Hitta_statistik/Regional%20statistik/Indelningar/_Dokument/lkf2015.pdf
@@ -89,40 +93,43 @@ comment(forsamling) <-
 
 
 
-##### Combined keyvalue for lan, kommun and forsamling, similair to hemort #####
+# Hemort2 -----------------------------------------------------------------
+
 hemort2 <- as.keyvalue(rbind(lan, kommun, forsamling))
 
 
-################################### Distrikt ###################################
+# Distrikt ----------------------------------------------------------------
 
 # Data och beskrivning:
-# http://www.scb.se/sv_/Hitta-statistik/Regional-statistik-och-kartor/Regionala-indelningar/Distrikt/
-distrikt <-
-  readxl::read_excel("data-raw/data_other_sources/Distrikt-i-kodnummerordning.xlsx",
-                     skip = 1)
-distrikt <- distrikt[!is.na(distrikt$Distriktskod), ]
-names(distrikt) <- kv_names
-distrikt <- decoder::as.keyvalue(distrikt)
-comment(distrikt) <-
-  "Data from www.scb.se/sv_/Hitta-statistik/Regional-statistik-och-kartor/Regionala-indelningar/Distrikt/"
+# https://www.scb.se/hitta-statistik/regional-statistik-och-kartor/regionala-indelningar/distrikt/
+distrikt <- 
+  suppressMessages(
+    readr::read_csv2("data-raw/data_other_sources/distrikt.dat")
+  ) %>% 
+  decoder::as.keyvalue()
 
 
-################################### Kliniker ####################################
+# Kliniker ----------------------------------------------------------------
+
 klinik <- 
   read.delim(
     "data-raw/best/klinik.tab", 
     stringsAsFactors = FALSE,
     fileEncoding = "UTF-8"
   )
-klinik_extra_rockan <- read.delim("data-raw/best/klinik_extra_rockan.tab")
+klinik_extra_rockan <- 
+  read.delim(
+    "data-raw/best/klinik_extra_rockan.tab", 
+    fileEncoding = "UTF-8"
+  )
 klinik              <- rbind(klinik, klinik_extra_rockan)
 klinik$key          <- decoder:::pad0(klinik$key, 3)
 klinik              <- unique(klinik)
 klinik              <- as.keyvalue(klinik, standard_var_names = c("ankli"))
 
+rm(klinik_extra_rockan)
 
-
-############################## Patologiavdelning ###############################
+# Patologiavdelning -------------------------------------------------------
 
 # Vi har koder både från Rockan och Sos.
 # http://www.socialstyrelsen.se/SiteCollectionDocuments/sosfs-2006-15-bilaga-5.pdf
@@ -149,9 +156,10 @@ patologiavdelning <-
 patologiavdelning <-
   as.keyvalue(patologiavdelning, standard_var_names = "pat")
 
-
+rm(patologiavdelningar_sos_2006)
 
 # ICD-9-CM Disease -------------------------------------------------------------
+
 # File from https://www.cms.gov/Medicare/Coding/ICD9ProviderDiagnosticCodes/codes
 # version 32
 icd9cmd <- readxl::read_excel("data-raw/data_other_sources/CMS32_DESC_LONG_SHORT_DX.xlsx") %>% 
@@ -159,12 +167,14 @@ icd9cmd <- readxl::read_excel("data-raw/data_other_sources/CMS32_DESC_LONG_SHORT
   as.keyvalue()
 
 # ICD-9-CM Procedure -------------------------------------------------------------
+
 icd9cmp <- readxl::read_excel("data-raw/data_other_sources/CMS32_DESC_LONG_SHORT_SG.xlsx") %>% 
   dplyr::select(key = 1, value = 3) %>% 
   as.keyvalue()
 
 
-#################################### ICD-10 ####################################
+# ICD-10 ------------------------------------------------------------------
+
 icd10se1 <- 
   readxl::read_excel(
     "data-raw/data_other_sources/icd10se-inkl-andringar-2020.xlsx",
@@ -186,7 +196,7 @@ icd10 <-
 rm(icd10se1, icd10se2)
 
 
-####################################### ICD7_grov #######################################
+# ICD-7 grov --------------------------------------------------------------
 
 x <-
   read.delim(
@@ -198,16 +208,14 @@ x <-
 icd7_grov <- as.keyvalue(x)
 
 
-
-
-####################################### ICDO3_grov #######################################
+# ICD-O3 grov -------------------------------------------------------------
 
 x <-
   read.delim(
     "data-raw/data_other_sources/icdo3_fran_manual.tab", 
     header = FALSE,
     stringsAsFactors = FALSE,
-    fileEncoding = "UTF-8",
+    fileEncoding = "UTF-8"
   )
 x <- as.character(unlist(x))
 x <- gsub(".", " ", x, fixed = TRUE)
@@ -231,71 +239,25 @@ comment(x) <-
 icdo3_grov <- as.keyvalue(x)
 
 
-################################## sjukhus_rc ##################################
 
-rc <- 
-  read.csv2(
-    "data-raw/data_other_sources/organisationslista_rc.tab", 
-    stringsAsFactors = FALSE,
-    fileEncoding = "UTF-8",
-  )
-
-sjukhus_rc <- 
-  rc %>% 
-    dplyr::select(
-      key = usesjhkod,
-      value = s_administration
-    ) %>% 
-    as.keyvalue()
-
-forvaltning_rc <- 
-  rc %>% 
-  select(
-    key = usesjhkod,
-    value = Administration
-  ) %>% 
-  as.keyvalue()
-
-# Hjälpöversättningar för kod till klartext
-
-sjukhus_rc_code2klartext <- 
-  rc %>% 
-  transmute(
-    key = s_administration,
-    value = trimws(sjukhus)
-  ) %>% 
-  as.keyvalue()
-
-
-forvaltning_rc_code2klartext <- 
-  rc %>% 
-  transmute(
-    key = Administration,
-    value = trimws(Förvaltning)
-  ) %>%
-  distinct() %>% 
-  as.keyvalue()
-
-rm(rc)
-  
-
-
-
-##################### Koder från INCA:s organisationsregister###################
+# Koder från INCA:s organisationsregister ---------------------------------
 
 incaorg <- 
-  readr::read_delim(
-    "data-raw/data_other_sources/N58 Organisationsenheter i INCA 2.txt", 
-    ";", 
-    escape_double = FALSE, 
-    trim_ws = TRUE
+  suppressMessages(
+    readr::read_delim(
+      "data-raw/data_other_sources/N58 Organisationsenheter i INCA 2.txt", 
+      ";", 
+      escape_double = FALSE, 
+      trim_ws = TRUE,
+      guess_max = 20000
+    )
   )
   
 trim0 <- function(x) gsub("^0(\\w*)$", "\\1", x)
 
 x <- 
   incaorg %>% 
-  filter(
+  dplyr::filter(
     TopPosCode %in% 1:6,
     PosLevel == 2,
     UnitCode != "30199",     # This code used by two units. Skip it by now
@@ -330,7 +292,7 @@ rm(incaorg, trim0, x, problematic_keys)
 
 
 
-########################## Sjukhuskoder från SOS/PAR ###########################
+# Sjukhuskoder från SOS/PAR -----------------------------------------------
 
 # download.file("http://www.socialstyrelsen.se/SiteCollectionDocuments/patientregistret-sjukhus-klinikkoder-sluten-vard-2014.xls", "data_other_sources/sos_par_sjukhus_sluten.xls")
 # download.file("http://www.socialstyrelsen.se/SiteCollectionDocuments/patientregistret-sjukhus-klinikkoder-oppen-vard-2014.xls", "data_other_sources/sos_par_sjukhus_oppen.xls")
@@ -341,7 +303,7 @@ oppen <-
     "Öppenvård", 
     range = "B3:C2058",
     col_names = c("key", "value"),
-    col_types = c("numeric", "text")
+    col_types = c("text", "text")
   ) %>% 
   na.omit()
 
@@ -351,7 +313,7 @@ sluten <-
     "Slutenvård", 
     range = "B3:C979",
     col_names = c("key", "value"),
-    col_types = c("numeric", "text")
+    col_types = c("text", "text")
   ) %>% 
   na.omit()
 
@@ -366,3 +328,32 @@ sjukhus_par <-
   as.keyvalue()
 
 rm(oppen, sluten)
+
+
+# Åtgärdskoder ------------------------------------------------------------
+
+kva <- 
+  readxl::read_excel(
+    "data-raw/data_other_sources/kva-inkl-beskrivningstexter-2020.xlsx",
+    sheet = "KVÅ - samtliga koder"
+  ) %>% 
+  select(key = KOD, value = TEXT) %>% 
+  as.keyvalue()
+
+
+# ATC codes ---------------------------------------------------------------
+
+
+page <- xml2::read_xml("data-raw/data_other_sources/atc-code-lx.xsd", encoding = "UTF-8")
+
+posts <- rvest::xml_nodes(page, xpath = "xs:simpleType/xs:restriction/xs:enumeration")
+value_sv <- rvest::xml_nodes(posts, xpath = 'xs:annotation/xs:documentation[2]')
+
+atc <- 
+  data.frame(
+    key   = xml2::xml_attr(posts, "value"),
+    value = xml2::xml_text(value_sv)
+  ) %>% 
+  as.keyvalue()
+
+rm(page, posts, value_sv)

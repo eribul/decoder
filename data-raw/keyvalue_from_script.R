@@ -21,7 +21,7 @@ sjukvardsomrade <- as.keyvalue(sjukvardsomrade)
 #################################### Region ####################################
 region <- 1:6
 names(region) <- paste("Region", 
-  c("Sthlm/Gotland", "Uppsala/Örebro", "Sydöstra", "Syd", "Väst", "Norr"))
+  enc2utf8(c("Sthlm/Gotland", "Uppsala/Örebro", "Sydöstra", "Syd", "Väst", "Norr")))
 
 region <- as.keyvalue(region, standard_var_names = "region")
 
@@ -30,7 +30,7 @@ region <- as.keyvalue(region, standard_var_names = "region")
 
 kon <- c(Man = 1, Kvinna = 2)
 kon <- as.keyvalue(kon, standard_var_names =
-                     c("kon_value", "kön", "kon", "sex"))
+                     enc2utf8(c("kon_value", "kön", "kon", "sex")))
 
 
 ##################################### Avgångsmarkering #########################
@@ -47,6 +47,7 @@ avgm <-
     `okänt enl bestånd 991007` = 8,
     okänd                      = 9
   )
+names(avgm) <- enc2utf8(names(avgm))
 avgm <- as.keyvalue(avgm, standard_var_names =  c("avgm"))
 
 
@@ -86,18 +87,21 @@ obd <- as.keyvalue(
   ),
   standard_var_names =  c("obd")
 )
+obd$value <- enc2utf8(obd$value)
 
 ##################################### dödca #########################
 
-dödca <- 
+dodca <- 
   as.keyvalue(
     c(
       ja                = 1,
       nej               = 2,
       `dödsorsak okänd` = 3
     ),
-    standard_var_names =  c("dödca")
+    standard_var_names =  c("dödca", "dodca")
   )
+
+dodca$value <- enc2utf8(dodca$value)
 
 
 ##################################### status #########################
@@ -111,3 +115,5 @@ status <-
     ),
     standard_var_names =  c("status")
   )
+
+status$value <- enc2utf8(status$value)

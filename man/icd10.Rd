@@ -13,6 +13,7 @@ Note that key codes are given without dots, i e C569, not C56.9.
 }
 \seealso{
 Other key_value_data: 
+\code{\link{atc}},
 \code{\link{distrikt}},
 \code{\link{figo}},
 \code{\link{forsamling}},
@@ -28,13 +29,14 @@ Other key_value_data:
 \code{\link{klinik}},
 \code{\link{kommun}},
 \code{\link{kon}},
+\code{\link{kva}},
 \code{\link{lan}},
 \code{\link{m_rtr}},
 \code{\link{n_rtr}},
 \code{\link{pad}},
 \code{\link{patologiavdelning}},
-\code{\link{rc}},
 \code{\link{region}},
+\code{\link{rockan}},
 \code{\link{sida}},
 \code{\link{sjukhus_inca}},
 \code{\link{sjukhus_par}},
