@@ -119,23 +119,7 @@
 #'      lkf = sample(decoder::hemort$key, 10, replace = TRUE)
 #'  )
 #'  decode(d)
-#'
-#' ### --- code --- ###
-#' # Sometimes we have keyvalue objects with some key-value pairs without a 1:1 relation.
-#' # This is true for snomed
-#' # Show all non 1:1 pairs:
-#' summary(decoder::snomed)$nonunique
-#' # Save them for later:
-#' non_unique_snomeds <- summary(decoder::snomed)$nonunique$key
-#'
-#' # Use these snomed codes for decoding and coding
-#' # Decoding works fine (all keys are unique) ...
-#' (a <- decode(non_unique_snomeds, "snomed"))
-#' # ... but coding these values back to their key does not
-#' \dontrun{
-#' code(a, "snomed")
-#' }
-#'@author Erik Bulow
-#'@name decode
+#' @author Erik Bulow
+#' @name decode
 #' @export
 decode <- function(x, ...)  UseMethod("decode")
