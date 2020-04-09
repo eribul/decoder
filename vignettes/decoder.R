@@ -4,12 +4,12 @@ n <- 6
 s <- function(x) sample(x, n, replace = TRUE)
 
 incadata <- 
-    data.frame(
-      KON_VALUE = s(1:2),
-      region = 1:6,
-      a_icdo3 = c("C446", "C749", "C159", "C709", "C475", "C320"),
-      a_tstad = c("0", "1", "1a", "1b", "1c", "2")
-)
+  data.frame(
+    KON_VALUE = s(1:2),
+    region = 1:6,
+    a_icdo3 = c("C446", "C749", "C159", "C709", "C475", "C320"),
+    a_tstad = c("0", "1", "1a", "1b", "1c", "2")
+  )
 knitr::kable(incadata)
 
 
