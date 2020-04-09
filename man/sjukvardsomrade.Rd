@@ -14,7 +14,7 @@ Key-value codes for health care areas.
     interest}
 }
 
-The object currently only applies to the Western healt hcare region
+The object currently only applies to the Western health care region
 \itemize{
   \item{Storgoteborg}
   \item{Fyrbodal}

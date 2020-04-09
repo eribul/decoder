@@ -33,3 +33,4 @@ URL: https://www.bitbucket.com/cancercentrum/decoder
 BugReports: https://www.bitbucket.com/cancercentrum/decoder/issues
 RoxygenNote: 7.1.0
 LazyData: TRUE
+Language: en-US, sv
