@@ -91,7 +91,7 @@ key_n_sources <-
 in3 <- key_n_sources %>% filter(n == 3)
 
 sjukhus_most %>% 
-  inner_join(in3) %>% 
+  inner_join(in3, "key") %>% 
   arrange(key) %>% 
   tidyr::spread(source, value) %>% 
   select(-n) %>% 
