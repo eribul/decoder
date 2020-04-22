@@ -173,7 +173,21 @@ icd9cmp <- readxl::read_excel("data-raw/data_other_sources/CMS32_DESC_LONG_SHORT
   as.keyvalue()
 
 
+
 # ICD-10 ------------------------------------------------------------------
+
+icd10cm <- 
+    read.fwf(
+      "data-raw/icd10cm_codes_2020.txt", 
+      widths = c(8, 1000),
+      header = FALSE,
+      col.names = c("key", "value"),
+      stringsAsFactors = FALSE
+    ) %>% 
+  mutate_all(trimws) %>% 
+  as.keyvalue()
+
+# ICD-10-SE ------------------------------------------------------------------
 
 icd10se1 <- 
   readxl::read_excel(
@@ -189,7 +203,7 @@ icd10se2 <-
   ) %>% 
   dplyr::select(key = Kod, value = Kodtext)
 
-icd10 <- 
+icd10se <- 
   dplyr::bind_rows(icd10se1, icd10se2) %>% 
   as.keyvalue()
 

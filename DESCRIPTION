@@ -1,7 +1,7 @@
 Package: decoder
 Type: Package
 Title: Decode Coded Variables to Plain Text and the Other Way Around
-Version: 1.2.1
+Version: 1.2.2
 Authors@R: 
   person(
     "Erik", 
