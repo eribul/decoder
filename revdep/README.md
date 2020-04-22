@@ -10,20 +10,13 @@
 |collate  |Swedish_Sweden.1252          |
 |ctype    |Swedish_Sweden.1252          |
 |tz       |Europe/Berlin                |
-|date     |2020-04-08                   |
+|date     |2020-04-22                   |
 
 # Dependencies
 
-|package   |old    |new   |<U+0394>  |
-|:---------|:------|:-----|:--|
-|decoder   |1.1.13 |1.2   |*  |
-|backports |1.1.6  |1.1.6 |   |
+|package |old   |new   |<U+0394>  |
+|:-------|:-----|:-----|:--|
+|decoder |1.2.1 |1.2.2 |*  |
 
 # Revdeps
-
-## New problems (1)
-
-|package                          |version |error  |warning |note |
-|:--------------------------------|:-------|:------|:-------|:----|
-|[incadata](problems.md#incadata) |0.8.2   |__+2__ |        |     |
 

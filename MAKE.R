@@ -10,11 +10,7 @@ source("data-raw/make_keyvalue.R")
 devtools::document()
 
 # Checks
-
-# Reverse dependencies
-# source("https://install-github.me/r-lib/revdepcheck")
-revdepcheck::revdep_check()
-
+devtools::test()
 devtools::spell_check(, FALSE)
 goodpractice::goodpractice(checks = setdiff(goodpractice::all_checks(), "covr"))
 covr::report(covr::package_coverage())
@@ -23,6 +19,11 @@ rhub::check_for_cran()
 devtools::check_win_devel()
 devtools::check_win_oldrelease()
 devtools::check_win_release()
+
+# Reverse dependencies
+# source("https://install-github.me/r-lib/revdepcheck")
+revdepcheck::revdep_reset()
+revdepcheck::revdep_check()
 
 # Rebuild website
 pkgdown::build_site()
