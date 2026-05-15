@@ -1,0 +1,102 @@
+# Package index
+
+## All functions
+
+- [`as.keyvalue(`*`<list>`*`)`](https://eribul.github.io/decoder/reference/as.keyvalue.list.md)
+  : Coerce a list to keyvalue object
+- [`atc`](https://eribul.github.io/decoder/reference/atc.md) :
+  Anatomical Therapeutic Chemical (ATC) Classification System codes
+- [`code()`](https://eribul.github.io/decoder/reference/decode.md)
+  [`decode()`](https://eribul.github.io/decoder/reference/decode.md) :
+  Decode codes to plain text (and vice versa)
+- [`distrikt`](https://eribul.github.io/decoder/reference/distrikt.md) :
+  Swedish district codes
+- [`kungalv2Storgoteborg()`](https://eribul.github.io/decoder/reference/extra_functions.md)
+  [`kungalv2Fyrbodal()`](https://eribul.github.io/decoder/reference/extra_functions.md)
+  [`real_names()`](https://eribul.github.io/decoder/reference/extra_functions.md)
+  [`short_region_names()`](https://eribul.github.io/decoder/reference/extra_functions.md)
+  : Extra functions to apply to decoded variables using decode
+- [`figo`](https://eribul.github.io/decoder/reference/figo.md) :
+  FIGO-stadium
+- [`forsamling`](https://eribul.github.io/decoder/reference/forsamling.md)
+  : Swedish parish codes
+- [`hemort`](https://eribul.github.io/decoder/reference/hemort.md)
+  [`hemort2`](https://eribul.github.io/decoder/reference/hemort.md) :
+  hemort and hemort2 codes (geographical codes)
+- [`hsn`](https://eribul.github.io/decoder/reference/hsn.md) : HSN code
+  (Hälso- och sjukvårdsnamnd)
+- [`icd10cm`](https://eribul.github.io/decoder/reference/icd10cm.md) :
+  ICD-10-CM code
+- [`icd10se`](https://eribul.github.io/decoder/reference/icd10se.md) :
+  ICD-10-SE code
+- [`icd7`](https://eribul.github.io/decoder/reference/icd7.md) : ICD-7
+- [`icd7_grov`](https://eribul.github.io/decoder/reference/icd7_grov.md)
+  : ICD-7 Grov
+- [`icd9`](https://eribul.github.io/decoder/reference/icd9.md) : ICD-9
+- [`icd9cmd`](https://eribul.github.io/decoder/reference/icd9cmd.md)
+  [`icd9cmp`](https://eribul.github.io/decoder/reference/icd9cmd.md) :
+  ICD-9-CM diagnosis and procedure codes
+- [`icdo`](https://eribul.github.io/decoder/reference/icdo.md) : ICD-O
+- [`icdo3`](https://eribul.github.io/decoder/reference/icdo3.md) :
+  ICD-O3
+- [`icdo3_grov`](https://eribul.github.io/decoder/reference/icdo3_grov.md)
+  : ICD-O3 Grov
+- [`as.key()`](https://eribul.github.io/decoder/reference/key_and_value.md)
+  [`is.key()`](https://eribul.github.io/decoder/reference/key_and_value.md)
+  [`as.value()`](https://eribul.github.io/decoder/reference/key_and_value.md)
+  [`is.value()`](https://eribul.github.io/decoder/reference/key_and_value.md)
+  : Coerce to key or value in objects in a key-value pair
+- [`as.keyvalue()`](https://eribul.github.io/decoder/reference/keyvalue.md)
+  [`is.keyvalue()`](https://eribul.github.io/decoder/reference/keyvalue.md)
+  : Coerce to a keyvalue object
+- [`klinik`](https://eribul.github.io/decoder/reference/klinik.md) :
+  Clinic codes
+- [`kommun`](https://eribul.github.io/decoder/reference/kommun.md) :
+  Swedish municipality codes
+- [`kon`](https://eribul.github.io/decoder/reference/kon.md) : Gender
+  code (kon)
+- [`kva`](https://eribul.github.io/decoder/reference/kva.md) :
+  Klassifikation av vardatgarder (KVA)
+- [`lan`](https://eribul.github.io/decoder/reference/lan.md) : Swedish
+  county codes
+- [`m_rtr`](https://eribul.github.io/decoder/reference/m_rtr.md) :
+  M-stadium
+- [`n_rtr`](https://eribul.github.io/decoder/reference/n_rtr.md) :
+  N-stadium
+- [`pad`](https://eribul.github.io/decoder/reference/pad.md) : PAD (C24)
+  code
+- [`pad0()`](https://eribul.github.io/decoder/reference/pad0.md) : Pad
+  leading zeros to character
+- [`patologiavdelning`](https://eribul.github.io/decoder/reference/patologiavdelning.md)
+  : Pathology department codes
+- [`region`](https://eribul.github.io/decoder/reference/region.md) :
+  Swedish health care regional codes
+- [`rockan`](https://eribul.github.io/decoder/reference/rockan.md)
+  [`avgm`](https://eribul.github.io/decoder/reference/rockan.md)
+  [`ben`](https://eribul.github.io/decoder/reference/rockan.md)
+  [`digr`](https://eribul.github.io/decoder/reference/rockan.md)
+  [`dodca`](https://eribul.github.io/decoder/reference/rockan.md)
+  [`manuell`](https://eribul.github.io/decoder/reference/rockan.md)
+  [`obd`](https://eribul.github.io/decoder/reference/rockan.md)
+  [`status`](https://eribul.github.io/decoder/reference/rockan.md) :
+  Help tables from Rockan
+- [`sida`](https://eribul.github.io/decoder/reference/sida.md) : Sida
+- [`sjukhus`](https://eribul.github.io/decoder/reference/sjukhus.md) :
+  Hospital codes
+- [`sjukhus_inca`](https://eribul.github.io/decoder/reference/sjukhus_inca.md)
+  : Hospital codes used by INCA
+- [`sjukhus_par`](https://eribul.github.io/decoder/reference/sjukhus_par.md)
+  : Hospital codes used by Socialstyrelsen and the National Patient
+  Register
+- [`sjukvardsomrade`](https://eribul.github.io/decoder/reference/sjukvardsomrade.md)
+  : Geographical health care areas
+- [`snomed`](https://eribul.github.io/decoder/reference/snomed.md) :
+  Snomed code
+- [`snomed3`](https://eribul.github.io/decoder/reference/snomed3.md) :
+  Snomed 3
+- [`summary(`*`<keyvalue>`*`)`](https://eribul.github.io/decoder/reference/summary.keyvalue.md)
+  : Object summary for keyvalue objects
+- [`t_rtr`](https://eribul.github.io/decoder/reference/t_rtr.md) :
+  T-stadium
+- [`tnmgrund`](https://eribul.github.io/decoder/reference/tnmgrund.md) :
+  Grund till TNM (patologisk/klinisk)
