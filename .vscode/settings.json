@@ -1,0 +1,12 @@
+{
+  "workbench.editorAssociations": {
+    "*.copilotmd": "vscode.markdown.preview.editor",
+    "{git,gitlens}:/**/*.{md,csv,svg}": "default",
+    "*.docx": "cweijan.officeViewer",
+    "*.csv": "workbench.editor.positronDataExplorer",
+    "*.pdf": "pdf.preview",
+    "*.parquet": "duckdb.dataFileViewer",
+    "*.tsv": "duckdb.dataFileViewer"
+  },
+  "positron.r.useNativePipe": true
+}
