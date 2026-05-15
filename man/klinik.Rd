@@ -7,7 +7,8 @@
 \description{
 Key-value codes for the Swedish clinic types.
 Data mainly from url below (taken from the PDF).
-Some extra codes are added from Rockan (290, 291, 292, 446, 921 and 999 for unknown).
+Some extra codes are added from Rockan
+(290, 291, 292, 446, 921 and 999 for unknown).
 }
 \seealso{
 Other key_value_data:

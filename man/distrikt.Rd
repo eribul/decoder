@@ -5,7 +5,7 @@
 \alias{distrikt}
 \title{Swedish district codes}
 \source{
-\url{https://www.scb.se/hitta-statistik/regional-statistik-och-kartor/regionala-indelningar/distrikt/}
+\url{https://www.scb.se/hitta-statistik/regional-statistik-och-kartor/regionala-indelningar/distrikt/} # nolint: line_length_linter
 }
 \description{
 Key-value codes for the Swedish districts (introduced 2016-01-01).

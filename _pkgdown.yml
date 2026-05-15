@@ -1,6 +1,4 @@
-destination: ../cancercentrum.bitbucket.io/decoder
-url: cancercentrum.bitbucket.io/decoder
+url: https://eribul.github.io/decoder/
+template:
+  bootstrap: 5
 
-authors:
-  Erik Bulow:
-    href: https://bitbucket.org/eriklgb/

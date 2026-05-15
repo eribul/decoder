@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<codesystem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="lv-sourceiso" xmlns="http://www.mpa.se/nsl/codesystem/v1">
+  <concepts>
+    <concept code="100000075705">
+      <designations>
+        <designation language="sv">Martindale</designation>
+        <designation language="en">Martindale</designation>
+      </designations>
+    </concept>
+    <concept code="100000075713">
+      <designations>
+        <designation language="sv">Summary of Product Characteristics</designation>
+        <designation language="en">Summary of Product Characteristics</designation>
+      </designations>
+    </concept>
+    <concept code="100000075715">
+      <designations>
+        <designation language="sv">International Non-proprietary Name</designation>
+        <designation language="en">International Non-proprietary Name</designation>
+      </designations>
+    </concept>
+    <concept code="100000075723">
+      <designations>
+        <designation language="sv">British Pharmacopoeia</designation>
+        <designation language="en">British Pharmacopoeia</designation>
+      </designations>
+    </concept>
+    <concept code="100000075726">
+      <designations>
+        <designation language="sv">World Health Organization</designation>
+        <designation language="en">World Health Organization</designation>
+      </designations>
+    </concept>
+    <concept code="100000075734">
+      <designations>
+        <designation language="sv">British Approved Name</designation>
+        <designation language="en">British Approved Name</designation>
+      </designations>
+    </concept>
+    <concept code="100000075735">
+      <designations>
+        <designation language="sv">Handbook of Pharmaceutical Excipients</designation>
+        <designation language="en">Handbook of Pharmaceutical Excipients</designation>
+      </designations>
+    </concept>
+    <concept code="100000075736">
+      <designations>
+        <designation language="sv">United States Adopted Name</designation>
+        <designation language="en">United States Adopted Name</designation>
+      </designations>
+    </concept>
+    <concept code="100000075738">
+      <designations>
+        <designation language="sv">United States Pharmacopoeia</designation>
+        <designation language="en">United States Pharmacopoeia</designation>
+      </designations>
+    </concept>
+    <concept code="100000075748">
+      <designations>
+        <designation language="sv">Italian Pharmacopoeia</designation>
+        <designation language="en">Italian Pharmacopoeia</designation>
+      </designations>
+    </concept>
+    <concept code="100000075766">
+      <designations>
+        <designation language="sv">Chem Industry</designation>
+        <designation language="en">Chem Industry</designation>
+      </designations>
+    </concept>
+    <concept code="100000075778">
+      <designations>
+        <designation language="sv">NCBI-Pubchem Website</designation>
+        <designation language="en">NCBI-Pubchem Website</designation>
+      </designations>
+    </concept>
+    <concept code="100000075786">
+      <designations>
+        <designation language="sv">International Nomenclature Cosmetic Ingredient</designation>
+        <designation language="en">International Nomenclature Cosmetic Ingredient</designation>
+      </designations>
+    </concept>
+    <concept code="100000075787">
+      <designations>
+        <designation language="sv">Chemical Abstract Service</designation>
+        <designation language="en">Chemical Abstract Service</designation>
+      </designations>
+    </concept>
+    <concept code="100000075789">
+      <designations>
+        <designation language="sv">Investigator brochure</designation>
+        <designation language="en">Investigator brochure</designation>
+      </designations>
+    </concept>
+    <concept code="100000075794">
+      <designations>
+        <designation language="sv">Pharmacopoeia Bohemoslovaca IV</designation>
+        <designation language="en">Pharmacopoeia Bohemoslovaca IV</designation>
+      </designations>
+    </concept>
+    <concept code="100000075797">
+      <designations>
+        <designation language="sv">Polish Pharmacopoeia</designation>
+        <designation language="en">Polish Pharmacopoeia</designation>
+      </designations>
+    </concept>
+    <concept code="100000075798">
+      <designations>
+        <designation language="sv">Recommended International Non-proprietary Name</designation>
+        <designation language="en">Recommended International Non-proprietary Name</designation>
+      </designations>
+    </concept>
+    <concept code="100000075801">
+      <designations>
+        <designation language="sv">International Union of Pure and Applied Chemistry Nomenclature</designation>
+        <designation language="en">International Union of Pure and Applied Chemistry Nomenclature</designation>
+      </designations>
+    </concept>
+    <concept code="100000075803">
+      <designations>
+        <designation language="sv">Kew Garden  - Iplants Database</designation>
+        <designation language="en">Kew Garden  - Iplants Database</designation>
+      </designations>
+    </concept>
+    <concept code="100000075814">
+      <designations>
+        <designation language="sv">Neurocrine Biosciences Inc</designation>
+        <designation language="en">Neurocrine Biosciences Inc</designation>
+      </designations>
+    </concept>
+    <concept code="100000075815">
+      <designations>
+        <designation language="sv">International Plant Names Index</designation>
+        <designation language="en">International Plant Names Index</designation>
+      </designations>
+    </concept>
+    <concept code="100000075819">
+      <designations>
+        <designation language="sv">Japanese Pharmaceutical Codex</designation>
+        <designation language="en">Japanese Pharmaceutical Codex</designation>
+      </designations>
+    </concept>
+    <concept code="100000115256">
+      <designations>
+        <designation language="sv">Merck Index</designation>
+        <designation language="en">Merck Index</designation>
+      </designations>
+    </concept>
+    <concept code="100000115260">
+      <designations>
+        <designation language="sv">Oesterreichisches Arzneibuch</designation>
+        <designation language="en">Oesterreichisches Arzneibuch</designation>
+      </designations>
+    </concept>
+    <concept code="100000115268">
+      <designations>
+        <designation language="sv">Substance Registration System (US FDA)</designation>
+        <designation language="en">Substance Registration System (US FDA)</designation>
+      </designations>
+    </concept>
+    <concept code="100000124049">
+      <designations>
+        <designation language="sv">European Pharmacopoeia</designation>
+        <designation language="en">European Pharmacopoeia</designation>
+      </designations>
+    </concept>
+    <concept code="100000124079">
+      <designations>
+        <designation language="sv">Pharmacopoeia Bohemica MCMXCVII</designation>
+        <designation language="en">Pharmacopoeia Bohemica MCMXCVII</designation>
+      </designations>
+    </concept>
+    <concept code="100000124081">
+      <designations>
+        <designation language="sv">International Non-proprietary Name Modified</designation>
+        <designation language="en">International Non-proprietary Name Modified</designation>
+      </designations>
+    </concept>
+    <concept code="100000124086">
+      <designations>
+        <designation language="sv">National Library of Medicine</designation>
+        <designation language="en">National Library of Medicine</designation>
+      </designations>
+    </concept>
+    <concept code="100000124087">
+      <designations>
+        <designation language="sv">Vidal</designation>
+        <designation language="en">Vidal</designation>
+      </designations>
+    </concept>
+    <concept code="100000124088">
+      <designations>
+        <designation language="sv">Japan Approved Name</designation>
+        <designation language="en">Japan Approved Name</designation>
+      </designations>
+    </concept>
+    <concept code="100000124089">
+      <designations>
+        <designation language="sv">Japanese Pharmacopoeia</designation>
+        <designation language="en">Japanese Pharmacopoeia</designation>
+      </designations>
+    </concept>
+    <concept code="100000124090">
+      <designations>
+        <designation language="sv">Deutsches Arzneibuch</designation>
+        <designation language="en">Deutsches Arzneibuch</designation>
+      </designations>
+    </concept>
+    <concept code="100000124101">
+      <designations>
+        <designation language="sv">Japanese Pharmaceutical Manufacturers Association</designation>
+        <designation language="en">Japanese Pharmaceutical Manufacturers Association</designation>
+      </designations>
+    </concept>
+    <concept code="100000124102">
+      <designations>
+        <designation language="sv">Virtuelle Fachbibliothek Pharmazie</designation>
+        <designation language="en">Virtuelle Fachbibliothek Pharmazie</designation>
+      </designations>
+    </concept>
+    <concept code="OTHEROTHEROT">
+      <designations>
+        <designation language="sv">Other</designation>
+        <designation language="en">Other</designation>
+      </designations>
+    </concept>
+    <concept code="UKNOWNUKNOWN">
+      <designations>
+        <designation language="sv">Unknown</designation>
+        <designation language="en">Unknown</designation>
+      </designations>
+    </concept>
+  </concepts>
+</codesystem>

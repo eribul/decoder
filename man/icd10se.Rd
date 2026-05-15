@@ -4,11 +4,8 @@
 \name{icd10se}
 \alias{icd10se}
 \title{ICD-10-SE code}
-\source{
-\url{https://www.socialstyrelsen.se/utveckla-verksamhet/e-halsa/klassificering-och-koder/kodtextfiler/}
-}
 \description{
-Key-value codes for ICD-10-SE 2020 (Swedish version).
+Key-value codes for ICD-10-SE 2026 (Swedish version).
 Note that key codes are given without dots, i e C569, not C56.9.
 }
 \seealso{

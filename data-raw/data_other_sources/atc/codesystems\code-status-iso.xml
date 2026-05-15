@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<codesystem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="lv-codestatusiso" xmlns="http://www.mpa.se/nsl/codesystem/v1">
+  <concepts>
+    <concept code="100000123543">
+      <designations>
+        <designation language="sv">Nu gällande</designation>
+        <designation language="en">Current</designation>
+      </designations>
+    </concept>
+    <concept code="100000123544">
+      <designations>
+        <designation language="sv">Inaktuell</designation>
+        <designation language="en">Superceded</designation>
+      </designations>
+    </concept>
+    <concept code="100000123545">
+      <designations>
+        <designation language="sv">Alternativ</designation>
+        <designation language="en">Alternate</designation>
+      </designations>
+    </concept>
+    <concept code="100000123546" throughDate="2012-08-01">
+      <designations>
+        <designation language="sv">Ej gällande</designation>
+        <designation language="en">Non-Current</designation>
+      </designations>
+    </concept>
+    <concept code="100000123559">
+      <designations>
+        <designation language="sv">Föreslagen</designation>
+        <designation language="en">Proposed</designation>
+      </designations>
+    </concept>
+  </concepts>
+</codesystem>

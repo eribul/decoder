@@ -6,10 +6,10 @@
 \alias{hemort2}
 \title{hemort and hemort2 codes (geographical codes)}
 \description{
-Both \code{hemort} and \code{hemort2} combines regional codes for lan, 
+Both \code{hemort} and \code{hemort2} combines regional codes for lan,
 kommun and forsamling.
-\code{hemort} is the official (but rather old) code used within RCC. 
-\code{hemort2} is an updated version combining \code{\link{lan}}, 
+\code{hemort} is the official (but rather old) code used within RCC.
+\code{hemort2} is an updated version combining \code{\link{lan}},
 \code{\link{kommun}} and \code{\link{forsamling}}
 }
 \seealso{

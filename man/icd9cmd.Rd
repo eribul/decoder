@@ -5,11 +5,8 @@
 \alias{icd9cmd}
 \alias{icd9cmp}
 \title{ICD-9-CM diagnosis and procedure codes}
-\source{
-\url{https://www.cms.gov/Medicare/Coding/ICD9ProviderDiagnosticCodes/codes}
-}
 \description{
-Key-value codes for ICD-9-CM diagnostics (\code{icd9cmd}) and 
+Key-value codes for ICD-9-CM diagnostics (\code{icd9cmd}) and
 procedure (\code{icd9cmp}) codes (version 32).
 }
 \seealso{

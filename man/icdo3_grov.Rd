@@ -7,8 +7,7 @@
 \description{
 Key-value codes for just the first two digits of the ICDO-3 code.
 This gives broader grouping.
-Based on the table of contents from:
-http://www.socialstyrelsen.se/Lists/Artikelkatalog/Attachments/19446/2014-5-12.pdf
+Based on the table of contents from PDF previously found from SoS
 }
 \seealso{
 Other key_value_data:

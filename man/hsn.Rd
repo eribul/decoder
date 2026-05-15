@@ -12,14 +12,14 @@ Data from 2014-12-17.
 \details{
 Categorization:
 \describe{
-\item{Norra}{Lysekil, Munkedal, Orust, Sotenäs, Strömstad, Tanum, Bengtsfors, 
+\item{Norra}{Lysekil, Munkedal, Orust, Sotenäs, Strömstad, Tanum, Bengtsfors,
 Dals-Ed, Färgelanda, Mellerud, Åmål, Trollhättan, Uddevalla och Vänersborg}
-\item{Västra}{Lilla Edet, Ale, Kungälv, Stenungsund, Tjörn, Öckerö, Härryda, 
+\item{Västra}{Lilla Edet, Ale, Kungälv, Stenungsund, Tjörn, Öckerö, Härryda,
 Mölndal, Partille, Lerum och Alingsås}
-\item{Södra}{Herrljunga, Vårgårda, Bollebygd, Borås, Mark, Svenljunga, 
+\item{Södra}{Herrljunga, Vårgårda, Bollebygd, Borås, Mark, Svenljunga,
 Tranemo och Ulricehamn}
 \item{Göteborg}{Göteborg}
-\item{Östra}{Essunga, Falköping, Grästorp, Götene, Lidköping, Skara, Vara, 
+\item{Östra}{Essunga, Falköping, Grästorp, Götene, Lidköping, Skara, Vara,
 Gullspång, Hjo, Karlsborg, Mariestad, Skövde, Tibro, Tidaholm och Töreboda}
 }
 }

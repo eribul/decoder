@@ -1,0 +1,481 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSpy v2009 (http://www.altova.com) by Medical Products Agency (Medical Products Agency) -->
+<!-- SEnsl-ssi.xsd version: 1.4 date: 2012-09-05 -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="http://www.mpa.se/nsl/ssi/v1" targetNamespace="http://www.mpa.se/nsl/ssi/v1" elementFormDefault="qualified" attributeFormDefault="unqualified" xml:lang="EN">
+	<xs:element name="envelope">
+		<xs:annotation>
+			<xs:documentation>An envelope for an NSL message that contains substances</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="substance" maxOccurs="unbounded"/>
+			</xs:sequence>
+			<xs:attribute name="timestamp" type="xs:dateTime" use="required"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="substance" id="SUB">
+		<xs:annotation>
+			<xs:documentation>
+        Guidance Notes: SUB.GD
+        Business Rules: SUB.BR
+      </xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="common" id="SUB.COM">
+					<xs:annotation>
+						<xs:documentation>
+              Guidance Notes: SUB.COM.GD
+              Business Rules: SUB.COM.BR
+            </xs:documentation>
+					</xs:annotation>
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="substance-id" id="COM.1" minOccurs="0">
+								<xs:annotation>
+									<xs:documentation>
+                    Guidance Notes: COM.1.GD
+                    Business Rules: COM.1.BR
+                  </xs:documentation>
+								</xs:annotation>
+								<xs:simpleType>
+									<xs:restriction base="xs:string">
+										<xs:maxLength value="12"/>
+									</xs:restriction>
+								</xs:simpleType>
+							</xs:element>
+							<xs:element name="substance-classification-cv" type="cvType" id="COM.2.CV" minOccurs="0">
+								<xs:annotation>
+									<xs:documentation>
+                    Guidance Notes: COM.2.CV.GD
+                    List Reference: COM.2.CV.LIST
+                    Business Rules: COM.2.CV.BR
+                  </xs:documentation>
+								</xs:annotation>
+							</xs:element>
+							<xs:element name="substance-names" id="COM.SNMs">
+								<xs:annotation>
+									<xs:documentation>
+                    Guidance Notes: COM.SNMs.GD
+                    Business Rules: COM.SNMs.BR
+                  </xs:documentation>
+								</xs:annotation>
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="substance-name" type="nameType" id="COM.SNM" maxOccurs="unbounded">
+											<xs:annotation>
+												<xs:documentation>
+                          Guidance Notes: COM.SNM.GD
+                          Business Rules: COM.SNM.BR
+                        </xs:documentation>
+											</xs:annotation>
+										</xs:element>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+							<xs:element name="substance-codes" id="COM.SCs" minOccurs="0">
+								<xs:annotation>
+									<xs:documentation>
+                    Guidance Notes: COM.SCs.GD
+                    Business Rules: COM.SCs.BR
+                  </xs:documentation>
+								</xs:annotation>
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="substance-code" type="codeType" id="COM.SC" maxOccurs="unbounded">
+											<xs:annotation>
+												<xs:documentation>
+                          Guidance Notes: COM.SC.GD
+                          Business Rules: COM.SC.BR
+                        </xs:documentation>
+											</xs:annotation>
+										</xs:element>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+							<xs:element name="versions" id="COM.VERs">
+								<xs:annotation>
+									<xs:documentation>
+                    Guidance Notes: COM.VERs.GD
+                    Business Rules: COM.VERs.BR
+                  </xs:documentation>
+								</xs:annotation>
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="version" type="versionType" id="COM.VER" maxOccurs="unbounded">
+											<xs:annotation>
+												<xs:documentation>
+                          Guidance Notes: COM.VER.GD
+                          Business Rules: COM.VER.BR
+                        </xs:documentation>
+											</xs:annotation>
+										</xs:element>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+							<xs:element name="reference-information" type="reference-informationType" id="COM.REF" minOccurs="0">
+								<xs:annotation>
+									<xs:documentation>
+                    Guidance Notes: COM.RI.GD
+                    Business Rules: COM.RI.BR
+                  </xs:documentation>
+								</xs:annotation>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:complexType name="reference-sourceType" id="RS">
+		<xs:annotation>
+			<xs:documentation>
+        Guidance Notes: RS.GD
+        Business Rules: RS.BR
+      </xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="reference-source-type-cv" type="cvType" id="RS.2.CV">
+				<xs:annotation>
+					<xs:documentation>
+            Guidance Notes: RS.2.CV.GD
+            List Reference: RS.2.CV.LIST
+            Business Rules: RS.2.CV.BR
+          </xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="nameType" id="SN">
+		<xs:annotation>
+			<xs:documentation>
+        Guidance Notes: SNM.GD
+        Business Rules: SNM.BR
+      </xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="substance-name" id="SNM.1">
+				<xs:annotation>
+					<xs:documentation>
+            Guidance Notes: SNM.1.GD
+            Business Rules: SNM.1.BR
+          </xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="4000"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="substance-name-type-cv" type="cvType" id="SNM.2.CV">
+				<xs:annotation>
+					<xs:documentation>
+            Guidance Notes: SNM.2.CV.GD
+            Business Rules: SNM.2.CV.BR
+            List Reference: SNM.2.CV.LIST
+          </xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="language-cv" id="SNM.3.CV">
+				<xs:annotation>
+					<xs:documentation>
+            Guidance Notes: SNM.3.CV.GD
+            Business Rules: SNM.3.CV.BR
+            List Reference: SNM.3.CV.LIST
+          </xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="3"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="official-names" id="SNM.ONs" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>
+            Guidance Notes: SNM.ONs.GD
+            Business Rules: SNM.ONs.BR
+          </xs:documentation>
+				</xs:annotation>
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="official-name" type="official-nameType" id="SNM.ON" maxOccurs="unbounded">
+							<xs:annotation>
+								<xs:documentation>
+                  Guidance Notes: SNM.ON.GD
+                  Business Rules: SNM.ON.BR
+                </xs:documentation>
+							</xs:annotation>
+						</xs:element>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="official-nameType" id="ON">
+		<xs:annotation>
+			<xs:documentation>
+        Guidance Notes: ON.GD
+        Business Rules: ON.BR
+      </xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="official-name-type-cv" type="cvType" id="ON.1.CV">
+				<xs:annotation>
+					<xs:documentation>
+            Guidance Notes: ON.1.CV.GD
+            List Reference: ON.1.CV.LIST
+            Business Rules: ON.1.CV.BR
+          </xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="official-name-status-cv" type="cvType" id="ON.2.CV">
+				<xs:annotation>
+					<xs:documentation>
+            Guidance Notes: ON.2.CV.GD
+            List Reference: ON.2.CV.LIST
+            Business Rules: ON.2.CV.BR
+          </xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="codeType" id="SC">
+		<xs:annotation>
+			<xs:documentation>
+        Guidance Notes: SC.GD
+        Business Rules: SC.BR
+      </xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="code" id="SC.1">
+				<xs:annotation>
+					<xs:documentation>
+            Guidance Notes: SC.1.GD
+            Business Rules: SC.1.BR
+          </xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="500"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="code-system-cv" type="cvType" id="SC.2.CV">
+				<xs:annotation>
+					<xs:documentation>
+            Guidance Notes: SC.2.CV.GD
+            List Reference: SC.2.CV.LIST
+            Business Rules: SC.2.CV.BR
+          </xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="code-system-status-cv" type="cvType" id="SC.4.CV">
+				<xs:annotation>
+					<xs:documentation>
+            Guidance Notes: SC.4.CV.GD
+            List Reference: SC.4.CV.LIST
+            Business Rules: SC.4.CV.BR
+          </xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="reference-informationType" id="RI">
+		<xs:annotation>
+			<xs:documentation>
+        Guidance Notes: RI.GD
+        Business Rules: RI.BR
+      </xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="comment" id="RI.1" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>
+            Guidance Notes: RI.1.GD
+            Business Rules: RI.1.BR
+          </xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="4000"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="substance-classifications" id="RI.SCLFs" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>
+            Guidance Notes: RI.SCLFs.GD
+            Business Rules: RI.SCLFs.BR
+          </xs:documentation>
+				</xs:annotation>
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="substance-classification" type="substance-classificationType" id="RI.SCLF" minOccurs="0">
+							<xs:annotation>
+								<xs:documentation>
+                  Guidance Notes: RI.SCLF.GD
+                  Business Rules: RI.SCLF.BR
+                </xs:documentation>
+							</xs:annotation>
+						</xs:element>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="substance-classificationType" id="SCLF">
+		<xs:annotation>
+			<xs:documentation>
+        Guidance Notes: SCLF.GD
+        Business Rules: SCLF.BR
+      </xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="substance-classification-cv" type="cvType" id="SCLF.2.CV" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>
+            Guidance Notes: SCLF.2.CV.GD
+            List Reference: SCLF.2.CV.LIST
+            Business Rules: SCLF.2.CV.BR
+          </xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="substance-classification-type-cv" type="cvType" id="SCLF.3.CV" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>
+            Guidance Notes: SCLF.3.CV.GD
+            List Reference: SCLF.3.CV.LIST
+            Business Rules: SCLF.3.CV.BR
+          </xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="substance-classification-subtypes" id="SCLF.STs" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>
+            Guidance Notes: SCLF.STs.GD
+            Business Rules: SCLF.STs.BR
+          </xs:documentation>
+				</xs:annotation>
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="substance-classification-subtype" type="substance-classification-subType" id="SCLF.ST" maxOccurs="unbounded">
+							<xs:annotation>
+								<xs:documentation>
+                  Guidance Notes: SCLF.ST.GD
+                  Business Rules: SCLF.ST.BR
+                </xs:documentation>
+							</xs:annotation>
+						</xs:element>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="substance-classification-subType" id="ST">
+		<xs:annotation>
+			<xs:documentation>
+        Guidance Notes: ST.GD
+        Business Rules: ST.BR
+      </xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="substance-classification-subtype-cv" type="cvType" id="ST.1.CV">
+				<xs:annotation>
+					<xs:documentation>
+            Guidance Notes: ST.1.CV.GD
+            Business Rules: ST.1.CV.BR
+          </xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="versionType" id="VER">
+		<xs:annotation>
+			<xs:documentation>
+        Guidance Notes: VER.GD
+        Business Rules: VER.BR
+      </xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="effective-date" type="xs:date" id="VER.2">
+				<xs:annotation>
+					<xs:documentation>
+            Guidance Notes: VER.2.GD
+            Business Rules: VER.2.BR
+          </xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="cvType" id="UL">
+		<xs:annotation>
+			<xs:documentation>
+        Guidance Notes: UL.GD
+        Business Rules: UL.BR
+      </xs:documentation>
+		</xs:annotation>
+		<xs:simpleContent>
+			<xs:extension base="cvType-length">
+				<xs:attribute name="term-id" id="UL.1">
+					<xs:annotation>
+						<xs:documentation>
+              Guidance Notes: UL.1.GD
+              Business Rules: UL.1.BR
+            </xs:documentation>
+					</xs:annotation>
+					<xs:simpleType>
+						<xs:restriction base="xs:string">
+							<xs:length value="12"/>
+						</xs:restriction>
+					</xs:simpleType>
+				</xs:attribute>
+				<xs:attribute name="term-revision-num" id="UL.2">
+					<xs:annotation>
+						<xs:documentation>
+              Guidance Notes: UL.2.GD
+              Business Rules: UL.2.BR
+            </xs:documentation>
+					</xs:annotation>
+					<xs:simpleType>
+						<xs:restriction base="xs:int">
+							<xs:minInclusive value="1"/>
+						</xs:restriction>
+					</xs:simpleType>
+				</xs:attribute>
+				<xs:attribute name="term-lang" id="UL.3">
+					<xs:annotation>
+						<xs:documentation>
+              Guidance Notes: UL.3.GD
+              Business Rules: UL.3.BR
+            </xs:documentation>
+					</xs:annotation>
+					<xs:simpleType>
+						<xs:restriction base="xs:string">
+							<xs:length value="2"/>
+						</xs:restriction>
+					</xs:simpleType>
+				</xs:attribute>
+				<xs:attribute name="term-english-equiv" id="UL.4">
+					<xs:annotation>
+						<xs:documentation>
+              Guidance Notes: UL.4.GD
+              Business Rules: UL.4.BR
+            </xs:documentation>
+					</xs:annotation>
+					<xs:simpleType>
+						<xs:restriction base="xs:string">
+							<xs:maxLength value="250"/>
+							<xs:minLength value="1"/>
+						</xs:restriction>
+					</xs:simpleType>
+				</xs:attribute>
+			</xs:extension>
+		</xs:simpleContent>
+	</xs:complexType>
+	<xs:simpleType name="cvType-length">
+		<xs:restriction base="xs:string">
+			<xs:maxLength value="250"/>
+		</xs:restriction>
+	</xs:simpleType>
+</xs:schema>

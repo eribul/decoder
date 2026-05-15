@@ -1,7 +1,7 @@
 Package: decoder
 Type: Package
 Title: Decode Coded Variables to Plain Text and the Other Way Around
-Version: 1.2.2
+Version: 1.2.3
 Authors@R: 
   person(
     "Erik", 
@@ -29,8 +29,8 @@ Suggests:
   tidyr
 VignetteBuilder: knitr
 Encoding: UTF-8
-URL: https://www.bitbucket.com/cancercentrum/decoder
-BugReports: https://www.bitbucket.com/cancercentrum/decoder/issues
+URL: https://github.com/eribul/decoder, https://eribul.github.io/decoder/
+BugReports: https://github.com/eribul/decoder/issues
 LazyData: TRUE
-Language: en-US, sv
+Language: en-US
 Config/roxygen2/version: 8.0.0

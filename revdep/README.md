@@ -1,22 +1,24 @@
 # Platform
 
-|field    |value                        |
-|:--------|:----------------------------|
-|version  |R version 3.6.3 (2020-02-29) |
-|os       |Windows 10 x64               |
-|system   |x86_64, mingw32              |
-|ui       |RStudio                      |
-|language |(EN)                         |
-|collate  |Swedish_Sweden.1252          |
-|ctype    |Swedish_Sweden.1252          |
-|tz       |Europe/Berlin                |
-|date     |2020-04-22                   |
+|field    |value                              |
+|:--------|:----------------------------------|
+|version  |R version 4.5.3 (2026-03-11)       |
+|os       |macOS Tahoe 26.4.1                 |
+|system   |aarch64, darwin20                  |
+|ui       |Positron                           |
+|language |(EN)                               |
+|collate  |en_US.UTF-8                        |
+|ctype    |en_US.UTF-8                        |
+|tz       |Europe/Stockholm                   |
+|date     |2026-05-15                         |
+|pandoc   |3.9.0.2 @ /opt/homebrew/bin/pandoc |
+|quarto   |1.9.37 @ /usr/local/bin//quarto    |
 
 # Dependencies
 
-|package |old   |new   |<U+0394>  |
+|package |old   |new   |Δ  |
 |:-------|:-----|:-----|:--|
-|decoder |1.2.1 |1.2.2 |*  |
+|decoder |1.2.2 |1.2.2 |NA |
 
 # Revdeps
 

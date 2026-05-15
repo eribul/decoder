@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<codesystem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="lv-narcclass" xmlns="http://www.mpa.se/nsl/codesystem/v1">
+  <concepts>
+    <concept code="-" throughDate="2000-01-01">
+      <designations>
+        <designation language="sv">Ospecificerad</designation>
+        <designation language="en">Unspecified</designation>
+      </designations>
+    </concept>
+    <concept code="0">
+      <designations>
+        <designation language="sv">Ej narkotikaklassad</designation>
+        <designation language="en">Not classified as a narcotic</designation>
+      </designations>
+    </concept>
+    <concept code="1">
+      <designations>
+        <designation language="sv">II - Narkotika med medicinsk användning</designation>
+        <designation language="en">II - Narcotic or psychotropic substance with medicinal use</designation>
+      </designations>
+    </concept>
+    <concept code="2" throughDate="2001-09-28">
+      <designations>
+        <designation language="sv">Narkotika förteckning IV/V</designation>
+        <designation language="en">Narcotic list IV/V</designation>
+      </designations>
+    </concept>
+    <concept code="3">
+      <designations>
+        <designation language="sv">III - Narkotika med medicinsk användning. Vissa läkemedel angivna i bilagan till LVFS 2011:9 är undantagna några av kraven i narkotikaregelverket.</designation>
+        <designation language="en">III - Narcotic or psychotropic substance with medicinal use. Preparations listed in annex to LVFS 2011:9 are exempted from some requirements.</designation>
+      </designations>
+    </concept>
+    <concept code="4">
+      <designations>
+        <designation language="sv">IV - Narkotika med medicinsk användning</designation>
+        <designation language="en">IV - Psychotropic substance with medicinal use</designation>
+      </designations>
+    </concept>
+    <concept code="5">
+      <designations>
+        <designation language="sv">V - Nationellt narkotikaförklarat ämne utan krav på tillstånd vid varje enskilt införsel- respektive utförseltillfälle</designation>
+        <designation language="en">V- Nationally classified psychotropic  substance without a requirement for individual import or export authorization</designation>
+      </designations>
+    </concept>
+    <concept code="6">
+      <designations>
+        <designation language="sv">I - Narkotika som normalt inte har medicinsk användning</designation>
+        <designation language="en">I - Narcotic or psychotropic substance that does not normally have medicinal use</designation>
+      </designations>
+    </concept>
+    <concept code="NA">
+      <designations>
+        <designation language="sv">Ej tillämplig</designation>
+        <designation language="en">Not applicable</designation>
+      </designations>
+    </concept>
+  </concepts>
+</codesystem>

@@ -4,9 +4,7 @@
 ![Total downloads](http://cranlogs.r-pkg.org/badges/grand-total/decoder)
 [![Project Status: Active - The project has reached a stable, usable state and is being actively developed.](http://www.repostatus.org/badges/latest/active.svg)](http://www.repostatus.org/#active)
 
-decoder
-==========
-
+# decoder
 
 The goal of decoder is to decode coded and perhaps cryptical variables to more understandable descriptive labels.
 
@@ -18,9 +16,9 @@ You can install the released version of decoder from [CRAN](https://CRAN.R-proje
 install.packages("decoder")
 ```
 
-And the development version from [BitBucket](https://bitbucket.org/) with:
+And the development version from [GitHub](https://github.com/eribul/decoder/) with:
 
 ``` r
-# install.packages("remotes")
-remotes::install_bitbucket("cancercentrum/decoder")
+# install.packages("pak")
+pak::pkg_install("eribul/decoder")
 ```

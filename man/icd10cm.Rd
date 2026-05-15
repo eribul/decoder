@@ -4,11 +4,8 @@
 \name{icd10cm}
 \alias{icd10cm}
 \title{ICD-10-CM code}
-\source{
-\url{ftp://ftp.cdc.gov/pub/Health_Statistics/NCHS/Publications/ICD10CM/2020/}
-}
 \description{
-Key-value codes for ICD-10-CM 2020.
+Key-value codes for ICD-10-CM.
 Note that key codes are given without dots, i e C569, not C56.9.
 }
 \seealso{

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<codesystem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="lv-substcodesystemsiso" xmlns="http://www.mpa.se/nsl/codesystem/v1">
+  <concepts>
+    <concept code="100000123553">
+      <designations>
+        <designation language="sv">Chemical Abstracts Service</designation>
+        <designation language="en">Chemical Abstracts Service</designation>
+      </designations>
+    </concept>
+    <concept code="100000123554" throughDate="2012-08-25">
+      <designations>
+        <designation language="sv">European Inventory of Existing Commercial Chemical Substances</designation>
+        <designation language="en">European Inventory of Existing Commercial Chemical Substances</designation>
+      </designations>
+    </concept>
+    <concept code="100000123555" throughDate="2012-08-25">
+      <designations>
+        <designation language="sv">ASK</designation>
+        <designation language="en">ASK</designation>
+      </designations>
+    </concept>
+    <concept code="100000123556">
+      <designations>
+        <designation language="sv">Anatomical Therapeutic Chemical classification</designation>
+        <designation language="en">Anatomical Therapeutic Chemical classification</designation>
+      </designations>
+    </concept>
+    <concept code="100000123564" throughDate="2012-08-25">
+      <designations>
+        <designation language="sv">Nomenclature Standards Committee (US FDA)</designation>
+        <designation language="en">Nomenclature Standards Committee (US FDA)</designation>
+      </designations>
+    </concept>
+    <concept code="100000123565">
+      <designations>
+        <designation language="sv">EudraVigilance Medicinal Products Dictionary</designation>
+        <designation language="en">EudraVigilance Medicinal Products Dictionary</designation>
+      </designations>
+    </concept>
+    <concept code="100000123566" throughDate="2012-08-25">
+      <designations>
+        <designation language="sv">RxNorm Concept Unique Identifier (US National Institute of Health)</designation>
+        <designation language="en">RxNorm Concept Unique Identifier (US National Institute of Health)</designation>
+      </designations>
+    </concept>
+    <concept code="100000123577">
+      <designations>
+        <designation language="sv">Substance Registration System - Unique Ingredient Identifier (FDA)</designation>
+        <designation language="en">Substance Registration System - Unique Ingredient Identifier (FDA)</designation>
+      </designations>
+    </concept>
+    <concept code="100000123578" throughDate="2012-08-25">
+      <designations>
+        <designation language="sv">National Drug File - Reference Terminology (US Department of Veteran Affairs)</designation>
+        <designation language="en">National Drug File - Reference Terminology (US Department of Veteran Affairs)</designation>
+      </designations>
+    </concept>
+    <concept code="EMASMSEMASMS" fromDate="2024-02-13">
+      <designations>
+        <designation language="sv">EMA SMS-ID</designation>
+        <designation language="en">EMA SMS-ID</designation>
+      </designations>
+    </concept>
+    <concept code="EUTCTEUTCTEU" fromDate="2018-05-31">
+      <designations>
+        <designation language="sv">European Union Telematics Controlled Terms</designation>
+        <designation language="en">European Union Telematics Controlled Terms</designation>
+      </designations>
+    </concept>
+    <concept code="SENSLIDSENSL">
+      <designations>
+        <designation language="sv">Nationellt substansregister för läkemedel</designation>
+        <designation language="en">Swedish National Drug Substance Registry ID</designation>
+      </designations>
+    </concept>
+    <concept code="SNOMEDSNOMED">
+      <designations>
+        <designation language="sv">Systematized Nomenclature of Medicine</designation>
+        <designation language="en">Systematized Nomenclature of Medicine</designation>
+      </designations>
+    </concept>
+  </concepts>
+</codesystem>

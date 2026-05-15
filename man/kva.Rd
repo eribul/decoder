@@ -4,11 +4,8 @@
 \name{kva}
 \alias{kva}
 \title{Klassifikation av vardatgarder (KVA)}
-\source{
-\url{https://www.socialstyrelsen.se/utveckla-verksamhet/e-halsa/klassificering-och-koder/kva/}
-}
 \description{
-Key-value codes for KVA (for surgery and medicine.
+Key-value codes for KVA (for surgery and medicine).
 }
 \seealso{
 Other key_value_data:

@@ -10,7 +10,7 @@ Key-value codes for health care areas.
 \details{
 \itemize{
   \item{Key: the first four digits from the LKF-code}
-  \item{Value: A geographical area (sub area of county/lan) with special 
+  \item{Value: A geographical area (sub area of county/lan) with special
     interest}
 }
 
@@ -26,9 +26,9 @@ Updates for other regions needs to be requested (please do!).
 }
 \section{Kungalv}{
 
- Kungalv is an independent area by default. There are situations when Kungalv 
+ Kungalv is an independent area by default. There are situations when Kungalv
  should be dealt with as an
- independent health care region or as a part of greater Gothenburg. 
+ independent health care region or as a part of greater Gothenburg.
  See section "extra_functions" in \link{decode}
  to handle this.
 }

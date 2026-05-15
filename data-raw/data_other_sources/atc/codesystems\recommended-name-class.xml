@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<codesystem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="lv-recommendednameclass" xmlns="http://www.mpa.se/nsl/codesystem/v1">
+  <concepts>
+    <concept code="altrec">
+      <designations>
+        <designation language="en">Alternative recommended Swedish name</designation>
+        <designation language="sv">Alternativt rekommenderat svenskt namn</designation>
+      </designations>
+    </concept>
+    <concept code="rec">
+      <designations>
+        <designation language="en">Recommended name</designation>
+        <designation language="sv">Rekommenderat namn</designation>
+      </designations>
+    </concept>
+    <concept code="seleng">
+      <designations>
+        <designation language="en">English selected name in Sweden</designation>
+        <designation language="sv">Utvalt engelskt namn i Sverige</designation>
+      </designations>
+    </concept>
+  </concepts>
+</codesystem>

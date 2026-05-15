@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" xmlns="http://www.mpa.se/nsl/other/v3" targetNamespace="http://www.mpa.se/nsl/other/v3" attributeFormDefault="unqualified">
+	<xs:element name="envelope">
+		<xs:annotation>
+			<xs:documentation>An envelope for an NSL message that contains substance information not contained in SEnsl-ssi.</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="NSL_Substance" maxOccurs="unbounded"/>
+			</xs:sequence>
+			<xs:attribute name="timestamp" type="xs:dateTime" use="required"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="NSL_Substance" type="NSL_Substance_type"/>
+	<xs:complexType name="NSL_Substance_type">
+		<xs:sequence>
+			<xs:element name="SeNSLid" type="LVidType">
+				<xs:annotation>
+					<xs:documentation>SeNSLid from LVIS. Foreign key to the key based on the SEnsl-ssi.xsd.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="RecommendedName" type="RecommendedName_type" maxOccurs="unbounded">
+				<xs:annotation>
+					<xs:documentation>The substance name recommended for use in the Swedish language, including the Swedish primary name.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="NarcoticClass" type="codingType" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Swedish national narcotic classification. Choose from a controlled vocabulary from code system: "lv-narcclass".</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="BiologicalSubstancePharmaceuticalLegislation" type="yesnoType" minOccurs="1">
+				<xs:annotation>
+					<xs:documentation>
+						A biological substance according to the definition in Directive 2001/83/EC Annex I Part I chapter 3.2.1.1 b.
+						If this substance is an active substance in a medicinal product the product is considered to be biological and subject to additional monitoring regarding adverse events. 
+						Possible values are "Y" for "Yes", "N" for "No".
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="SubstanceSubstanceRelation" type="SubstanceSubstanceRelation_type" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:element name="SubstanceSubstanceRelation" type="SubstanceSubstanceRelation_type"/>
+	<xs:complexType name="SubstanceSubstanceRelation_type">
+		<xs:annotation>
+			<xs:documentation>Shows the relation between one substance and another.</xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="RelatedSeNSLid" type="LVidType">
+				<xs:annotation>
+					<xs:documentation>Foreign key to the substance that this substance is related to.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="SubstSubstRelation" type="codingType">
+				<xs:annotation>
+					<xs:documentation>Type of relationship between substances. Choose from a list of controlled values from code system: "lv-substsubstrelation".</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:simpleType name="yesnoType">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="Y"/>
+			<xs:enumeration value="N"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:complexType name="RecommendedName_type">
+		<xs:sequence>
+			<xs:element name="Name">
+				<xs:annotation>
+					<xs:documentation>The recommended name</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="1000"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="RecommendedNameClass" type="codingType">
+				<xs:annotation>
+					<xs:documentation>Type of recommended name. Choose from a list of controlled values from code system: "lv-recommendednameclass".</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:simpleType name="LVidType">
+		<xs:annotation>
+			<xs:documentation>16 character string format for an LV-id plus 2 for "ID" as a prefix.</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:minLength value="18"/>
+			<xs:maxLength value="18"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:complexType name="codingType" block="#all">
+		<xs:attribute name="code" type="xs:string" use="required"/>
+		<xs:attribute name="codeSystem" type="xs:string" use="required"/>
+	</xs:complexType>
+</xs:schema>

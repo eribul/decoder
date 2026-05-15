@@ -32,7 +32,7 @@ NULL
 #' @keywords datasets
 #' @name distrikt
 #' @family key_value_data
-#' @source \url{https://www.scb.se/hitta-statistik/regional-statistik-och-kartor/regionala-indelningar/distrikt/}
+#' @source \url{https://www.scb.se/hitta-statistik/regional-statistik-och-kartor/regionala-indelningar/distrikt/} # nolint: line_length_linter
 NULL
 
 
@@ -42,7 +42,7 @@ NULL
 #'
 #' \itemize{
 #'   \item{Key: the first four digits from the LKF-code}
-#'   \item{Value: A geographical area (sub area of county/lan) with special 
+#'   \item{Value: A geographical area (sub area of county/lan) with special
 #'     interest}
 #' }
 #'
@@ -57,9 +57,9 @@ NULL
 #' Updates for other regions needs to be requested (please do!).
 #'
 #' @section Kungalv:
-#'  Kungalv is an independent area by default. There are situations when Kungalv 
+#'  Kungalv is an independent area by default. There are situations when Kungalv
 #'  should be dealt with as an
-#'  independent health care region or as a part of greater Gothenburg. 
+#'  independent health care region or as a part of greater Gothenburg.
 #'  See section "extra_functions" in \link{decode}
 #'  to handle this.
 #'
@@ -79,14 +79,14 @@ NULL
 #'
 #' Categorization:
 #' \describe{
-#' \item{Norra}{Lysekil, Munkedal, Orust, Sotenäs, Strömstad, Tanum, Bengtsfors, 
+#' \item{Norra}{Lysekil, Munkedal, Orust, Sotenäs, Strömstad, Tanum, Bengtsfors,
 #' Dals-Ed, Färgelanda, Mellerud, Åmål, Trollhättan, Uddevalla och Vänersborg}
-#' \item{Västra}{Lilla Edet, Ale, Kungälv, Stenungsund, Tjörn, Öckerö, Härryda, 
+#' \item{Västra}{Lilla Edet, Ale, Kungälv, Stenungsund, Tjörn, Öckerö, Härryda,
 #' Mölndal, Partille, Lerum och Alingsås}
-#' \item{Södra}{Herrljunga, Vårgårda, Bollebygd, Borås, Mark, Svenljunga, 
+#' \item{Södra}{Herrljunga, Vårgårda, Bollebygd, Borås, Mark, Svenljunga,
 #' Tranemo och Ulricehamn}
 #' \item{Göteborg}{Göteborg}
-#' \item{Östra}{Essunga, Falköping, Grästorp, Götene, Lidköping, Skara, Vara, 
+#' \item{Östra}{Essunga, Falköping, Grästorp, Götene, Lidköping, Skara, Vara,
 #' Gullspång, Hjo, Karlsborg, Mariestad, Skövde, Tibro, Tidaholm och Töreboda}
 #' }
 #' @docType data
@@ -106,7 +106,7 @@ NULL
 #' @keywords datasets
 #' @name kommun
 #' @family key_value_data
-#' @source \url{https://www.scb.se/hitta-statistik/regional-statistik-och-kartor/regionala-indelningar/lan-och-kommuner/}
+#' @source \url{https://www.scb.se/hitta-statistik/regional-statistik-och-kartor/regionala-indelningar/lan-och-kommuner/} # nolint: line_length_linter
 NULL
 
 
@@ -114,23 +114,23 @@ NULL
 #'
 #' Key-value codes for the Swedish parishes (forsamlingar).
 #' All six digits in the LKF code.
-#' 
+#'
 #' @docType data
 #' @keywords datasets
 #' @name forsamling
 #' @family key_value_data
-#' @source \url{https://www.scb.se/hitta-statistik/regional-statistik-och-kartor/regionala-indelningar/lan-och-kommuner/}
+#' @source \url{https://www.scb.se/hitta-statistik/regional-statistik-och-kartor/regionala-indelningar/lan-och-kommuner/} # nolint: line_length_linter
 NULL
 
 
 #' hemort and hemort2 codes (geographical codes)
 #'
-#' Both \code{hemort} and \code{hemort2} combines regional codes for lan, 
+#' Both \code{hemort} and \code{hemort2} combines regional codes for lan,
 #' kommun and forsamling.
-#' \code{hemort} is the official (but rather old) code used within RCC. 
-#' \code{hemort2} is an updated version combining \code{\link{lan}}, 
+#' \code{hemort} is the official (but rather old) code used within RCC.
+#' \code{hemort2} is an updated version combining \code{\link{lan}},
 #' \code{\link{kommun}} and \code{\link{forsamling}}
-#' 
+#'
 #' @docType data
 #' @keywords datasets
 #' @name hemort
@@ -142,9 +142,7 @@ NULL
 NULL
 
 
-
 # Administration ----------------------------------------------------------
-
 
 #' Hospital codes
 #'
@@ -153,12 +151,12 @@ NULL
 #' Data from 'Rockan'. Note that this is an old version of the classification!
 #' See the reference link below for the new version.
 #' The old version should be used of historical reasons.
-#' One difference is for example that the Sahlgrenska university hospital is 
+#' One difference is for example that the Sahlgrenska university hospital is
 #' one hospital
-#' in the new version of the classification but the Swedish regional cancer 
+#' in the new version of the classification but the Swedish regional cancer
 #' centers
 #' still classify it as three different hospitals.
-#' Note also that primary health care units did receive their own codes until 
+#' Note also that primary health care units did receive their own codes until
 #' 1992 (?)
 #' but not later!
 #'
@@ -197,7 +195,8 @@ NULL
 #'
 #' Key-value codes for the Swedish clinic types.
 #' Data mainly from url below (taken from the PDF).
-#' Some extra codes are added from Rockan (290, 291, 292, 446, 921 and 999 for unknown).
+#' Some extra codes are added from Rockan
+#' (290, 291, 292, 446, 921 and 999 for unknown).
 #'
 #' @docType data
 #' @keywords datasets
@@ -211,10 +210,10 @@ NULL
 #' Key-value codes for the Swedish "laboratories".
 #' Data is combined from two sources.
 #' \enumerate{
-#'  \item The official list from SOFS 2006:15 (see url below). 
+#'  \item The official list from SOFS 2006:15 (see url below).
 #'  This is the primary source for codes
 #'  appearing in both sources.
-#'  \item Extra codes are also added from the old Rockan registry for historical 
+#'  \item Extra codes are also added from the old Rockan registry for historical
 #'  reasons.
 #' }
 #' @docType data
@@ -224,18 +223,16 @@ NULL
 NULL
 
 
-
 # Diagnostics -------------------------------------------------------------
 
 #' Klassifikation av vardatgarder (KVA)
 #'
-#' Key-value codes for KVA (for surgery and medicine.
+#' Key-value codes for KVA (for surgery and medicine).
 #'
 #' @docType data
 #' @keywords datasets
 #' @name kva
 #' @family key_value_data
-#' @source \url{https://www.socialstyrelsen.se/utveckla-verksamhet/e-halsa/klassificering-och-koder/kva/}
 NULL
 
 
@@ -351,8 +348,7 @@ NULL
 #'
 #' Key-value codes for just the first two digits of the ICDO-3 code.
 #' This gives broader grouping.
-#' Based on the table of contents from:
-#' http://www.socialstyrelsen.se/Lists/Artikelkatalog/Attachments/19446/2014-5-12.pdf
+#' Based on the table of contents from PDF previously found from SoS
 #'
 #' @docType data
 #' @keywords datasets
@@ -387,39 +383,36 @@ NULL
 
 #' ICD-10-SE code
 #'
-#' Key-value codes for ICD-10-SE 2020 (Swedish version).
+#' Key-value codes for ICD-10-SE 2026 (Swedish version).
 #' Note that key codes are given without dots, i e C569, not C56.9.
 #'
 #' @docType data
 #' @keywords datasets
 #' @name icd10se
 #' @family key_value_data
-#' @source \url{https://www.socialstyrelsen.se/utveckla-verksamhet/e-halsa/klassificering-och-koder/kodtextfiler/}
 NULL
 
 
 #' ICD-10-CM code
 #'
-#' Key-value codes for ICD-10-CM 2020.
+#' Key-value codes for ICD-10-CM.
 #' Note that key codes are given without dots, i e C569, not C56.9.
 #'
 #' @docType data
 #' @keywords datasets
 #' @name icd10cm
 #' @family key_value_data
-#' @source \url{ftp://ftp.cdc.gov/pub/Health_Statistics/NCHS/Publications/ICD10CM/2020/}
 NULL
 
 #' ICD-9-CM diagnosis and procedure codes
 #'
-#' Key-value codes for ICD-9-CM diagnostics (\code{icd9cmd}) and 
+#' Key-value codes for ICD-9-CM diagnostics (\code{icd9cmd}) and
 #' procedure (\code{icd9cmp}) codes (version 32).
 #'
 #' @docType data
 #' @keywords datasets
 #' @name icd9cmd
 #' @family key_value_data
-#' @source \url{https://www.cms.gov/Medicare/Coding/ICD9ProviderDiagnosticCodes/codes}
 NULL
 
 #' @rdname icd9cmd
@@ -478,7 +471,7 @@ NULL
 
 #' Anatomical Therapeutic Chemical (ATC) Classification System codes
 #'
-#' Key-value codes for ATC from the Swedish Medical Products Agency (2020-04-07).
+#' Key-value codes for ATC from the Swedish Medical Products Agency.
 #'
 #' @docType data
 #' @keywords datasets
@@ -489,8 +482,8 @@ NULL
 
 #' Help tables from Rockan
 #'
-#' Key-value codes from old help tables used with Rockan 
-#' (by Swedish regional cancer centers) 
+#' Key-value codes from old help tables used with Rockan
+#' (by Swedish regional cancer centers)
 #' @docType data
 #' @keywords datasets
 #' @name rockan

@@ -21,7 +21,7 @@ devtools::check_win_oldrelease()
 devtools::check_win_release()
 
 # Reverse dependencies
-# source("https://install-github.me/r-lib/revdepcheck")
+# pak::pkg_install("r-lib/revdepcheck")
 revdepcheck::revdep_reset()
 revdepcheck::revdep_check()
 

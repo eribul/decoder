@@ -12,7 +12,7 @@
 \alias{status}
 \title{Help tables from Rockan}
 \description{
-Key-value codes from old help tables used with Rockan 
+Key-value codes from old help tables used with Rockan
 (by Swedish regional cancer centers)
 }
 \seealso{

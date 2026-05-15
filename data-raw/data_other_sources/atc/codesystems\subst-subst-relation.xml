@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<codesystem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="lv-substsubstrelation" xmlns="http://www.mpa.se/nsl/codesystem/v1">
+  <concepts>
+    <concept code="CHILD">
+      <designations>
+        <designation language="sv">Har dotter</designation>
+        <designation language="en">Has child</designation>
+      </designations>
+    </concept>
+    <concept code="PARENT">
+      <designations>
+        <designation language="sv">Har moder</designation>
+        <designation language="en">Has parent</designation>
+      </designations>
+    </concept>
+  </concepts>
+</codesystem>

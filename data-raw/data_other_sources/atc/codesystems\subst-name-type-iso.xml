@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<codesystem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="lv-substnametypeiso" xmlns="http://www.mpa.se/nsl/codesystem/v1">
+  <concepts>
+    <concept code="100000075669">
+      <designations>
+        <designation language="sv">Kod</designation>
+        <designation language="en">Code</designation>
+      </designations>
+    </concept>
+    <concept code="100000123540">
+      <designations>
+        <designation language="sv">Annat namn</designation>
+        <designation language="en">Other Name</designation>
+      </designations>
+    </concept>
+    <concept code="100000123541">
+      <designations>
+        <designation language="sv">Översättning</designation>
+        <designation language="en">Translation</designation>
+      </designations>
+    </concept>
+    <concept code="100000123558">
+      <designations>
+        <designation language="sv">Officiellt namn</designation>
+        <designation language="en">Official Name</designation>
+      </designations>
+    </concept>
+  </concepts>
+</codesystem>

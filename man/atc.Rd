@@ -8,7 +8,7 @@
 \url{https://nsl.mpa.se/}
 }
 \description{
-Key-value codes for ATC from the Swedish Medical Products Agency (2020-04-07).
+Key-value codes for ATC from the Swedish Medical Products Agency.
 }
 \seealso{
 Other key_value_data:
