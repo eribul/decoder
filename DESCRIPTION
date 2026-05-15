@@ -19,7 +19,7 @@ Description: Main function "decode" is used to decode coded key values to plain
     code sets.
 License: GPL-2
 Depends:
-    R (>= 2.10)
+    R (>= 4.1.0)
 Suggests:
   dplyr,
   DT,
@@ -31,6 +31,6 @@ VignetteBuilder: knitr
 Encoding: UTF-8
 URL: https://www.bitbucket.com/cancercentrum/decoder
 BugReports: https://www.bitbucket.com/cancercentrum/decoder/issues
-RoxygenNote: 7.1.0
 LazyData: TRUE
 Language: en-US, sv
+Config/roxygen2/version: 8.0.0

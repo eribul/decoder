@@ -10,7 +10,7 @@ Data mainly from url below (taken from the PDF).
 Some extra codes are added from Rockan (290, 291, 292, 446, 921 and 999 for unknown).
 }
 \seealso{
-Other key_value_data: 
+Other key_value_data:
 \code{\link{atc}},
 \code{\link{distrikt}},
 \code{\link{figo}},
@@ -19,13 +19,13 @@ Other key_value_data:
 \code{\link{hsn}},
 \code{\link{icd10cm}},
 \code{\link{icd10se}},
-\code{\link{icd7_grov}},
 \code{\link{icd7}},
-\code{\link{icd9cmd}},
+\code{\link{icd7_grov}},
 \code{\link{icd9}},
-\code{\link{icdo3_grov}},
-\code{\link{icdo3}},
+\code{\link{icd9cmd}},
 \code{\link{icdo}},
+\code{\link{icdo3}},
+\code{\link{icdo3_grov}},
 \code{\link{kommun}},
 \code{\link{kon}},
 \code{\link{kva}},
@@ -37,12 +37,12 @@ Other key_value_data:
 \code{\link{region}},
 \code{\link{rockan}},
 \code{\link{sida}},
+\code{\link{sjukhus}},
 \code{\link{sjukhus_inca}},
 \code{\link{sjukhus_par}},
-\code{\link{sjukhus}},
 \code{\link{sjukvardsomrade}},
-\code{\link{snomed3}},
 \code{\link{snomed}},
+\code{\link{snomed3}},
 \code{\link{t_rtr}},
 \code{\link{tnmgrund}}
 }

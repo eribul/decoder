@@ -11,3 +11,4 @@
 ^revdep/*
 ^_pkgdown.yml$
 ^docs/*
+^\.vscode$

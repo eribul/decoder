@@ -65,7 +65,7 @@ sjukhus_all <-
   )
 
 key_n_sources <- 
-  sjukhus_all %>% 
+  sjukhus_all |> 
   count(key, sort = TRUE)
 ```
 
@@ -77,14 +77,14 @@ key_n_sources <-
 ```{r, echo = FALSE, message = FALSE}
 
 key_n_sources <- 
-  sjukhus_all %>% 
+  sjukhus_all |> 
   count(key, sort = TRUE)
-in3 <- key_n_sources %>% filter(n == 3)
+in3 <- key_n_sources |> filter(n == 3)
 
-sjukhus_all %>% 
-  inner_join(in3, "key") %>% 
-  arrange(key) %>% 
-  tidyr::spread(source, value) %>% 
-  select(-n) %>% 
+sjukhus_all |> 
+  inner_join(in3, "key") |> 
+  arrange(key) |> 
+  tidyr::spread(source, value) |> 
+  select(-n) |> 
   knitr::kable()
 ```

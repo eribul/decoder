@@ -2,6 +2,7 @@
 
 S3method(as.keyvalue,data.frame)
 S3method(as.keyvalue,default)
+S3method(as.keyvalue,keyvalue)
 S3method(as.keyvalue,list)
 S3method(decode,data.frame)
 S3method(decode,default)
