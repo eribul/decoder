@@ -4,9 +4,6 @@
 \name{atc}
 \alias{atc}
 \title{Anatomical Therapeutic Chemical (ATC) Classification System codes}
-\source{
-\url{https://nsl.mpa.se/}
-}
 \description{
 Key-value codes for ATC from the Swedish Medical Products Agency.
 }

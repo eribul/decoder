@@ -5,7 +5,7 @@
 \alias{forsamling}
 \title{Swedish parish codes}
 \source{
-\url{https://www.scb.se/hitta-statistik/regional-statistik-och-kartor/regionala-indelningar/lan-och-kommuner/} # nolint: line_length_linter
+\url{https://www.scb.se/hitta-statistik/regional-statistik-och-kartor/regionala-indelningar/lan-och-kommuner/}
 }
 \description{
 Key-value codes for the Swedish parishes (forsamlingar).

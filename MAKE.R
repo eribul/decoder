@@ -15,8 +15,11 @@ devtools::spell_check(, FALSE)
 goodpractice::goodpractice(checks = setdiff(goodpractice::all_checks(), "covr"))
 covr::report(covr::package_coverage())
 devtools::check()
-rhub::check_for_cran()
 
+# ej windows då det finns fil med felaktigt namn i data-raw som hindrar
+rhub::rhub_check()
+
+# Win-kollarna körs utan data-raw etc pga .Rbuildignore så funkar ändå
 devtools::check_win_devel()
 devtools::check_win_oldrelease()
 devtools::check_win_release()

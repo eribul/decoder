@@ -7,7 +7,7 @@
 \description{
 Key-value codes for just the first two digits of the ICDO-3 code.
 This gives broader grouping.
-Based on the table of contents from PDF previously found from SoS
+Based on the table of contents from a PDF.
 }
 \seealso{
 Other key_value_data:

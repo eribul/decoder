@@ -208,6 +208,7 @@ icd10cm <-
   mutate_all(trimws) |>
   as.keyvalue()
 
+rm(icd10cmfile)
 
 # ICD-10-SE ------------------------------------------------------------------
 
@@ -380,6 +381,8 @@ kva <-
   ) |>
   select(key = Kod, value = Titel) |>
   as.keyvalue()
+
+rm(kva_path)
 
 # ATC codes ---------------------------------------------------------------
 if (!file.exists("data-raw/data_other_sources/atc.zip")) {

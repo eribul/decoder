@@ -32,7 +32,7 @@ NULL
 #' @keywords datasets
 #' @name distrikt
 #' @family key_value_data
-#' @source \url{https://www.scb.se/hitta-statistik/regional-statistik-och-kartor/regionala-indelningar/distrikt/} # nolint: line_length_linter
+#' @source \url{https://www.scb.se/hitta-statistik/regional-statistik-och-kartor/regionala-indelningar/distrikt/}
 NULL
 
 
@@ -106,7 +106,7 @@ NULL
 #' @keywords datasets
 #' @name kommun
 #' @family key_value_data
-#' @source \url{https://www.scb.se/hitta-statistik/regional-statistik-och-kartor/regionala-indelningar/lan-och-kommuner/} # nolint: line_length_linter
+#' @source \url{https://www.scb.se/hitta-statistik/regional-statistik-och-kartor/regionala-indelningar/lan-och-kommuner/}
 NULL
 
 
@@ -119,7 +119,7 @@ NULL
 #' @keywords datasets
 #' @name forsamling
 #' @family key_value_data
-#' @source \url{https://www.scb.se/hitta-statistik/regional-statistik-och-kartor/regionala-indelningar/lan-och-kommuner/} # nolint: line_length_linter
+#' @source \url{https://www.scb.se/hitta-statistik/regional-statistik-och-kartor/regionala-indelningar/lan-och-kommuner/}
 NULL
 
 
@@ -348,7 +348,7 @@ NULL
 #'
 #' Key-value codes for just the first two digits of the ICDO-3 code.
 #' This gives broader grouping.
-#' Based on the table of contents from PDF previously found from SoS
+#' Based on the table of contents from a PDF.
 #'
 #' @docType data
 #' @keywords datasets
@@ -477,7 +477,6 @@ NULL
 #' @keywords datasets
 #' @name atc
 #' @family key_value_data
-#' @source \url{https://nsl.mpa.se/}
 NULL
 
 #' Help tables from Rockan
