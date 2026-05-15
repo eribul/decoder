@@ -2,10 +2,6 @@
 
 Key-value codes for ATC from the Swedish Medical Products Agency.
 
-## Source
-
-<https://nsl.mpa.se/>
-
 ## See also
 
 Other key_value_data:

@@ -1,8 +1,7 @@
 # ICD-O3 Grov
 
 Key-value codes for just the first two digits of the ICDO-3 code. This
-gives broader grouping. Based on the table of contents from PDF
-previously found from SoS
+gives broader grouping. Based on the table of contents from a PDF.
 
 ## See also
 

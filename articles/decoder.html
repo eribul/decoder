@@ -284,10 +284,10 @@ subset” of ICD10, wherefore:</p>
 <p>“icd10”, can also decode non oncological desease codes:</p>
 <div class="sourceCode" id="cb11"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu"><a href="../reference/decode.html">decode</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="st">"D448A"</span>, <span class="st">"T009"</span>, <span class="st">"F182"</span>, <span class="st">"S134C"</span>, <span class="st">"C131"</span><span class="op">)</span>, <span class="st">"icd10se"</span><span class="op">)</span></span></code></pre></div>
-<pre><code><span><span class="co">## [1] "Tumör med multiglandulär lokalisation, typ I"                                                 </span></span>
-<span><span class="co">## [2] "Multipla ytliga skador, ospecificerade"                                                       </span></span>
-<span><span class="co">## [3] "Psykiska störningar och beteendestörningar orsakade av flyktiga lösningsmedel-Beroendesyndrom"</span></span>
-<span><span class="co">## [4] "Whiplash-skada, WAD III"                                                                      </span></span>
+<pre><code><span><span class="co">## [1] "Tumör med multiglandulär lokalisation, typ I"               </span></span>
+<span><span class="co">## [2] "Multipla ytliga skador, ospecificerade"                     </span></span>
+<span><span class="co">## [3] "Beroende av flyktiga lösningsmedel"                         </span></span>
+<span><span class="co">## [4] "Whiplash-skada, WAD III"                                    </span></span>
 <span><span class="co">## [5] "Malign tumör i aryepiglottiska vecket, hypofaryngeala delen"</span></span></code></pre>
 </div>
 <div class="section level3">
@@ -345,67 +345,76 @@ method:</p>
 <span>  <span class="op">)</span></span>
 <span><span class="fu">knitr</span><span class="fu">::</span><span class="fu"><a href="https://rdrr.io/pkg/knitr/man/kable.html" class="external-link">kable</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/warning.html" class="external-link">suppressWarnings</a></span><span class="op">(</span><span class="fu"><a href="../reference/decode.html">decode</a></span><span class="op">(</span><span class="va">df</span><span class="op">)</span><span class="op">)</span><span class="op">)</span></span></code></pre></div>
 <pre><code><span><span class="co">## New decoded columns added: </span></span>
+<span><span class="co">## * LKF_kommun_beskrivning</span></span>
 <span><span class="co">## * LKF_forsamling_beskrivning</span></span>
-<span><span class="co">## * LKF_hemort_beskrivning</span></span>
+<span><span class="co">## * LKF_hemort2_beskrivning</span></span>
 <span><span class="co">## * LKF_lan_beskrivning</span></span>
-<span><span class="co">## * LKF_kommun_beskrivning</span></span></code></pre>
+<span><span class="co">## * LKF_hemort_beskrivning</span></span></code></pre>
 <table class="table">
 <colgroup>
-<col width="6%">
-<col width="26%">
-<col width="22%">
-<col width="20%">
-<col width="22%">
+<col width="5%">
+<col width="18%">
+<col width="21%">
+<col width="19%">
+<col width="16%">
+<col width="18%">
 </colgroup>
 <thead><tr class="header">
 <th align="left">LKF</th>
-<th align="left">LKF_forsamling_beskrivning</th>
-<th align="left">LKF_hemort_beskrivning</th>
-<th align="left">LKF_lan_beskrivning</th>
 <th align="left">LKF_kommun_beskrivning</th>
+<th align="left">LKF_forsamling_beskrivning</th>
+<th align="left">LKF_hemort2_beskrivning</th>
+<th align="left">LKF_lan_beskrivning</th>
+<th align="left">LKF_hemort_beskrivning</th>
 </tr></thead>
 <tbody>
 <tr class="odd">
 <td align="left">149804</td>
-<td align="left">NA</td>
-<td align="left">Velinga</td>
-<td align="left">Västra Götalands län</td>
 <td align="left">Tidaholm</td>
+<td align="left">NA</td>
+<td align="left">NA</td>
+<td align="left">Västra Götalands län</td>
+<td align="left">Velinga</td>
 </tr>
 <tr class="even">
 <td align="left">147104</td>
-<td align="left">NA</td>
-<td align="left">Holmestad</td>
-<td align="left">Västra Götalands län</td>
 <td align="left">Götene</td>
+<td align="left">NA</td>
+<td align="left">NA</td>
+<td align="left">Västra Götalands län</td>
+<td align="left">Holmestad</td>
 </tr>
 <tr class="odd">
 <td align="left">012704</td>
-<td align="left">NA</td>
-<td align="left">Salem</td>
-<td align="left">Stockholms län</td>
 <td align="left">Botkyrka</td>
+<td align="left">NA</td>
+<td align="left">NA</td>
+<td align="left">Stockholms län</td>
+<td align="left">Salem</td>
 </tr>
 <tr class="even">
 <td align="left">143505</td>
-<td align="left">NA</td>
-<td align="left">Mo</td>
-<td align="left">Västra Götalands län</td>
 <td align="left">Tanum</td>
+<td align="left">NA</td>
+<td align="left">NA</td>
+<td align="left">Västra Götalands län</td>
+<td align="left">Mo</td>
 </tr>
 <tr class="odd">
 <td align="left">126502</td>
-<td align="left">NA</td>
-<td align="left">Björka</td>
-<td align="left">Skåne län</td>
 <td align="left">Sjöbo</td>
+<td align="left">NA</td>
+<td align="left">NA</td>
+<td align="left">Skåne län</td>
+<td align="left">Björka</td>
 </tr>
 <tr class="even">
 <td align="left">232602</td>
+<td align="left">Berg</td>
 <td align="left">Hackås</td>
 <td align="left">Hackås</td>
 <td align="left">Jämtlands län</td>
-<td align="left">Berg</td>
+<td align="left">Hackås</td>
 </tr>
 </tbody>
 </table>

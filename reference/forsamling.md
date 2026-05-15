@@ -6,7 +6,6 @@ in the LKF code.
 ## Source
 
 <https://www.scb.se/hitta-statistik/regional-statistik-och-kartor/regionala-indelningar/lan-och-kommuner/>
-\# nolint: line_length_linter
 
 ## See also
 

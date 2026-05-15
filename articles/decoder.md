@@ -144,10 +144,10 @@ decode(incadata$a_icdo3, "icd10se")
 decode(c("D448A", "T009", "F182", "S134C", "C131"), "icd10se")
 ```
 
-    ## [1] "Tumör med multiglandulär lokalisation, typ I"                                                 
-    ## [2] "Multipla ytliga skador, ospecificerade"                                                       
-    ## [3] "Psykiska störningar och beteendestörningar orsakade av flyktiga lösningsmedel-Beroendesyndrom"
-    ## [4] "Whiplash-skada, WAD III"                                                                      
+    ## [1] "Tumör med multiglandulär lokalisation, typ I"               
+    ## [2] "Multipla ytliga skador, ospecificerade"                     
+    ## [3] "Beroende av flyktiga lösningsmedel"                         
+    ## [4] "Whiplash-skada, WAD III"                                    
     ## [5] "Malign tumör i aryepiglottiska vecket, hypofaryngeala delen"
 
 ### Exact versus non exact decoding
@@ -225,19 +225,20 @@ knitr::kable(suppressWarnings(decode(df)))
 ```
 
     ## New decoded columns added: 
-    ## * LKF_forsamling_beskrivning
-    ## * LKF_hemort_beskrivning
-    ## * LKF_lan_beskrivning
     ## * LKF_kommun_beskrivning
+    ## * LKF_forsamling_beskrivning
+    ## * LKF_hemort2_beskrivning
+    ## * LKF_lan_beskrivning
+    ## * LKF_hemort_beskrivning
 
-| LKF | LKF_forsamling_beskrivning | LKF_hemort_beskrivning | LKF_lan_beskrivning | LKF_kommun_beskrivning |
-|:---|:---|:---|:---|:---|
-| 149804 | NA | Velinga | Västra Götalands län | Tidaholm |
-| 147104 | NA | Holmestad | Västra Götalands län | Götene |
-| 012704 | NA | Salem | Stockholms län | Botkyrka |
-| 143505 | NA | Mo | Västra Götalands län | Tanum |
-| 126502 | NA | Björka | Skåne län | Sjöbo |
-| 232602 | Hackås | Hackås | Jämtlands län | Berg |
+| LKF | LKF_kommun_beskrivning | LKF_forsamling_beskrivning | LKF_hemort2_beskrivning | LKF_lan_beskrivning | LKF_hemort_beskrivning |
+|:---|:---|:---|:---|:---|:---|
+| 149804 | Tidaholm | NA | NA | Västra Götalands län | Velinga |
+| 147104 | Götene | NA | NA | Västra Götalands län | Holmestad |
+| 012704 | Botkyrka | NA | NA | Stockholms län | Salem |
+| 143505 | Tanum | NA | NA | Västra Götalands län | Mo |
+| 126502 | Sjöbo | NA | NA | Skåne län | Björka |
+| 232602 | Berg | Hackås | Hackås | Jämtlands län | Hackås |
 
 Consult
 [`?hemort`](https://eribul.github.io/decoder/reference/hemort.md) and
