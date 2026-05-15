@@ -16,6 +16,7 @@ goodpractice::goodpractice(checks = setdiff(goodpractice::all_checks(), "covr"))
 covr::report(covr::package_coverage())
 devtools::check()
 rhub::check_for_cran()
+
 devtools::check_win_devel()
 devtools::check_win_oldrelease()
 devtools::check_win_release()
